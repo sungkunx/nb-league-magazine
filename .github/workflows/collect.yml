@@ -40,7 +40,12 @@ jobs:
           YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
           YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
           YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
-        run: python -m nbl "$COMMAND"
+        run: |
+          if [ -z "$YAHOO_REFRESH_TOKEN" ] && [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            echo "::notice::Yahoo secrets are not set yet - scheduled run skipped"
+            exit 0
+          fi
+          python -m nbl "$COMMAND"
       - name: Save data
         # Runs even after a failure so days that did finish are kept.
         if: always()
