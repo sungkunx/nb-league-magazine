@@ -73,6 +73,11 @@ class CliTests(unittest.TestCase):
         _, text = self.run_cli("sheets", "--week", "1")
         self.assertRegex(text, r"week-01: \d+ check")
 
+    def test_sheets_before_anything_is_collected_succeeds_quietly(self):
+        code, text = self.run_cli("sheets")
+        self.assertEqual(code, 0)
+        self.assertIn("nothing collected yet", text)
+
     def test_preseason_moves_get_their_own_sheet(self):
         self.run_cli("collect", "--now", "2026-10-22T00:05-07:00")
         pre = json.loads((self.data / "facts" / "preseason.json").read_text(encoding="utf-8"))

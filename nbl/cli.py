@@ -31,6 +31,9 @@ def _write_json(path, data):
 
 def _sheets(store, data_dir, out, only_week=None):
     """Rebuild the database and write fact sheets under <data_dir>/facts."""
+    if not store.root.exists():
+        print("nothing collected yet", file=out)
+        return
     conn = db.rebuild(store, data_dir / "league.db")
     facts = data_dir / "facts"
     try:
