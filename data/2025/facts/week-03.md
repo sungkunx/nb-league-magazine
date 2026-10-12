@@ -186,6 +186,9 @@
 - X38 2025-11-10 03:05 · add/drop · Kevin Huerter (add: FA → t.16); Isaiah Joe (drop: t.16 → Waivers)
 - X39 2025-11-10 04:27 · add/drop · Derik Queen (add: Waivers → t.6); Jaylin Williams (drop: t.6 → Waivers)
 
+## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
+- 스냅샷이 있는 날: 없음
+
 ## 스토리 훅
 - H1 무승부: Cho vs Kharami (5-5-0)
 - H2 무승부: Team Scott vs TERIE-DD-1 (5-5-0)

@@ -316,6 +316,42 @@ def _totals_checks(entries, results, cats, names):
     return checks
 
 
+# ---- lineup changes ------------------------------------------------------
+
+def _lineup_changes(conn, start, end, names):
+    """Players whose slot crossed the starter/bench line between the snapshot
+    taken before the games and the roster that actually counted."""
+    bench = _bench_slots(conn)
+    stat_names = dict(conn.execute("SELECT stat_id, display_name FROM stat_categories"))
+    out = []
+    for r in conn.execute(
+        """SELECT l.date, l.team_key, l.player_key, l.slot AS before, r.slot AS after, p.name,
+                  COALESCE(d.played, 0) AS played
+           FROM lineup_pre l
+           JOIN roster_daily r ON r.date=l.date AND r.team_key=l.team_key AND r.player_key=l.player_key
+           JOIN players p ON p.player_key=l.player_key
+           LEFT JOIN player_days d ON d.date=l.date AND d.player_key=l.player_key
+           WHERE l.date BETWEEN ? AND ? ORDER BY l.date, l.team_key, p.name""", (start, end)
+    ).fetchall():
+        was_starting, is_starting = r["before"] not in bench, r["after"] not in bench
+        if was_starting == is_starting:
+            continue
+        change = {
+            "date": r["date"], "team": names.get(r["team_key"], r["team_key"]), "player": r["name"],
+            "from": r["before"], "to": r["after"], "change": "started" if is_starting else "benched",
+            "played": bool(r["played"]),
+        }
+        if r["played"]:
+            change["line"] = {
+                stat_names.get(stat_id, stat_id): value
+                for stat_id, value in conn.execute(
+                    "SELECT stat_id, value FROM player_stats WHERE date=? AND player_key=?",
+                    (r["date"], r["player_key"]))
+            }
+        out.append(change)
+    return out
+
+
 # ---- transactions --------------------------------------------------------
 
 def _place(kind, team_key, names):
@@ -532,6 +568,8 @@ def build_week(conn, week, upset_gap=5):
             "is_playoffs": any(r["playoffs"] for r in results),
             "standings_through_week": standings_week,
             "lvp_min_games": min_games,
+            "lineup_snapshot_days": [r[0] for r in conn.execute(
+                "SELECT DISTINCT date FROM lineup_pre WHERE date BETWEEN ? AND ? ORDER BY date", (start, end))],
         },
         "categories": [{"name": c["name"], "lower_is_better": c["lower"]} for c in cats],
         "checks": checks,
@@ -541,6 +579,7 @@ def build_week(conn, week, upset_gap=5):
         "mvp_candidates": _with_ids("P", [candidate(e) for e in by_score[:CANDIDATES]]),
         "lvp_candidates": _with_ids("L", [candidate(e) for e in regulars[:CANDIDATES]]),
         "transactions": _with_ids("X", _transactions(conn, names, week_start_ts, week_end_ts)),
+        "lineup_changes": _with_ids("C", _lineup_changes(conn, start, end, names)),
         "hooks": _with_ids("H", _hooks(results, rank_before, teams, streaks, names, upset_gap)),
         "next_week": _with_ids("N", next_week),
     }
@@ -666,6 +705,18 @@ def render_md(sheet):
     out += ["", "## 트랜잭션 (한국 시간)"]
     out += [f"- {x['id']} {x['time_kst']} · {x['type']} · " + "; ".join(_move_text(m) for m in x["moves"])
             for x in sheet["transactions"]] or ["- 없음"]
+
+    out += ["", "## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)"]
+    covered = meta.get("lineup_snapshot_days") or []
+    out.append(f"- 스냅샷이 있는 날: {', '.join(covered) if covered else '없음'}")
+    for c in sheet.get("lineup_changes", []):
+        what = "선발로 올림" if c["change"] == "started" else "벤치로 내림"
+        if c["played"]:
+            line = c.get("line", {})
+            played = "그날 기록 " + ", ".join(f"{k} {v}" for k, v in line.items() if v not in ("-", "-/-"))
+        else:
+            played = "그날 기록 없음"
+        out.append(f"- {c['id']} {c['date']} · {c['team']} · {c['player']}: {c['from']} → {c['to']} ({what}, {played})")
 
     out += ["", "## 스토리 훅"]
     out += [f"- {h['id']} {_hook_text(h)}" for h in sheet["hooks"]] or ["- 없음"]

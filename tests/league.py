@@ -125,3 +125,8 @@ class League:
             stat = STAT_ID[{"FG": "FGM/A", "FT": "FTM/A"}.get(name, name)]
             c.execute("INSERT INTO prev_season_stats VALUES (?,?,?)", (key, stat, str(value)))
         return self
+
+    def pre(self, date, team, player, slot):
+        """The slot a player was in when the lineup was looked at before the games."""
+        self.conn.execute("INSERT OR REPLACE INTO lineup_pre VALUES (?,?,?,?)", (date, team, f"p:{player}", slot))
+        return self

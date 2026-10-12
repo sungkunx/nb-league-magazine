@@ -6,6 +6,7 @@ That text is saved as-is under <data_dir>/web:
     league/settings.txt, league/draft.txt
     weeks/week-NN.txt                 official team totals and score per matchup
     days/<date>/teams.txt             every team's slots and player lines that day
+    days/<date>/lineup-pre.txt        optional: the same page read before the games
     days/<date>/standings.txt         optional snapshot
     days/<date>/transactions.txt      optional snapshot (merged across days)
 
@@ -294,23 +295,31 @@ def parse_draft(text):
 
 # ---- what to collect next ------------------------------------------------
 
-def _valid_day(directory):
+def _valid_day(directory, name="teams.txt"):
     try:
-        return parse_day((directory / "teams.txt").read_text(encoding="utf-8"))["date"] == directory.name
+        return parse_day((directory / name).read_text(encoding="utf-8"))["date"] == directory.name
     except (OSError, WebDataError):
         return False
 
 
-def plan(root, season, season_start, now, max_days=5):
+def plan(root, season, season_start, now, max_days=5, season_end=None):
     """Days and weeks the next browser run should fetch.
 
     A stats day is fetched once it is over in US Pacific time. Week files are
     cheap, so the current week, the next one (for pairings) and - for two days
     after it ends - the previous one (for stat corrections) are refreshed.
+
+    "lineup" is the Pacific day now in progress: its lineups can be saved
+    before the games (lineup-pre.txt) to see later who was moved at the last minute.
     """
     root = Path(root)
     start = date.fromisoformat(season_start)
-    target = now.astimezone(ZoneInfo("America/Los_Angeles")).date() - timedelta(days=1)
+    end = date.fromisoformat(season_end) if season_end else None
+    today = now.astimezone(ZoneInfo("America/Los_Angeles")).date()
+    target = today - timedelta(days=1)
+    in_season = start <= today and (end is None or today <= end)
+    wanted = in_season and not _valid_day(root / "days" / today.isoformat(), "lineup-pre.txt")
+    common = {"yesterday": target.isoformat(), "lineup": today.isoformat() if wanted else None}
     known = []
     for path in sorted((root / "weeks").glob("week-*.txt")):
         try:
@@ -332,17 +341,19 @@ def plan(root, season, season_start, now, max_days=5):
         return 1 if day <= first_sunday else 2 + ((day - first_sunday).days - 1) // 7
 
     if target < start:
-        return {"days": [], "weeks": [1], "preseason": True, "behind": 0}
+        return {"days": [], "weeks": [1], "preseason": True, "behind": 0, **common}
     done = {d.name for d in (root / "days").glob("*") if d.is_dir() and _valid_day(d)}
+    last = min(target, end) if end else target
     missing = [
-        d.isoformat() for d in (start + timedelta(days=i) for i in range((target - start).days + 1))
+        d.isoformat() for d in (start + timedelta(days=i) for i in range((last - start).days + 1))
         if d.isoformat() not in done
     ]
     days = missing[:max_days]
     weeks = {week_of(date.fromisoformat(d)) for d in days}
     weeks |= {week_of(target), week_of(target) + 1}
     weeks |= {week_of(d) for d in (target - timedelta(days=1), target - timedelta(days=2)) if d >= start}
-    return {"days": days, "weeks": sorted(weeks), "preseason": False, "behind": len(missing) - len(days)}
+    return {"days": days, "weeks": sorted(weeks), "preseason": False,
+            "behind": len(missing) - len(days), **common}
 
 
 # ---- database ------------------------------------------------------------
@@ -451,6 +462,21 @@ def load(conn, root, season, tz):
                 warnings = day_problems(day)
                 problems += [f"{day_name}: {w}" for w in warnings]
                 _load_day(conn, day, warnings)
+        pre_file = directory / "lineup-pre.txt"
+        if pre_file.exists():
+            try:
+                pre = parse_day(pre_file.read_text(encoding="utf-8"))
+                if pre["date"] != day_name:
+                    raise WebDataError(f"file is for {pre['date']}, folder is {day_name}")
+            except WebDataError as error:
+                problems.append(f"{day_name} lineup: {error}")
+            else:
+                for team in pre["teams"]:
+                    for p in team["players"]:
+                        conn.execute("INSERT OR IGNORE INTO players VALUES (?,?,?,?,?)",
+                                     (_player_key(p["pid"]), p["name"], p["nba_team"], p["position"], ""))
+                        conn.execute("INSERT OR REPLACE INTO lineup_pre VALUES (?,?,?,?)",
+                                     (day_name, _team_key(team["id"]), _player_key(p["pid"]), p["slot"]))
         snapshot = directory / "standings.txt"
         if snapshot.exists():
             try:

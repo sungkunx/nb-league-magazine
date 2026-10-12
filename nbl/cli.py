@@ -183,11 +183,14 @@ def main(argv=None, env=None, api=None, out=None):
         now = datetime.fromisoformat(args.now) if args.now else datetime.now(collect.PT)
         if now.tzinfo is None:
             now = now.replace(tzinfo=collect.PT)
-        p = web.plan(data_dir / "web", config["season"], config["season_start"], now)
+        p = web.plan(data_dir / "web", config["season"], config["season_start"], now,
+                     season_end=config.get("season_end"))
         print(f"base: {config['web_base']}", file=out)
         print(f"teams: {' '.join(str(i) for i in range(1, config.get('num_teams', 16) + 1))}", file=out)
         print(f"days: {' '.join(p['days']) or '-'}", file=out)
         print(f"weeks: {' '.join(str(w) for w in p['weeks'])}", file=out)
+        print(f"yesterday: {p['yesterday']}", file=out)
+        print(f"lineup: {p['lineup'] or '-'}", file=out)
         if p["preseason"]:
             print("note: season has not started - collect settings and transactions only", file=out)
         if p["behind"]:

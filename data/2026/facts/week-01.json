@@ -9,7 +9,8 @@
   "complete": false,
   "is_playoffs": false,
   "standings_through_week": 0,
-  "lvp_min_games": 2
+  "lvp_min_games": 2,
+  "lineup_snapshot_days": []
  },
  "categories": [
   {
@@ -1287,6 +1288,7 @@
  "mvp_candidates": [],
  "lvp_candidates": [],
  "transactions": [],
+ "lineup_changes": [],
  "hooks": [],
  "next_week": []
 }

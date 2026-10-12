@@ -420,6 +420,59 @@ class HookTests(Base):
         self.assertEqual([h["team"] for h in limits], ["Alpha"])
 
 
+class LineupChangeTests(Base):
+    def week(self):
+        lg = self.league().days(*W1).matchup(1, "Alpha", "Bravo")
+        # Night before: Star starts, Sub on the bench. By game time they were swapped.
+        lg.pre("2026-10-20", "Alpha", "Star", "PG").pre("2026-10-20", "Alpha", "Sub", "BN")
+        lg.play("2026-10-20", "Alpha", "Star", "BN", PTS=31, FG="11/20")
+        lg.play("2026-10-20", "Alpha", "Sub", "PG", PTS=4, FG="2/9")
+        return lg
+
+    def changes(self, lg):
+        return self.build(lg, 1)["lineup_changes"]
+
+    def test_player_benched_after_the_night_snapshot_is_listed_with_his_line(self):
+        benched = next(c for c in self.changes(self.week()) if c["player"] == "Star")
+        self.assertEqual(benched["id"][0], "C")
+        self.assertEqual((benched["date"], benched["team"]), ("2026-10-20", "Alpha"))
+        self.assertEqual((benched["from"], benched["to"], benched["change"]), ("PG", "BN", "benched"))
+        self.assertTrue(benched["played"])
+        self.assertEqual(benched["line"]["PTS"], "31")
+        self.assertEqual(benched["line"]["FGM/A"], "11/20")
+
+    def test_player_moved_into_the_lineup_is_listed(self):
+        started = next(c for c in self.changes(self.week()) if c["player"] == "Sub")
+        self.assertEqual((started["from"], started["to"], started["change"]), ("BN", "PG", "started"))
+
+    def test_moving_between_two_starting_slots_is_not_a_change(self):
+        lg = self.league().days(*W1).matchup(1, "Alpha", "Bravo")
+        lg.pre("2026-10-20", "Alpha", "Star", "PG").play("2026-10-20", "Alpha", "Star", "Util", PTS=20, FG="8/15")
+        self.assertEqual(self.changes(lg), [])
+
+    def test_benched_player_who_did_not_play_has_no_line(self):
+        lg = self.league().days(*W1).matchup(1, "Alpha", "Bravo")
+        lg.pre("2026-10-20", "Alpha", "Hurt", "C").play("2026-10-20", "Alpha", "Hurt", "IL")
+        (change,) = self.changes(lg)
+        self.assertEqual(change["change"], "benched")
+        self.assertFalse(change["played"])
+        self.assertNotIn("line", change)
+
+    def test_day_without_final_roster_yet_is_skipped(self):
+        lg = self.league().days("2026-10-20").matchup(1, "Alpha", "Bravo", status="midevent")
+        lg.pre("2026-10-21", "Alpha", "Star", "PG")
+        self.assertEqual(self.changes(lg), [])
+
+    def test_meta_lists_days_that_have_a_night_snapshot(self):
+        self.assertEqual(self.build(self.week(), 1)["meta"]["lineup_snapshot_days"], ["2026-10-20"])
+
+    def test_markdown_shows_the_change(self):
+        text = factsheet.render_md(self.build(self.week(), 1))
+        self.assertIn("C1", text)
+        self.assertIn("Star: PG → BN", text)
+        self.assertIn("31", text)
+
+
 class SheetTests(Base):
     def full(self):
         lg = (
@@ -459,7 +512,7 @@ class SheetTests(Base):
         ids = [
             item["id"]
             for section in ("matchups", "standings", "teams", "mvp_candidates", "lvp_candidates",
-                            "transactions", "hooks", "next_week")
+                            "transactions", "lineup_changes", "hooks", "next_week")
             for item in sheet[section]
         ]
         self.assertEqual(len(ids), len(set(ids)))

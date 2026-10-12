@@ -11,13 +11,36 @@ Yahoo가 API를 막고 있는 동안, 로그인된 Chrome(Claude in Chrome)으�
 - 읽기만 한다. Yahoo에서 클릭·제출·로스터 변경을 하지 않는다.
 - 로그인 화면으로 넘어가면 멈추고 사용자에게 알린다(비밀번호 입력 금지).
 
+## 실행 종류
+
+예약 작업이 셋 있다. 각자 아래 "절차"에서 자기 몫만 한다.
+
+| 종류 | 언제 | 하는 일 |
+|---|---|---|
+| **오후 수집** | 매일 미국 태평양 00:05 (한국 16:05, 11월 1일 이후 17:05) | 절차 전체. `lineup` 줄은 무시한다. |
+| **야간 라인업** | 매일 한국 22:59 | `plan`의 `lineup` 날짜 하나만 읽어 `lineup-pre.txt`로 저장한다. `lineup: -`이면 할 일이 없다. |
+| **드래프트** | 드래프트 다음 날 1회 | `NBL.draft`, `NBL.settings`, `NBL.transactions`를 저장하고 `sheets`를 돌린다. |
+
+야간 라인업은 그날 경기가 시작되기 전의 선발/벤치 배치를 남기는 것이다. 다음 날 오후
+수집이 최종 로스터를 가져오면, 팩트시트의 "경기 전 라인업 변경"에 경기 직전에 선발로
+올리거나 벤치로 내린 선수가 나온다.
+
+```js
+await NBL.run(NBL.day(B, '<lineup 날짜>', IDS))   // 저장: <w>/days/<lineup 날짜>/lineup-pre.txt
+```
+
+경기 전이므로 기록은 전부 `-`인 것이 정상이다. `E|` 줄(표를 못 찾음)이 있으면 저장하지
+말고 보고한다. 야간 실행은 `sheets`를 돌릴 필요가 없다. `verify` 후 커밋·푸시만 한다.
+
 ## 절차
 
 1. **계획 확인**
    ```
    python -m nbl plan
    ```
-   `base`, `teams`, `days`, `weeks`가 나온다. `days: -`이고 시즌 전이 아니면 할 일이 없다.
+   `base`, `teams`, `days`, `weeks`, `yesterday`, `lineup`이 나온다.
+   - `days: -`여도 `weeks`, 순위, 트랜잭션은 수집한다(하루가 끝나기 전 재실행인 경우 제외).
+   - 시즌 전(`note: season has not started`)에는 트랜잭션을 `yesterday` 날짜 폴더에 저장한다.
 
 2. **탭 열기**: `https://basketball.fantasysports.yahoo.com<base>` 를 새 탭으로 연다.
 
@@ -41,7 +64,7 @@ Yahoo가 API를 막고 있는 동안, 로그인된 Chrome(Claude in Chrome)으�
    | `NBL.day(B, 날짜, IDS)` | `<w>/days/<날짜>/teams.txt` | `days`의 각 날짜 |
    | `NBL.week(B, 주차, IDS)` | `<w>/weeks/week-NN.txt` | `weeks`의 각 주차 |
    | `NBL.standings(B)` | `<w>/days/<가장 최근 날짜>/standings.txt` | 날짜를 수집한 날 |
-   | `NBL.transactions(B, 2)` | `<w>/days/<가장 최근 날짜>/transactions.txt` | 매일 (시즌 전에는 어제 날짜 폴더) |
+   | `NBL.transactions(B, 2)` | `<w>/days/<가장 최근 날짜>/transactions.txt` | 매일 (시즌 전에는 `yesterday` 폴더) |
    | `NBL.settings(B)` | `<w>/league/settings.txt` | 처음, 이후 주 1회 |
    | `NBL.draft(B)` | `<w>/league/draft.txt` | 드래프트 직후 1회 |
 

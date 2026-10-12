@@ -6,5 +6,6 @@
   "web_base": "/nba/80126",
   "web_time_zone": "Asia/Seoul",
   "season_start": "2026-10-20",
-  "num_teams": 16
+  "num_teams": 16,
+  "season_end": "2027-04-04"
 }

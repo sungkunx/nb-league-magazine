@@ -43,6 +43,30 @@ class PlanTests(unittest.TestCase):
     def plan(self, now, **kwargs):
         return web.plan(self.root, season=2026, season_start="2026-10-20", now=pt(now), **kwargs)
 
+    def lineup(self, name):
+        d = self.root / "days" / name
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "lineup-pre.txt").write_text(
+            web.seal([f"#nbl-day v2 base=/nba/1 date={name} teams=0", "C|PTS"]), encoding="utf-8")
+
+    def test_plan_names_the_days_a_run_writes_to(self):
+        p = self.plan("2026-10-22T07:00")
+        self.assertEqual(p["yesterday"], "2026-10-21")
+        self.assertEqual(p["lineup"], "2026-10-22")
+
+    def test_no_night_lineup_before_opening_day_or_after_the_last_day(self):
+        self.assertIsNone(self.plan("2026-10-19T07:00")["lineup"])
+        self.assertEqual(self.plan("2026-10-20T07:00")["lineup"], "2026-10-20")
+        self.assertIsNone(self.plan("2027-04-05T07:00", season_end="2027-04-04", max_days=0)["lineup"])
+
+    def test_night_lineup_already_saved_is_not_asked_for_again(self):
+        self.lineup("2026-10-22")
+        self.assertIsNone(self.plan("2026-10-22T07:00")["lineup"])
+
+    def test_days_after_the_season_are_not_collected(self):
+        p = self.plan("2027-04-10T00:05", season_end="2027-04-04", max_days=400)
+        self.assertEqual(p["days"][-1], "2027-04-04")
+
     def test_before_the_season_there_are_no_days_to_collect(self):
         p = self.plan("2026-10-19T09:00")
         self.assertEqual(p["days"], [])
@@ -190,6 +214,27 @@ class CommandTests(unittest.TestCase):
         self.assertIn("base: /2025/nba/48698", text)
         self.assertIn("days: 2025-10-21", text)
         self.assertIn("weeks:", text)
+        self.assertIn("yesterday: 2025-11-10", text)
+        self.assertIn("lineup: 2025-11-11", text)
+
+    def test_night_lineup_file_is_loaded_and_compared_with_the_final_roster(self):
+        # Pretend that on the night before Nov 5, Cho had Brunson on the bench and Bane starting.
+        final = (self.data / "web" / "days" / "2025-11-05" / "teams.txt").read_text(encoding="utf-8")
+        lines = [l for l in final.rstrip("\n").split("\n")[:-1] if not l.startswith("S|")]
+        lines = [("|".join(l.split("|")[:5]) + "|-") if l.startswith("P|") else l for l in lines]
+        lines = [l.replace("P|PG|6044|", "P|BN|6044|").replace("P|BN|6422|", "P|PG|6422|") for l in lines]
+        pre = self.data / "web" / "days" / "2025-11-05" / "lineup-pre.txt"
+        pre.write_text(web.seal(lines), encoding="utf-8")
+        code, text = self.run_cli("verify", str(pre))
+        self.assertEqual(code, 0, text)
+        self.run_cli("sheets")
+        sheet = json.loads((self.data / "facts" / "week-03.json").read_text(encoding="utf-8"))
+        changes = {c["player"]: c for c in sheet["lineup_changes"]}
+        self.assertEqual(set(changes), {"Jalen Brunson", "Desmond Bane"})
+        self.assertEqual(changes["Jalen Brunson"]["change"], "started")
+        self.assertEqual(changes["Jalen Brunson"]["line"]["PTS"], "23")
+        self.assertEqual(changes["Desmond Bane"]["change"], "benched")
+        self.assertEqual(sheet["checks"], [])
 
 
 if __name__ == "__main__":

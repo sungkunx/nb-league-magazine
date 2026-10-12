@@ -19,6 +19,8 @@ CREATE TABLE teams(team_key TEXT PRIMARY KEY, team_id INT, name TEXT, manager TE
 CREATE TABLE players(player_key TEXT PRIMARY KEY, name TEXT, nba_team TEXT, position TEXT, status TEXT);
 CREATE TABLE roster_daily(date TEXT, team_key TEXT, player_key TEXT, slot TEXT, status TEXT,
     PRIMARY KEY(date, team_key, player_key));
+CREATE TABLE lineup_pre(date TEXT, team_key TEXT, player_key TEXT, slot TEXT,
+    PRIMARY KEY(date, team_key, player_key));
 CREATE TABLE player_days(date TEXT, player_key TEXT, played INT, PRIMARY KEY(date, player_key));
 CREATE TABLE player_stats(date TEXT, player_key TEXT, stat_id TEXT, value TEXT,
     PRIMARY KEY(date, player_key, stat_id));
