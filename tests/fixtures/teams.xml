@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season>
+  <teams count="2">
+   <team><team_key>470.l.80126.t.1</team_key><team_id>1</team_id><name>Cho</name><number_of_moves>5</number_of_moves><number_of_trades>1</number_of_trades>
+    <roster_adds><coverage_type>week</coverage_type><coverage_value>1</coverage_value><value>2</value></roster_adds>
+    <managers><manager><manager_id>1</manager_id><nickname>Chochi</nickname><guid>ABC</guid></manager></managers></team>
+   <team><team_key>470.l.80126.t.2</team_key><team_id>2</team_id><name>YoungHun`s Team Bravo</name><number_of_moves>0</number_of_moves><number_of_trades>0</number_of_trades>
+    <roster_adds><coverage_type>week</coverage_type><coverage_value>1</coverage_value><value>0</value></roster_adds>
+    <managers><manager><manager_id>2</manager_id><nickname>YH</nickname></manager></managers></team>
+  </teams>
+ </league>
+</fantasy_content>

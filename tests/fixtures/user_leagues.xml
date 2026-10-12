@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <users count="1"><user><guid>ABC</guid>
+  <games count="2">
+   <game><game_key>466</game_key><game_id>466</game_id><name>Basketball</name><code>nba</code><season>2025</season>
+    <leagues count="1"><league><league_key>466.l.12345</league_key><league_id>12345</league_id><name>NB League 2025</name><num_teams>16</num_teams><is_finished>1</is_finished><season>2025</season></league></leagues></game>
+   <game><game_key>470</game_key><game_id>470</game_id><name>Basketball</name><code>nba</code><season>2026</season>
+    <leagues count="1"><league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season></league></leagues></game>
+  </games>
+ </user></users>
+</fantasy_content>

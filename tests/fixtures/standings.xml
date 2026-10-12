@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season>
+  <standings><teams count="2">
+   <team><team_key>470.l.80126.t.2</team_key><team_id>2</team_id><name>YoungHun`s Team Bravo</name>
+    <team_standings><rank>1</rank><playoff_seed>1</playoff_seed><outcome_totals><wins>6</wins><losses>3</losses><ties>1</ties><percentage>.650</percentage></outcome_totals><games_back>-</games_back></team_standings></team>
+   <team><team_key>470.l.80126.t.1</team_key><team_id>1</team_id><name>Cho</name>
+    <team_standings><rank>2</rank><outcome_totals><wins>3</wins><losses>6</losses><ties>1</ties><percentage>.350</percentage></outcome_totals><games_back>3.0</games_back></team_standings></team>
+  </teams></standings>
+ </league>
+</fantasy_content>

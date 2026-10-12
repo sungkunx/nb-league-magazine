@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season>
+  <draft_results count="2">
+   <draft_result><pick>1</pick><round>1</round><team_key>470.l.80126.t.2</team_key><player_key>470.p.5352</player_key></draft_result>
+   <draft_result><pick>2</pick><round>1</round><team_key>470.l.80126.t.1</team_key><player_key>470.p.6030</player_key></draft_result>
+  </draft_results>
+ </league>
+</fantasy_content>

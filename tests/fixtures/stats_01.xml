@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season>
+  <players count="3">
+   <player><player_key>470.p.5352</player_key><player_id>5352</player_id><name><full>Nikola Jokic</full></name><editorial_team_abbr>DEN</editorial_team_abbr><display_position>C</display_position>
+    <player_stats><coverage_type>date</coverage_type><date>2026-10-21</date><stats>
+     <stat><stat_id>9004003</stat_id><value>10/18</value></stat><stat><stat_id>5</stat_id><value>.556</value></stat>
+     <stat><stat_id>12</stat_id><value>27</value></stat><stat><stat_id>19</stat_id><value>3</value></stat></stats></player_stats></player>
+   <player><player_key>470.p.6030</player_key><player_id>6030</player_id><name><full>Tyrese Maxey</full></name><editorial_team_abbr>PHI</editorial_team_abbr><display_position>PG,SG</display_position>
+    <player_stats><coverage_type>date</coverage_type><date>2026-10-21</date><stats>
+     <stat><stat_id>9004003</stat_id><value>-/-</value></stat><stat><stat_id>5</stat_id><value>-</value></stat>
+     <stat><stat_id>12</stat_id><value>-</value></stat><stat><stat_id>19</stat_id><value>-</value></stat></stats></player_stats></player>
+   <player><player_key>470.p.4563</player_key><player_id>4563</player_id><name><full>Kawhi Leonard</full></name><editorial_team_abbr>LAC</editorial_team_abbr><display_position>SF</display_position>
+    <player_stats><coverage_type>date</coverage_type><date>2026-10-21</date><stats>
+     <stat><stat_id>9004003</stat_id><value>0/4</value></stat><stat><stat_id>5</stat_id><value>.000</value></stat>
+     <stat><stat_id>12</stat_id><value>0</value></stat><stat><stat_id>19</stat_id><value>1</value></stat></stats></player_stats></player>
+  </players>
+ </league>
+</fantasy_content>

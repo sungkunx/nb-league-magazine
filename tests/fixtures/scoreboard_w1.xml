@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <league><league_key>470.l.80126</league_key><league_id>80126</league_id><name>NB League 2026</name><url>https://basketball.fantasysports.yahoo.com/nba/80126</url><draft_status>postdraft</draft_status><num_teams>16</num_teams><scoring_type>head</scoring_type><current_week>1</current_week><start_week>1</start_week><start_date>2026-10-20</start_date><end_week>22</end_week><end_date>2027-04-04</end_date><is_finished>0</is_finished><game_code>nba</game_code><season>2026</season>
+  <scoreboard><week>1</week><matchups count="1">
+   <matchup><week>1</week><week_start>2026-10-20</week_start><week_end>2026-10-25</week_end><status>postevent</status><is_playoffs>0</is_playoffs><is_consolation>0</is_consolation><is_tied>0</is_tied><winner_team_key>470.l.80126.t.2</winner_team_key>
+    <stat_winners>
+     <stat_winner><stat_id>5</stat_id><winner_team_key>470.l.80126.t.2</winner_team_key></stat_winner>
+     <stat_winner><stat_id>12</stat_id><is_tied>1</is_tied></stat_winner>
+     <stat_winner><stat_id>19</stat_id><winner_team_key>470.l.80126.t.1</winner_team_key></stat_winner>
+    </stat_winners>
+    <teams count="2">
+     <team><team_key>470.l.80126.t.1</team_key><team_id>1</team_id><name>Cho</name>
+      <team_stats><coverage_type>week</coverage_type><week>1</week><stats>
+       <stat><stat_id>9004003</stat_id><value>150/330</value></stat><stat><stat_id>5</stat_id><value>.455</value></stat>
+       <stat><stat_id>12</stat_id><value>410</value></stat><stat><stat_id>19</stat_id><value>40</value></stat></stats></team_stats>
+      <team_points><coverage_type>week</coverage_type><week>1</week><total>1</total></team_points></team>
+     <team><team_key>470.l.80126.t.2</team_key><team_id>2</team_id><name>YoungHun`s Team Bravo</name>
+      <team_stats><coverage_type>week</coverage_type><week>1</week><stats>
+       <stat><stat_id>9004003</stat_id><value>160/320</value></stat><stat><stat_id>5</stat_id><value>.500</value></stat>
+       <stat><stat_id>12</stat_id><value>410</value></stat><stat><stat_id>19</stat_id><value>52</value></stat></stats></team_stats>
+      <team_points><coverage_type>week</coverage_type><week>1</week><total>1</total></team_points></team>
+    </teams>
+   </matchup>
+  </matchups></scoreboard>
+ </league>
+</fantasy_content>

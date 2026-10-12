@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <games count="1">
+  <game><game_key>470</game_key><game_id>470</game_id><name>Basketball</name><code>nba</code><type>full</type><season>2026</season></game>
+ </games>
+</fantasy_content>

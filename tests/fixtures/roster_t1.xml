@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/x" time="30ms" copyright="Yahoo" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+ <team><team_key>470.l.80126.t.1</team_key><team_id>1</team_id><name>Cho</name>
+  <roster><coverage_type>date</coverage_type><date>2026-10-21</date><is_editable>0</is_editable>
+   <players count="3">
+    <player><player_key>470.p.5352</player_key><player_id>5352</player_id><name><full>Nikola Jokic</full><first>Nikola</first><last>Jokic</last></name>
+     <editorial_team_abbr>DEN</editorial_team_abbr><display_position>C</display_position><position_type>P</position_type>
+     <eligible_positions><position>C</position><position>Util</position></eligible_positions>
+     <selected_position><coverage_type>date</coverage_type><date>2026-10-21</date><position>C</position><is_flex>0</is_flex></selected_position></player>
+    <player><player_key>470.p.6030</player_key><player_id>6030</player_id><name><full>Tyrese Maxey</full></name>
+     <status>GTD</status><status_full>Game Time Decision</status_full><injury_note>Ankle</injury_note>
+     <editorial_team_abbr>PHI</editorial_team_abbr><display_position>PG,SG</display_position><position_type>P</position_type>
+     <selected_position><coverage_type>date</coverage_type><date>2026-10-21</date><position>BN</position></selected_position></player>
+    <player><player_key>470.p.4563</player_key><player_id>4563</player_id><name><full>Kawhi Leonard</full></name>
+     <status>INJ</status><editorial_team_abbr>LAC</editorial_team_abbr><display_position>SF</display_position>
+     <selected_position><coverage_type>date</coverage_type><date>2026-10-21</date><position>IL</position></selected_position></player>
+   </players>
+  </roster>
+ </team>
+</fantasy_content>

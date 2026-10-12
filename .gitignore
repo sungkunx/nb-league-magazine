@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# Rebuilt from data/*/raw on every run.
+data/*/league.db
