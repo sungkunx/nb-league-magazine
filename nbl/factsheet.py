@@ -3,6 +3,7 @@
 Articles are written from this sheet only. Anything not on it is not a fact
 the writer may state.
 """
+import json
 import math
 import statistics
 from datetime import datetime, time, timedelta
@@ -104,7 +105,7 @@ def _week_results(conn, week, cats):
             cat_rows.append({"cat": cat, "who": who, "stats": (stats[a], stats[b])})
         wins_a, wins_b = tally[a][0], tally[b][0]
         out.append({
-            "a": a, "b": b, "tally": tally, "cats": cat_rows,
+            "idx": m["idx"], "a": a, "b": b, "tally": tally, "cats": cat_rows,
             "winner": a if wins_a > wins_b else b if wins_b > wins_a else None,
             "decided": any(sum(t) for t in tally.values()),
             "playoffs": bool(m["is_playoffs"]), "status": m["status"],
@@ -132,6 +133,21 @@ def _matchup_section(results, names):
             "categories": categories,
         })
     return out
+
+
+def _score_checks(conn, week, results, names):
+    """Category wins we worked out must match the score Yahoo shows."""
+    official = {r["idx"]: r for r in conn.execute("SELECT * FROM matchup_scores WHERE week=?", (week,))}
+    checks = []
+    for r in results:
+        row = official.get(r["idx"])
+        ours = (r["tally"][r["a"]][0], r["tally"][r["b"]][0])
+        if row and ours != (row["wins_a"], row["wins_b"]):
+            checks.append({
+                "type": "score_mismatch", "teams": [names[r["a"]], names[r["b"]]],
+                "computed": f"{ours[0]}-{ours[1]}", "yahoo": f"{row['wins_a']}-{row['wins_b']}",
+            })
+    return checks
 
 
 # ---- standings -----------------------------------------------------------
@@ -441,16 +457,22 @@ def build_week(conn, week, upset_gap=5):
         r["change"] = r["prev_rank"] - r["rank"] if r["prev_rank"] and r["rank"] else None
     rank_now = {r["team_key"]: r for r in standings}
     # "Rank coming into this week" for upsets: standings before this week's results.
-    before = _standings(results_by_week, week - 1, list(names), names) if week > 1 else []
-    rank_before = {r["team_key"]: r["rank"] for r in before if weeks[week - 1]["end"] <= last_day}
+    known_before = week - 1 in weeks and weeks[week - 1]["end"] <= last_day
+    before = _standings(results_by_week, week - 1, list(names), names) if known_before else []
+    rank_before = {r["team_key"]: r["rank"] for r in before}
 
     checks = []
     if through:
         missing = [d for d in date_range(start, through) if d not in collected]
         if missing:
             checks.append({"type": "missing_days", "days": missing})
+    for row in conn.execute("SELECT date, warnings FROM run_log WHERE date BETWEEN ? AND ? ORDER BY date",
+                            (start, end)):
+        for detail in json.loads(row["warnings"] or "[]"):
+            checks.append({"type": "collection_warning", "day": row["date"], "detail": detail})
     if standings_week:
         checks.extend(_standings_checks(conn, standings, weeks[standings_week]["end"]))
+    checks.extend(_score_checks(conn, week, results, names))
 
     entries = _player_weeks(conn, cats, start, end)
     pool = _score(entries, cats)

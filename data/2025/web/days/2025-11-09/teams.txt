@@ -1,0 +1,53 @@
+#nbl-day v2 base=/2025/nba/48698 date=2025-11-09 teams=4
+C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD
+T|4|Cho|Sun, Nov 9
+P|PG|6551|Davion Mitchell||-
+P|SG|6422|Desmond Bane||4/9|1/1|0|9|5|6|0|0|1|0
+P|SF|5858|Dillon Brooks||-
+P|PF|5836|OG Anunoby||6/11|3/4|4|19|8|3|1|0|1|0
+P|C|6047|Mitchell Robinson||4/4|0/0|0|8|8|0|2|2|0|0
+P|Util|6711|Christian Braun||-
+P|Util|5471|Myles Turner||6/11|0/2|1|13|6|1|3|3|1|0
+P|Util|6044|Jalen Brunson||6/14|4/4|3|19|0|7|0|0|4|0
+P|BN|6513|Jalen Green||-
+P|BN|6514|Evan Mobley||-
+S|26/49|8/11|8|68|27|17|6|5|7|0
+T|11|Kharami|Sun, Nov 9
+P|PG|6022|Shai Gilgeous-Alexander||11/22|10/11|3|35|7|6|2|0|1|0
+P|SG|6721|Andrew Nembhard||5/16|2/2|2|14|2|9|2|0|2|0
+P|SF|4912|Jimmy Butler III||10/15|1/4|0|21|9|7|2|1|1|0
+P|PF|6173|Cameron Johnson||-
+P|C|6219|Nic Claxton||3/4|6/6|0|12|5|5|0|2|2|0
+P|Util|6549|Jonathan Kuminga||1/9|3/6|0|5|8|2|0|0|1|0
+P|Util|5318|Julius Randle||8/16|2/2|1|19|6|4|1|0|1|0
+P|Util|6164|Ja Morant||3/18|3/4|2|11|3|8|1|0|3|0
+P|BN|10092|Jaime Jaquez Jr.||-
+P|BN|6548|Josh Giddey||-
+P|IL|10289|Yves Missi||-
+S|41/100|27/35|8|117|40|41|8|3|11|0
+T|3|Team Scott|Sun, Nov 9
+P|PG|6417|Immanuel Quickley||-
+P|SG|10454|VJ Edgecombe||3/9|4/6|1|11|6|2|1|1|5|0
+P|SF|6515|Scottie Barnes||-
+P|PF|5069|Draymond Green||1/3|0/0|1|3|2|3|0|0|4|0
+P|C|6018|Wendell Carter Jr.||4/10|2/2|2|12|4|1|1|1|3|0
+P|Util|6567|Quentin Grimes||4/8|3/3|2|13|5|4|1|0|3|0
+P|Util|4622|Jrue Holiday||-
+P|Util|5856|Isaiah Hartenstein||8/11|2/4|0|18|13|2|0|1|3|1
+P|BN|5663|Ivica Zubac||-
+P|BN|6014|Luka Dončić||-
+S|20/41|11/15|6|57|30|12|3|3|18|1
+T|15|TERIE-DD-1|Sun, Nov 9
+P|PG|10107|Cason Wallace||2/10|1/1|1|6|4|1|2|0|0|0
+P|SG|6403|Devin Vassell||-
+P|SF|6698|Dyson Daniels||-
+P|PF|6420|Jaden McDaniels||8/10|3/3|2|21|5|3|0|2|2|0
+P|C|4897|Nikola Vučević||-
+P|Util|5352|Nikola Jokić||-
+P|Util|5324|Zach LaVine||10/17|0/0|6|26|4|2|1|0|1|0
+P|Util|6705|Mark Williams||-
+P|BN|5350|Jerami Grant||-
+P|BN|6733|Moussa Diabaté||-
+P|IL|5506|Norman Powell||-
+S|20/37|4/4|9|53|13|6|3|2|3|0
+#crc=f1b6f433 lines=52

@@ -1,0 +1,91 @@
+#nbl-transactions v2 base=/2025/nba/48698 pages=32 filter=Nov3-10
+X|28.15|Nov 10, 10:19 pm|14|6717|Nikola Jović|MIA - PF,C|Free Agent
+X|28.15|Nov 10, 10:19 pm|14|6699|Jeremy Sochan|POR - PF,C|To Waivers
+X|28.16|Nov 10, 9:39 pm|1|5582|T.J. McConnell|IND - PG|Free Agent
+X|28.16|Nov 10, 9:39 pm|1|10448|Tre Johnson|WAS - PG,SG,SF|To Waivers
+X|28.17|Nov 10, 8:17 pm|4|5903|Luke Kornet|SAS - C|Free Agent
+X|28.17|Nov 10, 8:17 pm|4|6047|Mitchell Robinson|BOS - C|To Waivers
+X|28.18|Nov 10, 6:22 pm|16|5013|Harrison Barnes|SAS - SF,PF|Free Agent
+X|28.19|Nov 10, 4:27 am|6|10444|Derik Queen|NOP - PF,C|Waiver
+X|28.19|Nov 10, 4:27 am|6|6724|Jaylin Williams|OKC - PF,C|To Waivers
+X|28.20|Nov 10, 3:05 am|16|6030|Kevin Huerter|DET - SG,SF|Free Agent
+X|28.20|Nov 10, 3:05 am|16|6441|Isaiah Joe|DET - SG,SF|To Waivers
+X|28.21|Nov 10, 3:03 am|16|6560|Tre Mann|WAS - PG,SG|Free Agent
+X|28.21|Nov 10, 3:03 am|16|10333|Jamal Shead|TOR - PG|To Waivers
+X|28.22|Nov 10, 1:59 am|9|6709|Jake LaRavia|LAL - SF,PF|Free Agent
+X|28.22|Nov 10, 1:59 am|9|6031|Josh Okogie|UTA - SG,SF|To Waivers
+X|28.23|Nov 10, 1:06 am|5|10462|Ace Bailey|UTA - SG,SF,PF|Free Agent
+X|28.23|Nov 10, 1:06 am|5|5636|Kris Dunn|LAC - PG,SG|To Waivers
+X|28.24|Nov 10, 12:41 am|5|6604|Trendon Watford|NOP - PF,C|To Waivers
+X|29.0|Nov 9, 11:55 pm|6|10296|Zaccharie Risacher|DAL - SF,PF|Free Agent
+X|29.0|Nov 9, 11:55 pm|6|10276|Jared McCain|OKC - PG,SG|To Waivers
+X|29.1|Nov 9, 5:22 am|7|10121|Noah Clowney|BKN - PF,C|Free Agent
+X|29.1|Nov 9, 5:22 am|7|5317|Marcus Smart|HOU - PG,SG|To Waivers
+X|29.2|Nov 9, 1:44 am|9|6031|Josh Okogie|UTA - SG,SF|Free Agent
+X|29.2|Nov 9, 1:44 am|9|10292|Ryan Dunn|PHX - SF,PF|To Waivers
+X|29.3|Nov 8, 10:59 pm|4|6047|Mitchell Robinson|BOS - C|Free Agent
+X|29.3|Nov 8, 10:59 pm|4|10444|Derik Queen|NOP - PF,C|To Waivers
+X|29.4|Nov 8, 10:55 pm|4|5013|Harrison Barnes|SAS - SF,PF|To Waivers
+X|29.5|Nov 8, 7:55 pm|5|6604|Trendon Watford|NOP - PF,C|Free Agent
+X|29.5|Nov 8, 7:55 pm|5|6766|Simone Fontecchio|MIA - SF,PF|To Waivers
+X|29.6|Nov 8, 2:04 am|4|5013|Harrison Barnes|SAS - SF,PF|Free Agent
+X|29.6|Nov 8, 2:04 am|4|6236|Terance Mann|BKN - SG,SF|To Waivers
+X|29.7|Nov 8, 12:05 am|1|10448|Tre Johnson|WAS - PG,SG,SF|Free Agent
+X|29.7|Nov 8, 12:05 am|1|5433|D'Angelo Russell|MEM - PG|To Waivers
+X|29.8|Nov 7, 10:50 pm|7|5317|Marcus Smart|HOU - PG,SG|Free Agent
+X|29.8|Nov 7, 10:50 pm|7|6556|Moses Moody|GSW - SG,SF,PF|To Waivers
+X|29.9|Nov 7, 10:40 pm|4|10444|Derik Queen|NOP - PF,C|Free Agent
+X|29.9|Nov 7, 10:40 pm|4|6226|Daniel Gafford|DAL - C|To Waivers
+X|29.10|Nov 7, 9:17 pm|1|6577|Herbert Jones|NOP - SG,SF,PF|Free Agent
+X|29.11|Nov 7, 9:16 pm|1|6695|Jaden Ivey|CHI - PG,SG|To Waivers
+X|29.12|Nov 7, 3:00 am|10|6411|Saddiq Bey|NOP - SF,PF|Free Agent
+X|29.12|Nov 7, 3:00 am|10|10121|Noah Clowney|BKN - PF,C|To Waivers
+X|29.13|Nov 7, 1:56 am|4|5858|Dillon Brooks|PHX - SF,PF|Free Agent
+X|29.14|Nov 7, 12:52 am|13|6452|Sam Merrill|CLE - SG,SF|Free Agent
+X|29.14|Nov 7, 12:52 am|13|6709|Jake LaRavia|LAL - SF,PF|To Waivers
+X|29.15|Nov 6, 7:37 pm|4|6030|Kevin Huerter|DET - SG,SF|To Waivers
+X|29.16|Nov 6, 8:31 am|7|6556|Moses Moody|GSW - SG,SF,PF|Free Agent
+X|29.16|Nov 6, 8:31 am|7|10103|Jarace Walker|IND - SF,PF|To Waivers
+X|29.17|Nov 6, 3:00 am|10|10121|Noah Clowney|BKN - PF,C|Free Agent
+X|29.17|Nov 6, 3:00 am|10|5747|Derrick Jones Jr.|LAC - SF,PF|To Waivers
+X|29.18|Nov 6, 1:10 am|16|10333|Jamal Shead|TOR - PG|Free Agent
+X|29.18|Nov 6, 1:10 am|16|6217|Keldon Johnson|SAS - SF,PF|To Waivers
+X|29.19|Nov 5, 9:35 pm|1|6735|Josh Minott|BKN - SF,PF|Free Agent
+X|29.19|Nov 5, 9:35 pm|1|10099|Bilal Coulibaly|WAS - SG,SF|To Waivers
+X|29.20|Nov 5, 8:04 pm|5|5636|Kris Dunn|LAC - PG,SG|Free Agent
+X|29.21|Nov 5, 7:32 pm|5|6712|Walker Kessler|LAL - C|To Waivers
+X|29.22|Nov 5, 7:21 pm|10|5747|Derrick Jones Jr.|LAC - SF,PF|Free Agent
+X|29.22|Nov 5, 7:21 pm|10|4901|Tobias Harris|SAS - PF|To Waivers
+X|29.23|Nov 5, 7:21 am|16|10279|Jaylon Tyson|CLE - SG,SF|Free Agent
+X|29.23|Nov 5, 7:21 am|16|6577|Herbert Jones|NOP - SG,SF,PF|To Waivers
+X|29.24|Nov 5, 4:48 am|16|6441|Isaiah Joe|DET - SG,SF|Free Agent
+X|29.24|Nov 5, 4:48 am|16|6048|Gary Trent Jr.|MIL - SG,SF|To Waivers
+X|30.0|Nov 5, 4:10 am|11|6173|Cameron Johnson|DEN - SG,SF,PF|Waiver
+X|30.0|Nov 5, 4:10 am|11|5073|Khris Middleton|WAS - SF,PF|To Waivers
+X|30.1|Nov 5, 4:10 am|8|6614|Jock Landale|ATL - C|Waiver
+X|30.1|Nov 5, 4:10 am|8|6571|Day'Ron Sharpe|BKN - C|To Waivers
+X|30.2|Nov 5, 4:10 am|2|10315|Kyle Filipowski|UTA - PF,C|Waiver
+X|30.2|Nov 5, 4:10 am|2|5015|Andre Drummond|NYK - C|To Waivers
+X|30.3|Nov 4, 4:10 am|6|10276|Jared McCain|OKC - PG,SG|Waiver
+X|30.3|Nov 4, 4:10 am|6|10273|Bub Carrington|WAS - PG,SG|To Waivers
+X|30.4|Nov 3, 9:47 pm|5|6725|Max Christie|DAL - SG,SF|Free Agent
+X|30.4|Nov 3, 9:47 pm|5|10467|Dylan Harper|SAS - PG,SG|To Waivers
+X|30.5|Nov 3, 9:25 pm|9|6564|Isaiah Jackson|LAC - C|Free Agent
+X|30.5|Nov 3, 9:25 pm|9|10110|Taylor Hendricks|MEM - SF,PF,C|To Waivers
+X|30.6|Nov 3, 8:58 pm|8|6406|Aaron Nesmith|IND - SG,SF|Free Agent
+X|30.6|Nov 3, 8:58 pm|8|6776|Quenton Jackson|IND - PG,SG|To Waivers
+X|30.7|Nov 3, 8:57 pm|8|6707|Tari Eason|HOU - SG,SF,PF|Free Agent
+X|30.7|Nov 3, 8:57 pm|8|6735|Josh Minott|BKN - SF,PF|To Waivers
+X|30.8|Nov 3, 4:52 pm|15|6733|Moussa Diabaté|CHA - C|Free Agent
+X|30.8|Nov 3, 4:52 pm|15|10448|Tre Johnson|WAS - PG,SG,SF|To Waivers
+X|30.9|Nov 3, 4:20 am|9|10292|Ryan Dunn|PHX - SF,PF|Free Agent
+X|30.9|Nov 3, 4:20 am|9|10315|Kyle Filipowski|UTA - PF,C|To Waivers
+X|30.10|Nov 3, 3:59 am|16|6408|Isaiah Stewart|MEM - PF,C|Free Agent
+X|30.10|Nov 3, 3:59 am|16|6614|Jock Landale|ATL - C|To Waivers
+X|30.11|Nov 3, 3:52 am|6|6724|Jaylin Williams|OKC - PF,C|Free Agent
+X|30.11|Nov 3, 3:52 am|6|6052|Jarred Vanderbilt|LAL - PF,C|To Waivers
+X|30.12|Nov 3, 3:13 am|1|5433|D'Angelo Russell|MEM - PG|Free Agent
+X|30.12|Nov 3, 3:13 am|1|6173|Cameron Johnson|DEN - SG,SF,PF|To Waivers
+X|30.13|Nov 3, 12:53 am|4|6236|Terance Mann|BKN - SG,SF|Free Agent
+X|30.13|Nov 3, 12:53 am|4|10095|Anthony Black|ORL - PG,SG,SF|To Waivers
+#crc=d38cb86d lines=90

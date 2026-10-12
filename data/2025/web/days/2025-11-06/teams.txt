@@ -1,0 +1,54 @@
+#nbl-day v2 base=/2025/nba/48698 date=2025-11-06 teams=4
+C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD
+T|4|Cho|Thu, Nov 6
+P|PG|6044|Jalen Brunson||-
+P|SG|6422|Desmond Bane||-
+P|SF|5836|OG Anunoby||-
+P|PF|6514|Evan Mobley||-
+P|C|6226|Daniel Gafford||-
+P|Util|6030|Kevin Huerter||-
+P|Util|6711|Christian Braun||-
+P|Util|6551|Davion Mitchell||-
+P|BN|6236|Terance Mann||-
+P|BN|5471|Myles Turner||-
+P|IL|6513|Jalen Green||10/20|3/5|6|29|3|3|2|0|2|0
+S|-
+T|11|Kharami|Thu, Nov 6
+P|PG|6022|Shai Gilgeous-Alexander||-
+P|SG|10092|Jaime Jaquez Jr.||-
+P|SF|4912|Jimmy Butler III||-
+P|PF|6173|Cameron Johnson||-
+P|C|6219|Nic Claxton||-
+P|Util|6549|Jonathan Kuminga||-
+P|Util|10289|Yves Missi||-
+P|Util|5318|Julius Randle||-
+P|BN|6548|Josh Giddey||-
+P|BN|6164|Ja Morant||-
+P|IL|6721|Andrew Nembhard||-
+S|-
+T|3|Team Scott|Thu, Nov 6
+P|PG|4622|Jrue Holiday||-
+P|SG|10454|VJ Edgecombe||-
+P|SF|6515|Scottie Barnes||-
+P|PF|5069|Draymond Green||-
+P|C|5663|Ivica Zubac||8/14|7/8|0|23|11|2|2|0|2|1
+P|Util|6567|Quentin Grimes||-
+P|Util|5856|Isaiah Hartenstein||-
+P|Util|6014|Luka Dončić||-
+P|BN|6417|Immanuel Quickley||-
+P|BN|6018|Wendell Carter Jr.||-
+S|8/14|7/8|0|23|11|2|2|0|2|1
+T|15|TERIE-DD-1|Thu, Nov 6
+P|PG|10107|Cason Wallace||-
+P|SG|6403|Devin Vassell||-
+P|SF|6420|Jaden McDaniels||-
+P|PF|5350|Jerami Grant||-
+P|C|6705|Mark Williams||4/8|5/6|0|13|10|0|2|0|0|1
+P|Util|5352|Nikola Jokić||-
+P|Util|6733|Moussa Diabaté||-
+P|Util|5324|Zach LaVine||-
+P|BN|6698|Dyson Daniels||-
+P|BN|4897|Nikola Vučević||-
+P|IL|5506|Norman Powell||-
+S|4/8|5/6|0|13|10|0|2|0|0|1
+#crc=e30b47d3 lines=53

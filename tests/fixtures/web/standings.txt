@@ -1,0 +1,18 @@
+#nbl-standings v1 base=/2025/nba/48698
+R|1|1|Baesen|117-76-7|.603|82
+R|2|8|YoungHun`s Team Bravo|99-95-6|.510|60
+R|3|13|hyun's Team|120-74-6|.615|67
+R|4|15|TERIE-DD-1|112-81-7|.578|37
+R|6|3|Team Scott|107-87-6|.550|29
+R|8|11|Kharami|100-95-5|.513|58
+R|9|9|Hanseong's Team|99-96-5|.508|40
+R|11|7|TEAM G-JAY|94-97-9|.493|37
+R|5|6|Team Jaewon|125-67-8|.645|64
+R|7|5|Hewon the game|109-84-7|.563|40
+R|10|10|CHAN|95-93-12|.505|40
+R|12|14|IN's WooSSa Team|93-101-6|.480|59
+R|13|4|Cho|82-111-7|.428|37
+R|14|16|ALTMAN_CH|75-118-7|.393|66
+R|15|12|SEOB's ME7O team|68-123-9|.363|8
+R|16|2|TheMan|49-146-5|.258|21
+#crc=3416b309 lines=17

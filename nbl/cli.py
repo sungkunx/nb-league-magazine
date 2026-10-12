@@ -5,15 +5,20 @@
   collect    the daily run: collect finished days, then rebuild fact sheets
   draft      after the draft: save results and write the draft fact sheet
   sheets     rebuild fact sheets from data already collected (no network)
+
+Browser collection (config "source": "web"; see docs/browser-collection.md):
+  plan       list the days and weeks the next browser run should fetch
+  verify     check a saved browser file: checksum, and that a day adds up
 """
 import argparse
 import json
 import os
+import sqlite3
 import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import collect, db, factsheet, parse
+from . import collect, db, factsheet, parse, web
 from .store import RawStore
 from .yahoo import YahooClient, YahooError
 
@@ -29,19 +34,37 @@ def _write_json(path, data):
     _write(path, json.dumps(data, ensure_ascii=False, indent=1) + "\n")
 
 
-def _sheets(store, data_dir, out, only_week=None):
+def _open_db(config, store, data_dir, out):
+    """A fresh database from whichever source this league uses, or None."""
+    path = data_dir / "league.db"
+    if config.get("source") == "web":
+        root = data_dir / "web"
+        if not root.exists():
+            return None
+        path.unlink(missing_ok=True)
+        conn = sqlite3.connect(path)
+        conn.row_factory = sqlite3.Row
+        conn.executescript(db.SCHEMA)
+        for problem in web.load(conn, root, config["season"], config.get("web_time_zone", "Asia/Seoul")):
+            print(f"PROBLEM {problem}", file=out)
+        return conn
+    return db.rebuild(store, path) if store.root.exists() else None
+
+
+def _sheets(config, store, data_dir, out, only_week=None):
     """Rebuild the database and write fact sheets under <data_dir>/facts."""
-    if not store.root.exists():
+    conn = _open_db(config, store, data_dir, out)
+    if conn is None:
         print("nothing collected yet", file=out)
         return
-    conn = db.rebuild(store, data_dir / "league.db")
     facts = data_dir / "facts"
     try:
         weeks = [dict(r) for r in conn.execute("SELECT week, start, end FROM weeks ORDER BY week")]
         if only_week is not None:
             targets = [only_week]
         else:
-            touched = sorted({collect.week_for(d, weeks) for d in store.done_dates()} - {None})
+            days = [r[0] for r in conn.execute("SELECT date FROM run_log")]
+            touched = sorted({collect.week_for(d, weeks) for d in days} - {None})
             targets = touched[-2:]  # the week in progress and the one just corrected
         for week in targets:
             sheet = factsheet.build_week(conn, week)
@@ -57,6 +80,24 @@ def _sheets(store, data_dir, out, only_week=None):
             print(f"draft: {len(sheet['picks'])} picks", file=out)
     finally:
         conn.close()
+
+
+def _verify(files, out):
+    failed = False
+    for name in files:
+        try:
+            text = Path(name).read_text(encoding="utf-8")
+            header, lines = web.unseal(text)
+            problems = web.day_problems(web.parse_day(text)) if header["kind"] == "day" else []
+        except (OSError, web.WebDataError) as error:
+            problems, header, lines = [str(error)], None, []
+        if problems:
+            failed = True
+            for problem in problems:
+                print(f"FAILED {name}: {problem}", file=out)
+        else:
+            print(f"OK {name}: {header['kind']}, {len(lines)} lines", file=out)
+    return 1 if failed else 0
 
 
 def _smoke(api, store, config, out):
@@ -123,6 +164,10 @@ def main(argv=None, env=None, api=None, out=None):
     sub.add_parser("draft")
     p_sheets = sub.add_parser("sheets")
     p_sheets.add_argument("--week", type=int)
+    p_plan = sub.add_parser("plan")
+    p_plan.add_argument("--now", help="pretend it is this time (ISO 8601 with offset)")
+    p_verify = sub.add_parser("verify")
+    p_verify.add_argument("files", nargs="+")
     args = parser.parse_args(argv)
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
@@ -130,7 +175,29 @@ def main(argv=None, env=None, api=None, out=None):
     store = RawStore(data_dir / "raw")
 
     if args.command == "sheets":
-        _sheets(store, data_dir, out, args.week)
+        _sheets(config, store, data_dir, out, args.week)
+        return 0
+    if args.command == "verify":
+        return _verify(args.files, out)
+    if args.command == "plan":
+        now = datetime.fromisoformat(args.now) if args.now else datetime.now(collect.PT)
+        if now.tzinfo is None:
+            now = now.replace(tzinfo=collect.PT)
+        p = web.plan(data_dir / "web", config["season"], config["season_start"], now)
+        print(f"base: {config['web_base']}", file=out)
+        print(f"teams: {' '.join(str(i) for i in range(1, config.get('num_teams', 16) + 1))}", file=out)
+        print(f"days: {' '.join(p['days']) or '-'}", file=out)
+        print(f"weeks: {' '.join(str(w) for w in p['weeks'])}", file=out)
+        if p["preseason"]:
+            print("note: season has not started - collect settings and transactions only", file=out)
+        if p["behind"]:
+            print(f"note: {p['behind']} more day(s) are still missing after this run", file=out)
+        return 0
+
+    if config.get("source") == "web":
+        print("this league is collected through the browser (docs/browser-collection.md); "
+              "rebuilding fact sheets only", file=out)
+        _sheets(config, store, data_dir, out)
         return 0
 
     if api is None:
@@ -157,7 +224,7 @@ def main(argv=None, env=None, api=None, out=None):
             for day in summary["collected"] + summary["corrected"]:
                 for warning in store.run_info(day).get("warnings", []):
                     print(f"WARNING {day}: {warning}", file=out)
-            _sheets(store, data_dir, out)
+            _sheets(config, store, data_dir, out)
         elif args.command == "draft":
             league_key = collect.resolve_league_key(api, config["season"], config["league_id"])
             if not store.exists("league/settings.xml"):
@@ -168,7 +235,7 @@ def main(argv=None, env=None, api=None, out=None):
                 print(f"WARNING: {warning}", file=out)
             if not store.exists("league/draftresults.xml"):
                 return 1
-            _sheets(store, data_dir, out, only_week=None)
+            _sheets(config, store, data_dir, out)
     except YahooError as error:
         print(f"ERROR: {error}", file=out)
         return 1

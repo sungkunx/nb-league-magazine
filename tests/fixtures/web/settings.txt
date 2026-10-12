@@ -1,0 +1,40 @@
+#nbl-settings v1 base=/2025/nba/48698
+K|League ID#|48698
+K|League Name|NB League 2026
+K|League Logo|
+K|Auto-renew Enabled|Yes
+K|Draft Type|Live Standard Draft
+K|Draft Time|Sun Oct 19 10:00am EDT
+K|Cash League Settings|Not a cash league
+K|Max Teams|16
+K|Live Draft Pick Time|1 Minute
+K|Scoring Type|Head-to-Head - Categories
+K|Max Acquisitions for Entire Season|100
+K|Max Trades for Entire Season|No maximum
+K|Trade End Date|March 5, 2026
+K|Allow Draft Pick Trades|No
+K|Waiver Time|1 day
+K|Waiver Type|Continual rolling list
+K|Waiver Mode|Standard
+K|Allow injured players from waivers or free agents to be added directly to injury slot|Yes
+K|Can't Cut List Provider|Yahoo Sports
+K|Trade Review|League Votes
+K|Votes Required to Veto|Default
+K|Trade Reject Time|1 day
+K|Post Draft Players|Follow Waiver Rules
+K|Max Acquisitions per Week|4
+K|Weekly Deadline|Daily - Tomorrow
+K|Start Scoring on|Week 1
+K|Playoffs|8 teams - Week 21, 22 and 23 (ends Sunday, Apr 5)
+K|Playoff Tie-Breaker|Higher seed wins
+K|Playoff Reseeding|Yes
+K|Lock Eliminated Teams|Yes
+K|Divisions|Yes (2 divisions)
+K|Playoff Seeding Options|Division winners awarded top playoff seeds
+K|Lock Benched Players|No
+K|Make League Publicly Viewable|No
+K|Invite Permissions|Commissioner Only
+K|Send unjoined players email reminders|Yes
+K|Roster Positions|PG, SG, SF, PF, C, Util, Util, Util, BN, BN, IL
+K|Players Stat Categories|Field Goal Percentage (FG%), Free Throw Percentage (FT%), 3-point Shots Made (3PTM), Points Scored (PTS), Total Rebounds (REB), Assists (AST), Steals (ST), Blocked Shots (BLK), Turnovers (TO), Double-Doubles (DD)
+#crc=cf6e11c6 lines=39

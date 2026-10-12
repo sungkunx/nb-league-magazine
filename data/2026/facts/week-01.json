@@ -1,0 +1,1292 @@
+{
+ "meta": {
+  "league": "NB League 2026",
+  "season": "2026-27",
+  "week": 1,
+  "week_start": "2026-10-20",
+  "week_end": "2026-10-25",
+  "through": null,
+  "complete": false,
+  "is_playoffs": false,
+  "standings_through_week": 0,
+  "lvp_min_games": 2
+ },
+ "categories": [
+  {
+   "name": "FG%",
+   "lower_is_better": false
+  },
+  {
+   "name": "FT%",
+   "lower_is_better": false
+  },
+  {
+   "name": "3PTM",
+   "lower_is_better": false
+  },
+  {
+   "name": "PTS",
+   "lower_is_better": false
+  },
+  {
+   "name": "REB",
+   "lower_is_better": false
+  },
+  {
+   "name": "AST",
+   "lower_is_better": false
+  },
+  {
+   "name": "ST",
+   "lower_is_better": false
+  },
+  {
+   "name": "BLK",
+   "lower_is_better": false
+  },
+  {
+   "name": "TO",
+   "lower_is_better": true
+  },
+  {
+   "name": "DD",
+   "lower_is_better": false
+  }
+ ],
+ "checks": [],
+ "matchups": [
+  {
+   "id": "M1",
+   "teams": [
+    "Baesen",
+    "IN's WooSSa Team"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M2",
+   "teams": [
+    "TheMan",
+    "Hanseong's Team"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M3",
+   "teams": [
+    "Team Scott",
+    "CHAN"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M4",
+   "teams": [
+    "Cho",
+    "Kharami"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M5",
+   "teams": [
+    "Hewon the game",
+    "ALTMAN_CH"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M6",
+   "teams": [
+    "Team Jaewon",
+    "hyun's Team"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M7",
+   "teams": [
+    "TEAM G-JAY",
+    "SEOB's ME7O team"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "M8",
+   "teams": [
+    "YoungHun`s Team Bravo",
+    "Jaehun's Matchless Team"
+   ],
+   "score": [
+    "0-0-0",
+    "0-0-0"
+   ],
+   "winner": null,
+   "status": "preevent",
+   "categories": [
+    {
+     "name": "FG%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "FT%",
+     "values": [
+      "-",
+      "-"
+     ],
+     "made_attempted": [
+      "-/-",
+      "-/-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "3PTM",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "PTS",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "REB",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "AST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "ST",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "BLK",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "TO",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    },
+    {
+     "name": "DD",
+     "values": [
+      "-",
+      "-"
+     ],
+     "winner": null
+    }
+   ]
+  }
+ ],
+ "standings": [
+  {
+   "id": "S1",
+   "team": "ALTMAN_CH",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S2",
+   "team": "Baesen",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S3",
+   "team": "CHAN",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S4",
+   "team": "Cho",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S5",
+   "team": "Hanseong's Team",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S6",
+   "team": "Hewon the game",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S7",
+   "team": "IN's WooSSa Team",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S8",
+   "team": "Jaehun's Matchless Team",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S9",
+   "team": "Kharami",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S10",
+   "team": "SEOB's ME7O team",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S11",
+   "team": "TEAM G-JAY",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S12",
+   "team": "Team Jaewon",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S13",
+   "team": "Team Scott",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S14",
+   "team": "TheMan",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S15",
+   "team": "YoungHun`s Team Bravo",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  },
+  {
+   "id": "S16",
+   "team": "hyun's Team",
+   "w": 0,
+   "l": 0,
+   "t": 0,
+   "record": "0-0-0",
+   "pct": null,
+   "rank": null,
+   "prev_rank": null,
+   "change": null
+  }
+ ],
+ "teams": [
+  {
+   "id": "T1",
+   "team": "Baesen",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T2",
+   "team": "IN's WooSSa Team",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T3",
+   "team": "TheMan",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T4",
+   "team": "Hanseong's Team",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T5",
+   "team": "Team Scott",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T6",
+   "team": "CHAN",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T7",
+   "team": "Cho",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T8",
+   "team": "Kharami",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T9",
+   "team": "Hewon the game",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T10",
+   "team": "ALTMAN_CH",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T11",
+   "team": "Team Jaewon",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T12",
+   "team": "hyun's Team",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T13",
+   "team": "TEAM G-JAY",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T14",
+   "team": "SEOB's ME7O team",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T15",
+   "team": "YoungHun`s Team Bravo",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  },
+  {
+   "id": "T16",
+   "team": "Jaehun's Matchless Team",
+   "manager": null,
+   "adds": {
+    "week": 0,
+    "week_limit": 4,
+    "season": 0,
+    "season_limit": 100
+   },
+   "players": [],
+   "benched": []
+  }
+ ],
+ "mvp_candidates": [],
+ "lvp_candidates": [],
+ "transactions": [],
+ "hooks": [],
+ "next_week": []
+}

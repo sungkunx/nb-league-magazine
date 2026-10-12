@@ -29,6 +29,7 @@ CREATE TABLE matchup_stats(week INT, team_key TEXT, stat_id TEXT, value TEXT,
     PRIMARY KEY(week, team_key, stat_id));
 CREATE TABLE matchup_winners(week INT, idx INT, stat_id TEXT, winner_team_key TEXT, is_tied INT,
     PRIMARY KEY(week, idx, stat_id));
+CREATE TABLE matchup_scores(week INT, idx INT, wins_a INT, wins_b INT, PRIMARY KEY(week, idx));
 CREATE TABLE standings(date TEXT, team_key TEXT, rank INT, wins INT, losses INT, ties INT,
     pct REAL, playoff_seed INT, PRIMARY KEY(date, team_key));
 CREATE TABLE transactions(transaction_key TEXT PRIMARY KEY, type TEXT, status TEXT,

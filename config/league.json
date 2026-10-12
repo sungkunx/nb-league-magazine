@@ -1,5 +1,10 @@
 {
   "season": 2026,
   "league_id": "80126",
-  "data_dir": "data/2026"
+  "data_dir": "data/2026",
+  "source": "web",
+  "web_base": "/nba/80126",
+  "web_time_zone": "Asia/Seoul",
+  "season_start": "2026-10-20",
+  "num_teams": 16
 }

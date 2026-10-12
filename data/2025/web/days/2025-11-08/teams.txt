@@ -1,0 +1,54 @@
+#nbl-day v2 base=/2025/nba/48698 date=2025-11-08 teams=4
+C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD
+T|4|Cho|Sat, Nov 8
+P|PG|6551|Davion Mitchell||4/7|2/2|1|11|2|8|5|0|1|0
+P|SG|6513|Jalen Green||1/3|0/0|0|2|1|1|0|0|0|0
+P|SF|5013|Harrison Barnes||6/8|0/0|3|15|2|0|0|0|1|0
+P|PF|6514|Evan Mobley||9/14|5/7|1|24|8|5|0|1|1|0
+P|C|10444|Derik Queen||5/14|2/2|1|13|5|8|0|2|4|0
+P|Util|6711|Christian Braun||3/8|2/3|0|8|5|2|1|0|2|0
+P|Util|5471|Myles Turner||-
+P|Util|6044|Jalen Brunson||-
+P|BN|6422|Desmond Bane||-
+P|BN|5836|OG Anunoby||-
+P|IL|5858|Dillon Brooks||4/6|6/7|2|16|2|3|2|0|1|0
+S|28/54|11/14|6|73|23|24|6|3|9|0
+T|11|Kharami|Sat, Nov 8
+P|PG|6548|Josh Giddey||5/18|5/5|0|15|9|6|2|1|2|0
+P|SG|10092|Jaime Jaquez Jr.||6/15|2/3|0|14|12|7|1|0|1|1
+P|SF|4912|Jimmy Butler III||-
+P|PF|6173|Cameron Johnson||5/11|2/2|0|12|2|4|2|0|0|0
+P|C|6219|Nic Claxton||-
+P|Util|5318|Julius Randle||-
+P|Util|6164|Ja Morant||-
+P|Util|6721|Andrew Nembhard||7/20|6/6|2|22|0|6|0|0|3|0
+P|BN|6549|Jonathan Kuminga||-
+P|BN|6022|Shai Gilgeous-Alexander||-
+P|IL|10289|Yves Missi||0/0|0/0|0|0|0|0|0|0|0|0
+S|23/64|15/16|2|63|23|23|5|1|6|1
+T|3|Team Scott|Sat, Nov 8
+P|PG|6417|Immanuel Quickley||8/16|1/2|5|22|6|6|0|0|1|0
+P|SG|10454|VJ Edgecombe||5/15|1/2|0|11|7|4|3|0|2|0
+P|SF|6515|Scottie Barnes||7/14|2/3|2|18|5|4|2|2|2|0
+P|PF|5069|Draymond Green||-
+P|C|5663|Ivica Zubac||10/12|1/2|0|21|15|4|0|0|3|1
+P|Util|6567|Quentin Grimes||4/8|2/2|3|13|2|2|0|0|3|0
+P|Util|6014|Luka Dončić||7/17|4/6|4|22|5|11|1|0|5|1
+P|Util|4622|Jrue Holiday||6/19|3/4|3|18|9|13|4|0|3|1
+P|BN|6018|Wendell Carter Jr.||-
+P|BN|5856|Isaiah Hartenstein||-
+S|47/101|14/21|17|125|49|44|10|2|19|3
+T|15|TERIE-DD-1|Sat, Nov 8
+P|PG|10107|Cason Wallace||-
+P|SG|6403|Devin Vassell||6/13|0/0|4|16|2|0|0|1|0|0
+P|SF|6698|Dyson Daniels||5/8|0/0|0|10|8|13|1|0|2|1
+P|PF|5350|Jerami Grant||5/9|7/8|1|18|3|4|1|0|4|0
+P|C|4897|Nikola Vučević||4/11|1/2|0|9|5|4|2|0|2|0
+P|Util|5352|Nikola Jokić||10/14|11/12|1|32|14|14|1|0|8|1
+P|Util|5324|Zach LaVine||-
+P|Util|6705|Mark Williams||7/9|5/5|0|19|6|0|2|0|2|0
+P|BN|6420|Jaden McDaniels||-
+P|BN|6733|Moussa Diabaté||-
+P|IL|5506|Norman Powell||7/16|7/8|1|22|2|3|2|0|1|0
+S|37/64|24/27|6|104|38|35|7|1|18|2
+#crc=6cfeb3d3 lines=53

@@ -1,0 +1,10 @@
+{
+  "season": 2025,
+  "league_id": "48698",
+  "data_dir": "data/2025",
+  "source": "web",
+  "web_base": "/2025/nba/48698",
+  "web_time_zone": "Asia/Seoul",
+  "season_start": "2025-10-21",
+  "num_teams": 16
+}
