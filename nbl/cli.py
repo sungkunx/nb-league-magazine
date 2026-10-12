@@ -134,11 +134,12 @@ def main(argv=None, env=None, api=None, out=None):
         return 0
 
     if api is None:
-        missing = [name for name in SECRETS if not env.get(name)]
+        missing = [name for name in SECRETS if not (env.get(name) or "").strip()]
         if missing:
             print(f"Missing secret(s): {', '.join(missing)}", file=out)
             return 2
-        api = YahooClient(*(env[name] for name in SECRETS))
+        extra = {"redirect_uri": config["redirect_uri"]} if config.get("redirect_uri") else {}
+        api = YahooClient(*(env[name] for name in SECRETS), **extra)
 
     try:
         if args.command == "discover":

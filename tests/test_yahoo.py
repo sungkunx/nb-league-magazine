@@ -19,7 +19,9 @@ class FakeTransport:
         self.requests.append({"method": method, "url": url, "headers": headers, "body": body})
         if url == TOKEN_URL:
             if self.token_status != 200:
-                return self.token_status, b'{"error":"invalid_grant"}'
+                return self.token_status, (
+                    b'{"error":"invalid_grant","error_description":"Invalid refresh token"}'
+                )
             self.tokens_issued += 1
             token = f"access-{self.tokens_issued}"
             return 200, json.dumps({"access_token": token, "expires_in": 3600}).encode()
@@ -55,6 +57,52 @@ class YahooClientTests(unittest.TestCase):
         form = urllib.parse.parse_qs(req["body"].decode())
         self.assertEqual(form["grant_type"], ["refresh_token"])
         self.assertEqual(form["refresh_token"], ["my-refresh"])
+
+    def test_token_request_sends_the_registered_redirect_uri(self):
+        # Yahoo's documented refresh request includes redirect_uri.
+        t = FakeTransport([(200, b"<ok/>")])
+        client(t).get("x")
+        form = urllib.parse.parse_qs(t.token_requests()[0]["body"].decode())
+        self.assertEqual(form["redirect_uri"], ["https://localhost:8080/callback"])
+
+    def test_redirect_uri_can_be_overridden(self):
+        t = FakeTransport([(200, b"<ok/>")])
+        YahooClient("i", "s", "r", transport=t, redirect_uri="oob").get("x")
+        form = urllib.parse.parse_qs(t.token_requests()[0]["body"].decode())
+        self.assertEqual(form["redirect_uri"], ["oob"])
+
+    def test_credentials_are_trimmed_of_pasted_whitespace(self):
+        t = FakeTransport([(200, b"<ok/>")])
+        YahooClient(" my-id\n", "my-secret \n", "\tmy-refresh\n", transport=t).get("x")
+        req = t.token_requests()[0]
+        expected = base64.b64encode(b"my-id:my-secret").decode()
+        self.assertEqual(req["headers"]["Authorization"], f"Basic {expected}")
+        form = urllib.parse.parse_qs(req["body"].decode())
+        self.assertEqual(form["refresh_token"], ["my-refresh"])
+
+    def test_rejected_refresh_reports_yahoos_own_reason(self):
+        t = FakeTransport([], token_status=400)
+        with self.assertRaises(YahooError) as ctx:
+            client(t).get("x")
+        message = str(ctx.exception)
+        self.assertIn("invalid_grant", message)
+        self.assertIn("Invalid refresh token", message)
+
+    def test_empty_credential_does_not_garble_the_error_message(self):
+        t = FakeTransport([], token_status=400)
+        with self.assertRaises(YahooError) as ctx:
+            YahooClient("id", "", "", transport=t).get("x")
+        self.assertIn("invalid_grant - Invalid refresh token", str(ctx.exception))
+
+    def test_rejected_refresh_with_unreadable_body_still_reports_status(self):
+        class Html(FakeTransport):
+            def __call__(self, method, url, headers, body):
+                return 400, b"<html>Bad Request</html>"
+
+        with self.assertRaises(YahooError) as ctx:
+            client(Html([])).get("x")
+        self.assertIn("HTTP 400", str(ctx.exception))
+        self.assertIn("Bad Request", str(ctx.exception))
 
     def test_access_token_is_reused_between_calls(self):
         t = FakeTransport([(200, b"a"), (200, b"b")])

@@ -8,6 +8,7 @@ import urllib.request
 
 API_BASE = "https://fantasysports.yahooapis.com/fantasy/v2/"
 TOKEN_URL = "https://api.login.yahoo.com/oauth2/get_token"
+REDIRECT_URI = "https://localhost:8080/callback"  # as registered in the Yahoo app
 RETRIES = 3  # extra attempts after a server-side failure
 
 
@@ -29,10 +30,13 @@ def _urllib_transport(method, url, headers, body):
 
 
 class YahooClient:
-    def __init__(self, client_id, client_secret, refresh_token, transport=None, sleep=time.sleep):
-        self._client_id = client_id
-        self._client_secret = client_secret
-        self._refresh_token = refresh_token
+    def __init__(self, client_id, client_secret, refresh_token, transport=None, sleep=time.sleep,
+                 redirect_uri=REDIRECT_URI):
+        # Values pasted into a secrets form often carry a stray newline or space.
+        self._client_id = client_id.strip()
+        self._client_secret = client_secret.strip()
+        self._refresh_token = refresh_token.strip()
+        self._redirect_uri = redirect_uri
         self._transport = transport or _urllib_transport
         self._sleep = sleep
         self._access_token = None
@@ -40,9 +44,11 @@ class YahooClient:
 
     def _refresh(self):
         basic = base64.b64encode(f"{self._client_id}:{self._client_secret}".encode()).decode()
-        body = urllib.parse.urlencode(
-            {"grant_type": "refresh_token", "refresh_token": self._refresh_token}
-        ).encode()
+        body = urllib.parse.urlencode({
+            "grant_type": "refresh_token",
+            "redirect_uri": self._redirect_uri,
+            "refresh_token": self._refresh_token,
+        }).encode()
         headers = {
             "Authorization": f"Basic {basic}",
             "Content-Type": "application/x-www-form-urlencoded",
@@ -50,13 +56,26 @@ class YahooClient:
         status, payload = self._transport("POST", TOKEN_URL, headers, body)
         if status != 200:
             raise YahooError(
-                f"Yahoo rejected the token refresh (HTTP {status}). Check that "
+                f"Yahoo rejected the token refresh (HTTP {status}): {self._reason(payload)}. Check that "
                 "YAHOO_CLIENT_ID, YAHOO_CLIENT_SECRET and YAHOO_REFRESH_TOKEN are set "
                 "correctly; if they are, run scripts/yahoo_auth.py again for a new "
                 "YAHOO_REFRESH_TOKEN.",
                 status,
             )
         self._access_token = json.loads(payload)["access_token"]
+
+    def _reason(self, payload):
+        """Yahoo's own explanation of a token failure, with our secrets removed."""
+        text = payload.decode("utf-8", "replace")
+        try:
+            data = json.loads(text)
+            text = f"{data.get('error')} - {data.get('error_description')}"
+        except (ValueError, AttributeError):
+            text = text[:200]
+        for secret in (self._client_secret, self._refresh_token):
+            if secret:
+                text = text.replace(secret, "***")
+        return text
 
     def get(self, path):
         """GET one API path (relative to API_BASE) and return the raw XML bytes."""
