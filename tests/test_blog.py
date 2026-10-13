@@ -105,7 +105,7 @@ class BuildTests(Base):
         self.write("w01-start.md", post(title="시작 글", kind="week-start"))
         self.build()
         html = self.page("index.html")
-        self.assertEqual(html.count("예정"), 2)
+        self.assertEqual(html.count("예정"), 3)
 
     def test_special_posts_sit_among_the_weeks_by_date(self):
         self.write("draft.md", post(title="드래프트 평가", kind="draft", week=None, date="2026-10-19T20:00+09:00"))
@@ -145,6 +145,8 @@ class BuildTests(Base):
 
     def test_image_paths_in_the_body_are_fixed_for_the_post_page(self):
         self.write("a.md", post(body="![만평](images/a.png)"))
+        (self.posts / "images").mkdir()
+        (self.posts / "images" / "a.png").write_bytes(b"png")
         self.build()
         self.assertIn('src="../../images/a.png"', self.page("posts/a/index.html"))
 
@@ -288,3 +290,74 @@ class ReviewTests(Base):
         self.assertFalse(blog.needs_review(site, "week-start"))
         self.assertTrue(blog.needs_review(site, "week-end"))
         self.assertFalse(blog.needs_review(dict(SITE, auto_publish=["all"]), "playoff"))
+
+
+class CartoonTests(Base):
+    """The weekly cartoon is its own post: three pictures, a line under each."""
+
+    def cartoon(self, pictures=3, **kw):
+        (self.posts / "images").mkdir(exist_ok=True)
+        body = []
+        for n in range(1, pictures + 1):
+            (self.posts / "images" / f"w01-cartoon-{n}.png").write_bytes(b"png")
+            body += [f"![{n}번 만평](images/w01-cartoon-{n}.png)", "", f"{n}번 코멘트", ""]
+        return post(title="1주차 만평", kind="week-cartoon", body="\n".join(body), **kw)
+
+    def test_cartoon_is_the_fourth_slot_of_its_week(self):
+        self.write("w01-end.md", post(title="결산 글"))
+        self.write("w01-cartoon.md", self.cartoon(date="2026-10-26T22:30+09:00"))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('class="ed ed-cartoon"', html)
+        self.assertLess(html.index("결산 글"), html.index("1주차 만평"))
+        self.assertEqual(html.count("<h2>"), 1)
+
+    def test_cartoon_needs_a_week(self):
+        with self.assertRaisesRegex(blog.BlogError, "needs 'week'"):
+            blog.parse_post(post(kind="week-cartoon", week=None), "w01-cartoon")
+
+    def test_cartoon_page_shows_each_picture_with_its_comment(self):
+        self.write("w01-cartoon.md", self.cartoon())
+        self.build()
+        html = self.page("posts/w01-cartoon/index.html")
+        self.assertIn('class="post kind-cartoon"', html)
+        self.assertIn("Week 1 만평", html)
+        self.assertEqual(html.count("<figure>"), 3)
+        self.assertLess(html.index("w01-cartoon-2.png"), html.index("2번 코멘트"))
+        self.assertLess(html.index("2번 코멘트"), html.index("w01-cartoon-3.png"))
+
+    def test_first_picture_is_the_sharing_image_when_there_is_no_cover(self):
+        self.write("w01-cartoon.md", self.cartoon())
+        self.build()
+        self.assertIn('<meta property="og:image" content="https://example.github.io/mag/images/w01-cartoon-1.png">',
+                      self.page("posts/w01-cartoon/index.html"))
+
+    def test_cartoon_with_the_wrong_number_of_pictures_stops_the_build(self):
+        self.write("w01-cartoon.md", self.cartoon(pictures=2))
+        with self.assertRaisesRegex(blog.BlogError, "w01-cartoon: a cartoon post has 3 pictures, this one has 2"):
+            self.build()
+
+    def test_picture_that_does_not_exist_stops_the_build(self):
+        self.write("w01-end.md", post(body="![그림](images/nope.png)"))
+        with self.assertRaisesRegex(blog.BlogError, "w01-end: images/nope.png does not exist"):
+            self.build()
+
+
+class ExtraTests(Base):
+    """호외: an unscheduled special, with or without a week."""
+
+    def test_extra_is_listed_among_the_weeks_and_labelled(self):
+        self.write("w01-start.md", post(title="시작 글", kind="week-start", date="2026-10-20T20:00+09:00"))
+        self.write("extra-1022.md", post(title="하루 4건의 트레이드", kind="extra", week=None,
+                                         date="2026-10-22T18:00+09:00"))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<section class="special special-extra">', html)
+        self.assertIn('<span class="tag">호외</span>', html)
+        self.assertLess(html.index("하루 4건의 트레이드"), html.index("시작 글"))
+        page = self.page("posts/extra-1022/index.html")
+        self.assertIn('class="post kind-extra"', page)
+        self.assertIn('<p class="tag">호외</p>', page)
+
+    def test_extra_may_name_a_week_for_its_tables(self):
+        self.assertEqual(blog.parse_post(post(kind="extra", week=3), "extra-1105")["week"], 3)

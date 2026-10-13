@@ -23,9 +23,13 @@ cover: images/w03-end.png
 | `kind` | 뜻 | `week` |
 |---|---|---|
 | `week-start` / `week-mid` / `week-end` | 주간 시작 / 중간 / 마지막 | 필수 |
+| `week-cartoon` | 주간 만평 | 필수 |
+| `extra` | 호외 | 선택(표를 넣을 때) |
 | `draft` / `preseason` / `playoff` / `notice` | 드래프트 평가 / 개막 전 / 플레이오프 특집 / 안내 | 없음 |
 
-권장 파일 이름: `wNN-start.md`, `wNN-mid.md`, `wNN-end.md`, `draft.md`, `preseason.md`, `playoff.md`.
+권장 파일 이름: `wNN-start.md`, `wNN-mid.md`, `wNN-end.md`, `wNN-cartoon.md`,
+`extra-MMDD.md`, `draft.md`, `preseason.md`, `playoff.md`.
+무엇을 언제 쓰는지는 `docs/editorial.md`.
 
 ## 본문에서 쓸 수 있는 것
 
@@ -42,9 +46,38 @@ HTML은 쓸 수 없다(글자로 그대로 보인다).
 
 ## 만평
 
-이미지를 `posts/2026/images/`에 넣고 글 머리의 `cover:`에 경로를 적는다.
-`cover`는 글 맨 위에 실리고 카톡 미리보기 이미지로도 쓰인다. 가로 1200px 안팎을 권장한다.
-본문 중간에 넣으려면 `![설명](images/파일.png)`.
+만평은 별도의 글(`kind: week-cartoon`)이다. 그림은 정확히 3장이고, 그림마다 바로 아래에
+코멘트 한 줄을 적는다. 그림 수가 다르거나 파일이 없으면 빌드가 실패한다.
+
+```
+---
+title: 3주차 만평
+date: 2026-11-09T22:30+09:00
+kind: week-cartoon
+week: 3
+summary: 카톡 미리보기에 뜨는 한 줄
+---
+
+![첫 그림 설명](images/w03-cartoon-1.png)
+
+첫 그림의 코멘트 한 줄.
+
+![둘째 그림 설명](images/w03-cartoon-2.png)
+
+둘째 그림의 코멘트 한 줄.
+
+![셋째 그림 설명](images/w03-cartoon-3.png)
+
+셋째 그림의 코멘트 한 줄.
+```
+
+그림은 `posts/2026/images/`에 넣는다. 가로 1200px 안팎을 권장한다.
+`cover:`를 적지 않으면 첫 그림이 카톡 미리보기 이미지가 된다.
+
+## 그 밖의 이미지
+
+다른 글에도 본문에 `![설명](images/파일.png)`로 이미지를 넣을 수 있다.
+글 머리에 `cover:`를 적으면 글 맨 위에 실리고 카톡 미리보기 이미지로도 쓰인다.
 
 ## 검토 후 발행
 

@@ -15,7 +15,9 @@ Yahoo NBA 판타지 리그(16팀, H2H 10카테고리, 디비전 없음) 주간 �
 
 ## 발행
 
-- 글은 `posts/2026/`에 Markdown으로 쓴다. 형식은 `docs/publishing.md`.
+- 글은 `posts/2026/`에 Markdown으로 쓴다. 형식은 `docs/publishing.md`, 발행 계획은 `docs/editorial.md`.
+- 만평은 주간 글에 넣지 않고 별도의 글(`week-cartoon`, 그림 3장 + 코멘트 한 줄씩)로 낸다.
+- 호외(`extra`)는 오후 수집이 끝난 뒤, 그날 데이터에 평소와 다른 일이 있을 때만 쓴다.
 - 올리기 전에 `python -m nbl blog`로 빌드가 되는지 확인한다.
 - 새 글은 `status: review`로 올려 사용자 확인을 받은 뒤 `python -m nbl publish <파일 이름>`으로 발행한다.
   `config/site.json`의 `auto_publish`에 있는 종류만 확인 없이 바로 발행한다.

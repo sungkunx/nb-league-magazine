@@ -5,8 +5,9 @@ A post is a Markdown file with a short header:
     ---
     title: Week 1 최종 결과
     date: 2026-10-26T22:00+09:00
-    kind: week-end            # draft | preseason | week-start | week-mid | week-end | playoff | notice
-    week: 1                   # weekly posts only
+    kind: week-end            # week-start | week-mid | week-end | week-cartoon |
+                              # draft | preseason | playoff | extra | notice
+    week: 1                   # weekly posts (optional for the others)
     summary: 카톡 미리보기에 뜨는 한 줄
     cover: images/w01-end.png # optional; lives in <posts>/images/
     status: review            # optional; the post waits for the editor's OK
@@ -18,6 +19,8 @@ engines) but is left off the index and out of the other posts' links.
 
 In the body, a line holding only {{standings}} or {{matchups}} (optionally
 "week=N") becomes a table taken from that week's fact sheet.
+
+A week-cartoon post is three pictures, each followed by one line of comment.
 """
 import html
 import json
@@ -28,8 +31,10 @@ from pathlib import Path
 
 from . import markdown
 
-EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막"}
-SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "notice": "안내"}
+EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막", "week-cartoon": "만평"}
+SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외", "notice": "안내"}
+CARTOON_PICTURES = 3
+_PICTURE = re.compile(r"!\[[^\]]*\]\((images/[^)\s]+)\)")
 KINDS = {**EDITIONS, **SPECIALS}
 _SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups)(?:\s+week=(\d+))?\s*\}\}$")
 STYLE = Path(__file__).with_name("blog.css")
@@ -245,7 +250,7 @@ def _index(site, posts):
             weeks.setdefault(p["week"], []).append(p)
         else:
             items.append((p["date"].timestamp(), (
-                f'<section class="special">\n<a href="posts/{esc(p["slug"])}/">'
+                f'<section class="special special-{p["kind"]}">\n<a href="posts/{esc(p["slug"])}/">'
                 f'<span class="tag">{SPECIALS[p["kind"]]}</span>'
                 f'<span class="ed-title">{esc(p["title"])}</span>'
                 f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time></a>\n</section>'
@@ -264,7 +269,8 @@ def _index(site, posts):
         + '\n<p class="legend">매주 세 번 발행합니다. '
           '<span class="key key-start">시작</span> 대진 미리보기, '
           '<span class="key key-mid">중간</span> 주중 점검, '
-          '<span class="key key-end">마지막</span> 주간 결산.</p>\n'
+          '<span class="key key-end">마지막</span> 주간 결산. '
+          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</p>\n'
         + f'<main class="board">\n{listing}\n</main>'
     )
     description = site.get("description") or f"{site['season']} 시즌 판타지 농구 리그 매거진"
@@ -274,10 +280,13 @@ def _index(site, posts):
 def _post_page(site, post, body_html, older, newer):
     base = site["url"].rstrip("/")
     root = "../../"
-    cover = f'{base}/{post["cover"]}' if post["cover"] else ""
+    pictures = _PICTURE.findall(post["body"])
+    share = post["cover"] or (pictures[0] if pictures else "")
+    cover = f"{base}/{share}" if share else ""
     figure = (f'<figure class="cover"><img src="{root}{esc(post["cover"])}" alt="{esc(post["title"])} 만평"></figure>\n'
               if post["cover"] else "")
-    kind_class = post["kind"][5:] if post["kind"] in EDITIONS else "special"
+    kind_class = (post["kind"][5:] if post["kind"] in EDITIONS
+                  else "extra" if post["kind"] == "extra" else "special")
 
     def neighbour(p, word):
         if not p:
@@ -310,6 +319,13 @@ def build(posts_dir, out_dir, site, facts_dir):
     for post in everything:
         if post["cover"] and not (posts_dir / post["cover"]).exists():
             raise BlogError(f"{post['slug']}: cover {post['cover']} does not exist under {posts_dir}")
+        pictures = _PICTURE.findall(post["body"])
+        for picture in pictures:
+            if not (posts_dir / picture).exists():
+                raise BlogError(f"{post['slug']}: {picture} does not exist under {posts_dir}")
+        if post["kind"] == "week-cartoon" and len(pictures) != CARTOON_PICTURES:
+            raise BlogError(f"{post['slug']}: a cartoon post has {CARTOON_PICTURES} pictures, "
+                            f"this one has {len(pictures)}")
         body = _body_html(post, facts_dir).replace('src="images/', 'src="../../images/')
         i = posts.index(post) if post in posts else None
         older = posts[i - 1] if i else None

@@ -1,6 +1,6 @@
 /* NB League 매거진
    The three weekly editions each own a colour (tip-off, halftime, final buzzer);
-   everything else stays ink on cool paper. */
+   the cartoon is drawn in ink, and everything else stays ink on cool paper. */
 :root {
   --paper: #f1f3f7;
   --sheet: #ffffff;
@@ -83,6 +83,7 @@ time { font-variant-numeric: tabular-nums; }
 .key-start { color: var(--start); }
 .key-mid { color: var(--mid); }
 .key-end { color: var(--end); }
+.key-cartoon { color: var(--ink); }
 
 /* the board: one row per week, three editions across */
 .board { max-width: 960px; margin: 36px auto 0; }
@@ -102,11 +103,12 @@ time { font-variant-numeric: tabular-nums; }
   font-variant-numeric: tabular-nums;
 }
 .week h2 span { display: block; font-family: var(--text); font-weight: 700; font-size: 15px; line-height: 1.4; color: var(--soft); }
-.editions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.editions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .ed { background: var(--sheet); border-top: 5px solid var(--edition); display: flex; flex-direction: column; min-height: 132px; }
 .ed-start { --edition: var(--start); }
 .ed-mid { --edition: var(--mid); }
 .ed-end { --edition: var(--end); }
+.ed-cartoon { --edition: var(--ink); }
 .ed-name { padding: 10px 14px 0; color: var(--edition); font-weight: 700; font-size: 15px; }
 .ed a { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; padding: 4px 14px 12px; text-decoration: none; }
 .ed a:hover .ed-title, .special a:hover .ed-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
@@ -120,6 +122,7 @@ time { font-variant-numeric: tabular-nums; }
 .special a { display: grid; grid-template-columns: 132px 1fr auto; gap: 20px; align-items: baseline; text-decoration: none; }
 .special .tag { color: var(--special); font-weight: 700; }
 .special .ed-title { font-size: 20px; }
+.special-extra .tag { justify-self: start; padding: 0 10px; background: var(--end); color: var(--sheet); }
 .nothing { padding: 48px 0; color: var(--soft); }
 
 /* a post */
@@ -130,6 +133,8 @@ time { font-variant-numeric: tabular-nums; }
 .kind-mid { --edition: var(--mid); }
 .kind-end { --edition: var(--end); }
 .kind-special { --edition: var(--special); }
+.kind-cartoon { --edition: var(--ink); }
+.kind-extra { --edition: var(--end); }
 .post h1 { margin: 0 0 14px; font-family: var(--display); font-weight: 400; font-size: clamp(32px, 7.4vw, 54px); line-height: 1.16; }
 .post > header time { color: var(--soft); font-size: 15px; }
 .cover { margin: 24px 0 0; }
@@ -148,6 +153,10 @@ time { font-variant-numeric: tabular-nums; }
 .prose a { text-decoration-color: var(--edition); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .prose code { padding: 1px 5px; background: var(--sheet); font-size: 0.92em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .prose figure { margin: 1.6em 0; }
+/* the cartoon post: picture, then its one line */
+.kind-cartoon .prose figure { margin: 2.6em 0 0; border: 3px solid var(--ink); }
+.kind-cartoon .prose figure:first-child { margin-top: 0; }
+.kind-cartoon .prose figure + p { margin: 0; padding: 14px 4px 0; font-size: 19px; font-weight: 500; line-height: 1.6; }
 
 .table { margin: 1.4em 0; overflow-x: auto; background: var(--sheet); }
 table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.45; font-variant-numeric: tabular-nums; }
