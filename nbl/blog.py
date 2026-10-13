@@ -21,6 +21,10 @@ In the body, a line holding only {{standings}} or {{matchups}} (optionally
 "week=N") becomes a table taken from that week's fact sheet.
 
 A week-cartoon post is three pictures, each followed by one line of comment.
+
+Every league team named in the fact sheets gets a page (teams/<number>/)
+listing the published posts whose text mentions it, with the passage. Team
+names are found in the text; nothing is tagged by hand.
 """
 import html
 import json
@@ -111,6 +115,60 @@ def publish(path):
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+# ---- league teams ---------------------------------------------------------
+
+_LINK_TARGET = re.compile(r"\]\([^)\s]*\)")
+_MARKS = re.compile(r"\*\*|\*|`|^\s*(?:[-*]|\d+\.|#{1,6}|>)\s+")
+TEAMLESS = ("notice",)  # kinds that are not about what teams did
+
+
+def load_teams(facts_dir):
+    """Teams from the weekly fact sheets, by league number: the current name,
+    every name the team has had (older posts use older names), latest standing."""
+    teams = {}
+    for path in sorted(Path(facts_dir).glob("week-*.json")):
+        sheet = json.loads(path.read_text(encoding="utf-8"))
+        standing = {s["team"]: s for s in sheet.get("standings", [])}
+        for t in sheet.get("teams", []):
+            if t.get("team_id") is None:
+                continue
+            team = teams.setdefault(t["team_id"], {"id": t["team_id"], "names": []})
+            team["name"] = t["team"]
+            if t["team"] not in team["names"]:
+                team["names"].append(t["team"])
+            row = standing.get(t["team"], {})
+            team["rank"], team["record"] = row.get("rank"), row.get("record")
+    return sorted(teams.values(), key=lambda t: t["name"].casefold())
+
+
+def _name_pattern(names, escape=lambda n: n):
+    longest_first = sorted(names, key=len, reverse=True)
+    return re.compile("(?<![A-Za-z0-9])(?:" + "|".join(re.escape(escape(n)) for n in longest_first)
+                      + ")(?![A-Za-z0-9])")
+
+
+def passage(body, team):
+    """The first line of the post that names the team, as plain text; or None."""
+    pattern = _name_pattern(team["names"])
+    for line in body.split("\n"):
+        if _SHORTCODE.match(line.strip()):
+            continue
+        text = _LINK_TARGET.sub("]", line)
+        if pattern.search(text):
+            text = _MARKS.sub("", text).replace("[", "").replace("]", "").strip()
+            return text if len(text) <= 200 else text[:199].rstrip() + "…"
+    return None
+
+
+def _anchor(body_html, team):
+    """Mark the first place the team is named in the text of the page."""
+    pattern = _name_pattern(team["names"], lambda n: html.escape(n, quote=True))
+    for m in pattern.finditer(body_html):
+        if body_html.rfind("<", 0, m.start()) <= body_html.rfind(">", 0, m.start()):
+            return f'{body_html[:m.start()]}<span id="team-{team["id"]}"></span>{body_html[m.start():]}'
+    return body_html
+
+
 # ---- tables from the fact sheet ------------------------------------------
 
 def _pct(value):
@@ -187,6 +245,12 @@ def _day(date):
     return f"{date.month}.{date.day}"
 
 
+def _kind_class(post):
+    if post["kind"] in EDITIONS:
+        return post["kind"][5:]
+    return "extra" if post["kind"] == "extra" else "special"
+
+
 def _label(post):
     if post["kind"] in EDITIONS:
         return f"Week {post['week']} {EDITIONS[post['kind']]}"
@@ -242,7 +306,49 @@ def _slot(kind, posts):
     return f'<li class="ed ed-{kind[5:]}"><span class="ed-name">{name}</span>{links}</li>'
 
 
-def _index(site, posts):
+def _team_nav(teams, counts):
+    if not teams:
+        return ""
+    chips = []
+    for t in teams:
+        n = counts.get(t["id"], 0)
+        if n:
+            chips.append(f'<li><a href="teams/{t["id"]}/">{esc(t["name"])}<span class="count">{n}</span></a></li>')
+        else:
+            chips.append(f'<li><a href="teams/{t["id"]}/" class="none">{esc(t["name"])}</a></li>')
+    return ('\n<nav class="teams" aria-label="팀별로 보기">\n<h2>팀별로 보기</h2>\n<ul>\n'
+            + "\n".join(chips) + "\n</ul>\n</nav>")
+
+
+def _team_page(site, team, entries):
+    """entries: (post, passage), newest first."""
+    root = "../../"
+    standing = ""
+    if team.get("rank"):
+        standing = f'\n<p class="standing">현재 {esc(team["rank"])}위 · {esc(team["record"])}</p>'
+    if entries:
+        items = "\n".join(
+            f'<li class="mention kind-{_kind_class(p)}"><a href="{root}posts/{esc(p["slug"])}/#team-{team["id"]}">'
+            f'<span class="tag">{esc(_label(p))}</span><span class="ed-title">{esc(p["title"])}</span>'
+            f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time>'
+            f'<span class="passage">{markdown.inline(text)}</span></a></li>'
+            for p, text in entries
+        )
+        listing = f'<ol class="mentions">\n{items}\n</ol>'
+    else:
+        listing = '<p class="nothing">아직 이 팀이 나온 글이 없습니다.</p>'
+    body = (
+        _masthead(site, root, compact=True)
+        + f'\n<main class="team">\n<header>\n<p class="tag">팀</p>\n<h1>{esc(team["name"])}</h1>{standing}\n'
+          f'</header>\n{listing}\n</main>\n'
+        + f'<nav class="neighbours">\n<a class="home" href="{root}">전체 목록</a>\n</nav>'
+    )
+    base = site["url"].rstrip("/")
+    description = f'{team["name"]} 팀이 나온 {site["title"]} 글 모음'
+    return _page(site, f'{team["name"]} · {site["title"]}', description, root, body, f'{base}/teams/{team["id"]}/')
+
+
+def _index(site, posts, team_nav=""):
     weeks = {}
     items = []  # (sort time, html)
     for p in posts:
@@ -270,7 +376,8 @@ def _index(site, posts):
           '<span class="key key-start">시작</span> 대진 미리보기, '
           '<span class="key key-mid">중간</span> 주중 점검, '
           '<span class="key key-end">마지막</span> 주간 결산. '
-          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</p>\n'
+          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</p>'
+        + team_nav + "\n"
         + f'<main class="board">\n{listing}\n</main>'
     )
     description = site.get("description") or f"{site['season']} 시즌 판타지 농구 리그 매거진"
@@ -285,8 +392,7 @@ def _post_page(site, post, body_html, older, newer):
     cover = f"{base}/{share}" if share else ""
     figure = (f'<figure class="cover"><img src="{root}{esc(post["cover"])}" alt="{esc(post["title"])} 만평"></figure>\n'
               if post["cover"] else "")
-    kind_class = (post["kind"][5:] if post["kind"] in EDITIONS
-                  else "extra" if post["kind"] == "extra" else "special")
+    kind_class = _kind_class(post)
 
     def neighbour(p, word):
         if not p:
@@ -315,6 +421,8 @@ def build(posts_dir, out_dir, site, facts_dir):
     posts_dir, out_dir = Path(posts_dir), Path(out_dir)
     everything = load_posts(posts_dir)
     posts = [p for p in everything if p["status"] == "published"]
+    teams = load_teams(facts_dir)
+    mentions = {t["id"]: [] for t in teams}
     pages = {}
     for post in everything:
         if post["cover"] and not (posts_dir / post["cover"]).exists():
@@ -327,6 +435,12 @@ def build(posts_dir, out_dir, site, facts_dir):
             raise BlogError(f"{post['slug']}: a cartoon post has {CARTOON_PICTURES} pictures, "
                             f"this one has {len(pictures)}")
         body = _body_html(post, facts_dir).replace('src="images/', 'src="../../images/')
+        if post in posts and post["kind"] not in TEAMLESS:
+            for team in teams:
+                text = passage(post["body"], team)
+                if text:
+                    mentions[team["id"]].append((post, text))
+                    body = _anchor(body, team)
         i = posts.index(post) if post in posts else None
         older = posts[i - 1] if i else None
         newer = posts[i + 1] if i is not None and i + 1 < len(posts) else None
@@ -338,7 +452,12 @@ def build(posts_dir, out_dir, site, facts_dir):
     shutil.copyfile(STYLE, out_dir / "style.css")
     if (posts_dir / "images").exists():
         shutil.copytree(posts_dir / "images", out_dir / "images")
-    (out_dir / "index.html").write_text(_index(site, posts), encoding="utf-8")
+    counts = {team_id: len(found) for team_id, found in mentions.items()}
+    (out_dir / "index.html").write_text(_index(site, posts, _team_nav(teams, counts)), encoding="utf-8")
+    for team in teams:
+        target = out_dir / "teams" / str(team["id"])
+        target.mkdir(parents=True)
+        (target / "index.html").write_text(_team_page(site, team, mentions[team["id"]][::-1]), encoding="utf-8")
     for slug, page in pages.items():
         target = out_dir / "posts" / slug
         target.mkdir(parents=True)

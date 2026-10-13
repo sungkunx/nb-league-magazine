@@ -35,6 +35,12 @@ class MatchupTests(Base):
         self.assertEqual(m["score"], ["6-3-1", "3-6-1"])
         self.assertEqual(m["winner"], "Alpha")
 
+    def test_each_team_carries_its_league_number(self):
+        lg = self.league().days(*W1).result(1, "Alpha", "Bravo", 6, 3, 1)
+        sheet = self.build(lg, 1)
+        self.assertEqual(self.team(sheet, "Alpha")["team_id"], 1)
+        self.assertEqual(self.team(sheet, "Delta")["team_id"], 4)
+
     def test_even_category_score_has_no_winner(self):
         lg = self.league().days(*W1).result(1, "Alpha", "Bravo", 5, 5, 0)
         self.assertIsNone(self.build(lg, 1)["matchups"][0]["winner"])

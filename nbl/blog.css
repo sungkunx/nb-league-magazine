@@ -85,6 +85,31 @@ time { font-variant-numeric: tabular-nums; }
 .key-end { color: var(--end); }
 .key-cartoon { color: var(--ink); }
 
+/* teams: one chip per league team, leading to that team's page */
+.teams { max-width: 960px; margin: 22px auto 0; display: grid; grid-template-columns: 132px 1fr; gap: 20px; align-items: baseline; }
+.teams h2 { margin: 0; font-size: 15px; color: var(--soft); }
+.teams ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.teams a { display: inline-flex; align-items: baseline; gap: 6px; padding: 3px 10px; background: var(--sheet); border: 1px solid var(--rule); text-decoration: none; font-size: 15px; font-weight: 500; line-height: 1.5; }
+.teams a:hover { border-color: var(--ink); }
+.teams a.none { background: transparent; color: var(--soft); font-weight: 400; }
+.teams .count { color: var(--special); font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* a team's page */
+.team { max-width: 720px; margin: 0 auto; }
+.team > header { padding: 40px 0 8px; border-bottom: 3px solid var(--ink); }
+.team .tag { display: inline-block; margin: 0 0 14px; padding: 1px 10px; background: var(--ink); color: var(--paper); font-weight: 700; font-size: 15px; }
+.team h1 { margin: 0 0 10px; font-family: var(--display); font-weight: 400; font-size: clamp(32px, 7.4vw, 54px); line-height: 1.16; }
+.team .standing { margin: 0 0 14px; color: var(--soft); font-variant-numeric: tabular-nums; }
+.mentions { list-style: none; margin: 0; padding: 0; }
+.mention { border-bottom: 1px solid var(--rule); }
+.mention a { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: baseline; padding: 16px 0; text-decoration: none; }
+.mention .tag { grid-column: 1 / -1; justify-self: start; margin: 0; padding: 0; background: none; color: var(--edition); font-size: 14px; }
+.mention .ed-title { font-size: 19px; }
+.mention time { color: var(--soft); font-size: 14px; white-space: nowrap; }
+.mention .passage { grid-column: 1 / -1; padding-left: 12px; border-left: 3px solid var(--edition); color: var(--soft); font-size: 15px; line-height: 1.6; }
+.mention a:hover .ed-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.team .nothing { padding: 40px 0; }
+
 /* the board: one row per week, three editions across */
 .board { max-width: 960px; margin: 36px auto 0; }
 .week {
@@ -181,6 +206,7 @@ td.tie { color: var(--soft); }
 @media (max-width: 680px) {
   body { font-size: 16px; }
   .masthead { padding-top: 36px; }
+  .teams { grid-template-columns: 1fr; gap: 8px; }
   .week { grid-template-columns: 1fr; gap: 10px; }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }

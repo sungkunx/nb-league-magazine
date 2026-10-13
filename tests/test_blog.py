@@ -361,3 +361,107 @@ class ExtraTests(Base):
 
     def test_extra_may_name_a_week_for_its_tables(self):
         self.assertEqual(blog.parse_post(post(kind="extra", week=3), "extra-1105")["week"], 3)
+
+
+class TeamTests(Base):
+    """Each league team gets a page gathering the posts that talk about it."""
+
+    def sheet(self, week=1, teams=((4, "Cho"), (11, "Kharami"), (6, "CHAN"))):
+        (self.facts / f"week-{week:02d}.json").write_text(json.dumps({
+            "teams": [{"team_id": k, "team": n} for k, n in teams],
+            "standings": [{"rank": i + 1, "team": n, "record": f"{9 - i}-{i}-0", "pct": 0.5, "change": None}
+                          for i, (_, n) in enumerate(teams)],
+            "matchups": [],
+        }), encoding="utf-8")
+
+    def test_index_links_to_every_team(self):
+        self.sheet()
+        self.write("w01-end.md", post(body="Cho가 이겼습니다."))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<nav class="teams"', html)
+        for number, name in (("4", "Cho"), ("11", "Kharami"), ("6", "CHAN")):
+            self.assertIn(f'href="teams/{number}/"', html)
+            self.assertIn(f">{name}<", html)
+        self.assertLess(html.index(">CHAN<"), html.index(">Cho<"))
+        self.assertLess(html.index(">Cho<"), html.index(">Kharami<"))
+
+    def test_no_team_row_before_any_fact_sheet_names_teams(self):
+        self.write("w01-end.md", post())
+        self.build()
+        self.assertNotIn('class="teams"', self.page("index.html"))
+        self.assertFalse((self.out / "teams").exists())
+
+    def test_team_page_lists_posts_that_mention_it_newest_first_with_the_passage(self):
+        self.sheet()
+        self.write("w01-start.md", post(title="시작 글", kind="week-start", date="2026-10-20T20:00+09:00",
+                                        body="## 대진\n\n- **Cho** vs Kharami: 무난한 한 주가 될까요?\n\n다른 문단."))
+        self.write("w01-end.md", post(title="결산 글", body="CHAN만 나오는 문단.\n\n그리고 **Cho**가 5-4-1로 이겼습니다!"))
+        self.build()
+        html = self.page("teams/4/index.html")
+        self.assertIn("<h1>Cho</h1>", html)
+        self.assertLess(html.index("결산 글"), html.index("시작 글"))
+        self.assertIn('href="../../posts/w01-end/#team-4"', html)
+        self.assertIn("그리고 Cho가 5-4-1로 이겼습니다!", html)
+        self.assertIn("Cho vs Kharami: 무난한 한 주가 될까요?", html)
+        self.assertNotIn("CHAN만 나오는", html)
+        chan = self.page("teams/6/index.html")
+        self.assertIn("결산 글", chan)
+        self.assertNotIn("시작 글", chan)
+
+    def test_post_gets_an_anchor_at_the_first_mention(self):
+        self.sheet()
+        self.write("w01-end.md", post(body="첫 문단.\n\n여기서 Cho가 처음 나오고 Cho가 또 나옵니다."))
+        self.build()
+        html = self.page("posts/w01-end/index.html")
+        self.assertEqual(html.count('id="team-4"'), 1)
+        self.assertIn('<span id="team-4"></span>Cho가 처음', html)
+
+    def test_name_inside_a_longer_word_or_a_link_address_is_not_a_mention(self):
+        self.sheet()
+        self.write("w01-end.md", post(body="Chosen one. [기사](https://example.com/Cho) 그리고 CHANCE."))
+        self.build()
+        self.assertNotIn("team-4", self.page("posts/w01-end/index.html"))
+        self.assertIn("아직 이 팀이 나온 글이 없습니다", self.page("teams/4/index.html"))
+        self.assertIn("아직 이 팀이 나온 글이 없습니다", self.page("teams/6/index.html"))
+
+    def test_name_followed_by_korean_particle_counts(self):
+        self.sheet()
+        self.write("w01-end.md", post(body="Kharami는 강했습니다."))
+        self.build()
+        self.assertIn("Kharami는 강했습니다.", self.page("teams/11/index.html"))
+
+    def test_notices_and_posts_in_review_are_left_out(self):
+        self.sheet()
+        self.write("notice.md", post(title="안내 글", kind="notice", week=None, body="편집장 Cho에게 알려주세요."))
+        self.write("w01-mid.md", post(title="검토 글", kind="week-mid", extra="status: review", body="Cho 이야기."))
+        self.build()
+        html = self.page("teams/4/index.html")
+        self.assertNotIn("안내 글", html)
+        self.assertNotIn("검토 글", html)
+
+    def test_renamed_team_keeps_its_page_and_its_older_posts(self):
+        self.sheet(1, teams=((4, "Cho"),))
+        self.sheet(2, teams=((4, "Cho Dynasty"),))
+        self.write("w01-end.md", post(title="일주차", week=1, body="Cho가 이겼습니다."))
+        self.write("w02-end.md", post(title="이주차", week=2, date="2026-11-02T22:00+09:00", body="Cho Dynasty가 또 이겼습니다."))
+        self.build()
+        html = self.page("teams/4/index.html")
+        self.assertIn("<h1>Cho Dynasty</h1>", html)
+        self.assertIn("일주차", html)
+        self.assertIn("이주차", html)
+        self.assertEqual(self.page("index.html").count('href="teams/4/"'), 1)
+
+    def test_team_page_shows_the_latest_record_when_there_is_a_rank(self):
+        self.sheet()
+        self.build()
+        self.assertIn("1위", self.page("teams/4/index.html"))
+        self.assertIn("9-0-0", self.page("teams/4/index.html"))
+
+    def test_chip_shows_how_many_posts_a_team_has(self):
+        self.sheet()
+        self.write("w01-end.md", post(body="Cho가 이겼습니다."))
+        self.build()
+        html = self.page("index.html")
+        self.assertRegex(html, r'href="teams/4/"[^>]*>Cho<span class="count">1</span>')
+        self.assertRegex(html, r'href="teams/6/" class="none">CHAN<')

@@ -1079,6 +1079,7 @@
   {
    "id": "T1",
    "team": "Baesen",
+   "team_id": 1,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1092,6 +1093,7 @@
   {
    "id": "T2",
    "team": "IN's WooSSa Team",
+   "team_id": 14,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1105,6 +1107,7 @@
   {
    "id": "T3",
    "team": "TheMan",
+   "team_id": 2,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1118,6 +1121,7 @@
   {
    "id": "T4",
    "team": "Hanseong's Team",
+   "team_id": 9,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1131,6 +1135,7 @@
   {
    "id": "T5",
    "team": "Team Scott",
+   "team_id": 3,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1144,6 +1149,7 @@
   {
    "id": "T6",
    "team": "CHAN",
+   "team_id": 10,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1157,6 +1163,7 @@
   {
    "id": "T7",
    "team": "Cho",
+   "team_id": 4,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1170,6 +1177,7 @@
   {
    "id": "T8",
    "team": "Kharami",
+   "team_id": 11,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1183,6 +1191,7 @@
   {
    "id": "T9",
    "team": "Hewon the game",
+   "team_id": 5,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1196,6 +1205,7 @@
   {
    "id": "T10",
    "team": "ALTMAN_CH",
+   "team_id": 16,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1209,6 +1219,7 @@
   {
    "id": "T11",
    "team": "Team Jaewon",
+   "team_id": 6,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1222,6 +1233,7 @@
   {
    "id": "T12",
    "team": "hyun's Team",
+   "team_id": 13,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1235,6 +1247,7 @@
   {
    "id": "T13",
    "team": "TEAM G-JAY",
+   "team_id": 7,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1248,6 +1261,7 @@
   {
    "id": "T14",
    "team": "SEOB's ME7O team",
+   "team_id": 12,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1261,6 +1275,7 @@
   {
    "id": "T15",
    "team": "YoungHun`s Team Bravo",
+   "team_id": 8,
    "manager": null,
    "adds": {
     "week": 0,
@@ -1274,6 +1289,7 @@
   {
    "id": "T16",
    "team": "Jaehun's Matchless Team",
+   "team_id": 15,
    "manager": null,
    "adds": {
     "week": 0,

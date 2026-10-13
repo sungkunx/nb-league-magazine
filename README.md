@@ -87,6 +87,7 @@ python -m unittest discover -s tests -t .
 main에 올리면 `pages` 워크플로가 GitHub Pages로 발행한다. 글 쓰는 법은
 `docs/publishing.md`, 무엇을 언제 쓰는지는 `docs/editorial.md`. 목록은 주차마다
 시작/중간/마지막/만평 네 칸으로 쌓이고, 호외와 특집은 날짜순으로 그 사이에 놓인다.
+목록 위의 팀 이름을 누르면 그 팀이 나온 글만 모은 페이지로 간다(팩트시트의 팀 이름을 본문에서 자동으로 찾는다).
 
 ## 수집 경로: API와 브라우저
 

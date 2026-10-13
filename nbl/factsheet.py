@@ -470,6 +470,7 @@ def build_week(conn, week, upset_gap=5):
     cats = _categories(conn)
     names = dict(conn.execute("SELECT team_key, name FROM teams"))
     managers = dict(conn.execute("SELECT team_key, manager FROM teams"))
+    team_ids = dict(conn.execute("SELECT team_key, team_id FROM teams"))
     collected = {r[0] for r in conn.execute("SELECT date FROM run_log")}
     last_day = max(collected, default="")
     in_week = sorted(d for d in collected if start <= d <= end)
@@ -530,7 +531,7 @@ def build_week(conn, week, upset_gap=5):
         started = sorted((e for e in mine if e["started"]), key=lambda e: -(e.get("score") or -99))
         benched = sorted((e for e in mine if not e["started"] and e["games"]), key=lambda e: e["name"])
         teams.append({
-            "team": names[team], "manager": managers.get(team),
+            "team": names[team], "team_id": team_ids.get(team), "manager": managers.get(team),
             "adds": {
                 "week": _adds(conn, team, week_start_ts, week_end_ts),
                 "week_limit": _int_meta(meta, "max_weekly_adds"),
