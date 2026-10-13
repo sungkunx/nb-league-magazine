@@ -316,8 +316,9 @@ def _masthead(site, root, compact=False):
     tag = "p" if compact else "h1"
     lead, _, last = site["title"].rpartition(" ")
     # On the index the last word drops to its own line, so a phone shows two tidy lines.
-    name = (f'<span class="lead">{esc(lead)}</span> <span>{esc(last)}</span>' if lead and not compact
-            else esc(site["title"]))
+    by = f' <small class="by">{esc(site["byline"])}</small>' if site.get("byline") and not compact else ""
+    name = (f'<span class="lead">{esc(lead)}</span> <span>{esc(last)}{by}</span>' if lead and not compact
+            else esc(site["title"]) + by)
     return (f'<header class="masthead{" compact" if compact else ""}">\n'
             f'<{tag} class="name"><a href="{root or "./"}">{name}</a></{tag}>\n'
             f'<p class="season">{esc(site["season"])} 시즌</p>\n</header>')

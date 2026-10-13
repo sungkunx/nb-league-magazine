@@ -60,12 +60,14 @@ time { font-variant-numeric: tabular-nums; }
   margin: 0;
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(40px, 11vw, 92px);
+  font-size: clamp(40px, 11vw, 80px);
   line-height: 0.95;
   letter-spacing: -0.01em;
 }
 .masthead .name a { text-decoration: none; }
 .masthead .name .lead { white-space: nowrap; }
+.masthead .name span { white-space: nowrap; }
+.masthead .by { margin-left: 0; font-family: var(--text); font-size: 15px; font-weight: 500; letter-spacing: 0; color: var(--soft); white-space: nowrap; }
 .masthead .season {
   margin: 0 0 6px;
   padding: 2px 12px;

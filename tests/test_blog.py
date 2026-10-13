@@ -474,6 +474,12 @@ class MastheadTests(Base):
         self.build()
         self.assertIn('<span class="lead">NB League</span> <span>매거진</span>', self.page("index.html"))
 
+    def test_byline_sits_beside_the_last_word_on_the_index_only(self):
+        self.write("w01-end.md", post())
+        blog.build(self.posts, self.out, dict(SITE, byline="by Cho <편집장>"), self.facts)
+        self.assertIn('<span>매거진 <small class="by">by Cho &lt;편집장&gt;</small></span>', self.page("index.html"))
+        self.assertNotIn('class="by"', self.page("posts/w01-end/index.html"))
+
     def test_one_word_title_is_left_alone(self):
         blog.build(self.posts, self.out, dict(SITE, title="매거진"), self.facts)
         self.assertIn('<a href="./">매거진</a>', self.page("index.html"))
