@@ -379,7 +379,9 @@ class TeamTests(Base):
         self.write("w01-end.md", post(body="Cho가 이겼습니다."))
         self.build()
         html = self.page("index.html")
-        self.assertIn('<nav class="teams"', html)
+        self.assertIn('<details class="teams">', html)
+        self.assertNotIn("<details class=\"teams\" open", html)
+        self.assertIn("<summary>팀별로 보기</summary>", html)
         for number, name in (("4", "Cho"), ("11", "Kharami"), ("6", "CHAN")):
             self.assertIn(f'href="teams/{number}/"', html)
             self.assertIn(f">{name}<", html)

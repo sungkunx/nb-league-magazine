@@ -86,9 +86,14 @@ time { font-variant-numeric: tabular-nums; }
 .key-cartoon { color: var(--ink); }
 
 /* teams: one chip per league team, leading to that team's page */
-.teams { max-width: 960px; margin: 22px auto 0; display: grid; grid-template-columns: 132px 1fr; gap: 20px; align-items: baseline; }
-.teams h2 { margin: 0; font-size: 15px; color: var(--soft); }
-.teams ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.teams { max-width: 960px; margin: 18px auto 0; }
+.teams summary { display: inline-block; padding: 4px 12px; border: 1px solid var(--ink); font-size: 15px; font-weight: 700; cursor: pointer; list-style: none; user-select: none; }
+.teams summary::-webkit-details-marker { display: none; }
+.teams summary::after { content: " ▾"; }
+.teams[open] summary { background: var(--ink); color: var(--paper); }
+.teams[open] summary::after { content: " ▴"; }
+.teams summary:focus-visible { outline: 3px solid var(--special); outline-offset: 3px; }
+.teams ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; }
 .teams a { display: inline-flex; align-items: baseline; gap: 6px; padding: 3px 10px; background: var(--sheet); border: 1px solid var(--rule); text-decoration: none; font-size: 15px; font-weight: 500; line-height: 1.5; }
 .teams a:hover { border-color: var(--ink); }
 .teams a.none { background: transparent; color: var(--soft); font-weight: 400; }
@@ -206,7 +211,6 @@ td.tie { color: var(--soft); }
 @media (max-width: 680px) {
   body { font-size: 16px; }
   .masthead { padding-top: 36px; }
-  .teams { grid-template-columns: 1fr; gap: 8px; }
   .week { grid-template-columns: 1fr; gap: 10px; }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }

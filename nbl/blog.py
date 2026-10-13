@@ -316,8 +316,9 @@ def _team_nav(teams, counts):
             chips.append(f'<li><a href="teams/{t["id"]}/">{esc(t["name"])}<span class="count">{n}</span></a></li>')
         else:
             chips.append(f'<li><a href="teams/{t["id"]}/" class="none">{esc(t["name"])}</a></li>')
-    return ('\n<nav class="teams" aria-label="팀별로 보기">\n<h2>팀별로 보기</h2>\n<ul>\n'
-            + "\n".join(chips) + "\n</ul>\n</nav>")
+    # Folded by default: sixteen chips would push the first post down on a phone.
+    return ('\n<details class="teams">\n<summary>팀별로 보기</summary>\n<ul>\n'
+            + "\n".join(chips) + "\n</ul>\n</details>")
 
 
 def _team_page(site, team, entries):
