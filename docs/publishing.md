@@ -1,7 +1,7 @@
 # 블로그 발행
 
 글은 `posts/2026/` 아래의 Markdown 파일이다. main에 올리면 `pages` 워크플로가
-사이트를 다시 만들어 https://sungkunx.github.io/nb-league-magazine2627/ 에 올린다.
+사이트를 다시 만들어 https://sungkunx.github.io/nb-league-magazine/ 에 올린다.
 
 ## 글 파일
 
