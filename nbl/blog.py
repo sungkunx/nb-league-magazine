@@ -9,7 +9,12 @@ A post is a Markdown file with a short header:
     week: 1                   # weekly posts only
     summary: 카톡 미리보기에 뜨는 한 줄
     cover: images/w01-end.png # optional; lives in <posts>/images/
+    status: review            # optional; the post waits for the editor's OK
     ---
+
+A post in review gets its page (marked as a preview, hidden from search
+engines) but is left off the index and out of the other posts' links.
+"python -m nbl publish <slug>" removes the line.
 
 In the body, a line holding only {{standings}} or {{matchups}} (optionally
 "week=N") becomes a table taken from that week's fact sheet.
@@ -64,7 +69,11 @@ def parse_post(text, slug):
         week = int(meta["week"])
     if meta["kind"] in EDITIONS and week is None:
         raise BlogError(f"{slug}: a {meta['kind']} post needs 'week'")
+    status = meta.get("status") or "published"
+    if status not in ("published", "review"):
+        raise BlogError(f"{slug}: status '{status}' is not 'review' (leave the line out to publish)")
     return {
+        "status": status,
         "slug": slug, "title": meta["title"], "date": date, "kind": meta["kind"], "week": week,
         "summary": meta.get("summary", ""), "cover": meta.get("cover", ""),
         "body": "\n".join(lines[end + 1:]),
@@ -74,6 +83,27 @@ def parse_post(text, slug):
 def load_posts(posts_dir):
     posts = [parse_post(f.read_text(encoding="utf-8"), f.stem) for f in sorted(Path(posts_dir).glob("*.md"))]
     return sorted(posts, key=lambda p: (p["date"].timestamp(), p["slug"]))
+
+
+def needs_review(site, kind):
+    """Whether a new post of this kind waits for the editor (site "auto_publish")."""
+    auto = site.get("auto_publish") or []
+    return "all" not in auto and kind not in auto
+
+
+def publish(path):
+    """Take a post out of review by removing its status line."""
+    path = Path(path)
+    text = path.read_text(encoding="utf-8")
+    if parse_post(text, path.stem)["status"] != "review":
+        raise BlogError(f"{path.stem}: is not waiting for review")
+    lines = text.split("\n")
+    end = [l.strip() for l in lines[1:]].index("---") + 1
+    for i in range(1, end):
+        if lines[i].split(":", 1)[0].strip() == "status":
+            del lines[i]
+            break
+    path.write_text("\n".join(lines), encoding="utf-8")
 
 
 # ---- tables from the fact sheet ------------------------------------------
@@ -158,7 +188,8 @@ def _label(post):
     return SPECIALS[post["kind"]]
 
 
-def _page(site, title, description, root, body, url, image=""):
+def _page(site, title, description, root, body, url, image="", hidden=False):
+    robots = '\n<meta name="robots" content="noindex">' if hidden else ""
     og_image = f'\n<meta property="og:image" content="{esc(image)}">' if image else ""
     card = "summary_large_image" if image else "summary"
     return f"""<!doctype html>
@@ -167,7 +198,7 @@ def _page(site, title, description, root, body, url, image=""):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
-<meta name="description" content="{esc(description)}">
+<meta name="description" content="{esc(description)}">{robots}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="{esc(site['title'])}">
 <meta property="og:title" content="{esc(title)}">
@@ -253,8 +284,11 @@ def _post_page(site, post, body_html, older, newer):
             return ""
         return f'<a class="{word}" href="../{esc(p["slug"])}/"><span>{"이전 글" if word == "older" else "다음 글"}</span>{esc(p["title"])}</a>'
 
+    review = post["status"] == "review"
+    notice = ('\n<p class="preview">미리보기입니다. 아직 발행되지 않아 목록에는 보이지 않습니다.</p>'
+              if review else "")
     body = (
-        _masthead(site, root, compact=True)
+        _masthead(site, root, compact=True) + notice
         + f'\n<article class="post kind-{kind_class}">\n<header>\n'
           f'<p class="tag">{esc(_label(post))}</p>\n<h1>{esc(post["title"])}</h1>\n'
           f'<time datetime="{post["date"].isoformat()}">{post["date"].year}년 {post["date"].month}월 {post["date"].day}일</time>\n'
@@ -263,20 +297,23 @@ def _post_page(site, post, body_html, older, newer):
           f'<a class="home" href="{root}">전체 목록</a>\n</nav>'
     )
     description = post["summary"] or site.get("description") or f"{site['title']} {site['season']}"
-    return _page(site, post["title"], description, root, body, f"{base}/posts/{post['slug']}/", cover)
+    return _page(site, post["title"], description, root, body, f"{base}/posts/{post['slug']}/", cover, hidden=review)
 
 
 def build(posts_dir, out_dir, site, facts_dir):
-    """Write the whole site into out_dir (replacing it). Returns the post count."""
+    """Write the whole site into out_dir (replacing it). Returns the number of
+    published posts; posts in review get a page but are not counted or listed."""
     posts_dir, out_dir = Path(posts_dir), Path(out_dir)
-    posts = load_posts(posts_dir)
+    everything = load_posts(posts_dir)
+    posts = [p for p in everything if p["status"] == "published"]
     pages = {}
-    for i, post in enumerate(posts):
+    for post in everything:
         if post["cover"] and not (posts_dir / post["cover"]).exists():
             raise BlogError(f"{post['slug']}: cover {post['cover']} does not exist under {posts_dir}")
         body = _body_html(post, facts_dir).replace('src="images/', 'src="../../images/')
-        older = posts[i - 1] if i > 0 else None
-        newer = posts[i + 1] if i + 1 < len(posts) else None
+        i = posts.index(post) if post in posts else None
+        older = posts[i - 1] if i else None
+        newer = posts[i + 1] if i is not None and i + 1 < len(posts) else None
         pages[post["slug"]] = _post_page(site, post, body, older, newer)
 
     shutil.rmtree(out_dir, ignore_errors=True)

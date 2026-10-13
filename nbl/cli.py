@@ -7,6 +7,7 @@
   sheets     rebuild fact sheets from data already collected (no network)
 
   blog       build the static site from posts/ (see config/site.json)
+  publish    take a post out of review: python -m nbl publish <slug>
 
 Browser collection (config "source": "web"; see docs/browser-collection.md):
   plan       list the days and weeks the next browser run should fetch
@@ -170,6 +171,9 @@ def main(argv=None, env=None, api=None, out=None):
     p_plan.add_argument("--now", help="pretend it is this time (ISO 8601 with offset)")
     p_blog = sub.add_parser("blog")
     p_blog.add_argument("--site", default="config/site.json")
+    p_publish = sub.add_parser("publish")
+    p_publish.add_argument("slug")
+    p_publish.add_argument("--site", default="config/site.json")
     p_verify = sub.add_parser("verify")
     p_verify.add_argument("files", nargs="+")
     args = parser.parse_args(argv)
@@ -182,6 +186,22 @@ def main(argv=None, env=None, api=None, out=None):
             print(f"ERROR: {error}", file=out)
             return 1
         print(f"built {count} post(s) into {site['out_dir']}", file=out)
+        for post in blog.load_posts(site["posts_dir"]):
+            if post["status"] == "review":
+                print(f"waiting for review: {site['url'].rstrip('/')}/posts/{post['slug']}/", file=out)
+        return 0
+
+    if args.command == "publish":
+        site = json.loads(Path(args.site).read_text(encoding="utf-8"))
+        path = Path(site["posts_dir"]) / f"{args.slug}.md"
+        try:
+            if not path.exists():
+                raise blog.BlogError(f"{args.slug}: no such post in {site['posts_dir']}")
+            blog.publish(path)
+        except blog.BlogError as error:
+            print(f"ERROR: {error}", file=out)
+            return 1
+        print(f"published {args.slug}", file=out)
         return 0
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))

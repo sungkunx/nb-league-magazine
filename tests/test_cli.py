@@ -131,6 +131,43 @@ class CliTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("bad", out.getvalue())
 
+    def _review_site(self, header_extra="status: review\n"):
+        posts = self.root / "posts"
+        posts.mkdir()
+        (posts / "w01-end.md").write_text(
+            "---\ntitle: 결산\ndate: 2026-10-26T22:00+09:00\nkind: week-end\nweek: 1\n" + header_extra
+            + "---\n\n본문.\n", encoding="utf-8")
+        site = self.root / "site.json"
+        site.write_text(json.dumps({
+            "title": "t", "season": "s", "url": "https://example.github.io/mag",
+            "posts_dir": str(posts), "facts_dir": str(self.data / "facts"), "out_dir": str(self.root / "out"),
+        }))
+        return posts, site
+
+    def test_blog_names_posts_waiting_for_review(self):
+        _, site = self._review_site()
+        out = io.StringIO()
+        code = main(["--config", str(self.config), "blog", "--site", str(site)], env={}, out=out)
+        self.assertEqual(code, 0)
+        self.assertIn("built 0 post(s)", out.getvalue())
+        self.assertIn("waiting for review: https://example.github.io/mag/posts/w01-end/", out.getvalue())
+
+    def test_publish_takes_a_post_out_of_review(self):
+        posts, site = self._review_site()
+        out = io.StringIO()
+        code = main(["--config", str(self.config), "publish", "w01-end", "--site", str(site)], env={}, out=out)
+        self.assertEqual(code, 0)
+        self.assertNotIn("status", (posts / "w01-end.md").read_text(encoding="utf-8"))
+        self.assertIn("published w01-end", out.getvalue())
+
+    def test_publish_fails_for_a_post_that_is_not_in_review_or_missing(self):
+        _, site = self._review_site(header_extra="")
+        for slug in ("w01-end", "nope"):
+            out = io.StringIO()
+            code = main(["--config", str(self.config), "publish", slug, "--site", str(site)], env={}, out=out)
+            self.assertEqual(code, 1)
+            self.assertIn(slug, out.getvalue())
+
     def test_missing_secret_is_named_without_calling_yahoo(self):
         env = {k: v for k, v in ENV.items() if k != "YAHOO_REFRESH_TOKEN"}
         out = io.StringIO()

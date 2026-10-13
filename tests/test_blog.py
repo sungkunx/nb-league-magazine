@@ -230,3 +230,61 @@ class TableTests(Base):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ReviewTests(Base):
+    """A post with 'status: review' is built for reading but not listed yet."""
+
+    def test_status_is_published_unless_the_header_says_review(self):
+        self.assertEqual(blog.parse_post(post(), "a")["status"], "published")
+        self.assertEqual(blog.parse_post(post(extra="status: review"), "a")["status"], "review")
+
+    def test_unknown_status_is_rejected(self):
+        with self.assertRaisesRegex(blog.BlogError, "a: status 'later'"):
+            blog.parse_post(post(extra="status: later"), "a")
+
+    def test_post_in_review_has_a_page_but_is_not_on_the_index(self):
+        self.write("w01-end.md", post(title="검토 중인 글", extra="status: review"))
+        self.assertEqual(self.build(), 0)
+        self.assertNotIn("검토 중인 글", self.page("index.html"))
+        self.assertIn("아직 발행된 글이 없습니다", self.page("index.html"))
+        html = self.page("posts/w01-end/index.html")
+        self.assertIn("<h1>검토 중인 글</h1>", html)
+        self.assertIn('<meta name="robots" content="noindex">', html)
+        self.assertIn('class="preview"', html)
+
+    def test_published_page_has_no_preview_marks(self):
+        self.write("w01-end.md", post())
+        self.build()
+        html = self.page("posts/w01-end/index.html")
+        self.assertNotIn("noindex", html)
+        self.assertNotIn('class="preview"', html)
+
+    def test_published_posts_do_not_link_to_a_post_in_review(self):
+        self.write("a.md", post(title="첫 글", date="2026-10-20T20:00+09:00", kind="week-start"))
+        self.write("b.md", post(title="검토 글", date="2026-10-23T20:00+09:00", kind="week-mid", extra="status: review"))
+        self.write("c.md", post(title="셋째 글", date="2026-10-26T20:00+09:00", kind="week-end"))
+        self.build()
+        self.assertNotIn("검토 글", self.page("posts/a/index.html"))
+        self.assertIn('href="../c/"', self.page("posts/a/index.html"))
+        self.assertIn('href="../a/"', self.page("posts/c/index.html"))
+        self.assertIn("예정", self.page("index.html"))
+
+    def test_publish_removes_the_review_line_and_nothing_else(self):
+        text = post(title="검토 글", extra="status: review\nsummary: 한 줄", body="status: review 라는 본문")
+        self.write("a.md", text)
+        blog.publish(self.posts / "a.md")
+        self.assertEqual((self.posts / "a.md").read_text(encoding="utf-8"), text.replace("status: review\n", "", 1))
+        self.assertEqual(self.build(), 1)
+
+    def test_publishing_a_post_that_is_not_in_review_is_an_error(self):
+        self.write("a.md", post())
+        with self.assertRaisesRegex(blog.BlogError, "a: is not waiting for review"):
+            blog.publish(self.posts / "a.md")
+
+    def test_kinds_need_review_unless_the_site_lists_them_as_automatic(self):
+        self.assertTrue(blog.needs_review(SITE, "week-end"))
+        site = dict(SITE, auto_publish=["week-start", "week-mid"])
+        self.assertFalse(blog.needs_review(site, "week-start"))
+        self.assertTrue(blog.needs_review(site, "week-end"))
+        self.assertFalse(blog.needs_review(dict(SITE, auto_publish=["all"]), "playoff"))

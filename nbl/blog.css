@@ -183,3 +183,6 @@ td.tie { color: var(--soft); }
   .special a { grid-template-columns: 1fr auto; gap: 4px 12px; }
   .special .tag { grid-column: 1 / -1; }
 }
+
+/* a post still waiting for the editor's OK */
+.preview { max-width: 720px; margin: 16px auto 0; padding: 8px 14px; border: 2px dashed var(--mid); color: var(--mid); font-weight: 700; font-size: 15px; }
