@@ -81,6 +81,12 @@ python -m unittest discover -s tests -t .
 
 외부 패키지 없이 Python 표준 라이브러리만 씁니다(3.11 이상).
 
+## 블로그
+
+`posts/2026/*.md`가 글이고, `python -m nbl blog`가 정적 사이트(`site/`)를 만든다.
+main에 올리면 `pages` 워크플로가 GitHub Pages로 발행한다. 글 쓰는 법은
+`docs/publishing.md`. 목록은 주차마다 시작/중간/마지막 세 칸으로 쌓인다.
+
 ## 수집 경로: API와 브라우저
 
 같은 팩트시트를 두 경로 중 하나로 만든다. `config/league.json`의 `source`로 고른다.

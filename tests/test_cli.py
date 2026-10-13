@@ -101,6 +101,36 @@ class CliTests(unittest.TestCase):
         self.assertIn("No draft picks yet", text)
         self.assertFalse((self.data / "facts" / "draft.md").exists())
 
+    def test_blog_builds_the_site_from_posts_without_any_secret(self):
+        posts = self.root / "posts"
+        posts.mkdir()
+        (posts / "hello.md").write_text(
+            "---\ntitle: 첫 글\ndate: 2026-10-19T20:00+09:00\nkind: notice\n---\n\n안녕하세요.\n", encoding="utf-8")
+        site = self.root / "site.json"
+        site.write_text(json.dumps({
+            "title": "NB League 매거진", "season": "2026-27", "url": "https://example.github.io/mag",
+            "posts_dir": str(posts), "facts_dir": str(self.data / "facts"), "out_dir": str(self.root / "out"),
+        }))
+        out = io.StringIO()
+        code = main(["--config", str(self.config), "blog", "--site", str(site)], env={}, out=out)
+        self.assertEqual(code, 0)
+        self.assertIn("1 post", out.getvalue())
+        self.assertIn("첫 글", (self.root / "out" / "index.html").read_text(encoding="utf-8"))
+
+    def test_blog_reports_a_broken_post_and_fails(self):
+        posts = self.root / "posts"
+        posts.mkdir()
+        (posts / "bad.md").write_text("---\ntitle: 제목만\n---\n", encoding="utf-8")
+        site = self.root / "site.json"
+        site.write_text(json.dumps({
+            "title": "t", "season": "s", "url": "https://example.github.io/mag",
+            "posts_dir": str(posts), "facts_dir": str(self.data / "facts"), "out_dir": str(self.root / "out"),
+        }))
+        out = io.StringIO()
+        code = main(["--config", str(self.config), "blog", "--site", str(site)], env={}, out=out)
+        self.assertEqual(code, 1)
+        self.assertIn("bad", out.getvalue())
+
     def test_missing_secret_is_named_without_calling_yahoo(self):
         env = {k: v for k, v in ENV.items() if k != "YAHOO_REFRESH_TOKEN"}
         out = io.StringIO()

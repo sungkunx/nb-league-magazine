@@ -6,6 +6,8 @@
   draft      after the draft: save results and write the draft fact sheet
   sheets     rebuild fact sheets from data already collected (no network)
 
+  blog       build the static site from posts/ (see config/site.json)
+
 Browser collection (config "source": "web"; see docs/browser-collection.md):
   plan       list the days and weeks the next browser run should fetch
   verify     check a saved browser file: checksum, and that a day adds up
@@ -18,7 +20,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import collect, db, factsheet, parse, web
+from . import blog, collect, db, factsheet, parse, web
 from .store import RawStore
 from .yahoo import YahooClient, YahooError
 
@@ -166,9 +168,21 @@ def main(argv=None, env=None, api=None, out=None):
     p_sheets.add_argument("--week", type=int)
     p_plan = sub.add_parser("plan")
     p_plan.add_argument("--now", help="pretend it is this time (ISO 8601 with offset)")
+    p_blog = sub.add_parser("blog")
+    p_blog.add_argument("--site", default="config/site.json")
     p_verify = sub.add_parser("verify")
     p_verify.add_argument("files", nargs="+")
     args = parser.parse_args(argv)
+
+    if args.command == "blog":
+        site = json.loads(Path(args.site).read_text(encoding="utf-8"))
+        try:
+            count = blog.build(site["posts_dir"], site["out_dir"], site, site["facts_dir"])
+        except blog.BlogError as error:
+            print(f"ERROR: {error}", file=out)
+            return 1
+        print(f"built {count} post(s) into {site['out_dir']}", file=out)
+        return 0
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     data_dir = Path(config["data_dir"])

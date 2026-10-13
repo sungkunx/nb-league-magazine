@@ -1,0 +1,9 @@
+{
+  "title": "NB League 매거진",
+  "season": "2026-27",
+  "description": "NB League 판타지 농구 2026-27 시즌 매거진. 매주 세 번, 대진 미리보기와 주중 점검과 주간 결산.",
+  "url": "https://sungkunx.github.io/nb-league-magazine2627",
+  "posts_dir": "posts/2026",
+  "facts_dir": "data/2026/facts",
+  "out_dir": "site"
+}

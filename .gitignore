@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 # Rebuilt from data/*/raw on every run.
 data/*/league.db
+# Built by `python -m nbl blog`; published by the pages workflow.
+site/

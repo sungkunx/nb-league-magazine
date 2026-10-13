@@ -13,6 +13,12 @@ Yahoo NBA 판타지 리그(16팀, H2H 10카테고리, 디비전 없음) 주간 �
 - 시즌 표기는 "2026-27", 카테고리는 10개(FG%, FT%, 3PTM, PTS, REB, AST, ST, BLK, TO, DD).
 - 판타지 드래프트 순번과 실제 NBA 신인 드래프트 순번을 섞지 않는다.
 
+## 발행
+
+- 글은 `posts/2026/`에 Markdown으로 쓴다. 형식은 `docs/publishing.md`.
+- 올리기 전에 `python -m nbl blog`로 빌드가 되는지 확인한다.
+- 순위표와 매치업 표는 손으로 쓰지 말고 `{{standings}}`, `{{matchups}}`를 쓴다.
+
 ## 데이터 수집 (현재는 브라우저 경로)
 
 - 절차는 `docs/browser-collection.md`를 그대로 따른다. 먼저 `python -m nbl plan`.

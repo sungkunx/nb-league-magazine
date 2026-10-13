@@ -1,0 +1,293 @@
+"""Static blog built from posts/*.md.
+
+A post is a Markdown file with a short header:
+
+    ---
+    title: Week 1 최종 결과
+    date: 2026-10-26T22:00+09:00
+    kind: week-end            # draft | preseason | week-start | week-mid | week-end | playoff | notice
+    week: 1                   # weekly posts only
+    summary: 카톡 미리보기에 뜨는 한 줄
+    cover: images/w01-end.png # optional; lives in <posts>/images/
+    ---
+
+In the body, a line holding only {{standings}} or {{matchups}} (optionally
+"week=N") becomes a table taken from that week's fact sheet.
+"""
+import html
+import json
+import re
+import shutil
+from datetime import datetime
+from pathlib import Path
+
+from . import markdown
+
+EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막"}
+SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "notice": "안내"}
+KINDS = {**EDITIONS, **SPECIALS}
+_SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups)(?:\s+week=(\d+))?\s*\}\}$")
+STYLE = Path(__file__).with_name("blog.css")
+
+
+class BlogError(Exception):
+    pass
+
+
+def esc(value):
+    return html.escape(str(value), quote=True)
+
+
+def parse_post(text, slug):
+    lines = text.replace("\r\n", "\n").split("\n")
+    if lines[0].strip() != "---" or "---" not in [l.strip() for l in lines[1:]]:
+        raise BlogError(f"{slug}: the post must start with a header between two '---' lines")
+    end = [l.strip() for l in lines[1:]].index("---") + 1
+    meta = {}
+    for line in lines[1:end]:
+        if ":" in line:
+            key, value = line.split(":", 1)
+            meta[key.strip()] = value.strip()
+    for key in ("title", "date", "kind"):
+        if not meta.get(key):
+            raise BlogError(f"{slug}: header is missing '{key}'")
+    if meta["kind"] not in KINDS:
+        raise BlogError(f"{slug}: kind '{meta['kind']}' is not one of {', '.join(KINDS)}")
+    try:
+        date = datetime.fromisoformat(meta["date"])
+    except ValueError:
+        raise BlogError(f"{slug}: date '{meta['date']}' is not like 2026-10-26T22:00+09:00") from None
+    week = None
+    if meta.get("week"):
+        if not meta["week"].isdigit():
+            raise BlogError(f"{slug}: week '{meta['week']}' is not a number")
+        week = int(meta["week"])
+    if meta["kind"] in EDITIONS and week is None:
+        raise BlogError(f"{slug}: a {meta['kind']} post needs 'week'")
+    return {
+        "slug": slug, "title": meta["title"], "date": date, "kind": meta["kind"], "week": week,
+        "summary": meta.get("summary", ""), "cover": meta.get("cover", ""),
+        "body": "\n".join(lines[end + 1:]),
+    }
+
+
+def load_posts(posts_dir):
+    posts = [parse_post(f.read_text(encoding="utf-8"), f.stem) for f in sorted(Path(posts_dir).glob("*.md"))]
+    return sorted(posts, key=lambda p: (p["date"].timestamp(), p["slug"]))
+
+
+# ---- tables from the fact sheet ------------------------------------------
+
+def _pct(value):
+    if value is None:
+        return "–"
+    text = f"{value:.3f}"
+    return text[1:] if text.startswith("0") else text
+
+
+def _change(value):
+    if value is None:
+        return ""
+    if value == 0:
+        return "–"
+    return f"▲{value}" if value > 0 else f"▼{-value}"
+
+
+def standings_html(sheet):
+    rows = "\n".join(
+        f'<tr><td class="num">{esc(s["rank"] if s["rank"] is not None else "–")}</td><td>{esc(s["team"])}</td>'
+        f'<td class="num">{esc(s["record"])}</td><td class="num">{_pct(s.get("pct"))}</td>'
+        f'<td class="num">{_change(s.get("change"))}</td></tr>'
+        for s in sheet["standings"]
+    )
+    return ('<div class="table"><table class="standings">\n<thead><tr><th class="num">순위</th><th>팀</th>'
+            '<th class="num">전적</th><th class="num">승률</th><th class="num">변동</th></tr></thead>\n'
+            f"<tbody>\n{rows}\n</tbody>\n</table></div>")
+
+
+def matchups_html(sheet):
+    out = []
+    for m in sheet["matchups"]:
+        a, b = m["teams"]
+        rows = []
+        for c in m["categories"]:
+            cells = []
+            for team, value in zip((a, b), c["values"]):
+                cls = "num tie" if c["winner"] == "tie" else "num win" if c["winner"] == team else "num"
+                cells.append(f'<td class="{cls}">{esc(value if value is not None else "–")}</td>')
+            rows.append(f"<tr><td>{esc(c['name'])}</td>{''.join(cells)}</tr>")
+        out.append(
+            f'<div class="table"><table class="matchup">\n<caption>{esc(a)} {esc(m["score"][0])} {esc(b)}</caption>\n'
+            f'<thead><tr><th>카테고리</th><th class="num">{esc(a)}</th><th class="num">{esc(b)}</th></tr></thead>\n'
+            "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table></div>"
+        )
+    return "\n".join(out)
+
+
+def _body_html(post, facts_dir):
+    """Markdown with fact-sheet tables dropped in where the post asks for them."""
+    parts, chunk = [], []
+    for line in post["body"].split("\n"):
+        m = _SHORTCODE.match(line.strip())
+        if not m:
+            chunk.append(line)
+            continue
+        parts.append(markdown.render("\n".join(chunk)))
+        chunk = []
+        week = int(m.group(2)) if m.group(2) else post["week"]
+        if week is None:
+            raise BlogError(f"{post['slug']}: {{{{{m.group(1)}}}}} needs week=N in a post without a week")
+        path = Path(facts_dir) / f"week-{week:02d}.json"
+        if not path.exists():
+            raise BlogError(f"{post['slug']}: {{{{{m.group(1)}}}}} needs {path.name}, which does not exist yet")
+        sheet = json.loads(path.read_text(encoding="utf-8"))
+        parts.append(standings_html(sheet) if m.group(1) == "standings" else matchups_html(sheet))
+    parts.append(markdown.render("\n".join(chunk)))
+    return "\n".join(p for p in parts if p)
+
+
+# ---- pages ---------------------------------------------------------------
+
+def _day(date):
+    return f"{date.month}.{date.day}"
+
+
+def _label(post):
+    if post["kind"] in EDITIONS:
+        return f"Week {post['week']} {EDITIONS[post['kind']]}"
+    return SPECIALS[post["kind"]]
+
+
+def _page(site, title, description, root, body, url, image=""):
+    og_image = f'\n<meta property="og:image" content="{esc(image)}">' if image else ""
+    card = "summary_large_image" if image else "summary"
+    return f"""<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(description)}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{esc(site['title'])}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{esc(url)}">{og_image}
+<meta name="twitter:card" content="{card}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{root}style.css">
+</head>
+<body>
+{body}
+</body>
+</html>
+"""
+
+
+def _masthead(site, root, compact=False):
+    tag = "p" if compact else "h1"
+    return (f'<header class="masthead{" compact" if compact else ""}">\n'
+            f'<{tag} class="name"><a href="{root or "./"}">{esc(site["title"])}</a></{tag}>\n'
+            f'<p class="season">{esc(site["season"])} 시즌</p>\n</header>')
+
+
+def _slot(kind, posts):
+    name = EDITIONS[kind]
+    if not posts:
+        return (f'<li class="ed ed-{kind[5:]} empty"><span class="ed-name">{name}</span>'
+                '<span class="ed-title">예정</span></li>')
+    links = "".join(
+        f'<a href="posts/{esc(p["slug"])}/"><span class="ed-title">{esc(p["title"])}</span>'
+        f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time></a>'
+        for p in posts
+    )
+    return f'<li class="ed ed-{kind[5:]}"><span class="ed-name">{name}</span>{links}</li>'
+
+
+def _index(site, posts):
+    weeks = {}
+    items = []  # (sort time, html)
+    for p in posts:
+        if p["kind"] in EDITIONS:
+            weeks.setdefault(p["week"], []).append(p)
+        else:
+            items.append((p["date"].timestamp(), (
+                f'<section class="special">\n<a href="posts/{esc(p["slug"])}/">'
+                f'<span class="tag">{SPECIALS[p["kind"]]}</span>'
+                f'<span class="ed-title">{esc(p["title"])}</span>'
+                f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time></a>\n</section>'
+            )))
+    for week, group in weeks.items():
+        slots = "\n".join(_slot(kind, [p for p in group if p["kind"] == kind]) for kind in EDITIONS)
+        items.append((max(p["date"].timestamp() for p in group), (
+            f'<section class="week">\n<h2><span>Week</span> {week}</h2>\n'
+            f'<ol class="editions">\n{slots}\n</ol>\n</section>'
+        )))
+    listing = "\n".join(block for _, block in sorted(items, key=lambda item: -item[0]))
+    if not posts:
+        listing = '<p class="nothing">아직 발행된 글이 없습니다. 드래프트가 끝나면 첫 글이 올라옵니다.</p>'
+    body = (
+        _masthead(site, "")
+        + '\n<p class="legend">매주 세 번 발행합니다. '
+          '<span class="key key-start">시작</span> 대진 미리보기, '
+          '<span class="key key-mid">중간</span> 주중 점검, '
+          '<span class="key key-end">마지막</span> 주간 결산.</p>\n'
+        + f'<main class="board">\n{listing}\n</main>'
+    )
+    description = site.get("description") or f"{site['season']} 시즌 판타지 농구 리그 매거진"
+    return _page(site, site["title"], description, "", body, site["url"].rstrip("/") + "/")
+
+
+def _post_page(site, post, body_html, older, newer):
+    base = site["url"].rstrip("/")
+    root = "../../"
+    cover = f'{base}/{post["cover"]}' if post["cover"] else ""
+    figure = (f'<figure class="cover"><img src="{root}{esc(post["cover"])}" alt="{esc(post["title"])} 만평"></figure>\n'
+              if post["cover"] else "")
+    kind_class = post["kind"][5:] if post["kind"] in EDITIONS else "special"
+
+    def neighbour(p, word):
+        if not p:
+            return ""
+        return f'<a class="{word}" href="../{esc(p["slug"])}/"><span>{"이전 글" if word == "older" else "다음 글"}</span>{esc(p["title"])}</a>'
+
+    body = (
+        _masthead(site, root, compact=True)
+        + f'\n<article class="post kind-{kind_class}">\n<header>\n'
+          f'<p class="tag">{esc(_label(post))}</p>\n<h1>{esc(post["title"])}</h1>\n'
+          f'<time datetime="{post["date"].isoformat()}">{post["date"].year}년 {post["date"].month}월 {post["date"].day}일</time>\n'
+          f'</header>\n{figure}<div class="prose">\n{body_html}\n</div>\n</article>\n'
+        + f'<nav class="neighbours">\n{neighbour(older, "older")}\n{neighbour(newer, "newer")}\n'
+          f'<a class="home" href="{root}">전체 목록</a>\n</nav>'
+    )
+    description = post["summary"] or site.get("description") or f"{site['title']} {site['season']}"
+    return _page(site, post["title"], description, root, body, f"{base}/posts/{post['slug']}/", cover)
+
+
+def build(posts_dir, out_dir, site, facts_dir):
+    """Write the whole site into out_dir (replacing it). Returns the post count."""
+    posts_dir, out_dir = Path(posts_dir), Path(out_dir)
+    posts = load_posts(posts_dir)
+    pages = {}
+    for i, post in enumerate(posts):
+        if post["cover"] and not (posts_dir / post["cover"]).exists():
+            raise BlogError(f"{post['slug']}: cover {post['cover']} does not exist under {posts_dir}")
+        body = _body_html(post, facts_dir).replace('src="images/', 'src="../../images/')
+        older = posts[i - 1] if i > 0 else None
+        newer = posts[i + 1] if i + 1 < len(posts) else None
+        pages[post["slug"]] = _post_page(site, post, body, older, newer)
+
+    shutil.rmtree(out_dir, ignore_errors=True)
+    out_dir.mkdir(parents=True)
+    (out_dir / ".nojekyll").write_text("", encoding="utf-8")
+    shutil.copyfile(STYLE, out_dir / "style.css")
+    if (posts_dir / "images").exists():
+        shutil.copytree(posts_dir / "images", out_dir / "images")
+    (out_dir / "index.html").write_text(_index(site, posts), encoding="utf-8")
+    for slug, page in pages.items():
+        target = out_dir / "posts" / slug
+        target.mkdir(parents=True)
+        (target / "index.html").write_text(page, encoding="utf-8")
+    return len(posts)
