@@ -65,6 +65,7 @@ time { font-variant-numeric: tabular-nums; }
   letter-spacing: -0.01em;
 }
 .masthead .name a { text-decoration: none; }
+.masthead .name .lead { white-space: nowrap; }
 .masthead .season {
   margin: 0 0 6px;
   padding: 2px 12px;
@@ -86,8 +87,19 @@ time { font-variant-numeric: tabular-nums; }
 .key-cartoon { color: var(--ink); }
 
 /* teams: one chip per league team, leading to that team's page */
-.teams { max-width: 960px; margin: 18px auto 0; }
-.teams summary { display: inline-block; padding: 4px 12px; border: 1px solid var(--ink); font-size: 15px; font-weight: 700; cursor: pointer; list-style: none; user-select: none; }
+/* tools under the masthead: the team fold on the left, search filling the rest of its row */
+.tools { position: relative; max-width: 960px; margin: 18px auto 0; }
+#q { position: absolute; top: 0; right: 0; left: 132px; width: calc(100% - 132px); height: 35px; padding: 0 12px; border: 1px solid var(--rule); border-radius: 0; background: var(--sheet); color: var(--ink); font: inherit; font-size: 15px; -webkit-appearance: none; appearance: none; }
+#q::placeholder { color: var(--soft); }
+#q:focus { outline: none; border-color: var(--ink); }
+.tools:not(:has(.teams)) { height: 35px; }
+.tools:not(:has(.teams)) #q { left: 0; width: 100%; }
+.found { list-style: none; margin: 14px 0 0; padding: 0; border-top: 3px solid var(--ink); }
+.found .mention { --edition: var(--special); }
+.found .nothing { padding: 32px 0; color: var(--soft); }
+.found mark { background: color-mix(in srgb, var(--mid) 35%, transparent); color: inherit; padding: 0 1px; }
+.teams { margin: 0; }
+.teams summary { display: inline-block; width: 120px; height: 35px; padding: 4px 0; text-align: center; border: 1px solid var(--ink); font-size: 15px; font-weight: 700; cursor: pointer; list-style: none; user-select: none; }
 .teams summary::-webkit-details-marker { display: none; }
 .teams summary::after { content: " ▾"; }
 .teams[open] summary { background: var(--ink); color: var(--paper); }
@@ -210,7 +222,11 @@ td.tie { color: var(--soft); }
 
 @media (max-width: 680px) {
   body { font-size: 16px; }
-  .masthead { padding-top: 36px; }
+  .masthead { padding-top: 28px; padding-bottom: 14px; gap: 12px; }
+  .masthead .name { font-size: clamp(30px, 10vw, 42px); }
+  .masthead .season { padding: 1px 8px; font-size: 14px; margin-bottom: 4px; }
+  .masthead .name span { display: block; }
+  .masthead.compact .name { font-size: 26px; }
   .week { grid-template-columns: 1fr; gap: 10px; }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }

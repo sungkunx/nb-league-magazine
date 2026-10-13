@@ -467,3 +467,56 @@ class TeamTests(Base):
         html = self.page("index.html")
         self.assertRegex(html, r'href="teams/4/"[^>]*>Cho<span class="count">1</span>')
         self.assertRegex(html, r'href="teams/6/" class="none">CHAN<')
+
+
+class MastheadTests(Base):
+    def test_index_title_keeps_its_last_word_on_its_own_line(self):
+        self.build()
+        self.assertIn('<span class="lead">NB League</span> <span>매거진</span>', self.page("index.html"))
+
+    def test_one_word_title_is_left_alone(self):
+        blog.build(self.posts, self.out, dict(SITE, title="매거진"), self.facts)
+        self.assertIn('<a href="./">매거진</a>', self.page("index.html"))
+
+
+class SearchTests(Base):
+    """The index searches a list of every published post's text, in the browser."""
+
+    def entries(self):
+        return json.loads(self.page("search.json"))
+
+    def test_search_list_holds_each_published_post_as_plain_text(self):
+        self.write("w01-end.md", post(title="결산 글", body="## MVP\n\n**Jokić**가 [폭발](https://example.com/x)했습니다.\n\n- 둘째 줄"))
+        self.write("w01-mid.md", post(title="검토 글", kind="week-mid", extra="status: review", body="비밀"))
+        self.build()
+        entries = self.entries()
+        self.assertEqual(len(entries), 1)
+        e = entries[0]
+        self.assertEqual((e["title"], e["url"], e["label"], e["date"]), ("결산 글", "posts/w01-end/", "Week 1 마지막", "10.26"))
+        self.assertEqual(e["text"], "MVP Jokić가 폭발했습니다. 둘째 줄")
+
+    def test_newest_post_comes_first_in_the_search_list(self):
+        self.write("a.md", post(title="먼저", kind="week-start", date="2026-10-20T20:00+09:00"))
+        self.write("b.md", post(title="나중", date="2026-10-26T22:00+09:00"))
+        self.build()
+        self.assertEqual([e["title"] for e in self.entries()], ["나중", "먼저"])
+
+    def test_table_shortcodes_and_picture_lines_are_not_search_text(self):
+        (self.facts / "week-01.json").write_text(json.dumps({"standings": [], "matchups": []}), encoding="utf-8")
+        (self.posts / "images").mkdir()
+        (self.posts / "images" / "a.png").write_bytes(b"png")
+        self.write("w01-end.md", post(body="앞\n\n{{standings}}\n\n![그림 설명](images/a.png)\n\n뒤"))
+        self.build()
+        self.assertEqual(self.entries()[0]["text"], "앞 뒤")
+
+    def test_index_has_the_search_box_and_its_script(self):
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<input type="search" id="q"', html)
+        self.assertIn('<script src="search.js" defer></script>', html)
+        self.assertTrue((self.out / "search.js").exists())
+
+    def test_post_pages_do_not_load_the_search_script(self):
+        self.write("w01-end.md", post())
+        self.build()
+        self.assertNotIn("search.js", self.page("posts/w01-end/index.html"))

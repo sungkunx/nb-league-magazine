@@ -25,6 +25,9 @@ A week-cartoon post is three pictures, each followed by one line of comment.
 Every league team named in the fact sheets gets a page (teams/<number>/)
 listing the published posts whose text mentions it, with the passage. Team
 names are found in the text; nothing is tagged by hand.
+
+The index has a search box. It reads search.json (every published post as
+plain text) in the browser; there is no server.
 """
 import html
 import json
@@ -42,6 +45,7 @@ _PICTURE = re.compile(r"!\[[^\]]*\]\((images/[^)\s]+)\)")
 KINDS = {**EDITIONS, **SPECIALS}
 _SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups)(?:\s+week=(\d+))?\s*\}\}$")
 STYLE = Path(__file__).with_name("blog.css")
+SEARCH = Path(__file__).with_name("search.js")
 
 
 class BlogError(Exception):
@@ -160,6 +164,27 @@ def passage(body, team):
     return None
 
 
+_PICTURE_ANY = re.compile(r"!\[[^\]]*\]\([^)\s]*\)")
+
+
+def plain_text(body):
+    """A post's words without Markdown marks, tables' rules, pictures or shortcodes."""
+    words = []
+    for line in body.split("\n"):
+        line = line.strip()
+        if not line or _SHORTCODE.match(line) or markdown._TABLE_RULE.match(line) or markdown._RULE.match(line):
+            continue
+        line = _LINK_TARGET.sub("]", _PICTURE_ANY.sub("", line))
+        line = _MARKS.sub("", line).replace("[", "").replace("]", "").replace("|", " ")
+        words.extend(line.split())
+    return " ".join(words)
+
+
+def search_entries(posts):
+    return [{"title": p["title"], "url": f'posts/{p["slug"]}/', "label": _label(p), "date": _day(p["date"]),
+             "text": plain_text(p["body"])} for p in reversed(posts)]
+
+
 def _anchor(body_html, team):
     """Mark the first place the team is named in the text of the page."""
     pattern = _name_pattern(team["names"], lambda n: html.escape(n, quote=True))
@@ -257,7 +282,8 @@ def _label(post):
     return SPECIALS[post["kind"]]
 
 
-def _page(site, title, description, root, body, url, image="", hidden=False):
+def _page(site, title, description, root, body, url, image="", hidden=False, script=""):
+    script = f'\n<script src="{script}" defer></script>' if script else ""
     robots = '\n<meta name="robots" content="noindex">' if hidden else ""
     og_image = f'\n<meta property="og:image" content="{esc(image)}">' if image else ""
     card = "summary_large_image" if image else "summary"
@@ -277,7 +303,7 @@ def _page(site, title, description, root, body, url, image="", hidden=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}style.css">
+<link rel="stylesheet" href="{root}style.css">{script}
 </head>
 <body>
 {body}
@@ -288,8 +314,12 @@ def _page(site, title, description, root, body, url, image="", hidden=False):
 
 def _masthead(site, root, compact=False):
     tag = "p" if compact else "h1"
+    lead, _, last = site["title"].rpartition(" ")
+    # On the index the last word drops to its own line, so a phone shows two tidy lines.
+    name = (f'<span class="lead">{esc(lead)}</span> <span>{esc(last)}</span>' if lead and not compact
+            else esc(site["title"]))
     return (f'<header class="masthead{" compact" if compact else ""}">\n'
-            f'<{tag} class="name"><a href="{root or "./"}">{esc(site["title"])}</a></{tag}>\n'
+            f'<{tag} class="name"><a href="{root or "./"}">{name}</a></{tag}>\n'
             f'<p class="season">{esc(site["season"])} 시즌</p>\n</header>')
 
 
@@ -378,11 +408,13 @@ def _index(site, posts, team_nav=""):
           '<span class="key key-mid">중간</span> 주중 점검, '
           '<span class="key key-end">마지막</span> 주간 결산. '
           '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</p>'
-        + team_nav + "\n"
+        + '\n<div class="tools">' + team_nav
+        + '\n<input type="search" id="q" placeholder="글 검색: 팀, 선수, 단어" aria-label="글 검색" autocomplete="off">'
+          '\n<ol id="found" class="found" hidden></ol>\n</div>\n'
         + f'<main class="board">\n{listing}\n</main>'
     )
     description = site.get("description") or f"{site['season']} 시즌 판타지 농구 리그 매거진"
-    return _page(site, site["title"], description, "", body, site["url"].rstrip("/") + "/")
+    return _page(site, site["title"], description, "", body, site["url"].rstrip("/") + "/", script="search.js")
 
 
 def _post_page(site, post, body_html, older, newer):
@@ -451,6 +483,8 @@ def build(posts_dir, out_dir, site, facts_dir):
     out_dir.mkdir(parents=True)
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     shutil.copyfile(STYLE, out_dir / "style.css")
+    shutil.copyfile(SEARCH, out_dir / "search.js")
+    (out_dir / "search.json").write_text(json.dumps(search_entries(posts), ensure_ascii=False), encoding="utf-8")
     if (posts_dir / "images").exists():
         shutil.copytree(posts_dir / "images", out_dir / "images")
     counts = {team_id: len(found) for team_id, found in mentions.items()}
