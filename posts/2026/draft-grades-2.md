@@ -2,7 +2,6 @@
 title: 📝 드래프트 성적표 2부: "9~16번 픽, 빨간 펜 2회차"
 date: 2026-10-19T12:10+09:00
 kind: draft
-status: review
 summary: Towns부터 Mitchell까지, 9~16번 순번 여덟 팀 채점. 2라운드 22번 Alex Sarr의 사연과 의무실을 통째로 사들인 팀 이야기까지.
 ---
 

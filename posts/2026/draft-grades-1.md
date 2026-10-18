@@ -2,7 +2,6 @@
 title: 📝 드래프트 성적표 1부: "1~8번 픽, 채점 들어갑니다"
 date: 2026-10-19T12:00+09:00
 kind: draft
-status: review
 summary: Jokić부터 Edwards까지, 1~8번 순번 여덟 팀의 드래프트를 A부터 F까지 채점했습니다. 편집장 팀도 봐주지 않았습니다.
 ---
 
