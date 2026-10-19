@@ -129,6 +129,8 @@ summary: 드래프트에서 아무도 안 데려간 선수 중 개막 주에 바
 - **픽업 가치:** ⭐⭐⭐
 
 ### 16. Ben Simmons (SAC, 가드)
+> **10월 19일 정정**: Simmons는 10월 18일(현지) 연습 중 오른쪽 아킬레스건이 파열돼 시즌 아웃이 유력합니다. 영입 후보에서 빼 주세요. 자세한 내용은 특집 "올해도 부상하는 부상전문가들"에 있습니다.
+
 - **역할**: 보도가 엇갈립니다. 10월 12일엔 선발 유지 전망, 10월 17일 RotoWire는 Acuff의 백업 전망. 같은 날 시범경기에선 선발로 26분 14점 8리바운드 7어시스트.
 - **한 줄**: 선발이면 REB·AST·ST를 한 자리에서 채우는 만능 테이프. 개막전 선발 명단을 확인하세요.
 - **픽업 가치:** ⭐⭐⭐
@@ -176,7 +178,7 @@ IL 칸이 비어 있는 팀만 보세요.
 
 - **⭐⭐⭐⭐⭐ 지금 바로**: Jerami Grant(득점), Jrue Holiday(어시스트), Isaiah Jackson(블록·리바운드)
 - **약점 맞춤**: 3점·저실책은 Champagnie와 Vassell, 퍼센트 지키기는 Tre Jones, 자유투를 버린 팀의 센터는 Ighodaro
-- **개막전 보고 결정**: Sexton, Simmons, Dunn
+- **개막전 보고 결정**: Sexton, Dunn (Simmons는 10월 18일 아킬레스 파열로 제외)
 
 **웨이버 황금률**, 작년에 이어 올해도 갑니다.
 1. 시범경기 한 경기 대박에 혹하지 말 것. 역할이 먼저입니다.
@@ -193,3 +195,5 @@ IL 칸이 비어 있는 팀만 보세요.
 - 부상 복귀 예상일: [CBS Sports 부상 리포트](https://www.cbssports.com/nba/injuries/) (10월 19일)
 - 지난 시즌 9개 카테고리 순위: [Hashtag Basketball 랭킹](https://hashtagbasketball.com/fantasy-basketball-rankings) (10월 18일 갱신)
 - 미지명 여부: Yahoo 리그 드래프트 보드
+
+*10월 19일 고침: Ben Simmons의 아킬레스 파열 소식을 반영해 16위 항목에 정정 표시를 붙였습니다.*
