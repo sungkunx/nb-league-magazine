@@ -157,7 +157,7 @@ ADP 대비 가성비로만 보면 **리그 1위**입니다. 줄줄이 할인 스
 
 ## 16번 · TEAM G-JAY — B
 
-**지명**: Donovan Mitchell(16) · Evan Mobley(17) · Joel Embiid(48) · Cameron Boozer(49) · Stephon Castle(80) · AJ Dybantsa(81) · Ja Morant(112) · Aaron Gordon(113) · Anthony Black(144) · D'Anthony Melton(145)
+**지명**: Donovan Mitchell(16) · Evan Mobley(17) · Joel Embiid(48) · Cameron Boozer(49) · Stephon Castle(80) · AJ Dybantsa(81) · Ja Morant(112) · Aaron Gordon(113) · Anthony Black(144) · De'Anthony Melton(145)
 
 **별명: "미래에 투자합니다"**
 

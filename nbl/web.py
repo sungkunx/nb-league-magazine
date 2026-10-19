@@ -285,12 +285,24 @@ def parse_transactions(text, season, tz):
     return list(groups.values())
 
 
+_DRAFT_PLAYER = re.compile(r"^(.*?) \(([A-Z]{2,4}) - ([A-Z,]+)\)$")
+
+
 def parse_draft(text):
+    """Draft picks. The live 2026 page has no team links, so "team" (the league
+    team number) may be empty; "team_name" is always there to match on."""
     _, rows = _open(text, "draft")
-    return [
-        {"pick": int(r[1]), "round": int(r[2]), "team": r[3], "pid": r[4], "name": r[5]}
-        for r in rows if r[0] == "D"
-    ]
+    picks = []
+    for r in rows:
+        if r[0] != "D":
+            continue
+        pick = {"pick": int(r[1]), "round": int(r[2]), "team": r[3], "pid": r[4], "name": r[5]}
+        m = _DRAFT_PLAYER.match(r[5])
+        if m:
+            pick.update(name=m.group(1), nba_team=m.group(2), position=m.group(3))
+        pick["team_name"] = r[6] if len(r) > 6 else ""
+        picks.append(pick)
+    return picks
 
 
 # ---- what to collect next ------------------------------------------------
@@ -510,11 +522,15 @@ def load(conn, root, season, tz):
     draft_file = root / "league" / "draft.txt"
     if draft_file.exists():
         try:
+            by_name = {name: key for key, name in conn.execute("SELECT team_key, name FROM teams")}
             for d in parse_draft(draft_file.read_text(encoding="utf-8")):
                 conn.execute("INSERT OR IGNORE INTO players VALUES (?,?,?,?,?)",
-                             (_player_key(d["pid"]), d["name"], None, None, ""))
+                             (_player_key(d["pid"]), d["name"], d.get("nba_team"), d.get("position"), ""))
+                team = _team_key(d["team"]) if d["team"] else by_name.get(d["team_name"])
+                if team is None:
+                    problems.append(f"draft: pick {d['pick']} team '{d['team_name']}' is not a league team")
                 conn.execute("INSERT OR REPLACE INTO draft_results VALUES (?,?,?,?)",
-                             (d["pick"], d["round"], _team_key(d["team"]), _player_key(d["pid"])))
+                             (d["pick"], d["round"], team, _player_key(d["pid"])))
         except WebDataError as error:
             problems.append(f"draft: {error}")
 

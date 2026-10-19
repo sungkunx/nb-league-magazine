@@ -4,7 +4,7 @@ K|League Name|NB League 2026
 K|League Logo|
 K|Auto-renew Enabled|Yes
 K|Draft Type|Live Standard Draft
-K|Draft Time|Sun Oct 18 10:00am EDT [ Add to My Calendar ]
+K|Draft Time|Sun Oct 18 10:00am EDT
 K|Cash League Settings|Not a cash league
 K|Max Teams|16
 K|Live Draft Pick Time|1 Minute
@@ -36,4 +36,4 @@ K|Invite Permissions|Commissioner Only
 K|Send unjoined players email reminders|Yes
 K|Roster Positions|PG, SG, SF, PF, C, Util, Util, Util, BN, BN, IL
 K|Players Stat Categories|Field Goal Percentage (FG%), Free Throw Percentage (FT%), 3-point Shots Made (3PTM), Points Scored (PTS), Total Rebounds (REB), Assists (AST), Steals (ST), Blocked Shots (BLK), Turnovers (TO), Double-Doubles (DD)
-#crc=2846f9ec lines=38
+#crc=88fe5105 lines=38

@@ -213,7 +213,44 @@ class OtherFileTests(unittest.TestCase):
             "D|1|1|15|5352|Nikola Jokić|TERIE-DD-1",
             "D|17|2|10|5294|Joel Embiid|CHAN",
         ]))
-        self.assertEqual(picks[1], {"pick": 17, "round": 2, "team": "10", "pid": "5294", "name": "Joel Embiid"})
+        self.assertEqual(picks[1]["team"], "10")
+        self.assertEqual((picks[1]["pick"], picks[1]["round"], picks[1]["pid"], picks[1]["name"]),
+                         (17, 2, "5294", "Joel Embiid"))
+        self.assertEqual(picks[0]["team_name"], "TERIE-DD-1")
+
+    def test_draft_row_from_the_live_page_splits_name_team_and_position(self):
+        # The 2026 draft page has no team links, and the player cell carries "(NBA - POS)".
+        picks = web.parse_draft(web.seal([
+            "#nbl-draft v1 base=/nba/80126",
+            "D|8|1||6355|Anthony Edwards (MIN - PG,SG)|Cho",
+        ]))
+        self.assertEqual(picks[0], {"pick": 8, "round": 1, "team": "", "pid": "6355", "name": "Anthony Edwards",
+                                    "nba_team": "MIN", "position": "PG,SG", "team_name": "Cho"})
+
+    def test_draft_picks_without_a_team_number_are_matched_by_team_name(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "weeks").mkdir()
+            (root / "league").mkdir()
+            (root / "weeks" / "week-01.txt").write_text(web.seal([
+                "#nbl-week v2 base=/nba/80126 week=1", "W|1|Tue 10/20|Sun 10/25|6",
+                "C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD",
+                "M|4|11|0|0", "A|4|Cho|-/-|-/-|-|-|-|-|-|-|-|-", "A|11|Kharami|-/-|-/-|-|-|-|-|-|-|-|-",
+            ]), encoding="utf-8")
+            (root / "league" / "draft.txt").write_text(web.seal([
+                "#nbl-draft v1 base=/nba/80126",
+                "D|6|1||5185|Giannis Antetokounmpo (MIA - PF,C)|Kharami",
+                "D|8|1||6355|Anthony Edwards (MIN - PG,SG)|Cho",
+                "D|9|1||5432|Karl-Anthony Towns (NYK - PF,C)|Nobody",
+            ]), encoding="utf-8")
+            conn = sqlite3.connect(":memory:")
+            conn.executescript(db.SCHEMA)
+            problems = web.load(conn, root, season=2026, tz="Asia/Seoul")
+            rows = conn.execute("SELECT pick, team_key FROM draft_results ORDER BY pick").fetchall()
+            self.assertEqual(rows[:2], [(6, "t.11"), (8, "t.4")])
+            self.assertEqual(conn.execute("SELECT name, nba_team, position FROM players WHERE player_key='p.6355'").fetchone(),
+                             ("Anthony Edwards", "MIN", "PG,SG"))
+            self.assertTrue(any("Nobody" in p for p in problems))
 
 
 class LoadTests(unittest.TestCase):

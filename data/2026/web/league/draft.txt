@@ -1,0 +1,162 @@
+#nbl-draft v1 base=/nba/80126
+D|1|1||5352|Nikola Jokić (DEN - C)|Team Jaewon
+D|2|1||10094|Victor Wembanyama (SAS - C)|Jaehun's Matchless Team
+D|3|1||6014|Luka Dončić (LAL - PG,SG)|Team Scott
+D|4|1||6022|Shai Gilgeous-Alexander (OKC - PG)|SEOB's ME7O team
+D|5|1||6512|Cade Cunningham (DET - PG,SG)|TheMan
+D|6|1||5185|Giannis Antetokounmpo (MIA - PF,C)|Kharami
+D|7|1||5765|Jayson Tatum (BOS - SF,PF)|hyun's Team
+D|8|1||6355|Anthony Edwards (MIN - PG,SG)|Cho
+D|9|1||5432|Karl-Anthony Towns (NYK - PF,C)|Baesen
+D|10|1||6413|Tyrese Maxey (PHI - PG)|ALTMAN_CH
+D|11|1||10468|Cooper Flagg (DAL - SG,SF,PF)|IN's WooSSa Team
+D|12|1||6558|Alperen Şengün (HOU - PF,C)|Hanseong's Team
+D|13|1||6562|Jalen Johnson (ATL - SF,PF)|Hewon the game
+D|14|1||6515|Scottie Barnes (TOR - SF,PF,C)|YoungHun`s Team Bravo
+D|15|1||6404|Tyrese Haliburton (IND - PG,SG)|CHAN
+D|16|1||5826|Donovan Mitchell (CLE - PG,SG)|TEAM G-JAY
+D|17|2||6514|Evan Mobley (CLE - PF,C)|TEAM G-JAY
+D|18|2||10108|Amen Thompson (HOU - PG,SG)|CHAN
+D|19|2||5642|Domantas Sabonis (SAC - PF,C)|YoungHun`s Team Bravo
+D|20|2||4612|Stephen Curry (GSW - PG)|Hewon the game
+D|21|2||5007|Anthony Davis (WAS - PF,C)|Hanseong's Team
+D|22|2||10294|Alex Sarr (WAS - C)|IN's WooSSa Team
+D|23|2||6692|Chet Holmgren (OKC - PF,C)|ALTMAN_CH
+D|24|2||4244|Kevin Durant (HOU - SG,SF,PF)|Baesen
+D|25|2||6703|Jalen Duren (DET - C)|Cho
+D|26|2||5638|Jamal Murray (DEN - PG)|hyun's Team
+D|27|2||6548|Josh Giddey (CHI - PG,SG)|Kharami
+D|28|2||6044|Jalen Brunson (NYK - PG)|TheMan
+D|29|2||5827|Bam Adebayo (MIA - PF,C)|SEOB's ME7O team
+D|30|2||6712|Walker Kessler (LAL - C)|Team Scott
+D|31|2||6606|Austin Reaves (LAL - PG,SG,SF)|Jaehun's Matchless Team
+D|32|2||6016|Trae Young (WAS - PG)|Team Jaewon
+D|33|3||4896|Kawhi Leonard (TOR - SG,SF,PF)|Team Jaewon
+D|34|3||10104|Brandon Miller (CHA - SF,PF)|Jaehun's Matchless Team
+D|35|3||6015|Jaren Jackson Jr. (UTA - PF,C)|Team Scott
+D|36|3||5473|Devin Booker (PHX - PG,SG)|SEOB's ME7O team
+D|37|3||6401|Deni Avdija (POR - SG,SF,PF)|TheMan
+D|38|3||5842|Derrick White (BOS - PG,SG)|Kharami
+D|39|3||10285|Donovan Clingan (POR - C)|hyun's Team
+D|40|3||4563|James Harden (CLE - PG,SG)|Cho
+D|41|3||6691|Paolo Banchero (ORL - PF)|Baesen
+D|42|3||6559|Trey Murphy III (NOP - SG,SF)|ALTMAN_CH
+D|43|3||5769|Lauri Markkanen (UTA - SF,PF)|IN's WooSSa Team
+D|44|3||6395|LaMelo Ball (MIN - PG)|Hanseong's Team
+D|45|3||5658|Pascal Siakam (IND - PF,C)|Hewon the game
+D|46|3||5602|Jaylen Brown (PHI - SG,SF,PF)|YoungHun`s Team Bravo
+D|47|3||6398|Onyeka Okongwu (ATL - C)|CHAN
+D|48|3||5294|Joel Embiid (PHI - C)|TEAM G-JAY
+D|49|4||10592|Cameron Boozer (MEM - PF)|TEAM G-JAY
+D|50|4||5663|Ivica Zubac (IND - C)|CHAN
+D|51|4||5012|Damian Lillard (POR - PG)|YoungHun`s Team Bravo
+D|52|4||6702|Jalen Williams (OKC - SF,PF)|Hewon the game
+D|53|4||3704|LeBron James (PHI - SF,PF)|Hanseong's Team
+D|54|4||6175|Tyler Herro (MIL - PG,SG)|IN's WooSSa Team
+D|55|4||10265|Matas Buzelis (CHI - SF,PF)|ALTMAN_CH
+D|56|4||6205|Nickeil Alexander-Walker (ATL - PG,SG)|Baesen
+D|57|4||5836|OG Anunoby (NYK - SF,PF)|Cho
+D|58|4||6698|Dyson Daniels (ATL - SG,SF)|hyun's Team
+D|59|4||5318|Julius Randle (BKN - PF)|Kharami
+D|60|4||5835|Jarrett Allen (CLE - C)|TheMan
+D|61|4||6422|Desmond Bane (ORL - SG,SF)|SEOB's ME7O team
+D|62|4||6167|Darius Garland (LAC - PG)|Team Scott
+D|63|4||6025|Michael Porter Jr. (BKN - SF,PF)|Jaehun's Matchless Team
+D|64|4||10100|Keyonte George (UTA - PG,SG)|Team Jaewon
+D|65|5||6021|Mikal Bridges (NYK - SF,PF)|Team Jaewon
+D|66|5||6420|Jaden McDaniels (MIN - SF)|Jaehun's Matchless Team
+D|67|5||4725|Paul George (BOS - SF,PF)|Team Scott
+D|68|5||10287|Zach Edey (MEM - C)|SEOB's ME7O team
+D|69|5||10274|Kel'el Ware (MIL - C)|TheMan
+D|70|5||5197|Rudy Gobert (MIN - C)|Kharami
+D|71|5||10450|Kon Knueppel (CHA - SG,SF)|hyun's Team
+D|72|5||6253|Naz Reid (CHA - PF,C)|Cho
+D|73|5||10595|Caleb Wilson (CHI - PF)|Baesen
+D|74|5||4840|Kyrie Irving (DAL - PG)|ALTMAN_CH
+D|75|5||10096|Ausar Thompson (DET - SG,SF,PF)|IN's WooSSa Team
+D|76|5||6550|Franz Wagner (ORL - SF,PF)|Hanseong's Team
+D|77|5||10467|Dylan Harper (SAS - PG,SG)|Hewon the game
+D|78|5||6163|Zion Williamson (NOP - PF,C)|YoungHun`s Team Bravo
+D|79|5||6571|Day'Ron Sharpe (BKN - C)|CHAN
+D|80|5||10290|Stephon Castle (SAS - PG,SG)|TEAM G-JAY
+D|81|6||10599|AJ Dybantsa (WAS - SF)|TEAM G-JAY
+D|82|6||10444|Derik Queen (NOP - PF,C)|CHAN
+D|83|6||5767|De'Aaron Fox (SAS - PG)|YoungHun`s Team Bravo
+D|84|6||6694|Keegan Murray (SAC - SF,PF)|Hewon the game
+D|85|6||5660|Dejounte Murray (NOP - PG)|Hanseong's Team
+D|86|6||5506|Norman Powell (CHI - SG,SF)|IN's WooSSa Team
+D|87|6||6418|Payton Pritchard (BOS - PG)|ALTMAN_CH
+D|88|6||10454|VJ Edgecombe (PHI - PG,SG)|Baesen
+D|89|6||6734|Ryan Rollins (MIL - PG,SG)|Cho
+D|90|6||6693|Jabari Smith Jr. (HOU - PF,C)|hyun's Team
+D|91|6||6023|Miles Bridges (PHX - PF)|Kharami
+D|92|6||5843|Josh Hart (NYK - SG,SF)|TheMan
+D|93|6||6417|Immanuel Quickley (TOR - PG,SG)|SEOB's ME7O team
+D|94|6||5161|CJ McCollum (ATL - PG,SG)|Team Scott
+D|95|6||6516|Jalen Suggs (ORL - PG,SG)|Jaehun's Matchless Team
+D|96|6||6581|Neemias Queta (BOS - C)|Team Jaewon
+D|97|7||10582|Darius Acuff Jr. (SAC - PG)|Team Jaewon
+D|98|7||5471|Myles Turner (MIL - C)|Jaehun's Matchless Team
+D|99|7||5832|John Collins (DET - PF,C)|Team Scott
+D|100|7||5856|Isaiah Hartenstein (OKC - C)|SEOB's ME7O team
+D|101|7||6047|Mitchell Robinson (BOS - C)|TheMan
+D|102|7||5324|Zach LaVine (SAC - PG,SG,SF)|Kharami
+D|103|7||6212|Ty Jerome (MEM - PG,SG)|hyun's Team
+D|104|7||10115|Brandin Podziemski (GSW - PG,SG)|Cho
+D|105|7||10443|Collin Murray-Boyles (TOR - PF,C)|Baesen
+D|106|7||10447|Khaman Maluach (PHX - C)|ALTMAN_CH
+D|107|7||10571|Yaxel Lendeborg (GSW - PF)|IN's WooSSa Team
+D|108|7||6169|Coby White (CHA - PG,SG)|Hanseong's Team
+D|109|7||10590|Darryn Peterson (UTA - SG)|Hewon the game
+D|110|7||10465|Cedric Coward (MEM - SG,SF)|YoungHun`s Team Bravo
+D|111|7||10065|Toumani Camara (POR - SF,PF)|CHAN
+D|112|7||6164|Ja Morant (POR - PG)|TEAM G-JAY
+D|113|8||5295|Aaron Gordon (DEN - PF,C)|TEAM G-JAY
+D|114|8||10092|Jaime Jaquez Jr. (MIL - SG,SF,PF)|CHAN
+D|115|8||6513|Jalen Green (PHX - SG,SF)|YoungHun`s Team Bravo
+D|116|8||6018|Wendell Carter Jr. (ORL - C)|Hewon the game
+D|117|8||5292|Andrew Wiggins (MIA - SG,SF,PF)|Hanseong's Team
+D|118|8||5727|Fred VanVleet (HOU - PG)|IN's WooSSa Team
+D|119|8||6219|Nic Claxton (CHI - C)|ALTMAN_CH
+D|120|8||5858|Dillon Brooks (PHX - SF,PF)|Baesen
+D|121|8||6596|Sandro Mamukelashvili (LAL - PF,C)|Cho
+D|122|8||6711|Christian Braun (DEN - SG,SF,PF)|hyun's Team
+D|123|8||6567|Quentin Grimes (LAL - SG,SF)|Kharami
+D|124|8||4614|DeMar DeRozan (DEN - SF,PF)|TheMan
+D|125|8||10107|Cason Wallace (OKC - PG,SG,SF)|SEOB's ME7O team
+D|126|8||6165|RJ Barrett (TOR - SG,SF,PF)|Team Scott
+D|127|8||6171|Rui Hachimura (LAC - SF,PF)|Jaehun's Matchless Team
+D|128|8||6551|Davion Mitchell (MIA - PG)|Team Jaewon
+D|129|9||6411|Saddiq Bey (NOP - SF,PF)|Team Jaewon
+D|130|9||10304|Ajay Mitchell (OKC - PG,SG)|Jaehun's Matchless Team
+D|131|9||6218|Kevin Porter Jr. (MIL - PG,SG)|Team Scott
+D|132|9||6720|Peyton Watson (CLE - SF,PF)|SEOB's ME7O team
+D|133|9||10579|Aday Mara (OKC - C)|TheMan
+D|134|9||10440|Jeremiah Fears (NOP - PG,SG)|Kharami
+D|135|9||6174|P.J. Washington (DAL - PF,C)|hyun's Team
+D|136|9||10272|Kyshawn George (WAS - SG,SF,PF)|Cho
+D|137|9||6580|Ayo Dosunmu (MIN - PG,SG)|Baesen
+D|138|9||10289|Yves Missi (NOP - C)|ALTMAN_CH
+D|139|9||6707|Tari Eason (HOU - SG,SF,PF)|IN's WooSSa Team
+D|140|9||6032|Grayson Allen (CHA - SG,SF)|Hanseong's Team
+D|141|9||5640|Jakob Poeltl (TOR - C)|Hewon the game
+D|142|9||6226|Daniel Gafford (DAL - C)|YoungHun`s Team Bravo
+D|143|9||4897|Nikola Vučević (ORL - C)|CHAN
+D|144|9||10095|Anthony Black (ORL - PG,SG,SF)|TEAM G-JAY
+D|145|10||6057|De'Anthony Melton (GSW - PG,SG)|TEAM G-JAY
+D|146|10||4912|Jimmy Butler III (GSW - SF,PF)|CHAN
+D|147|10||5601|Brandon Ingram (LAC - SG,SF,PF)|YoungHun`s Team Bravo
+D|148|10||10445|Egor Dëmin (BKN - PG,SG)|Hewon the game
+D|149|10||5754|Alex Caruso (OKC - SG,SF)|Hanseong's Team
+D|150|10||6733|Moussa Diabaté (CHA - C)|IN's WooSSa Team
+D|151|10||10462|Ace Bailey (UTA - SF,PF)|ALTMAN_CH
+D|152|10||10296|Zaccharie Risacher (DAL - SF,PF)|Baesen
+D|153|10||6173|Cameron Johnson (DEN - SF,PF)|Cho
+D|154|10||6549|Jonathan Kuminga (MIN - SF,PF)|hyun's Team
+D|155|10||6745|Gui Santos (GSW - SF,PF)|Kharami
+D|156|10||6721|Andrew Nembhard (IND - PG,SG)|TheMan
+D|157|10||6751|Collin Gillespie (PHX - PG,SG)|SEOB's ME7O team
+D|158|10||5069|Draymond Green (GSW - PF,C)|Team Scott
+D|159|10||6696|Bennedict Mathurin (NOP - SG,SF)|Jaehun's Matchless Team
+D|160|10||10288|Reed Sheppard (HOU - PG,SG)|Team Jaewon
+#crc=aba2bc12 lines=161
