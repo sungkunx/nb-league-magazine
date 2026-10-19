@@ -545,3 +545,66 @@ class ImageSizeTests(unittest.TestCase):
 
     def test_the_default_limit_is_one_megabyte(self):
         self.assertEqual(blog.IMAGE_LIMIT, 1024 * 1024)
+
+
+DRAFT = {
+    "picks": [
+        {"pick": 1, "round": 1, "team": "Alpha", "player": "Nikola Jokić", "nba_team": "DEN", "position": "C"},
+        {"pick": 2, "round": 1, "team": "Bravo", "player": "Victor Wembanyama", "nba_team": "SAS", "position": "C"},
+        {"pick": 3, "round": 2, "team": "Bravo", "player": "Luka Dončić", "nba_team": "LAL", "position": "PG,SG"},
+        {"pick": 4, "round": 2, "team": "Alpha", "player": "Kyrie Irving", "nba_team": "DAL", "position": "PG"},
+    ],
+}
+
+
+class GuideTests(Base):
+    def guide(self, extra="", body="## 규칙\n\n{{teams}}\n\n{{draft}}"):
+        self.write("guide.md", post(title="26-27 NB 리그 가이드", kind="guide", week=None, extra=extra, body=body))
+        (self.facts / "draft.json").write_text(json.dumps(DRAFT, ensure_ascii=False), encoding="utf-8")
+
+    def test_published_guide_is_linked_from_the_legend_and_not_listed_as_a_post(self):
+        self.guide()
+        self.write("w01-end.md", post(title="결산"))
+        self.assertEqual(self.build(), 1)
+        html = self.page("index.html")
+        legend = html[html.index('class="legend"'):html.index("</p>", html.index('class="legend"'))]
+        self.assertIn('href="posts/guide/"', legend)
+        self.assertIn("26-27 NB 리그 가이드", legend)
+        self.assertNotIn("special-guide", html)
+        self.assertNotIn("guide", self.page("posts/w01-end/index.html").split('class="neighbours"')[1])
+
+    def test_guide_in_review_is_not_linked(self):
+        self.guide(extra="status: review")
+        self.build()
+        self.assertNotIn("posts/guide/", self.page("index.html"))
+        self.assertIn("미리보기", self.page("posts/guide/index.html"))
+
+    def test_teams_lists_every_team_in_first_round_order(self):
+        self.guide()
+        self.build()
+        html = self.page("posts/guide/index.html")
+        teams = html[html.index('class="roster"'):]
+        self.assertLess(teams.index("Alpha"), teams.index("Bravo"))
+
+    def test_draft_shows_each_team_with_its_picks_in_order(self):
+        self.guide()
+        self.build()
+        html = self.page("posts/guide/index.html")
+        board = html[html.index('class="draftboard"'):]
+        self.assertIn("Nikola Jokić", board)
+        alpha = board[board.index("Alpha"):board.index("Bravo")]
+        self.assertLess(alpha.index("Nikola Jokić"), alpha.index("Kyrie Irving"))
+        self.assertIn("DAL", alpha)
+
+    def test_draft_shortcode_without_a_draft_sheet_fails_clearly(self):
+        self.write("guide.md", post(title="가이드", kind="guide", week=None, body="{{draft}}"))
+        with self.assertRaises(blog.BlogError) as ctx:
+            self.build()
+        self.assertIn("draft.json", str(ctx.exception))
+
+    def test_guide_does_not_count_as_a_team_mention(self):
+        self.guide()
+        week = {"teams": [{"team_id": 1, "team": "Alpha"}]}
+        (self.facts / "week-01.json").write_text(json.dumps(week), encoding="utf-8")
+        self.build()
+        self.assertIn("아직 이 팀이 나온 글이 없습니다", self.page("teams/1/index.html"))

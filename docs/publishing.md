@@ -26,6 +26,7 @@ cover: images/w03-end.png
 | `week-cartoon` | 주간 만평 | 필수 |
 | `extra` | 호외 | 선택(표를 넣을 때) |
 | `draft` / `preseason` / `playoff` / `notice` | 드래프트 평가 / 개막 전 / 플레이오프 특집 / 안내 | 없음 |
+| `guide` | 시즌 가이드 (한 편만, 목록 대신 첫 화면 안내문 오른쪽 링크) | 없음 |
 
 권장 파일 이름: `wNN-start.md`, `wNN-mid.md`, `wNN-end.md`, `wNN-cartoon.md`,
 `extra-MMDD.md`, `draft.md`, `preseason.md`, `playoff.md`.
@@ -90,7 +91,7 @@ summary: 카톡 미리보기에 뜨는 한 줄
 
 - 팀 이름은 팩트시트에 적힌 그대로 쓴다(`Cho`, `Team Jaewon`). 줄이거나 바꿔 쓰면 묶이지 않는다.
 - 시즌 중에 이름이 바뀐 팀은 팀 번호로 이어진다. 옛 이름으로 쓴 글도 같은 페이지에 남는다.
-- 안내 글(`notice`)과 검토 중인 글은 묶지 않는다. 표(`{{standings}}`, `{{matchups}}`) 속 이름도 세지 않는다.
+- 안내 글(`notice`), 가이드(`guide`), 검토 중인 글은 묶지 않는다. 표(`{{standings}}`, `{{matchups}}`) 속 이름도 세지 않는다.
 
 ## 검토 후 발행
 
@@ -124,3 +125,10 @@ python -m nbl blog        # site/ 에 만들어진다. 오류가 있으면 파�
 ```
 
 글을 고친 경우 본문 끝에 무엇을 고쳤는지 한 줄 적는다.
+
+## 시즌 가이드
+
+`posts/2026/guide.md`(`kind: guide`)는 시즌 내내 한 자리에 있는 안내 페이지다. 발행되면 첫 화면
+안내문 오른쪽에 제목으로 링크가 붙고, 글 목록·이전/다음 글·팀 페이지에는 나오지 않는다(검색에는 나온다).
+본문에서 `{{teams}}`는 참여 팀 표(1라운드 지명 순), `{{draft}}`는 팀별 드래프트 결과를
+`data/2026/facts/draft.json`에서 만든다. 규칙이 바뀌면 이 파일을 고쳐 다시 발행한다.

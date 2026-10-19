@@ -39,11 +39,13 @@ from pathlib import Path
 from . import markdown
 
 EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막", "week-cartoon": "만평"}
-SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외", "notice": "안내"}
+SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외", "notice": "안내",
+            "guide": "가이드"}
+GUIDE = "guide"  # one standing page, linked from the legend instead of listed among the posts
 CARTOON_PICTURES = 3
 _PICTURE = re.compile(r"!\[[^\]]*\]\((images/[^)\s]+)\)")
 KINDS = {**EDITIONS, **SPECIALS}
-_SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups)(?:\s+week=(\d+))?\s*\}\}$")
+_SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups|draft|teams)(?:\s+week=(\d+))?\s*\}\}$")
 STYLE = Path(__file__).with_name("blog.css")
 SEARCH = Path(__file__).with_name("search.js")
 
@@ -123,7 +125,7 @@ def publish(path):
 
 _LINK_TARGET = re.compile(r"\]\([^)\s]*\)")
 _MARKS = re.compile(r"\*\*|\*|`|^\s*(?:[-*]|\d+\.|#{1,6}|>)\s+")
-TEAMLESS = ("notice",)  # kinds that are not about what teams did
+TEAMLESS = ("notice", GUIDE)  # kinds that are not about what teams did
 
 
 def load_teams(facts_dir):
@@ -242,6 +244,36 @@ def matchups_html(sheet):
     return "\n".join(out)
 
 
+def _by_team(picks):
+    """Teams in first-round order, each with its picks in order."""
+    teams = {}
+    for p in sorted(picks, key=lambda p: p["pick"]):
+        teams.setdefault(p["team"], []).append(p)
+    return teams
+
+
+def teams_html(picks):
+    rows = "\n".join(
+        f'<tr><td class="num">{i}</td><td>{esc(team)}</td><td>{esc(mine[0]["player"])}</td></tr>'
+        for i, (team, mine) in enumerate(_by_team(picks).items(), 1)
+    )
+    return ('<div class="table"><table class="roster">\n'
+            '<thead><tr><th class="num">순번</th><th>팀</th><th>1라운드 지명</th></tr></thead>\n'
+            f'<tbody>\n{rows}\n</tbody>\n</table></div>')
+
+
+def draft_html(picks):
+    blocks = []
+    for team, mine in _by_team(picks).items():
+        items = "\n".join(
+            f'<li><span class="pick">{p["round"]}R · {p["pick"]}</span> {esc(p["player"])}'
+            f' <span class="meta">{esc(p.get("nba_team") or "")} {esc(p.get("position") or "")}</span></li>'
+            for p in mine
+        )
+        blocks.append(f'<details class="draft-team">\n<summary>{esc(team)}</summary>\n<ol>\n{items}\n</ol>\n</details>')
+    return '<div class="draftboard">\n' + "\n".join(blocks) + "\n</div>"
+
+
 def _body_html(post, facts_dir):
     """Markdown with fact-sheet tables dropped in where the post asks for them."""
     parts, chunk = [], []
@@ -252,6 +284,13 @@ def _body_html(post, facts_dir):
             continue
         parts.append(markdown.render("\n".join(chunk)))
         chunk = []
+        if m.group(1) in ("draft", "teams"):
+            path = Path(facts_dir) / "draft.json"
+            if not path.exists():
+                raise BlogError(f"{post['slug']}: {{{{{m.group(1)}}}}} needs draft.json, which does not exist yet")
+            picks = json.loads(path.read_text(encoding="utf-8"))["picks"]
+            parts.append(draft_html(picks) if m.group(1) == "draft" else teams_html(picks))
+            continue
         week = int(m.group(2)) if m.group(2) else post["week"]
         if week is None:
             raise BlogError(f"{post['slug']}: {{{{{m.group(1)}}}}} needs week=N in a post without a week")
@@ -380,7 +419,7 @@ def _team_page(site, team, entries):
     return _page(site, f'{team["name"]} · {site["title"]}', description, root, body, f'{base}/teams/{team["id"]}/')
 
 
-def _index(site, posts, team_nav=""):
+def _index(site, posts, team_nav="", guide=None):
     weeks = {}
     items = []  # (sort time, html)
     for p in posts:
@@ -404,11 +443,13 @@ def _index(site, posts, team_nav=""):
         listing = '<p class="nothing">아직 발행된 글이 없습니다. 드래프트가 끝나면 첫 글이 올라옵니다.</p>'
     body = (
         _masthead(site, "")
-        + '\n<p class="legend">매주 세 번 발행합니다. '
+        + '\n<p class="legend"><span>매주 세 번 발행합니다. '
           '<span class="key key-start">시작</span> 대진 미리보기, '
           '<span class="key key-mid">중간</span> 주중 점검, '
           '<span class="key key-end">마지막</span> 주간 결산. '
-          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</p>'
+          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</span>'
+        + (f'<a class="guide-link" href="posts/{esc(guide["slug"])}/">{esc(guide["title"])} →</a>' if guide else "")
+        + '</p>'
         + '\n<div class="tools">' + team_nav
         + '\n<input type="search" id="q" placeholder="글 검색: 팀, 선수, 단어" aria-label="글 검색" autocomplete="off">'
           '\n<ol id="found" class="found" hidden></ol>\n</div>\n'
@@ -465,7 +506,8 @@ def build(posts_dir, out_dir, site, facts_dir):
     published posts; posts in review get a page but are not counted or listed."""
     posts_dir, out_dir = Path(posts_dir), Path(out_dir)
     everything = load_posts(posts_dir)
-    posts = [p for p in everything if p["status"] == "published"]
+    posts = [p for p in everything if p["status"] == "published" and p["kind"] != GUIDE]
+    guide = next((p for p in everything if p["status"] == "published" and p["kind"] == GUIDE), None)
     teams = load_teams(facts_dir)
     mentions = {t["id"]: [] for t in teams}
     pages = {}
@@ -496,11 +538,11 @@ def build(posts_dir, out_dir, site, facts_dir):
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     shutil.copyfile(STYLE, out_dir / "style.css")
     shutil.copyfile(SEARCH, out_dir / "search.js")
-    (out_dir / "search.json").write_text(json.dumps(search_entries(posts), ensure_ascii=False), encoding="utf-8")
+    (out_dir / "search.json").write_text(json.dumps(search_entries(posts + ([guide] if guide else [])), ensure_ascii=False), encoding="utf-8")
     if (posts_dir / "images").exists():
         shutil.copytree(posts_dir / "images", out_dir / "images")
     counts = {team_id: len(found) for team_id, found in mentions.items()}
-    (out_dir / "index.html").write_text(_index(site, posts, _team_nav(teams, counts)), encoding="utf-8")
+    (out_dir / "index.html").write_text(_index(site, posts, _team_nav(teams, counts), guide), encoding="utf-8")
     for team in teams:
         target = out_dir / "teams" / str(team["id"])
         target.mkdir(parents=True)

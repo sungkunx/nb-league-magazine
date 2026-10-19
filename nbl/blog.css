@@ -243,3 +243,19 @@ td.tie { color: var(--soft); }
 
 /* a post still waiting for the editor's OK */
 .preview { max-width: 720px; margin: 16px auto 0; padding: 8px 14px; border: 2px dashed var(--mid); color: var(--mid); font-weight: 700; font-size: 15px; }
+
+/* the season guide: linked at the right end of the legend */
+.legend { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
+.guide-link { margin-left: auto; padding: 2px 10px; border: 2px solid var(--ink); color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; white-space: nowrap; }
+.guide-link:hover, .guide-link:focus-visible { background: var(--ink); color: var(--paper); }
+.draftboard { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); align-items: start; gap: 8px; margin: 1.4em 0; }
+.draft-team { background: var(--sheet); border-top: 3px solid var(--ink); }
+.draft-team summary { padding: 8px 12px; font-weight: 700; cursor: pointer; }
+.draft-team ol { list-style: none; margin: 0; padding: 0 12px 10px; font-size: 15px; line-height: 1.5; }
+.draft-team li { margin: 0; padding: 4px 0; border-top: 1px solid var(--rule); }
+.draft-team .pick { display: inline-block; min-width: 76px; color: var(--soft); font-variant-numeric: tabular-nums; }
+.draft-team .meta { color: var(--soft); font-size: 13px; }
+@media (max-width: 680px) {
+  .guide-link { margin-left: 0; }
+}
+table.roster td { white-space: normal; }
