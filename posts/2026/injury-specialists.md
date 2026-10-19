@@ -15,6 +15,7 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 
 > **읽는 법**
 > - **출석부**: 2021-22 ~ 2025-26 다섯 시즌의 정규시즌 출전 경기 수입니다(Basketball-Reference 기준). 한 시즌은 82경기, 다섯 시즌 만점은 410경기입니다.
+> - **명단 기준**: 다섯 시즌 내내 NBA에 있었고 출석률이 62% 이하인 선수입니다. 우리 리그에 뽑혔거나 이름값이 큰 선수는 명예의 전당에, 아무도 뽑지 않은 나머지는 따로 표로 모았습니다.
 > - **현재 상태**: 10월 15~18일 CBS 부상 리포트와 주요 보도 기준입니다.
 > - 선수의 부상을 놀리려는 글이 아닙니다. 놀림은 오직, 그 선수를 뽑아 놓고 매일 아침 부상 리포트를 확인하게 될 단장님들 몫입니다ㅋㅋㅋ
 
@@ -29,7 +30,7 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 | 2025-26 | 0 (NBA 미출전) |
 | **5시즌 합계** | **108 / 410 (26%)** |
 
-다섯 시즌 동안 코트에 선 날이 네 번 중 한 번꼴입니다. 2017-18, 2018-19 시즌에는 81경기, 79경기를 뛴 선수였다는 게 더 아쉬운 대목이에요.
+다섯 시즌 동안 코트에 선 날이 네 번 중 한 번꼴입니다. 2017-18, 2018-19 시즌에는 81경기, 79경기를 뛴 선수였다는 게 더 아쉬운 대목이에요. 그런데 놀라지 마세요. 이 출석률이 오늘 특집의 **최저 기록은 아닙니다.** 진짜 꼴찌는 글 아래쪽에서 기다리고 있어요.
 
 **우리 리그와의 관계**: 다행히(?) 160명 안에 뽑히지 않았습니다. 그런데 매거진이 드래프트 직후 낸 "웨이버 후벼파기 Top 20"에서 Simmons를 **16위**로 추천했었죠. 반성합니다. 해당 글에는 정정 표시를 붙였습니다. 혹시 오늘 아침 영입하신 단장님이 계시다면... 영입권 한 장, 같이 묵념합시다🕯️
 
@@ -45,7 +46,15 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 **현재**: CBS 부상 리포트 목록에 없음.
 **데려간 팀**: YoungHun`s Team Bravo (5라운드 78번)
 
-### 🥈 Ja Morant (POR) · 출석률 48%
+### 🥈 Kyrie Irving (DAL) · 출석률 48% (공동 2위)
+**5시즌 출석부**: 29 · 60 · 58 · 50 · 0 → **197 / 410**
+
+여기도 공정하게 짚고 갑니다. 2021-22의 29경기는 뉴욕의 백신 의무화로 홈경기에 나서지 못한 영향이 컸어요. 부상이 아니라 행정 문제였던 셈입니다. 그런데 지난 시즌 0경기는 진짜 부상입니다. 2025년 3월 전방십자인대가 파열됐고, 이번 가을 10월 11일 마카오 시범경기에서야 복귀전을 치렀습니다.
+
+**현재**: CBS 목록에 없음. 다만 시즌 초 출전 시간 제한 가능성이 있습니다.
+**데려간 팀**: ALTMAN_CH (5라운드 74번). 아래 "신흥 부상전문가" 표의 Holmgren도 같은 팀이에요.
+
+### 🥈 Ja Morant (POR) · 출석률 48% (공동 2위)
 **5시즌 출석부**: 57 · 61 · 9 · 50 · 20 → **197 / 410**
 
 공정하게 짚고 갈 부분이 있습니다. 2023-24 시즌 9경기에는 **25경기 출전 정지**가 포함되어 있어서, 전부 부상 탓은 아닙니다. 다만 지난 시즌에는 왼쪽 팔꿈치 인대 문제로 3월에 시즌을 접었어요. 올해는 포틀랜드로 옮겨 시범경기를 소화했습니다.
@@ -53,13 +62,21 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 **현재**: CBS 목록에 없음. 다만 Lillard와 함께 뛰는 백코트라 출전 시간은 두고 봐야 합니다.
 **데려간 팀**: TEAM G-JAY (7라운드 112번)
 
-### 🥉 Bradley Beal (LAC) · 출석률 49%
+### Bradley Beal (LAC) · 출석률 49%
 **5시즌 출석부**: 40 · 50 · 53 · 53 · 6 → **202 / 410**
 
 지난 시즌은 무릎, 허리 문제에 이어 11월 낙상으로 엉덩이 골절까지 겹쳐 **6경기**로 끝났습니다. 올해도 무릎 문제로 개막 결장이 확정이고, CBS 기준 빨라야 11월 8일 이후 복귀입니다.
 
 **현재**: 결장(무릎).
 **데려간 팀**: 없음. 우리 리그 단장님들, 이번엔 다들 현명했습니다👏
+
+### Damian Lillard (POR) · 출석률 53%
+**5시즌 출석부**: 29 · 58 · 73 · 58 · 0 → **218 / 410**
+
+73경기를 뛴 해도 있었지만, 지난 시즌은 아킬레스 부상으로 한 경기도 뛰지 못했습니다. 올해는 포틀랜드 유니폼을 입고 바로 위의 Morant와 백코트를 나눕니다. 감독이 둘 중 한 명은 벤치에서 시작할 수 있다고 했는데, 최종 결정은 아직 보도되지 않았어요. 출석부 48%와 53%가 한 백코트라니, 포틀랜드 트레이너실은 올해 바쁘겠습니다.
+
+**현재**: CBS 목록에 없음.
+**데려간 팀**: YoungHun`s Team Bravo (4라운드 51번). 네, Zion과 같은 팀입니다. 이 팀은 아래에서 또 나와요.
 
 ### Kawhi Leonard (TOR) · 출석률 54%
 **5시즌 출석부**: 0 · 52 · 68 · 37 · 65 → **222 / 410**
@@ -76,6 +93,22 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 
 **현재**: CBS 목록에 없음.
 **데려간 팀**: TEAM G-JAY (3라운드 48번). 네, Morant와 같은 팀입니다. G-JAY 단장님, 의무실 VIP 회원권 축하드립니다ㅋㅋㅋ
+
+### Paul George (BOS) · 출석률 58% (공동 8위)
+**5시즌 출석부**: 31 · 56 · 74 · 41 · 37 → **239 / 410**
+
+74경기를 뛴 2023-24가 이 출석부의 하이라이트입니다. 공정하게 짚으면, 지난 시즌 37경기에는 반도핑 규정 위반에 따른 **25경기 출전 정지**가 포함돼 있어요. 그걸 빼고 계산해도 62% 정도라, 명단에서 빠져나가진 못합니다. 올해는 보스턴으로 옮겨 10월 11일 셀틱스 데뷔전을 치렀습니다.
+
+**현재**: CBS 목록에 없음.
+**데려간 팀**: Team Scott (5라운드 67번)
+
+### Mitchell Robinson (BOS) · 출석률 58% (공동 8위)
+**5시즌 출석부**: 72 · 59 · 31 · 17 · 60 → **239 / 410**
+
+Paul George와 출석부 합계가 239경기로 똑같습니다. 리바운드와 블록을 책임지는 센터인데, 2023-24와 2024-25에 31경기, 17경기로 길게 자리를 비웠어요. 지난 시즌 60경기로 다시 출근 도장을 찍기 시작한 건 좋은 소식입니다.
+
+**현재**: CBS 목록에 없음.
+**데려간 팀**: TheMan (7라운드 101번)
 
 ### Anthony Davis (WAS) · 출석률 59%
 **5시즌 출석부**: 40 · 56 · 76 · 51 · 20 → **243 / 410**
@@ -101,6 +134,20 @@ summary: 개막 이틀 전, Ben Simmons가 또 쓰러졌습니다. 지난 5시�
 **현재**: CBS 목록에 없음.
 **데려간 팀**: Hanseong's Team (3라운드 44번). AD와 LaMelo를 한 팀에 모았습니다. 드래프트 성적표에서 "할인 코너 싹쓸이"라고 했던 바로 그 팀이에요. 할인의 이유가 여기 있었습니다.
 
+## 🙈 우리 리그가 피해 간 이름들
+
+기준에는 들어오지만 160픽 동안 아무도 부르지 않은 선수들입니다. 우리 리그 단장님들의 위기관리 능력에 박수를 보냅니다👏
+
+| 선수 | 5시즌 출석부 | 출석률 | 현재 상태 |
+|---|---|---|---|
+| Lonzo Ball | 35 · 0 · 0 · 35 · 35 | 26% (105 / 410) | CBS 목록에 없음 |
+| Robert Williams III | 61 · 35 · 6 · 20 · 59 | 44% (181 / 410) | CBS 목록에 없음 |
+| Jonathan Isaac (ORL) | 0 · 11 · 58 · 71 · 52 | 47% (192 / 410) | 무릎, 경기 직전 출전 결정(10월 16일 CBS) |
+| Marcus Smart | 71 · 61 · 20 · 34 · 62 | 60% (248 / 410) | CBS 목록에 없음 |
+| Khris Middleton | 66 · 33 · 55 · 37 · 63 | 62% (254 / 410) | CBS 목록에 없음 |
+
+그렇습니다. 오늘 특집 출석부의 진짜 꼴찌는 **Lonzo Ball**입니다. 105경기로 Simmons(108경기)보다 세 경기 적어요. 두 시즌을 통째로 쉬었다가 돌아와 최근 두 시즌은 35경기씩 뛰었습니다. 돌아온 것만으로도 박수받을 일이지만, 판타지 출석부는 냉정하네요.
+
 ## 🚑 신흥 부상전문가 (출전 시즌이 짧은 젊은 선수들)
 
 | 선수 | 출석부 | 현재 상태 | 데려간 팀 |
@@ -119,7 +166,7 @@ Edey와 Holmgren은 82경기를 뛴 시즌도 있으니 아직 "전문가" 칭�
 - **Jimmy Butler (GSW)**: 1월에 전방십자인대 파열. CBS 기준 빨라야 1월 2일. → **CHAN** (10라운드 146번 IL 저금통)
 - **Brandon Ingram (LAC)**: 발꿈치 수술 중 아킬레스 부분 파열 발견. CBS 기준 빨라야 11월 8일. → **YoungHun`s Team Bravo** (10라운드 147번 IL 저금통)
 
-YoungHun`s Team Bravo는 Zion과 Ingram을 함께 보유 중입니다. 이 특집의 숨은 주인공이에요😅
+YoungHun`s Team Bravo는 Zion, Lillard, Ingram까지 이 특집에 세 명을 올렸습니다. 숨은 주인공이 아니라 그냥 주인공이에요😅
 
 ## ⚠️ 경각심 체크리스트
 
@@ -135,12 +182,15 @@ YoungHun`s Team Bravo는 Zion과 Ingram을 함께 보유 중입니다. 이 특�
 정리하면 이렇습니다!
 
 - **오늘의 교훈**: 부상은 이력을 따라온다. Simmons의 5시즌 출석률은 26%였습니다.
-- **명예의 전당 1~3위**: Zion(47%), Morant(48%), Beal(49%)
-- **의무실 VIP 팀**: TEAM G-JAY(Embiid·Morant), Hanseong's Team(AD·LaMelo), YoungHun`s Team Bravo(Zion·Ingram)
+- **명예의 전당 1~2위**: Zion(47%), Kyrie·Morant(공동 48%)
+- **출석부 진짜 꼴찌**: Lonzo Ball(26%). 다행히 아무도 뽑지 않았습니다.
+- **의무실 VIP 팀**: YoungHun`s Team Bravo(Zion·Lillard·Ingram), TEAM G-JAY(Embiid·Morant), Hanseong's Team(AD·LaMelo), ALTMAN_CH(Kyrie·Holmgren)
 
 다쳤던 모든 선수들이 올해는 출석부를 꽉 채우길 진심으로 바랍니다. 그래야 우리 매거진도 쓸 거리가 생기니까요ㅋㅋㅋ 개막은 내일입니다. 모두 건강한 시즌 되세요! 🏀💪
 
 *P.S. 이 특집에 이름이 나온 선수가 올해 82경기를 다 뛰면, 시즌 끝에 정식으로 "개근상" 특집을 내겠습니다. 진심으로 그 글을 쓰고 싶습니다.*
+
+*10월 19일 고침: 편집장의 지적으로 출석부 전체를 다시 확인했습니다. 기준에 맞는데 빠졌던 9명을 더했습니다(본문 Kyrie Irving, Damian Lillard, Paul George, Mitchell Robinson / 표 Lonzo Ball, Robert Williams III, Jonathan Isaac, Marcus Smart, Khris Middleton). 처음 실렸던 선수들의 경기 수는 모두 다시 대조해 맞는 것을 확인했습니다.*
 
 ## 출처
 
@@ -150,6 +200,9 @@ YoungHun`s Team Bravo는 Zion과 Ingram을 함께 보유 중입니다. 이 특�
 - 부상 복귀 정리: [ESPN 보도 (ABC7 게재, 9월 8일)](https://abc7news.com/post/biggest-injury-returns-2026-27-nba-season/19805511/)
 - Porzingis: [AP (La Nación 게재, 10월 14일)](https://www.lanacion.com.ar/usa/warriors-kristaps-porzingis-remains-out-indefinitely-says-hes-seeing-doctors-to-figure-out-health-nid14102026/)
 - Morant 출전 정지·복귀: [OPB (10월 13일)](https://www.opb.org/article/2026/10/13/damian-lillard-is-back-on-the-court-for-the-trail-blazers-with-something-to-prove/)
+- Kyrie 2021-22 홈경기 불가: [NBA.com](https://www.nba.com/news/nets-say-irving-ineligible-to-play-in-home-preseason-game) · Kyrie 복귀전: [AP (NBA.com 게재, 10월 11일)](https://www.nba.com/news/kyrie-irving-makes-return-in-nba-china-game)
+- Paul George 출전 정지: [AP (ABC News 게재)](https://abcnews.go.com/Sports/wireStory/nba-suspends-philadelphia-76ers-paul-george-25-games-129736827) · 셀틱스 데뷔: [Boston.com (10월 11일)](https://www.boston.com/sports/boston-celtics/2026/10/11/jayson-tatum-shines-paul-george-debuts-as-celtics-thump-sixers-8-takeaways/)
+- Lillard·Morant 벤치 논의: [Bleacher Report (10월 2일)](https://bleacherreport.com/articles/25505903-ja-morant-damian-lillard-potentially-being-used-bench-role-discussed-hc-ahead-nba-season)
 - Kawhi 출전 이력 분석: [Fantasy Sixpack (9월 27일)](https://fantasysixpack.net/2026-27-fantasy-basketball-injury-prone-players/)
 - Ingram: [ESPN 보도 (abc30 게재, 9월 28일)](https://abc30.com/post/clippers-brandon-ingram-miss-start-season-surgery/19884436/) · Mark Williams: [KOLD (9월 11일)](https://www.kold.com/2026/09/11/suns-center-mark-williams-undergoes-shoulder-surgery-could-miss-extended-time/)
 - 데려간 팀: 리그 드래프트 결과(Yahoo, 10월 19일 수집)
