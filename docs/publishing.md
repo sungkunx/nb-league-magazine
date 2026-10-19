@@ -71,7 +71,10 @@ summary: 카톡 미리보기에 뜨는 한 줄
 셋째 그림의 코멘트 한 줄.
 ```
 
-그림은 `posts/2026/images/`에 넣는다. 가로 1200px 안팎을 권장한다.
+그림은 `posts/2026/images/`에 넣는다. 받은 원본(PNG 등)은 그대로 커밋하지 않고, 가로 1200px JPG(품질 80 안팎,
+장당 200~400KB)로 줄여서 넣는다. 한 번 커밋한 파일은 지워도 저장소 이력에 남아 용량이 줄지 않기 때문이다.
+`python -m nbl blog`는 1MB가 넘는 그림을 `WARNING:` 줄로 알려 준다. 경고가 나오면 줄인 뒤에 커밋한다.
+줄이는 방법: 작업 공간에서는 Pillow(`pip install pillow`), Mac에서는 `sips -Z 1200 -s format jpeg -s formatOptions 80 원본.png --out 결과.jpg`.
 `cover:`를 적지 않으면 첫 그림이 카톡 미리보기 이미지가 된다.
 
 ## 그 밖의 이미지

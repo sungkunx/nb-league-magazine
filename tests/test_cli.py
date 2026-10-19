@@ -152,6 +152,17 @@ class CliTests(unittest.TestCase):
         self.assertIn("built 0 post(s)", out.getvalue())
         self.assertIn("waiting for review: https://example.github.io/mag/posts/w01-end/", out.getvalue())
 
+    def test_blog_warns_about_images_over_the_size_limit(self):
+        posts, site = self._review_site(header_extra="")
+        (posts / "images").mkdir()
+        (posts / "images" / "big.png").write_bytes(b"x" * (1024 * 1024 + 1))
+        (posts / "images" / "small.jpg").write_bytes(b"x" * 1000)
+        out = io.StringIO()
+        code = main(["--config", str(self.config), "blog", "--site", str(site)], env={}, out=out)
+        self.assertEqual(code, 0)
+        self.assertIn("WARNING: images/big.png is 1.0 MB", out.getvalue())
+        self.assertNotIn("small.jpg", out.getvalue())
+
     def test_publish_takes_a_post_out_of_review(self):
         posts, site = self._review_site()
         out = io.StringIO()

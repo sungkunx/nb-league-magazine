@@ -526,3 +526,22 @@ class SearchTests(Base):
         self.write("w01-end.md", post())
         self.build()
         self.assertNotIn("search.js", self.page("posts/w01-end/index.html"))
+
+
+class ImageSizeTests(unittest.TestCase):
+    def test_heavy_images_lists_only_files_over_the_limit_largest_first(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            images = Path(tmp) / "images"
+            (images / "w01").mkdir(parents=True)
+            (images / "a.png").write_bytes(b"x" * 300)
+            (images / "w01" / "b.png").write_bytes(b"x" * 500)
+            (images / "c.jpg").write_bytes(b"x" * 100)
+            self.assertEqual(blog.heavy_images(tmp, limit=200),
+                             [("images/w01/b.png", 500), ("images/a.png", 300)])
+
+    def test_heavy_images_is_empty_without_an_images_folder(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertEqual(blog.heavy_images(tmp), [])
+
+    def test_the_default_limit_is_one_megabyte(self):
+        self.assertEqual(blog.IMAGE_LIMIT, 1024 * 1024)

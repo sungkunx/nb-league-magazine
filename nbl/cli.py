@@ -186,6 +186,9 @@ def main(argv=None, env=None, api=None, out=None):
             print(f"ERROR: {error}", file=out)
             return 1
         print(f"built {count} post(s) into {site['out_dir']}", file=out)
+        for path, size in blog.heavy_images(site["posts_dir"]):
+            print(f"WARNING: {path} is {size / 1024 / 1024:.1f} MB; shrink it to a JPG "
+                  f"about 1200px wide before committing", file=out)
         for post in blog.load_posts(site["posts_dir"]):
             if post["status"] == "review":
                 print(f"waiting for review: {site['url'].rstrip('/')}/posts/{post['slug']}/", file=out)

@@ -449,6 +449,17 @@ def _post_page(site, post, body_html, older, newer):
     return _page(site, post["title"], description, root, body, f"{base}/posts/{post['slug']}/", cover, hidden=review)
 
 
+IMAGE_LIMIT = 1024 * 1024  # every image is kept in the repository's history forever
+
+
+def heavy_images(posts_dir, limit=IMAGE_LIMIT):
+    """Images under <posts>/images larger than limit, as (relative path, bytes), largest first."""
+    posts_dir = Path(posts_dir)
+    found = [(path.relative_to(posts_dir).as_posix(), path.stat().st_size)
+             for path in (posts_dir / "images").rglob("*") if path.is_file()]
+    return sorted([f for f in found if f[1] > limit], key=lambda f: -f[1])
+
+
 def build(posts_dir, out_dir, site, facts_dir):
     """Write the whole site into out_dir (replacing it). Returns the number of
     published posts; posts in review get a page but are not counted or listed."""
