@@ -81,10 +81,21 @@ def _season_date(season, month, day):
 # ---- one stats day -------------------------------------------------------
 
 def _player_info(info):
-    m = re.match(r"^([A-Z]{2,3}) - ([A-Z,]+)\s*(.*)$", info)
+    # The live page may put note text first: "Player Note GSW - PG,SG", "NANew Player Note MIL - PG,SG".
+    m = re.search(r"(?<![A-Za-z])([A-Z]{2,3}) - ([A-Z,]+)\s*(.*)$", info)
     if m:
         return {"nba_team": m.group(1), "position": m.group(2), "status": m.group(3)}
     return {"nba_team": None, "position": None, "status": info}
+
+
+def _upsert_player(conn, key, name, nba_team, position, status=None):
+    """Keep the best known team and position: a later row without them never blanks earlier ones."""
+    conn.execute(
+        "INSERT INTO players VALUES (?,?,?,?,?) ON CONFLICT(player_key) DO UPDATE SET "
+        "name=excluded.name, nba_team=COALESCE(excluded.nba_team, players.nba_team), "
+        "position=COALESCE(excluded.position, players.position), "
+        "status=COALESCE(?, players.status)",
+        (key, name, nba_team, position, status or "", status))
 
 
 def parse_day(text):
@@ -485,8 +496,7 @@ def load(conn, root, season, tz):
             else:
                 for team in pre["teams"]:
                     for p in team["players"]:
-                        conn.execute("INSERT OR IGNORE INTO players VALUES (?,?,?,?,?)",
-                                     (_player_key(p["pid"]), p["name"], p["nba_team"], p["position"], ""))
+                        _upsert_player(conn, _player_key(p["pid"]), p["name"], p["nba_team"], p["position"])
                         conn.execute("INSERT OR REPLACE INTO lineup_pre VALUES (?,?,?,?)",
                                      (day_name, _team_key(team["id"]), _player_key(p["pid"]), p["slot"]))
         snapshot = directory / "standings.txt"
@@ -510,8 +520,7 @@ def load(conn, root, season, tz):
         conn.execute("INSERT OR REPLACE INTO transactions VALUES (?,?,?,?,?,?)",
                      (tx["key"], tx["type"], "successful", tx["timestamp"], None, None))
         for p in tx["players"]:
-            conn.execute("INSERT OR IGNORE INTO players VALUES (?,?,?,?,?)",
-                         (_player_key(p["pid"]), p["name"], None, None, ""))
+            _upsert_player(conn, _player_key(p["pid"]), p["name"], None, None)
             conn.execute(
                 "INSERT OR REPLACE INTO transaction_players VALUES (?,?,?,?,?,?,?,?)",
                 (tx["key"], _player_key(p["pid"]), p["name"], p["action"], p["source_type"],
@@ -524,8 +533,7 @@ def load(conn, root, season, tz):
         try:
             by_name = {name: key for key, name in conn.execute("SELECT team_key, name FROM teams")}
             for d in parse_draft(draft_file.read_text(encoding="utf-8")):
-                conn.execute("INSERT OR IGNORE INTO players VALUES (?,?,?,?,?)",
-                             (_player_key(d["pid"]), d["name"], d.get("nba_team"), d.get("position"), ""))
+                _upsert_player(conn, _player_key(d["pid"]), d["name"], d.get("nba_team"), d.get("position"))
                 team = _team_key(d["team"]) if d["team"] else by_name.get(d["team_name"])
                 if team is None:
                     problems.append(f"draft: pick {d['pick']} team '{d['team_name']}' is not a league team")
@@ -552,8 +560,7 @@ def _load_day(conn, day, warnings):
         _upsert_team(conn, team["id"], team["name"])
         for p in team["players"]:
             key = _player_key(p["pid"])
-            conn.execute("INSERT OR REPLACE INTO players VALUES (?,?,?,?,?)",
-                         (key, p["name"], p["nba_team"], p["position"], p["status"] or ""))
+            _upsert_player(conn, key, p["name"], p["nba_team"], p["position"], p["status"] or "")
             conn.execute("INSERT OR REPLACE INTO roster_daily VALUES (?,?,?,?,?)",
                          (d, _team_key(team["id"]), key, p["slot"], p["status"] or ""))
             stats = p["stats"]

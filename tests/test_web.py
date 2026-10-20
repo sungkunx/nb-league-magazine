@@ -253,6 +253,43 @@ class OtherFileTests(unittest.TestCase):
             self.assertTrue(any("Nobody" in p for p in problems))
 
 
+    def test_player_info_skips_the_note_text_the_live_page_puts_first(self):
+        # Seen on 2026-10-20: "Player Note GSW - PG,SG", "NANew Player Note MIL - PG,SG"
+        for info, status in [("Player Note GSW - PG,SG", ""), ("NANew Player Note MIL - PG,SG", ""),
+                             ("Player Note NYK - PG GTD", "GTD")]:
+            got = web._player_info(info)
+            self.assertEqual((got["nba_team"], got["status"]), (info.split(" - ")[0][-3:], status), info)
+
+    def test_a_pre_game_lineup_does_not_blank_the_draft_sheet_teams(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for d in ("weeks", "league", "days/2026-10-20"):
+                (root / d).mkdir(parents=True)
+            (root / "weeks" / "week-01.txt").write_text(web.seal([
+                "#nbl-week v2 base=/nba/80126 week=1", "W|1|Tue 10/20|Sun 10/25|6",
+                "C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD",
+                "M|4|11|0|0", "A|4|Cho|-/-|-/-|-|-|-|-|-|-|-|-", "A|11|Kharami|-/-|-/-|-|-|-|-|-|-|-|-",
+            ]), encoding="utf-8")
+            (root / "league" / "draft.txt").write_text(web.seal([
+                "#nbl-draft v1 base=/nba/80126",
+                "D|8|1||6355|Anthony Edwards (MIN - PG,SG)|Cho",
+            ]), encoding="utf-8")
+            (root / "days" / "2026-10-20" / "lineup-pre.txt").write_text(web.seal([
+                "#nbl-day v2 base=/nba/80126 date=2026-10-20 teams=1",
+                "C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD",
+                "T|4|Cho|Tue, Oct 20", "P|PG|6355|Anthony Edwards|Player Note|-",
+            ]), encoding="utf-8")
+            (root / "days" / "2026-10-20" / "transactions.txt").write_text(web.seal([
+                "#nbl-transactions v2 base=/nba/80126 pages=2",
+                "X|0.0|Oct 20, 4:31 am|4|6355|Anthony Edwards|MIN - PG,SG|Free Agent",
+            ]), encoding="utf-8")
+            conn = sqlite3.connect(":memory:")
+            conn.executescript(db.SCHEMA)
+            web.load(conn, root, season=2026, tz="Asia/Seoul")
+            self.assertEqual(conn.execute("SELECT nba_team, position FROM players WHERE player_key='p.6355'").fetchone(),
+                             ("MIN", "PG,SG"))
+
+
 class LoadTests(unittest.TestCase):
     """The whole real week 3 of last season (two matchups), end to end."""
 
