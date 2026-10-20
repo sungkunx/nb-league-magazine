@@ -538,7 +538,7 @@ def build(posts_dir, out_dir, site, facts_dir):
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     shutil.copyfile(STYLE, out_dir / "style.css")
     shutil.copyfile(SEARCH, out_dir / "search.js")
-    (out_dir / "search.json").write_text(json.dumps(search_entries(posts + ([guide] if guide else [])), ensure_ascii=False), encoding="utf-8")
+    (out_dir / "search.json").write_text(json.dumps(search_entries(posts), ensure_ascii=False), encoding="utf-8")
     if (posts_dir / "images").exists():
         shutil.copytree(posts_dir / "images", out_dir / "images")
     counts = {team_id: len(found) for team_id, found in mentions.items()}

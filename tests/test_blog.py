@@ -573,6 +573,11 @@ class GuideTests(Base):
         self.assertNotIn("special-guide", html)
         self.assertNotIn("guide", self.page("posts/w01-end/index.html").split('class="neighbours"')[1])
 
+    def test_guide_is_reached_only_through_its_link_not_search(self):
+        self.guide()
+        self.build()
+        self.assertNotIn("posts/guide/", self.page("search.json"))
+
     def test_guide_in_review_is_not_linked(self):
         self.guide(extra="status: review")
         self.build()
