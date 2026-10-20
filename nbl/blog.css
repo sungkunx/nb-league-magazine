@@ -246,8 +246,8 @@ td.tie { color: var(--soft); }
 
 /* the season guide: linked at the right end of the legend */
 .legend { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; }
-.guide-link { margin-left: auto; padding: 2px 10px; border: 2px solid var(--ink); color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; white-space: nowrap; }
-.guide-link:hover, .guide-link:focus-visible { background: var(--ink); color: var(--paper); }
+.guide-link { margin-left: auto; padding: 4px 12px; border-radius: 4px; background: #17408b; color: #fff; font-weight: 700; font-size: 14px; text-decoration: none; white-space: nowrap; }
+.guide-link:hover, .guide-link:focus-visible { background: #0f2f6b; color: #fff; outline: 2px solid #c9082a; outline-offset: 2px; }
 .draftboard { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); align-items: start; gap: 8px; margin: 1.4em 0; }
 .draft-team { background: var(--sheet); border-top: 3px solid var(--ink); }
 .draft-team summary { padding: 8px 12px; font-weight: 700; cursor: pointer; }
