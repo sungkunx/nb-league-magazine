@@ -613,3 +613,15 @@ class GuideTests(Base):
         (self.facts / "week-01.json").write_text(json.dumps(week), encoding="utf-8")
         self.build()
         self.assertIn("아직 이 팀이 나온 글이 없습니다", self.page("teams/1/index.html"))
+
+
+class FloatNavTests(Base):
+    def test_every_page_has_home_and_back_to_top_buttons(self):
+        self.write("w01-end.md", post(title="결산"))
+        self.build()
+        for rel, home in [("index.html", "./"), ("posts/w01-end/index.html", "../../")]:
+            html = self.page(rel)
+            nav = html[html.index('class="float-nav"'):]
+            self.assertIn(f'href="{home}"', nav[:400])
+            self.assertIn('class="to-top"', nav[:600])
+            self.assertLess(nav.index("float-home"), nav.index("to-top"))  # home sits above the top button

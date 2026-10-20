@@ -321,6 +321,21 @@ def _label(post):
     return SPECIALS[post["kind"]]
 
 
+_FLOAT_SCRIPT = ("(function(){var n=document.querySelector('.float-nav');"
+                 "function s(){n.classList.toggle('shown',window.scrollY>400)}"
+                 "window.addEventListener('scroll',s,{passive:true});s();"
+                 "n.querySelector('.to-top').addEventListener('click',function(){"
+                 "window.scrollTo({top:0,behavior:'smooth'})})})();")
+
+
+def _float_nav(root):
+    """Bottom-right buttons that appear once the reader has scrolled: home above, back-to-top below."""
+    return (f'<nav class="float-nav" aria-label="바로가기">\n'
+            f'<a class="float-home" href="{root or "./"}" aria-label="처음 화면">🏠</a>\n'
+            f'<button type="button" class="to-top" aria-label="맨 위로">↑</button>\n'
+            f'</nav>\n<script>{_FLOAT_SCRIPT}</script>')
+
+
 def _page(site, title, description, root, body, url, image="", hidden=False, script=""):
     script = f'\n<script src="{script}" defer></script>' if script else ""
     robots = '\n<meta name="robots" content="noindex">' if hidden else ""
@@ -346,6 +361,7 @@ def _page(site, title, description, root, body, url, image="", hidden=False, scr
 </head>
 <body>
 {body}
+{_float_nav(root)}
 </body>
 </html>
 """

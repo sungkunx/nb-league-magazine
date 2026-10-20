@@ -259,3 +259,14 @@ td.tie { color: var(--soft); }
   .guide-link { margin-left: 0; }
 }
 table.roster td { white-space: normal; }
+
+/* floating home + back-to-top, bottom right, shown after scrolling */
+.float-nav { position: fixed; right: 18px; bottom: 18px; z-index: 20; display: flex; flex-direction: column; gap: 10px;
+  opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s; }
+.float-nav.shown { opacity: 1; transform: none; pointer-events: auto; }
+.float-nav a, .float-nav button { display: flex; align-items: center; justify-content: center; width: 46px; height: 46px;
+  border: 0; border-radius: 50%; background: #17408b; color: #fff; font: 700 20px/1 var(--text); text-decoration: none;
+  cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,.25); }
+.float-nav a:hover, .float-nav button:hover, .float-nav a:focus-visible, .float-nav button:focus-visible { background: #0f2f6b; outline: 2px solid #c9082a; outline-offset: 2px; }
+@media (max-width: 680px) { .float-nav { right: 12px; bottom: 12px; } .float-nav a, .float-nav button { width: 42px; height: 42px; } }
+@media (prefers-reduced-motion: reduce) { .float-nav { transition: none; } }
