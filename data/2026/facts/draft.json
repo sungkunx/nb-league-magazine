@@ -1483,8 +1483,8 @@
    "round": 9,
    "team": "Team Scott",
    "player": "Kevin Porter Jr.",
-   "nba_team": "MIL",
-   "position": "PG,SG",
+   "nba_team": null,
+   "position": null,
    "adp": null,
    "vs_adp": null
   },
@@ -1560,8 +1560,8 @@
    "round": 9,
    "team": "ALTMAN_CH",
    "player": "Yves Missi",
-   "nba_team": "NOP",
-   "position": "C",
+   "nba_team": null,
+   "position": null,
    "adp": null,
    "vs_adp": null
   },
@@ -1637,8 +1637,8 @@
    "round": 10,
    "team": "TEAM G-JAY",
    "player": "De'Anthony Melton",
-   "nba_team": "GSW",
-   "position": "PG,SG",
+   "nba_team": null,
+   "position": null,
    "adp": null,
    "vs_adp": null
   },
@@ -1909,8 +1909,8 @@
      "round": 9,
      "team": "ALTMAN_CH",
      "player": "Yves Missi",
-     "nba_team": "NOP",
-     "position": "C",
+     "nba_team": null,
+     "position": null,
      "adp": null,
      "vs_adp": null
     },
@@ -3340,8 +3340,8 @@
      "round": 10,
      "team": "TEAM G-JAY",
      "player": "De'Anthony Melton",
-     "nba_team": "GSW",
-     "position": "PG,SG",
+     "nba_team": null,
+     "position": null,
      "adp": null,
      "vs_adp": null
     }
@@ -3613,8 +3613,8 @@
      "round": 9,
      "team": "Team Scott",
      "player": "Kevin Porter Jr.",
-     "nba_team": "MIL",
-     "position": "PG,SG",
+     "nba_team": null,
+     "position": null,
      "adp": null,
      "vs_adp": null
     },

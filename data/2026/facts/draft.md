@@ -24,7 +24,7 @@
 | D87 | 87 | 6 | ALTMAN_CH | Payton Pritchard | BOS | PG |  |  |
 | D106 | 106 | 7 | ALTMAN_CH | Khaman Maluach | PHX | C |  |  |
 | D119 | 119 | 8 | ALTMAN_CH | Nic Claxton | CHI | C |  |  |
-| D138 | 138 | 9 | ALTMAN_CH | Yves Missi | NOP | C |  |  |
+| D138 | 138 | 9 | ALTMAN_CH | Yves Missi |  |  |  |  |
 | D151 | 151 | 10 | ALTMAN_CH | Ace Bailey | UTA | SF,PF |  |  |
 
 직전 시즌 합계와 리그 내 순위:
@@ -225,7 +225,7 @@
 | D112 | 112 | 7 | TEAM G-JAY | Ja Morant | POR | PG |  |  |
 | D113 | 113 | 8 | TEAM G-JAY | Aaron Gordon | DEN | PF,C |  |  |
 | D144 | 144 | 9 | TEAM G-JAY | Anthony Black | ORL | PG,SG,SF |  |  |
-| D145 | 145 | 10 | TEAM G-JAY | De'Anthony Melton | GSW | PG,SG |  |  |
+| D145 | 145 | 10 | TEAM G-JAY | De'Anthony Melton |  |  |  |  |
 
 직전 시즌 합계와 리그 내 순위:
 | 구분 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -264,7 +264,7 @@
 | D94 | 94 | 6 | Team Scott | CJ McCollum | ATL | PG,SG |  |  |
 | D99 | 99 | 7 | Team Scott | John Collins | DET | PF,C |  |  |
 | D126 | 126 | 8 | Team Scott | RJ Barrett | TOR | SG,SF,PF |  |  |
-| D131 | 131 | 9 | Team Scott | Kevin Porter Jr. | MIL | PG,SG |  |  |
+| D131 | 131 | 9 | Team Scott | Kevin Porter Jr. |  |  |  |  |
 | D158 | 158 | 10 | Team Scott | Draymond Green | GSW | PF,C |  |  |
 
 직전 시즌 합계와 리그 내 순위:
@@ -466,21 +466,21 @@
 | D128 | 128 | 8 | Team Jaewon | Davion Mitchell | MIA | PG |  |  |
 | D129 | 129 | 9 | Team Jaewon | Saddiq Bey | NOP | SF,PF |  |  |
 | D130 | 130 | 9 | Jaehun's Matchless Team | Ajay Mitchell | OKC | PG,SG |  |  |
-| D131 | 131 | 9 | Team Scott | Kevin Porter Jr. | MIL | PG,SG |  |  |
+| D131 | 131 | 9 | Team Scott | Kevin Porter Jr. |  |  |  |  |
 | D132 | 132 | 9 | SEOB's ME7O team | Peyton Watson | CLE | SF,PF |  |  |
 | D133 | 133 | 9 | TheMan | Aday Mara | OKC | C |  |  |
 | D134 | 134 | 9 | Kharami | Jeremiah Fears | NOP | PG,SG |  |  |
 | D135 | 135 | 9 | hyun's Team | P.J. Washington | DAL | PF,C |  |  |
 | D136 | 136 | 9 | Cho | Kyshawn George | WAS | SG,SF,PF |  |  |
 | D137 | 137 | 9 | Baesen | Ayo Dosunmu | MIN | PG,SG |  |  |
-| D138 | 138 | 9 | ALTMAN_CH | Yves Missi | NOP | C |  |  |
+| D138 | 138 | 9 | ALTMAN_CH | Yves Missi |  |  |  |  |
 | D139 | 139 | 9 | IN's WooSSa Team | Tari Eason | HOU | SG,SF,PF |  |  |
 | D140 | 140 | 9 | Hanseong's Team | Grayson Allen | CHA | SG,SF |  |  |
 | D141 | 141 | 9 | Hewon the game | Jakob Poeltl | TOR | C |  |  |
 | D142 | 142 | 9 | YoungHun`s Team Bravo | Daniel Gafford | DAL | C |  |  |
 | D143 | 143 | 9 | CHAN | Nikola Vučević | ORL | C |  |  |
 | D144 | 144 | 9 | TEAM G-JAY | Anthony Black | ORL | PG,SG,SF |  |  |
-| D145 | 145 | 10 | TEAM G-JAY | De'Anthony Melton | GSW | PG,SG |  |  |
+| D145 | 145 | 10 | TEAM G-JAY | De'Anthony Melton |  |  |  |  |
 | D146 | 146 | 10 | CHAN | Jimmy Butler III | GSW | SF,PF |  |  |
 | D147 | 147 | 10 | YoungHun`s Team Bravo | Brandon Ingram | LAC | SG,SF,PF |  |  |
 | D148 | 148 | 10 | Hewon the game | Egor Dëmin | BKN | PG,SG |  |  |
