@@ -69,6 +69,18 @@ globalThis.NBL = (() => {
     while (last > first && !headers[last]) last--;
     return first < 0 ? [] : headers.map((h, i) => i).filter((i) => i >= first && i <= last && !/%$/.test(headers[i]));
   };
+  // Cells laid out by column position: a cell with colspan=N fills N slots (the extra
+  // slots are null). Yahoo's header row joins some columns (e.g. "Action" over two
+  // cells on other managers' pages) while body rows keep them apart, so header and
+  // body cells must be matched by position, not by index.
+  const spread = (row) => {
+    const out = [];
+    for (const c of row ? row.cells : []) {
+      out.push(c);
+      for (let k = 1; k < (c.colSpan || 1); k++) out.push(null);
+    }
+    return out;
+  };
   // "-" when the player has no line at all that day (every cell is a dash).
   const statLine = (values) => (values.every((v) => v === '-' || v === '-/-') ? '-' : values.join('|'));
 
@@ -86,12 +98,12 @@ globalThis.NBL = (() => {
       const rows = [...table.rows];
       const head = rows.find((r) => cellText(r.cells[0]) === 'Pos');
       if (!head) return { lines: lines.concat(`E|${id}|no header row`) };
-      const headers = [...head.cells].map((c) => cellText(c).replace(/\*$/, ''));
+      const headers = spread(head).map((c) => cellText(c).replace(/\*$/, ''));
       const cols = statColumns(headers);
       const nameCol = headers.findIndex((h) => /^Players?$/.test(h));
       const columns = cols.map((i) => headers[i]).join('|');
       for (const r of rows) {
-        const cells = [...r.cells];
+        const cells = spread(r);
         const label = cellText(cells[nameCol]);
         const stats = statLine(cols.map((i) => cellText(cells[i])));
         if (/^Starting Lineup Totals/.test(label)) {
@@ -136,16 +148,16 @@ globalThis.NBL = (() => {
           .filter((t) => /^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d{1,2}\/\d{1,2}$/.test(t));
         span = days.length ? `${days[0]}|${days[days.length - 1]}|${days.length}` : '||0';
       }
-      const headers = [...table.rows[0].cells].map((c) => cellText(c).replace(/\*$/, ''));
+      const headers = spread(table.rows[0]).map((c) => cellText(c).replace(/\*$/, ''));
       const cols = statColumns(headers);
       if (!lines.some((l) => l.startsWith('C|'))) lines.push(`C|${cols.map((i) => headers[i]).join('|')}`);
       const sides = [1, 2].map((n) => {
-        const cells = [...table.rows[n].cells];
+        const cells = spread(table.rows[n]);
         return {
           id: teamIdOf(table.rows[n], base),
           name: cellText(cells[0]),
           stats: cols.map((i) => cellText(cells[i])).join('|'),
-          score: cellText(cells[cells.length - 1]),
+          score: cellText(table.rows[n].cells[table.rows[n].cells.length - 1]),
         };
       });
       sides.forEach((s) => seen.add(s.id));
