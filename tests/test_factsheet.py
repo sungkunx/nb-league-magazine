@@ -556,3 +556,20 @@ class SheetTests(Base):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EmptySideTests(unittest.TestCase):
+    """Yahoo gives a category to the team that has a value when the other has none (seen in week 1, 2026)."""
+    FT = {"stat_id": "FT%", "source_id": "FTM/A", "lower": False}
+    TO = {"stat_id": "TO", "source_id": None, "lower": True}
+
+    def test_no_free_throws_attempted_loses_ft_percent(self):
+        self.assertEqual(factsheet._compare(self.FT, {"FTM/A": "9/10"}, {"FTM/A": "0/0", "FT%": "-"}), "a")
+        self.assertEqual(factsheet._compare(self.FT, {"FTM/A": "0/0"}, {"FTM/A": "9/10"}), "b")
+
+    def test_a_team_with_no_games_loses_every_category_even_turnovers(self):
+        self.assertEqual(factsheet._compare(self.TO, {"TO": "3"}, {"TO": "-"}), "a")
+
+    def test_both_empty_is_still_undecided(self):
+        self.assertIsNone(factsheet._compare(self.TO, {"TO": "-"}, {"TO": "-"}))
+        self.assertIsNone(factsheet._compare(self.FT, {"FTM/A": "0/0"}, {"FTM/A": "-/-"}))

@@ -180,6 +180,11 @@ class CommandTests(unittest.TestCase):
         this_year = Path(__file__).parent.parent / "data" / "2026" / "web"
         shutil.rmtree(self.data / "web")
         shutil.copytree(this_year, self.data / "web", ignore=shutil.ignore_patterns("days"))
+        # The live file now has real totals; this test pins the copy taken before the draft.
+        fixture = Path(__file__).parent / "fixtures" / "web" / "week-01-2026-predraft.txt"
+        for name in ("week-01.txt", "week-02.txt"):
+            (self.data / "web" / "weeks" / name).unlink(missing_ok=True)
+        shutil.copyfile(fixture, self.data / "web" / "weeks" / "week-01.txt")
         self.config.write_text(json.dumps({
             "season": 2026, "league_id": "80126", "data_dir": str(self.data), "source": "web",
             "web_base": "/nba/80126", "web_time_zone": "Asia/Seoul", "season_start": "2026-10-20",

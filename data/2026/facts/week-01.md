@@ -9,117 +9,117 @@
 
 ## 매치업
 
-### M1 Baesen 0-0-0 IN's WooSSa Team — 무승부 또는 미정
+### M1 Baesen 6-3-1 IN's WooSSa Team — 승: Baesen
 | 카테고리 | Baesen | IN's WooSSa Team | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .526 (10/19) | .500 (4/8) | Baesen |
+| FT% | .556 (5/9) | 1.000 (3/3) | IN's WooSSa Team |
+| 3PTM | 3 | 0 | Baesen |
+| PTS | 28 | 11 | Baesen |
+| REB | 16 | 11 | Baesen |
+| AST | 2 | 5 | IN's WooSSa Team |
+| ST | 2 | 1 | Baesen |
+| BLK | 2 | 0 | Baesen |
+| TO | 5 | 3 | IN's WooSSa Team |
+| DD | 1 | 1 | tie |
 
-### M2 TheMan 0-0-0 Hanseong's Team — 무승부 또는 미정
+### M2 TheMan 7-2-1 Hanseong's Team — 승: TheMan
 | 카테고리 | TheMan | Hanseong's Team | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .453 (24/53) | .471 (8/17) | Hanseong's Team |
+| FT% | .800 (16/20) | .625 (5/8) | TheMan |
+| 3PTM | 4 | 2 | TheMan |
+| PTS | 68 | 23 | TheMan |
+| REB | 21 | 15 | TheMan |
+| AST | 16 | 8 | TheMan |
+| ST | 3 | 2 | TheMan |
+| BLK | 5 | 1 | TheMan |
+| TO | 12 | 1 | Hanseong's Team |
+| DD | 0 | 0 | tie |
 
-### M3 Team Scott 0-0-0 CHAN — 무승부 또는 미정
+### M3 Team Scott 10-0-0 CHAN — 승: Team Scott
 | 카테고리 | Team Scott | CHAN | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .536 (15/28) | - (-/-) | Team Scott |
+| FT% | .875 (7/8) | - (-/-) | Team Scott |
+| 3PTM | 7 | - | Team Scott |
+| PTS | 44 | - | Team Scott |
+| REB | 10 | - | Team Scott |
+| AST | 4 | - | Team Scott |
+| ST | 6 | - | Team Scott |
+| BLK | 1 | - | Team Scott |
+| TO | 3 | - | Team Scott |
+| DD | 0 | - | Team Scott |
 
-### M4 Cho 0-0-0 Kharami — 무승부 또는 미정
+### M4 Cho 6-3-1 Kharami — 승: Cho
 | 카테고리 | Cho | Kharami | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .440 (11/25) | .538 (7/13) | Kharami |
+| FT% | .900 (9/10) | - (0/0) | Cho |
+| 3PTM | 1 | 3 | Kharami |
+| PTS | 32 | 17 | Cho |
+| REB | 14 | 1 | Cho |
+| AST | 1 | 8 | Kharami |
+| ST | 2 | 1 | Cho |
+| BLK | 2 | 0 | Cho |
+| TO | 3 | 4 | Cho |
+| DD | 0 | 0 | tie |
 
-### M5 Hewon the game 0-0-0 ALTMAN_CH — 무승부 또는 미정
+### M5 Hewon the game 1-8-1 ALTMAN_CH — 승: ALTMAN_CH
 | 카테고리 | Hewon the game | ALTMAN_CH | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .364 (12/33) | .444 (16/36) | ALTMAN_CH |
+| FT% | .833 (5/6) | .920 (23/25) | ALTMAN_CH |
+| 3PTM | 1 | 4 | ALTMAN_CH |
+| PTS | 30 | 59 | ALTMAN_CH |
+| REB | 14 | 15 | ALTMAN_CH |
+| AST | 7 | 8 | ALTMAN_CH |
+| ST | 1 | 3 | ALTMAN_CH |
+| BLK | 1 | 7 | ALTMAN_CH |
+| TO | 2 | 3 | Hewon the game |
+| DD | 0 | 0 | tie |
 
-### M6 Team Jaewon 0-0-0 hyun's Team — 무승부 또는 미정
+### M6 Team Jaewon 5-4-1 hyun's Team — 승: Team Jaewon
 | 카테고리 | Team Jaewon | hyun's Team | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .273 (3/11) | .261 (6/23) | Team Jaewon |
+| FT% | .500 (1/2) | 1.000 (1/1) | hyun's Team |
+| 3PTM | 0 | 0 | tie |
+| PTS | 7 | 13 | hyun's Team |
+| REB | 7 | 4 | Team Jaewon |
+| AST | 3 | 11 | hyun's Team |
+| ST | 1 | 0 | Team Jaewon |
+| BLK | 3 | 0 | Team Jaewon |
+| TO | 1 | 2 | Team Jaewon |
+| DD | 0 | 1 | hyun's Team |
 
-### M7 TEAM G-JAY 0-0-0 SEOB's ME7O team — 무승부 또는 미정
+### M7 TEAM G-JAY 4-6-0 SEOB's ME7O team — 승: SEOB's ME7O team
 | 카테고리 | TEAM G-JAY | SEOB's ME7O team | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .361 (13/36) | .462 (18/39) | SEOB's ME7O team |
+| FT% | .800 (4/5) | .750 (3/4) | TEAM G-JAY |
+| 3PTM | 7 | 3 | TEAM G-JAY |
+| PTS | 37 | 42 | SEOB's ME7O team |
+| REB | 18 | 12 | TEAM G-JAY |
+| AST | 7 | 9 | SEOB's ME7O team |
+| ST | 2 | 5 | SEOB's ME7O team |
+| BLK | 3 | 4 | SEOB's ME7O team |
+| TO | 7 | 5 | SEOB's ME7O team |
+| DD | 1 | 0 | TEAM G-JAY |
 
-### M8 YoungHun`s Team Bravo 0-0-0 Jaehun's Matchless Team — 무승부 또는 미정
+### M8 YoungHun`s Team Bravo 6-4-0 Jaehun's Matchless Team — 승: YoungHun`s Team Bravo
 | 카테고리 | YoungHun`s Team Bravo | Jaehun's Matchless Team | 승 |
 |---|---|---|---|
-| FG% | - (-/-) | - (-/-) |  |
-| FT% | - (-/-) | - (-/-) |  |
-| 3PTM | - | - |  |
-| PTS | - | - |  |
-| REB | - | - |  |
-| AST | - | - |  |
-| ST | - | - |  |
-| BLK | - | - |  |
-| TO | - | - |  |
-| DD | - | - |  |
+| FG% | .565 (13/23) | .143 (3/21) | YoungHun`s Team Bravo |
+| FT% | .714 (5/7) | .833 (10/12) | Jaehun's Matchless Team |
+| 3PTM | 2 | 0 | YoungHun`s Team Bravo |
+| PTS | 33 | 16 | YoungHun`s Team Bravo |
+| REB | 15 | 18 | Jaehun's Matchless Team |
+| AST | 13 | 9 | YoungHun`s Team Bravo |
+| ST | 2 | 1 | YoungHun`s Team Bravo |
+| BLK | 1 | 6 | Jaehun's Matchless Team |
+| TO | 4 | 5 | YoungHun`s Team Bravo |
+| DD | 0 | 1 | Jaehun's Matchless Team |
 
 ## 순위
 | ID | 순위 | 팀 | 전적 | 승률 | 직전 순위 | 변동 |
@@ -361,7 +361,8 @@
 - C2 2026-10-20 · Hanseong's Team · Coby White: SG → BN (벤치로 내림, 그날 기록 없음)
 
 ## 스토리 훅
-- 없음
+- H1 대승: Team Scott 10-0-0 CHAN
+- H2 대승: ALTMAN_CH 8-1-1 Hewon the game
 
 ## 다음 주 대진
 - N1 Baesen (None위, 0-0-0) vs TheMan (None위, 0-0-0)

@@ -55,17 +55,23 @@ def _categories(conn):
 
 # ---- matchups ------------------------------------------------------------
 
-def _compare(cat, stats_a, stats_b):
-    """'a' / 'b' / 'tie' from the two teams' values, or None if either is missing."""
-    va = vb = None
+def _value(cat, stats):
+    """One side's value: made/attempted for a percentage (None if nothing was attempted), else the number."""
     if cat["source_id"]:
-        ra, rb = ratio(stats_a.get(cat["source_id"])), ratio(stats_b.get(cat["source_id"]))
-        if ra and rb and ra[1] and rb[1]:
-            va, vb = ra[0] / ra[1], rb[0] / rb[1]
-    if va is None or vb is None:
-        va, vb = number(stats_a.get(cat["stat_id"])), number(stats_b.get(cat["stat_id"]))
-    if va is None or vb is None:
+        r = ratio(stats.get(cat["source_id"]))
+        if r:
+            return r[0] / r[1] if r[1] else None
+    return number(stats.get(cat["stat_id"]))
+
+
+def _compare(cat, stats_a, stats_b):
+    """'a' / 'b' / 'tie' from the two teams' values, or None if neither has one."""
+    va, vb = _value(cat, stats_a), _value(cat, stats_b)
+    if va is None and vb is None:
         return None
+    if va is None or vb is None:
+        # Yahoo gives the category to the side that has a value (no games, or 0/0 attempts).
+        return "a" if vb is None else "b"
     if va == vb:
         return "tie"
     return "a" if (va < vb) == cat["lower"] else "b"

@@ -65,99 +65,99 @@
     "IN's WooSSa Team"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "6-3-1",
+    "3-6-1"
    ],
-   "winner": null,
+   "winner": "Baesen",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".526",
+      ".500"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "10/19",
+      "4/8"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".556",
+      "1.000"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "5/9",
+      "3/3"
      ],
-     "winner": null
+     "winner": "IN's WooSSa Team"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "3",
+      "0"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "28",
+      "11"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "16",
+      "11"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "2",
+      "5"
      ],
-     "winner": null
+     "winner": "IN's WooSSa Team"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "2",
+      "1"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "2",
+      "0"
      ],
-     "winner": null
+     "winner": "Baesen"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "5",
+      "3"
      ],
-     "winner": null
+     "winner": "IN's WooSSa Team"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "1",
+      "1"
      ],
-     "winner": null
+     "winner": "tie"
     }
    ]
   },
@@ -168,99 +168,99 @@
     "Hanseong's Team"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "7-2-1",
+    "2-7-1"
    ],
-   "winner": null,
+   "winner": "TheMan",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".453",
+      ".471"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "24/53",
+      "8/17"
      ],
-     "winner": null
+     "winner": "Hanseong's Team"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".800",
+      ".625"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "16/20",
+      "5/8"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "4",
+      "2"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "68",
+      "23"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "21",
+      "15"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "16",
+      "8"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "3",
+      "2"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "5",
+      "1"
      ],
-     "winner": null
+     "winner": "TheMan"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "12",
+      "1"
      ],
-     "winner": null
+     "winner": "Hanseong's Team"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "0",
+      "0"
      ],
-     "winner": null
+     "winner": "tie"
     }
    ]
   },
@@ -271,99 +271,99 @@
     "CHAN"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "10-0-0",
+    "0-10-0"
    ],
-   "winner": null,
+   "winner": "Team Scott",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
+      ".536",
       "-"
      ],
      "made_attempted": [
-      "-/-",
+      "15/28",
       "-/-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
+      ".875",
       "-"
      ],
      "made_attempted": [
-      "-/-",
+      "7/8",
       "-/-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
+      "7",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
+      "44",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "REB",
      "values": [
-      "-",
+      "10",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "AST",
      "values": [
-      "-",
+      "4",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "ST",
      "values": [
-      "-",
+      "6",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
+      "1",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "TO",
      "values": [
-      "-",
+      "3",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     },
     {
      "name": "DD",
      "values": [
-      "-",
+      "0",
       "-"
      ],
-     "winner": null
+     "winner": "Team Scott"
     }
    ]
   },
@@ -374,99 +374,99 @@
     "Kharami"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "6-3-1",
+    "3-6-1"
    ],
-   "winner": null,
+   "winner": "Cho",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".440",
+      ".538"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "11/25",
+      "7/13"
      ],
-     "winner": null
+     "winner": "Kharami"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
+      ".900",
       "-"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "9/10",
+      "0/0"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "1",
+      "3"
      ],
-     "winner": null
+     "winner": "Kharami"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "32",
+      "17"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "14",
+      "1"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "1",
+      "8"
      ],
-     "winner": null
+     "winner": "Kharami"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "2",
+      "1"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "2",
+      "0"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "3",
+      "4"
      ],
-     "winner": null
+     "winner": "Cho"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "0",
+      "0"
      ],
-     "winner": null
+     "winner": "tie"
     }
    ]
   },
@@ -477,99 +477,99 @@
     "ALTMAN_CH"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "1-8-1",
+    "8-1-1"
    ],
-   "winner": null,
+   "winner": "ALTMAN_CH",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".364",
+      ".444"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "12/33",
+      "16/36"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".833",
+      ".920"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "5/6",
+      "23/25"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "1",
+      "4"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "30",
+      "59"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "14",
+      "15"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "7",
+      "8"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "1",
+      "3"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "1",
+      "7"
      ],
-     "winner": null
+     "winner": "ALTMAN_CH"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "2",
+      "3"
      ],
-     "winner": null
+     "winner": "Hewon the game"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "0",
+      "0"
      ],
-     "winner": null
+     "winner": "tie"
     }
    ]
   },
@@ -580,99 +580,99 @@
     "hyun's Team"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "5-4-1",
+    "4-5-1"
    ],
-   "winner": null,
+   "winner": "Team Jaewon",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".273",
+      ".261"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "3/11",
+      "6/23"
      ],
-     "winner": null
+     "winner": "Team Jaewon"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".500",
+      "1.000"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "1/2",
+      "1/1"
      ],
-     "winner": null
+     "winner": "hyun's Team"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "0",
+      "0"
      ],
-     "winner": null
+     "winner": "tie"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "7",
+      "13"
      ],
-     "winner": null
+     "winner": "hyun's Team"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "7",
+      "4"
      ],
-     "winner": null
+     "winner": "Team Jaewon"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "3",
+      "11"
      ],
-     "winner": null
+     "winner": "hyun's Team"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "1",
+      "0"
      ],
-     "winner": null
+     "winner": "Team Jaewon"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "3",
+      "0"
      ],
-     "winner": null
+     "winner": "Team Jaewon"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "1",
+      "2"
      ],
-     "winner": null
+     "winner": "Team Jaewon"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "0",
+      "1"
      ],
-     "winner": null
+     "winner": "hyun's Team"
     }
    ]
   },
@@ -683,99 +683,99 @@
     "SEOB's ME7O team"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "4-6-0",
+    "6-4-0"
    ],
-   "winner": null,
+   "winner": "SEOB's ME7O team",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".361",
+      ".462"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "13/36",
+      "18/39"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".800",
+      ".750"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "4/5",
+      "3/4"
      ],
-     "winner": null
+     "winner": "TEAM G-JAY"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "7",
+      "3"
      ],
-     "winner": null
+     "winner": "TEAM G-JAY"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "37",
+      "42"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "18",
+      "12"
      ],
-     "winner": null
+     "winner": "TEAM G-JAY"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "7",
+      "9"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "2",
+      "5"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "3",
+      "4"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "7",
+      "5"
      ],
-     "winner": null
+     "winner": "SEOB's ME7O team"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "1",
+      "0"
      ],
-     "winner": null
+     "winner": "TEAM G-JAY"
     }
    ]
   },
@@ -786,99 +786,99 @@
     "Jaehun's Matchless Team"
    ],
    "score": [
-    "0-0-0",
-    "0-0-0"
+    "6-4-0",
+    "4-6-0"
    ],
-   "winner": null,
+   "winner": "YoungHun`s Team Bravo",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      "-",
-      "-"
+      ".565",
+      ".143"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "13/23",
+      "3/21"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "FT%",
      "values": [
-      "-",
-      "-"
+      ".714",
+      ".833"
      ],
      "made_attempted": [
-      "-/-",
-      "-/-"
+      "5/7",
+      "10/12"
      ],
-     "winner": null
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "3PTM",
      "values": [
-      "-",
-      "-"
+      "2",
+      "0"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "PTS",
      "values": [
-      "-",
-      "-"
+      "33",
+      "16"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "REB",
      "values": [
-      "-",
-      "-"
+      "15",
+      "18"
      ],
-     "winner": null
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "AST",
      "values": [
-      "-",
-      "-"
+      "13",
+      "9"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "ST",
      "values": [
-      "-",
-      "-"
+      "2",
+      "1"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "BLK",
      "values": [
-      "-",
-      "-"
+      "1",
+      "6"
      ],
-     "winner": null
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "TO",
      "values": [
-      "-",
-      "-"
+      "4",
+      "5"
      ],
-     "winner": null
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "DD",
      "values": [
-      "-",
-      "-"
+      "0",
+      "1"
      ],
-     "winner": null
+     "winner": "Jaehun's Matchless Team"
     }
    ]
   }
@@ -4105,7 +4105,22 @@
    "played": false
   }
  ],
- "hooks": [],
+ "hooks": [
+  {
+   "id": "H1",
+   "type": "blowout",
+   "winner": "Team Scott",
+   "loser": "CHAN",
+   "score": "10-0-0"
+  },
+  {
+   "id": "H2",
+   "type": "blowout",
+   "winner": "ALTMAN_CH",
+   "loser": "Hewon the game",
+   "score": "8-1-1"
+  }
+ ],
  "next_week": [
   {
    "id": "N1",
