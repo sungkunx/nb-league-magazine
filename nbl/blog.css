@@ -166,7 +166,7 @@ time { font-variant-numeric: tabular-nums; }
 .special a { display: grid; grid-template-columns: 132px 1fr auto; gap: 20px; align-items: baseline; text-decoration: none; }
 .special .tag { color: var(--special); font-weight: 700; }
 .special .ed-title { font-size: 20px; }
-.special-extra .tag { justify-self: start; padding: 0 10px; background: var(--end); color: var(--sheet); }
+.special-extra .tag { color: var(--end); }
 .nothing { padding: 48px 0; color: var(--soft); }
 
 /* a post */
