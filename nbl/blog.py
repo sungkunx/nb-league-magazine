@@ -6,7 +6,7 @@ A post is a Markdown file with a short header:
     title: Week 1 최종 결과
     date: 2026-10-26T22:00+09:00
     kind: week-end            # week-start | week-mid | week-end | week-cartoon |
-                              # draft | preseason | playoff | extra | notice
+                              # draft | preseason | playoff | extra | feature | waiver | notice
     week: 1                   # weekly posts (optional for the others)
     summary: 카톡 미리보기에 뜨는 한 줄
     cover: images/w01-end.png # optional; lives in <posts>/images/
@@ -39,8 +39,9 @@ from pathlib import Path
 from . import markdown
 
 EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막", "week-cartoon": "만평"}
-SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외", "notice": "안내",
-            "guide": "가이드"}
+SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외",
+            "feature": "특집", "waiver": "웨이버", "notice": "안내", "guide": "가이드"}
+OWN_COLOUR = ("extra", "waiver")  # specials painted in their own colour; the rest share --special
 GUIDE = "guide"  # one standing page, linked from the legend instead of listed among the posts
 CARTOON_PICTURES = 3
 _PICTURE = re.compile(r"!\[[^\]]*\]\((images/[^)\s]+)\)")
@@ -312,7 +313,7 @@ def _day(date):
 def _kind_class(post):
     if post["kind"] in EDITIONS:
         return post["kind"][5:]
-    return "extra" if post["kind"] == "extra" else "special"
+    return post["kind"] if post["kind"] in OWN_COLOUR else "special"
 
 
 def _label(post):

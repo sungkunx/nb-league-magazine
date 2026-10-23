@@ -11,6 +11,7 @@
   --mid: #b87900;
   --end: #c2263a;
   --special: #5140bd;
+  --waiver: #3d7a1f;
   --display: "Black Han Sans", "IBM Plex Sans KR", sans-serif;
   --text: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
@@ -25,6 +26,7 @@
     --mid: #f0b43c;
     --end: #ff6b7d;
     --special: #a99bff;
+    --waiver: #8fd46b;
   }
 }
 
@@ -167,6 +169,7 @@ time { font-variant-numeric: tabular-nums; }
 .special .tag { color: var(--special); font-weight: 700; }
 .special .ed-title { font-size: 20px; }
 .special-extra .tag { color: var(--end); }
+.special-waiver .tag { color: var(--waiver); }
 .nothing { padding: 48px 0; color: var(--soft); }
 
 /* a post */
@@ -179,6 +182,7 @@ time { font-variant-numeric: tabular-nums; }
 .kind-special { --edition: var(--special); }
 .kind-cartoon { --edition: var(--ink); }
 .kind-extra { --edition: var(--end); }
+.kind-waiver { --edition: var(--waiver); }
 .post h1 { margin: 0 0 14px; font-family: var(--display); font-weight: 400; font-size: clamp(32px, 7.4vw, 54px); line-height: 1.16; }
 .post > header time { color: var(--soft); font-size: 15px; }
 .cover { margin: 24px 0 0; }

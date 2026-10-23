@@ -359,6 +359,20 @@ class ExtraTests(Base):
         self.assertIn('class="post kind-extra"', page)
         self.assertIn('<p class="tag">호외</p>', page)
 
+    def test_feature_and_waiver_have_their_own_tags(self):
+        self.write("injury.md", post(title="부상전문가", kind="feature", week=None, date="2026-10-21T18:00+09:00"))
+        self.write("waiver-w01.md", post(title="고민되십니까", kind="waiver", week=1, date="2026-10-22T18:00+09:00"))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<section class="special special-feature">', html)
+        self.assertIn('<span class="tag">특집</span>', html)
+        self.assertIn('<section class="special special-waiver">', html)
+        self.assertIn('<span class="tag">웨이버</span>', html)
+        self.assertIn('class="post kind-special"', self.page("posts/injury/index.html"))
+        page = self.page("posts/waiver-w01/index.html")
+        self.assertIn('class="post kind-waiver"', page)
+        self.assertIn('<p class="tag">웨이버</p>', page)
+
     def test_extra_may_name_a_week_for_its_tables(self):
         self.assertEqual(blog.parse_post(post(kind="extra", week=3), "extra-1105")["week"], 3)
 

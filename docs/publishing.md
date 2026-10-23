@@ -24,12 +24,14 @@ cover: images/w03-end.png
 |---|---|---|
 | `week-start` / `week-mid` / `week-end` | 주간 시작 / 중간 / 마지막 | 필수 |
 | `week-cartoon` | 주간 만평 | 필수 |
-| `extra` | 호외 | 선택(표를 넣을 때) |
+| `extra` | 호외 (빨강, 수집 뒤 데이터에서 터진 속보만) | 선택(표를 넣을 때) |
+| `feature` | 특집 (보라, 주제를 정한 기획 글·편집장 요청 글) | 선택 |
+| `waiver` | 웨이버 (초록, FA·웨이버 추천 코너) | 선택 |
 | `draft` / `preseason` / `playoff` / `notice` | 드래프트 평가 / 개막 전 / 플레이오프 특집 / 안내 | 없음 |
 | `guide` | 시즌 가이드 (한 편만, 목록 대신 첫 화면 안내문 오른쪽 링크) | 없음 |
 
 권장 파일 이름: `wNN-start.md`, `wNN-mid.md`, `wNN-end.md`, `wNN-cartoon.md`,
-`extra-MMDD.md`, `draft.md`, `preseason.md`, `playoff.md`.
+`extra-MMDD.md`, `waiver-wNN.md`, `draft.md`, `preseason.md`, `playoff.md`.
 무엇을 언제 쓰는지는 `docs/editorial.md`.
 
 ## 본문에서 쓸 수 있는 것
