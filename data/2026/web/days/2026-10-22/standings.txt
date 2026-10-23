@@ -1,0 +1,18 @@
+#nbl-standings v1 base=/nba/80126
+R|1|1|Baesen|0-0-0|.000|2
+R|2|2|TheMan|0-0-0|.000|1
+R|3|3|Team Scott|0-0-0|.000|2
+R|4|4|Cho|0-0-0|.000|2
+R|5|5|Hewon the game|0-0-0|.000|1
+R|6|6|Team Jaewon|0-0-0|.000|1
+R|7|7|TEAM G-JAY|0-0-0|.000|3
+R|8|8|YoungHun`s Team Bravo|0-0-0|.000|1
+R|9|9|Hanseong's Team|0-0-0|.000|-
+R|10|10|CHAN|0-0-0|.000|2
+R|11|11|Kharami|0-0-0|.000|1
+R|12|12|SEOB's ME7O team|0-0-0|.000|-
+R|13|13|hyun's Team|0-0-0|.000|2
+R|14|14|IN's WooSSa Team|0-0-0|.000|-
+R|15|15|Jaehun's Matchless Team|0-0-0|.000|1
+R|16|16|ALTMAN_CH|0-0-0|.000|4
+#crc=38e3e1c3 lines=17
