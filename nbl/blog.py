@@ -38,7 +38,9 @@ from pathlib import Path
 
 from . import markdown
 
-EDITIONS = {"week-start": "시작", "week-mid": "중간", "week-end": "마지막", "week-cartoon": "만평"}
+EDITIONS = {"week-start": "시작", "week-mid": "점검", "week-end": "결과", "week-cartoon": "만평"}
+SLOTS = ("week-start", "week-end", "week-cartoon")  # fixed cards in a week box; the mid-week check is listed with the rest
+PRESEASON = ("draft", "preseason", "notice")  # kinds that belong to Week 0 (개막 전) unless they name a week
 SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외",
             "feature": "특집", "waiver": "웨이버", "notice": "안내", "guide": "가이드"}
 OWN_COLOUR = ("extra", "waiver")  # specials painted in their own colour; the rest share --special
@@ -83,7 +85,9 @@ def parse_post(text, slug):
         if not meta["week"].isdigit():
             raise BlogError(f"{slug}: week '{meta['week']}' is not a number")
         week = int(meta["week"])
-    if meta["kind"] in EDITIONS and week is None:
+    if week is None and meta["kind"] in PRESEASON:
+        week = 0
+    if week is None and meta["kind"] != GUIDE:
         raise BlogError(f"{slug}: a {meta['kind']} post needs 'week'")
     status = meta.get("status") or "published"
     if status not in ("published", "review"):
@@ -436,35 +440,41 @@ def _team_page(site, team, entries):
     return _page(site, f'{team["name"]} · {site["title"]}', description, root, body, f'{base}/teams/{team["id"]}/')
 
 
+def _week_item(p):
+    tag = EDITIONS[p["kind"]] if p["kind"] in EDITIONS else SPECIALS[p["kind"]]
+    return (f'<li><a href="posts/{esc(p["slug"])}/"><span class="tag tag-{_kind_class(p)}">{tag}</span>'
+            f'<span class="ed-title">{esc(p["title"])}</span>'
+            f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time></a></li>')
+
+
+def _week(week, group):
+    """One week box: the start/result/cartoon cards (from Week 1 on) and every other post of the week by date."""
+    head = (f'<h2><span>Week</span> {week}<span class="week-sub">개막 전</span></h2>' if week == 0
+            else f'<h2><span>Week</span> {week}</h2>')
+    parts = []
+    if week:
+        slots = "\n".join(_slot(kind, [p for p in group if p["kind"] == kind]) for kind in SLOTS)
+        parts.append(f'<ol class="editions">\n{slots}\n</ol>')
+    rest = sorted((p for p in group if week == 0 or p["kind"] not in SLOTS), key=lambda p: p["date"])
+    if rest:
+        label = "개막 전 기사" if week == 0 else "이번 주 기사"
+        items = "\n".join(_week_item(p) for p in rest)
+        parts.append(f'<ol class="inweek">\n<li class="inweek-head">{label} · {len(rest)}편</li>\n{items}\n</ol>')
+    return f'<section class="week">\n{head}\n<div class="week-body">\n' + "\n".join(parts) + '\n</div>\n</section>'
+
+
 def _index(site, posts, team_nav="", guide=None):
     weeks = {}
-    items = []  # (sort time, html)
     for p in posts:
-        if p["kind"] in EDITIONS:
-            weeks.setdefault(p["week"], []).append(p)
-        else:
-            items.append((p["date"].timestamp(), (
-                f'<section class="special special-{p["kind"]}">\n<a href="posts/{esc(p["slug"])}/">'
-                f'<span class="tag">{SPECIALS[p["kind"]]}</span>'
-                f'<span class="ed-title">{esc(p["title"])}</span>'
-                f'<time datetime="{p["date"].isoformat()}">{_day(p["date"])}</time></a>\n</section>'
-            )))
-    for week, group in weeks.items():
-        slots = "\n".join(_slot(kind, [p for p in group if p["kind"] == kind]) for kind in EDITIONS)
-        items.append((max(p["date"].timestamp() for p in group), (
-            f'<section class="week">\n<h2><span>Week</span> {week}</h2>\n'
-            f'<ol class="editions">\n{slots}\n</ol>\n</section>'
-        )))
-    listing = "\n".join(block for _, block in sorted(items, key=lambda item: -item[0]))
+        weeks.setdefault(p["week"], []).append(p)
+    listing = "\n".join(_week(week, weeks[week]) for week in sorted(weeks, reverse=True))
     if not posts:
         listing = '<p class="nothing">아직 발행된 글이 없습니다. 드래프트가 끝나면 첫 글이 올라옵니다.</p>'
     body = (
         _masthead(site, "")
-        + '\n<p class="legend"><span>매주 세 번 발행합니다. '
-          '<span class="key key-start">시작</span> 대진 미리보기, '
-          '<span class="key key-mid">중간</span> 주중 점검, '
-          '<span class="key key-end">마지막</span> 주간 결산. '
-          '주마다 <span class="key key-cartoon">만평</span> 한 편, 큰일이 나면 호외.</span>'
+        + '\n<p class="legend"><span>매주 <span class="key key-start">시작</span> 대진 미리보기, '
+          '<span class="key key-end">결과</span> 주간 결산, <span class="key key-cartoon">만평</span> 한 편. '
+          '주중 점검과 특집·웨이버·호외는 그 주 안에 함께 묶입니다.</span>'
         + (f'<a class="guide-link" href="posts/{esc(guide["slug"])}/">{esc(guide["title"])} →</a>' if guide else "")
         + '</p>'
         + '\n<div class="tools">' + team_nav

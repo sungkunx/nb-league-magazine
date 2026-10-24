@@ -149,7 +149,19 @@ time { font-variant-numeric: tabular-nums; }
   font-variant-numeric: tabular-nums;
 }
 .week h2 span { display: block; font-family: var(--text); font-weight: 700; font-size: 15px; line-height: 1.4; color: var(--soft); }
-.editions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.week-body { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.week-sub { display: block; margin-top: 6px; font-family: var(--text); font-weight: 700; font-size: 15px; color: var(--special); }
+.editions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.inweek { list-style: none; margin: 0; padding: 0; background: var(--sheet); }
+.inweek-head { color: var(--soft); font-size: 14px; font-weight: 700; padding: 10px 14px 4px; }
+.inweek a { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: baseline; padding: 10px 14px; border-top: 1px solid var(--rule); text-decoration: none; }
+.inweek a:hover .ed-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.inweek .tag { font-weight: 700; color: var(--special); }
+.inweek .tag-extra { color: var(--end); }
+.inweek .tag-waiver { color: var(--waiver); }
+.inweek .tag-mid { color: var(--mid); }
+.inweek .ed-title { font-size: 17px; }
+.inweek time { color: var(--soft); font-size: 14px; white-space: nowrap; }
 .ed { background: var(--sheet); border-top: 5px solid var(--edition); display: flex; flex-direction: column; min-height: 132px; }
 .ed-start { --edition: var(--start); }
 .ed-mid { --edition: var(--mid); }
@@ -237,6 +249,9 @@ td.tie { color: var(--soft); }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }
   .editions { grid-template-columns: 1fr; gap: 8px; }
+  .inweek a { grid-template-columns: 1fr auto; gap: 2px 12px; }
+  .inweek .tag { grid-column: 1 / -1; }
+  .week-sub { display: inline; margin: 0 0 0 4px; }
   .ed { min-height: 0; flex-direction: row; align-items: baseline; flex-wrap: wrap; }
   .ed-name { padding: 10px 0 10px 14px; min-width: 64px; }
   .ed a { flex-direction: row; align-items: baseline; padding: 10px 14px 10px 0; }

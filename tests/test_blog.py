@@ -83,16 +83,36 @@ class BuildTests(Base):
         self.assertIn("<strong>Jokić</strong>", html)
         self.assertIn('<html lang="ko">', html)
 
-    def test_index_groups_the_three_editions_of_a_week_in_order(self):
-        self.write("w01-end.md", post(title="마지막 글", date="2026-10-26T22:00+09:00", kind="week-end"))
+    def test_index_shows_start_result_cartoon_slots_and_lists_the_rest_of_the_week(self):
+        self.write("w01-end.md", post(title="결과 글", date="2026-10-26T22:00+09:00", kind="week-end"))
         self.write("w01-start.md", post(title="시작 글", date="2026-10-20T20:00+09:00", kind="week-start"))
-        self.write("w01-mid.md", post(title="중간 글", date="2026-10-23T22:00+09:00", kind="week-mid"))
+        self.write("w01-mid.md", post(title="점검 글", date="2026-10-23T22:00+09:00", kind="week-mid"))
         self.build()
         html = self.page("index.html")
-        self.assertLess(html.index("시작 글"), html.index("중간 글"))
-        self.assertLess(html.index("중간 글"), html.index("마지막 글"))
+        slots = html[html.index('<ol class="editions">'):html.index("</ol>", html.index('<ol class="editions">'))]
+        self.assertIn("시작 글", slots)
+        self.assertIn("결과 글", slots)
+        self.assertNotIn("점검 글", slots)
+        self.assertNotIn("ed-mid", slots)
+        self.assertIn('<span class="ed-name">결과</span>', slots)
+        week = html[html.index('<ol class="inweek">'):]
+        self.assertIn('<span class="tag tag-mid">점검</span>', week)
+        self.assertIn("점검 글", week)
         self.assertEqual(html.count('href="posts/w01-'), 3)
         self.assertIn("Week 1", re.sub(r"<[^>]+>", "", html))
+
+    def test_posts_of_a_week_are_listed_in_date_order_inside_it(self):
+        self.write("w01-start.md", post(title="시작 글", kind="week-start", date="2026-10-20T20:00+09:00"))
+        self.write("b.md", post(title="둘째", kind="feature", date="2026-10-23T20:00+09:00"))
+        self.write("a.md", post(title="첫째", kind="extra", date="2026-10-21T20:00+09:00"))
+        self.write("w02-start.md", post(title="이주차", kind="week-start", week=2, date="2026-10-27T20:00+09:00"))
+        self.build()
+        html = self.page("index.html")
+        week1 = html[html.index("시작 글"):]
+        self.assertLess(week1.index("첫째"), week1.index("둘째"))
+        self.assertLess(html.index("이주차"), html.index("첫째"))
+        self.assertIn("이번 주 기사 · 2편", html)
+        self.assertNotIn('class="special', html)
 
     def test_newer_weeks_come_first(self):
         self.write("w01-end.md", post(title="일주차", week=1))
@@ -105,15 +125,30 @@ class BuildTests(Base):
         self.write("w01-start.md", post(title="시작 글", kind="week-start"))
         self.build()
         html = self.page("index.html")
-        self.assertEqual(html.count("예정"), 3)
+        self.assertEqual(html.count("예정"), 2)
 
-    def test_special_posts_sit_among_the_weeks_by_date(self):
+    def test_preseason_posts_form_week_zero_without_slots(self):
         self.write("draft.md", post(title="드래프트 평가", kind="draft", week=None, date="2026-10-19T20:00+09:00"))
+        self.write("moves.md", post(title="전날 줍줍", kind="preseason", week=None, date="2026-10-20T23:50+09:00"))
         self.write("w01-end.md", post(title="일주차 결과", week=1))
         self.build()
         html = self.page("index.html")
         self.assertLess(html.index("일주차 결과"), html.index("드래프트 평가"))
+        zero = html[html.index("Week</span> 0"):]
+        self.assertIn('<span class="week-sub">개막 전</span>', zero)
+        self.assertIn("개막 전 기사 · 2편", zero)
+        self.assertLess(zero.index("드래프트 평가"), zero.index("전날 줍줍"))
+        self.assertNotIn("editions", zero)
         self.assertIn('href="posts/draft/"', html)
+
+    def test_feature_waiver_and_extra_need_a_week(self):
+        for kind in ("feature", "waiver", "extra"):
+            with self.assertRaisesRegex(blog.BlogError, f"a {kind} post needs 'week'"):
+                blog.parse_post(post(kind=kind, week=None), "x")
+
+    def test_preseason_kinds_default_to_week_zero(self):
+        for kind in ("draft", "preseason", "notice"):
+            self.assertEqual(blog.parse_post(post(kind=kind, week=None), "x")["week"], 0)
 
     def test_empty_blog_says_so(self):
         self.build()
@@ -346,28 +381,26 @@ class CartoonTests(Base):
 class ExtraTests(Base):
     """호외: an unscheduled special, with or without a week."""
 
-    def test_extra_is_listed_among_the_weeks_and_labelled(self):
+    def test_extra_is_listed_inside_its_week_and_labelled(self):
         self.write("w01-start.md", post(title="시작 글", kind="week-start", date="2026-10-20T20:00+09:00"))
-        self.write("extra-1022.md", post(title="하루 4건의 트레이드", kind="extra", week=None,
+        self.write("extra-1022.md", post(title="하루 4건의 트레이드", kind="extra",
                                          date="2026-10-22T18:00+09:00"))
         self.build()
         html = self.page("index.html")
-        self.assertIn('<section class="special special-extra">', html)
-        self.assertIn('<span class="tag">호외</span>', html)
-        self.assertLess(html.index("하루 4건의 트레이드"), html.index("시작 글"))
+        self.assertIn('<span class="tag tag-extra">호외</span>', html)
+        self.assertLess(html.index("시작 글"), html.index("하루 4건의 트레이드"))
         page = self.page("posts/extra-1022/index.html")
         self.assertIn('class="post kind-extra"', page)
         self.assertIn('<p class="tag">호외</p>', page)
 
     def test_feature_and_waiver_have_their_own_tags(self):
-        self.write("injury.md", post(title="부상전문가", kind="feature", week=None, date="2026-10-21T18:00+09:00"))
+        self.write("injury.md", post(title="부상전문가", kind="feature", week=0, date="2026-10-19T18:00+09:00"))
         self.write("waiver-w01.md", post(title="고민되십니까", kind="waiver", week=1, date="2026-10-22T18:00+09:00"))
         self.build()
         html = self.page("index.html")
-        self.assertIn('<section class="special special-feature">', html)
-        self.assertIn('<span class="tag">특집</span>', html)
-        self.assertIn('<section class="special special-waiver">', html)
-        self.assertIn('<span class="tag">웨이버</span>', html)
+        self.assertIn('<span class="tag tag-special">특집</span>', html)
+        self.assertIn('<span class="tag tag-waiver">웨이버</span>', html)
+        self.assertLess(html.index("고민되십니까"), html.index("부상전문가"))
         self.assertIn('class="post kind-special"', self.page("posts/injury/index.html"))
         page = self.page("posts/waiver-w01/index.html")
         self.assertIn('class="post kind-waiver"', page)
@@ -512,7 +545,7 @@ class SearchTests(Base):
         entries = self.entries()
         self.assertEqual(len(entries), 1)
         e = entries[0]
-        self.assertEqual((e["title"], e["url"], e["label"], e["date"]), ("결산 글", "posts/w01-end/", "Week 1 마지막", "10.26"))
+        self.assertEqual((e["title"], e["url"], e["label"], e["date"]), ("결산 글", "posts/w01-end/", "Week 1 결과", "10.26"))
         self.assertEqual(e["text"], "MVP Jokić가 폭발했습니다. 둘째 줄")
 
     def test_newest_post_comes_first_in_the_search_list(self):

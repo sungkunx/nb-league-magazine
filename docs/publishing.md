@@ -22,13 +22,19 @@ cover: images/w03-end.png
 
 | `kind` | 뜻 | `week` |
 |---|---|---|
-| `week-start` / `week-mid` / `week-end` | 주간 시작 / 중간 / 마지막 | 필수 |
+| `week-start` / `week-mid` / `week-end` | 주간 시작 / 점검 / 결과 | 필수 |
 | `week-cartoon` | 주간 만평 | 필수 |
-| `extra` | 호외 (빨강, 수집 뒤 데이터에서 터진 속보만) | 선택(표를 넣을 때) |
-| `feature` | 특집 (보라, 주제를 정한 기획 글·편집장 요청 글) | 선택 |
-| `waiver` | 웨이버 (초록, FA·웨이버 추천 코너) | 선택 |
-| `draft` / `preseason` / `playoff` / `notice` | 드래프트 평가 / 개막 전 / 플레이오프 특집 / 안내 | 없음 |
+| `extra` | 호외 (빨강, 수집 뒤 데이터에서 터진 속보만) | 필수 |
+| `feature` | 특집 (보라, 주제를 정한 기획 글·편집장 요청 글) | 필수 |
+| `waiver` | 웨이버 (초록, FA·웨이버 추천 코너) | 필수 |
+| `playoff` | 플레이오프 특집 | 필수 |
+| `draft` / `preseason` / `notice` | 드래프트 평가 / 개막 전 / 안내 | 없으면 0 (개막 전) |
 | `guide` | 시즌 가이드 (한 편만, 목록 대신 첫 화면 안내문 오른쪽 링크) | 없음 |
+
+첫 화면은 주차별 상자로 쌓인다(새 주가 위). `week`가 그 글이 들어갈 상자다.
+- Week 1부터: 위에 **시작 / 결과 / 만평** 세 칸, 그 아래 "이번 주 기사"에 점검·호외·특집·웨이버를 날짜순으로.
+- Week 0 (개막 전): 칸 없이 "개막 전 기사" 목록만. 개막 전에 쓴 특집·웨이버는 `week: 0`.
+- 글이 나온 날이 그 판타지 주(한국 시간 화요일 오후 4시~다음 월요일 오후 4시, 11월부터 5시) 안이면 그 주 번호를 쓴다.
 
 권장 파일 이름: `wNN-start.md`, `wNN-mid.md`, `wNN-end.md`, `wNN-cartoon.md`,
 `extra-MMDD.md`, `waiver-wNN.md`, `draft.md`, `preseason.md`, `playoff.md`.

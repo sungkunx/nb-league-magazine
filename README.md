@@ -85,8 +85,8 @@ python -m unittest discover -s tests -t .
 
 `posts/2026/*.md`가 글이고, `python -m nbl blog`가 정적 사이트(`site/`)를 만든다.
 main에 올리면 `pages` 워크플로가 GitHub Pages로 발행한다. 글 쓰는 법은
-`docs/publishing.md`, 무엇을 언제 쓰는지는 `docs/editorial.md`. 목록은 주차마다
-시작/중간/마지막/만평 네 칸으로 쌓이고, 호외와 특집은 날짜순으로 그 사이에 놓인다.
+`docs/publishing.md`, 무엇을 언제 쓰는지는 `docs/editorial.md`. 목록은 주차별 상자로
+쌓인다. 상자마다 시작/결과/만평 세 칸과, 그 주에 나온 점검·특집·웨이버·호외 목록. 개막 전 글은 Week 0.
 목록 위에 검색창이 있다(발행된 글 전체를 `search.json`으로 만들어 브라우저에서 찾는다. 서버 없음).
 목록 위의 팀 이름을 누르면 그 팀이 나온 글만 모은 페이지로 간다(팩트시트의 팀 이름을 본문에서 자동으로 찾는다).
 
