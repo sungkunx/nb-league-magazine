@@ -30,6 +30,7 @@ The index has a search box. It reads search.json (every published post as
 plain text) in the browser; there is no server.
 """
 import html
+import hashlib
 import json
 import re
 import shutil
@@ -50,6 +51,8 @@ _PICTURE = re.compile(r"!\[[^\]]*\]\((images/[^)\s]+)\)")
 KINDS = {**EDITIONS, **SPECIALS}
 _SHORTCODE = re.compile(r"^\{\{\s*(standings|matchups|draft|teams)(?:\s+week=(\d+))?\s*\}\}$")
 STYLE = Path(__file__).with_name("blog.css")
+# Version stamp on the stylesheet link, so a browser holding last week's style.css fetches the new one.
+_STAMP = hashlib.sha1(STYLE.read_bytes()).hexdigest()[:8]
 SEARCH = Path(__file__).with_name("search.js")
 
 
@@ -362,7 +365,7 @@ def _page(site, title, description, root, body, url, image="", hidden=False, scr
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}style.css">{script}
+<link rel="stylesheet" href="{root}style.css?v={_STAMP}">{script}
 </head>
 <body>
 {body}

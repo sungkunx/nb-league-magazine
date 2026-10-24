@@ -1,3 +1,4 @@
+import hashlib
 import json
 import re
 import tempfile
@@ -215,6 +216,8 @@ class BuildTests(Base):
         self.write("a.md", post())
         self.assertEqual(self.build(), 1)
         self.assertTrue((self.out / "style.css").exists())
+        stamp = hashlib.sha1((self.out / "style.css").read_bytes()).hexdigest()[:8]
+        self.assertIn(f'href="style.css?v={stamp}"', self.page("index.html"))
         self.assertTrue((self.out / ".nojekyll").exists())
 
 
