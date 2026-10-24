@@ -440,6 +440,18 @@ def _team_page(site, team, entries):
     return _page(site, f'{team["name"]} · {site["title"]}', description, root, body, f'{base}/teams/{team["id"]}/')
 
 
+# Lists come newest first; the button flips every week's list and the browser remembers the choice.
+_ORDER_SCRIPT = ("(function(){var K='nbl-order',old=false;try{old=localStorage.getItem(K)==='old'}catch(e){}"
+                 "function apply(){document.querySelectorAll('.inweek').forEach(function(l){"
+                 "var h=l.querySelector('.inweek-head'),items=[].slice.call(l.children).filter(function(c){return c!==h});"
+                 "items.sort(function(a,b){var x=a.querySelector('time').getAttribute('datetime'),"
+                 "y=b.querySelector('time').getAttribute('datetime');return old?(x<y?-1:x>y?1:0):(x<y?1:x>y?-1:0)});"
+                 "items.forEach(function(c){l.appendChild(c)});var b=h.querySelector('.order');"
+                 "b.textContent=old?'오래된순':'최신순';b.setAttribute('aria-pressed',old?'true':'false')})}"
+                 "document.querySelectorAll('.inweek .order').forEach(function(b){b.addEventListener('click',function(){"
+                 "old=!old;try{localStorage.setItem(K,old?'old':'new')}catch(e){}apply()})});apply()})();")
+
+
 def _week_item(p):
     tag = EDITIONS[p["kind"]] if p["kind"] in EDITIONS else SPECIALS[p["kind"]]
     return (f'<li><a href="posts/{esc(p["slug"])}/"><span class="tag tag-{_kind_class(p)}">{tag}</span>'
@@ -455,11 +467,12 @@ def _week(week, group):
     if week:
         slots = "\n".join(_slot(kind, [p for p in group if p["kind"] == kind]) for kind in SLOTS)
         parts.append(f'<ol class="editions">\n{slots}\n</ol>')
-    rest = sorted((p for p in group if week == 0 or p["kind"] not in SLOTS), key=lambda p: p["date"])
+    rest = sorted((p for p in group if week == 0 or p["kind"] not in SLOTS), key=lambda p: p["date"], reverse=True)
     if rest:
         label = "개막 전 기사" if week == 0 else "이번 주 기사"
         items = "\n".join(_week_item(p) for p in rest)
-        parts.append(f'<ol class="inweek">\n<li class="inweek-head">{label} · {len(rest)}편</li>\n{items}\n</ol>')
+        parts.append(f'<ol class="inweek">\n<li class="inweek-head"><span>{label} · {len(rest)}편</span>'
+                     f'<button type="button" class="order" aria-label="정렬 순서 바꾸기">최신순</button></li>\n{items}\n</ol>')
     return f'<section class="week">\n{head}\n<div class="week-body">\n' + "\n".join(parts) + '\n</div>\n</section>'
 
 
@@ -480,7 +493,7 @@ def _index(site, posts, team_nav="", guide=None):
         + '\n<div class="tools">' + team_nav
         + '\n<input type="search" id="q" placeholder="글 검색: 팀, 선수, 단어" aria-label="글 검색" autocomplete="off">'
           '\n<ol id="found" class="found" hidden></ol>\n</div>\n'
-        + f'<main class="board">\n{listing}\n</main>'
+        + f'<main class="board">\n{listing}\n</main>\n<script>{_ORDER_SCRIPT}</script>'
     )
     description = site.get("description") or f"{site['season']} 시즌 판타지 농구 리그 매거진"
     return _page(site, site["title"], description, "", body, site["url"].rstrip("/") + "/", script="search.js")

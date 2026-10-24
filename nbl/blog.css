@@ -153,7 +153,11 @@ time { font-variant-numeric: tabular-nums; }
 .week-sub { display: block; margin-top: 6px; font-family: var(--text); font-weight: 700; font-size: 15px; color: var(--special); }
 .editions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .inweek { list-style: none; margin: 0; padding: 0; background: var(--sheet); }
-.inweek-head { color: var(--soft); font-size: 14px; font-weight: 700; padding: 10px 14px 4px; }
+.inweek-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--soft); font-size: 14px; font-weight: 700; padding: 8px 14px 6px; }
+.inweek .order { font: inherit; font-size: 13px; color: var(--ink); background: transparent; border: 1px solid var(--rule); padding: 3px 10px; cursor: pointer; }
+.inweek .order::after { content: " ⇅"; color: var(--soft); }
+.inweek .order:hover { border-color: var(--ink); }
+.inweek .order:focus-visible { outline: 3px solid var(--special); outline-offset: 2px; }
 .inweek a { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: baseline; padding: 10px 14px; border-top: 1px solid var(--rule); text-decoration: none; }
 .inweek a:hover .ed-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .inweek .tag { font-weight: 700; color: var(--special); }

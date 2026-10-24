@@ -109,7 +109,7 @@ class BuildTests(Base):
         self.build()
         html = self.page("index.html")
         week1 = html[html.index("시작 글"):]
-        self.assertLess(week1.index("첫째"), week1.index("둘째"))
+        self.assertLess(week1.index("둘째"), week1.index("첫째"))  # newest first by default
         self.assertLess(html.index("이주차"), html.index("첫째"))
         self.assertIn("이번 주 기사 · 2편", html)
         self.assertNotIn('class="special', html)
@@ -127,6 +127,13 @@ class BuildTests(Base):
         html = self.page("index.html")
         self.assertEqual(html.count("예정"), 2)
 
+    def test_each_week_list_has_an_order_toggle(self):
+        self.write("a.md", post(title="첫째", kind="extra", date="2026-10-21T20:00+09:00"))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<button type="button" class="order" aria-label="정렬 순서 바꾸기">최신순</button>', html)
+        self.assertIn("nbl-order", html)  # the choice is remembered in the browser
+
     def test_preseason_posts_form_week_zero_without_slots(self):
         self.write("draft.md", post(title="드래프트 평가", kind="draft", week=None, date="2026-10-19T20:00+09:00"))
         self.write("moves.md", post(title="전날 줍줍", kind="preseason", week=None, date="2026-10-20T23:50+09:00"))
@@ -137,7 +144,7 @@ class BuildTests(Base):
         zero = html[html.index("Week</span> 0"):]
         self.assertIn('<span class="week-sub">개막 전</span>', zero)
         self.assertIn("개막 전 기사 · 2편", zero)
-        self.assertLess(zero.index("드래프트 평가"), zero.index("전날 줍줍"))
+        self.assertLess(zero.index("전날 줍줍"), zero.index("드래프트 평가"))
         self.assertNotIn("editions", zero)
         self.assertIn('href="posts/draft/"', html)
 
