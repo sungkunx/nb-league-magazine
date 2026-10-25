@@ -158,7 +158,7 @@ time { font-variant-numeric: tabular-nums; }
 .inweek .order::after { content: " ⇅"; color: var(--soft); }
 .inweek .order:hover { border-color: var(--ink); }
 .inweek .order:focus-visible { outline: 3px solid var(--special); outline-offset: 2px; }
-.inweek a { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: baseline; padding: 10px 14px; border-top: 1px solid var(--rule); text-decoration: none; }
+.inweek a { display: grid; grid-template-columns: 76px 1fr auto; gap: 14px; align-items: baseline; padding: 10px 14px; border-top: 1px solid var(--rule); text-decoration: none; }
 .inweek a:hover .ed-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .inweek .tag { font-weight: 700; color: var(--special); }
 .inweek .tag-extra { color: var(--end); }

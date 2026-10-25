@@ -39,7 +39,7 @@ from pathlib import Path
 
 from . import markdown
 
-EDITIONS = {"week-start": "시작", "week-mid": "점검", "week-end": "결과", "week-cartoon": "만평"}
+EDITIONS = {"week-start": "시작", "week-mid": "D-2 점검", "week-end": "결과", "week-cartoon": "만평"}
 SLOTS = ("week-start", "week-end", "week-cartoon")  # fixed cards in a week box; the mid-week check is listed with the rest
 PRESEASON = ("draft", "preseason", "notice")  # kinds that belong to Week 0 (개막 전) unless they name a week
 SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외",
@@ -490,7 +490,7 @@ def _index(site, posts, team_nav="", guide=None):
         _masthead(site, "")
         + '\n<p class="legend"><span>매주 <span class="key key-start">시작</span> 대진 미리보기, '
           '<span class="key key-end">결과</span> 주간 결산, <span class="key key-cartoon">만평</span> 한 편. '
-          '주중 점검과 특집·웨이버·호외는 그 주 안에 함께 묶입니다.</span>'
+          'D-2 점검과 특집·웨이버·호외는 그 주 안에 함께 묶입니다.</span>'
         + (f'<a class="guide-link" href="posts/{esc(guide["slug"])}/">{esc(guide["title"])} →</a>' if guide else "")
         + '</p>'
         + '\n<div class="tools">' + team_nav
