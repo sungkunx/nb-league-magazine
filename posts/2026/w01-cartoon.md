@@ -4,7 +4,6 @@ date: 2026-10-26T20:40+09:00
 kind: week-cartoon
 week: 1
 summary: 103점과 턴오버 21개를 같이 배달한 Luka, 어시스트 맛집의 리바운드 품절, 그리고 토요일 밤에 잠든 편집장. 1주차 만평 세 컷.
-status: review
 ---
 
 ![Luka Dončić가 스쿠터로 PTS 103 상자를 배달하는 동안 뒤 짐칸에서 TO 21 상자가 떨어지고, Amen Thompson과 Tyrese Haliburton이 주워 가는 그림. 스코어 Team Scott 5-5 CHAN](images/w01-cartoon-1.jpg)
