@@ -4,7 +4,6 @@ date: 2026-10-26T23:40+09:00
 kind: week-start
 week: 2
 summary: 첫 풀타임 7일 주. 9개 NBA 팀이 4경기, 선즈는 2경기. hyun's Team은 리그 최다 35경기. 8개 매치업 예상과 놓치면 안 되는 일정 포인트.
-status: review
 ---
 
 여러분, 2주차 대진 미리보기입니다!🔮
