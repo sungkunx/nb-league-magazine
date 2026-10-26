@@ -12,6 +12,11 @@
   --end: #c2263a;
   --special: #5140bd;
   --waiver: #3d7a1f;
+  --tone-0: #e5e7ec;
+  --tone-1: #dfe8f8;
+  --tone-2: #f5e9d6;
+  --tone-3: #dcefe7;
+  --tone-4: #ebe3f6;
   --display: "Black Han Sans", "IBM Plex Sans KR", sans-serif;
   --text: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
@@ -27,6 +32,11 @@
     --end: #ff6b7d;
     --special: #a99bff;
     --waiver: #8fd46b;
+    --tone-0: #1a1e33;
+    --tone-1: #18254a;
+    --tone-2: #2c2433;
+    --tone-3: #14302d;
+    --tone-4: #262043;
   }
 }
 
@@ -137,9 +147,17 @@ time { font-variant-numeric: tabular-nums; }
   display: grid;
   grid-template-columns: 132px 1fr;
   gap: 20px;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 22px 20px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: var(--tone);
 }
+/* Each week box gets its own background so neighbouring weeks never blur together. */
+.tone-0 { --tone: var(--tone-0); }
+.tone-1 { --tone: var(--tone-1); }
+.tone-2 { --tone: var(--tone-2); }
+.tone-3 { --tone: var(--tone-3); }
+.tone-4 { --tone: var(--tone-4); }
 .week h2 {
   margin: 0;
   font-family: var(--display);
@@ -249,7 +267,7 @@ td.tie { color: var(--soft); }
   .masthead .season { padding: 1px 8px; font-size: 14px; margin-bottom: 4px; }
   .masthead .name span { display: block; }
   .masthead.compact .name { font-size: 26px; }
-  .week { grid-template-columns: 1fr; gap: 10px; }
+  .week { grid-template-columns: 1fr; gap: 10px; padding: 16px 12px; margin-bottom: 12px; }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }
   .editions { grid-template-columns: 1fr; gap: 8px; }

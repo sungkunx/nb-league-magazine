@@ -41,6 +41,7 @@ from . import markdown
 
 EDITIONS = {"week-start": "시작", "week-mid": "D-2 점검", "week-end": "결과", "week-cartoon": "만평"}
 SLOTS = ("week-start", "week-end", "week-cartoon")  # fixed cards in a week box; the mid-week check is listed with the rest
+WEEK_TONES = 4  # week boxes cycle through tone-1..tone-4 backgrounds; Week 0 has tone-0
 PRESEASON = ("draft", "preseason", "notice")  # kinds that belong to Week 0 (개막 전) unless they name a week
 SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외",
             "feature": "특집", "waiver": "웨이버", "notice": "안내", "guide": "가이드"}
@@ -476,7 +477,8 @@ def _week(week, group):
         items = "\n".join(_week_item(p) for p in rest)
         parts.append(f'<ol class="inweek">\n<li class="inweek-head"><span>{label} · {len(rest)}편</span>'
                      f'<button type="button" class="order" aria-label="정렬 순서 바꾸기">최신순</button></li>\n{items}\n</ol>')
-    return f'<section class="week">\n{head}\n<div class="week-body">\n' + "\n".join(parts) + '\n</div>\n</section>'
+    tone = 0 if week == 0 else (week - 1) % WEEK_TONES + 1
+    return f'<section class="week tone-{tone}">\n{head}\n<div class="week-body">\n' + "\n".join(parts) + '\n</div>\n</section>'
 
 
 def _index(site, posts, team_nav="", guide=None):

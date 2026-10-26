@@ -128,6 +128,18 @@ class BuildTests(Base):
         html = self.page("index.html")
         self.assertEqual(html.count("예정"), 2)
 
+    def test_neighbouring_weeks_get_different_background_tones(self):
+        for n in (1, 2, 5):
+            self.write(f"w{n:02d}-start.md", post(title=f"{n}주차", kind="week-start", week=n,
+                                                 date=f"2026-10-{19 + n}T20:00+09:00"))
+        self.write("draft.md", post(title="드래프트", kind="draft", week=None, date="2026-10-19T20:00+09:00"))
+        self.build()
+        html = self.page("index.html")
+        self.assertIn('<section class="week tone-0">', html)   # Week 0 (개막 전) keeps its own tone
+        self.assertIn('<section class="week tone-1">', html)   # Week 1
+        self.assertIn('<section class="week tone-2">', html)   # Week 2
+        self.assertEqual(html.count('class="week tone-1"'), 2)  # Week 5 comes round to Week 1's tone
+
     def test_each_week_list_has_an_order_toggle(self):
         self.write("a.md", post(title="첫째", kind="extra", date="2026-10-21T20:00+09:00"))
         self.build()
