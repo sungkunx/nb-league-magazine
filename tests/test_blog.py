@@ -96,6 +96,7 @@ class BuildTests(Base):
         self.assertNotIn("점검 글", slots)
         self.assertNotIn("ed-mid", slots)
         self.assertIn('<span class="ed-name">결과</span>', slots)
+        self.assertIn('<span class="ed-name">이주의 예측</span>', slots)
         week = html[html.index('<ol class="inweek">'):]
         self.assertIn('<span class="tag tag-mid">D-2 점검</span>', week)
         self.assertIn("점검 글", week)

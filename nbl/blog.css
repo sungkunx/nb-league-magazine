@@ -275,8 +275,9 @@ td.tie { color: var(--soft); }
   .inweek .tag { grid-column: 1 / -1; }
   .week-sub { display: inline; margin: 0 0 0 4px; }
   .ed { min-height: 0; flex-direction: row; align-items: baseline; flex-wrap: wrap; }
-  .ed-name { padding: 10px 0 10px 14px; min-width: 64px; }
-  .ed a { flex-direction: row; align-items: baseline; padding: 10px 14px 10px 0; }
+  .ed-name { flex-basis: 100%; padding: 10px 14px 0; }
+  .ed a { flex: 1 1 100%; flex-direction: row; align-items: baseline; padding: 2px 14px 10px; }
+  .ed.empty .ed-name { flex-basis: auto; padding: 10px 0 10px 14px; min-width: 64px; }
   .ed.empty .ed-title { padding: 10px 14px 10px 0; }
   .special a { grid-template-columns: 1fr auto; gap: 4px 12px; }
   .special .tag { grid-column: 1 / -1; }
