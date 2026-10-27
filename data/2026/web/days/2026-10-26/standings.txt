@@ -1,0 +1,18 @@
+#nbl-standings v1 base=/nba/80126
+R|1|7|TEAM G-JAY|7-3-0|.700|4
+R|2|8|YoungHun`s Team Bravo|7-3-0|.700|3
+R|3|9|Hanseong's Team|7-3-0|.700|-
+R|4|1|Baesen|6-3-1|.650|6
+R|5|5|Hewon the game|6-3-1|.650|4
+R|6|13|hyun's Team|6-4-0|.600|3
+R|7|3|Team Scott|5-5-0|.500|5
+R|8|4|Cho|5-5-0|.500|4
+R|9|10|CHAN|5-5-0|.500|2
+R|10|11|Kharami|5-5-0|.500|5
+R|11|6|Team Jaewon|4-6-0|.400|2
+R|12|14|IN's WooSSa Team|3-6-1|.350|3
+R|13|16|ALTMAN_CH|3-6-1|.350|4
+R|14|2|TheMan|3-7-0|.300|3
+R|15|12|SEOB's ME7O team|3-7-0|.300|-
+R|16|15|Jaehun's Matchless Team|3-7-0|.300|5
+#crc=5940ed66 lines=17
