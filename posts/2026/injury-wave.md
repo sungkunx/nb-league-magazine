@@ -4,7 +4,6 @@ date: 2026-10-28T13:30+09:00
 kind: feature
 week: 2
 summary: 개막 열흘 만에 Jalen Williams, Kawhi, Banchero, Edwards, Şengün, Jaren Jackson Jr.까지. 왜 이렇게 다치는지 전문가들이 꼽는 이유와, IL 한 칸으로 버티는 우리 리그 단장님들의 사정.
-status: review
 ---
 
 여러분, 오늘은 조금 무거운 주제를 밝게 다뤄 보겠습니다🩹
