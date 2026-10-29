@@ -7,7 +7,7 @@
 
 - 2주차 진행 중 (미국 10/26 월 ~ 11/1 일). Week 2 이주의 예측 발행됨(`posts/2026/w02-start.md`).
 - 특집 발행: 부상 러시 특집(`injury-wave.md`, Week 2, 10/28). 부상 상태는 NBA 공식 부상 리포트 PDF(ak-static.cms.nba.com/referee/injury/Injury-Report_YYYY-MM-DD_HH_MMPM.pdf)와 ESPN 부상 페이지가 가장 빠르고 정확했다.
-- 웨이버 검토 중: 흙속의진주(`waiver-w02.md`, Week 2, 10/29). FA 기록은 Yahoo 리그 선수 목록의 "최근 7일"(`players?status=A&pos=P&stat1=S_L7&sort=AR`)에서 읽었다. 운영자가 "발행"하면 publish.
+- 웨이버 발행: 흙속의진주(`waiver-w02.md`, Week 2, 10/29 발행). 갯벌체험 비유. "조개"는 성적으로 들릴 수 있어 쓰지 않고 바지락·꼬막·백합·굴처럼 구체적인 이름을 쓴다(운영자 결정). FA 기록은 Yahoo 리그 선수 목록의 "최근 7일"(`players?status=A&pos=P&stat1=S_L7&sort=AR`)에서 읽었다.
 - 다음 정규 글: Week 2 D-2 점검 (한국 시간 토 10/31 오후 수집 뒤) → Week 2 결과 + 만평 문안 (월 11/2 오후 수집 뒤) → Week 3 이주의 예측.
 - 예상 성적 누적: Week 1 **4승 4패** (매치업 승자 기준, 무승부 예상이 무승부로 끝나면 적중). Week 2 예상은 `w02-start.md`의 각 매치업 "예상" 줄.
 - 정규 글은 아직 예약 작업이 아니라 운영자가 대화에서 요청할 때 쓴다. 운영자가 "응"이라고 하기 전에는 글 쓰는 예약 작업을 만들지 않는다.
