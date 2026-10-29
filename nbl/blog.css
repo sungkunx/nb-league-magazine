@@ -260,6 +260,27 @@ td.tie { color: var(--soft); }
 .neighbours .older { grid-column: 1; }
 .neighbours .home { grid-column: 1 / -1; color: var(--soft); font-weight: 400; text-decoration: underline; text-underline-offset: 3px; }
 
+/* bell: top right of the masthead, red square count of the last three days' posts */
+.mast-side { align-self: stretch; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 10px; }
+.masthead.compact .mast-side { align-self: flex-end; flex-direction: row; align-items: center; }
+.bell { position: relative; }
+.bell-button { position: relative; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 2px solid var(--ink); background: var(--sheet); color: var(--ink); cursor: pointer; }
+.bell-button:hover, .bell-button[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+.bell-button:focus-visible { outline: 3px solid var(--end); outline-offset: 2px; }
+.masthead.compact .bell-button { width: 34px; height: 34px; }
+.masthead.compact .bell-button svg { width: 19px; height: 19px; }
+.bell-count { position: absolute; top: -9px; right: -9px; min-width: 20px; height: 20px; padding: 0 4px; background: #e0202e; color: #fff; font: 700 13px/20px var(--text); text-align: center; font-variant-numeric: tabular-nums; }
+.bell-panel { position: absolute; top: calc(100% + 8px); right: 0; z-index: 20; width: min(340px, calc(100vw - 32px)); background: var(--sheet); border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); text-align: left; }
+.bell-head { margin: 0; padding: 8px 14px; border-bottom: 2px solid var(--ink); font-weight: 700; font-size: 14px; }
+.bell-list { list-style: none; margin: 0; padding: 0; max-height: 60vh; overflow-y: auto; }
+.bell-list li + li { border-top: 1px solid var(--rule); }
+.bell-list a { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 14px; text-decoration: none; color: var(--ink); }
+.bell-list a:hover { background: var(--paper); }
+.bell-list .tag { grid-column: 1 / -1; color: var(--edition, var(--special)); font-weight: 700; font-size: 13px; }
+.bell-title { font-weight: 500; line-height: 1.4; }
+.bell-list time { color: var(--soft); font-size: 13px; white-space: nowrap; align-self: start; padding-top: 2px; }
+.bell-none { padding: 14px; color: var(--soft); font-size: 14px; }
+
 @media (max-width: 680px) {
   body { font-size: 16px; }
   .masthead { padding-top: 28px; padding-bottom: 14px; gap: 12px; }
@@ -267,6 +288,7 @@ td.tie { color: var(--soft); }
   .masthead .season { padding: 1px 8px; font-size: 14px; margin-bottom: 4px; }
   .masthead .name span { display: block; }
   .masthead.compact .name { font-size: 26px; }
+  .bell-button { width: 36px; height: 36px; }
   .week { grid-template-columns: 1fr; gap: 10px; padding: 16px 12px; margin-bottom: 12px; }
   .week h2 { font-size: 44px; display: flex; align-items: baseline; gap: 8px; }
   .week h2 span { display: inline; }

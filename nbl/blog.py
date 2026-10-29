@@ -26,6 +26,11 @@ Every league team named in the fact sheets gets a page (teams/<number>/)
 listing the published posts whose text mentions it, with the passage. Team
 names are found in the text; nothing is tagged by hand.
 
+Every page has a bell at the top right. It reads updates.json (the newest
+published posts with their exact time) and, in the browser, counts and lists
+the ones from the last three days; the site is only rebuilt when a post goes
+up, so the counting cannot happen at build time.
+
 The index has a search box. It reads search.json (every published post as
 plain text) in the browser; there is no server.
 """
@@ -55,6 +60,9 @@ STYLE = Path(__file__).with_name("blog.css")
 # Version stamp on the stylesheet link, so a browser holding last week's style.css fetches the new one.
 _STAMP = hashlib.sha1(STYLE.read_bytes()).hexdigest()[:8]
 SEARCH = Path(__file__).with_name("search.js")
+BELL = Path(__file__).with_name("bell.js")
+_BELL_STAMP = hashlib.sha1(BELL.read_bytes()).hexdigest()[:8]
+UPDATES_KEPT = 20  # newest posts in updates.json; the bell shows those of the last three days
 
 
 class BlogError(Exception):
@@ -194,6 +202,11 @@ def plain_text(body):
 def search_entries(posts):
     return [{"title": p["title"], "url": f'posts/{p["slug"]}/', "label": _label(p), "date": _day(p["date"]),
              "text": plain_text(p["body"])} for p in reversed(posts)]
+
+
+def update_entries(posts):
+    return [{"title": p["title"], "url": f'posts/{p["slug"]}/', "label": _label(p), "kind": _kind_class(p),
+             "date": p["date"].isoformat()} for p in list(reversed(posts))[:UPDATES_KEPT]]
 
 
 def _anchor(body_html, team):
@@ -366,7 +379,8 @@ def _page(site, title, description, root, body, url, image="", hidden=False, scr
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}style.css?v={_STAMP}">{script}
+<link rel="stylesheet" href="{root}style.css?v={_STAMP}">
+<script src="{root or './'}bell.js?v={_BELL_STAMP}" defer></script>{script}
 </head>
 <body>
 {body}
@@ -385,7 +399,18 @@ def _masthead(site, root, compact=False):
             else esc(site["title"]) + by)
     return (f'<header class="masthead{" compact" if compact else ""}">\n'
             f'<{tag} class="name"><a href="{root or "./"}">{name}</a></{tag}>\n'
-            f'<p class="season">{esc(site["season"])} 시즌</p>\n</header>')
+            f'<div class="mast-side">\n{_bell(root)}\n<p class="season">{esc(site["season"])} 시즌</p>\n</div>\n</header>')
+
+
+def _bell(root):
+    """Filled in by bell.js: the red count and the list of the last three days' posts."""
+    return (f'<div class="bell" data-root="{root or "./"}">'
+            '<button type="button" class="bell-button" aria-label="최근 3일 새 글" aria-expanded="false">'
+            '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6'
+            'L4.3 15.4A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.6L18 12.6V9a6 6 0 0 0-6-6Zm-2.4 15.5a2.5 2.5 0 0 0 4.8 0Z"'
+            ' fill="currentColor"/></svg><span class="bell-count" hidden></span></button>'
+            '<div class="bell-panel" hidden><p class="bell-head">최근 3일 새 글</p><ol class="bell-list"></ol></div>'
+            '</div>')
 
 
 def _slot(kind, posts):
@@ -583,6 +608,8 @@ def build(posts_dir, out_dir, site, facts_dir):
     (out_dir / ".nojekyll").write_text("", encoding="utf-8")
     shutil.copyfile(STYLE, out_dir / "style.css")
     shutil.copyfile(SEARCH, out_dir / "search.js")
+    shutil.copyfile(BELL, out_dir / "bell.js")
+    (out_dir / "updates.json").write_text(json.dumps(update_entries(posts), ensure_ascii=False), encoding="utf-8")
     (out_dir / "search.json").write_text(json.dumps(search_entries(posts), ensure_ascii=False), encoding="utf-8")
     if (posts_dir / "images").exists():
         shutil.copytree(posts_dir / "images", out_dir / "images")

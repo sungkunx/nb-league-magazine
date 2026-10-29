@@ -695,3 +695,40 @@ class FloatNavTests(Base):
             self.assertIn(f'href="{home}"', nav[:400])
             self.assertIn('class="to-top"', nav[:600])
             self.assertLess(nav.index("float-home"), nav.index("to-top"))  # home sits above the top button
+
+
+class BellTests(Base):
+    """Top-right bell: the browser counts the posts of the last three days from updates.json."""
+
+    def updates(self):
+        return json.loads(self.page("updates.json"))
+
+    def test_update_list_holds_published_posts_newest_first_with_their_exact_time(self):
+        self.write("a.md", post(title="먼저", kind="week-start", date="2026-10-20T20:00+09:00"))
+        self.write("b.md", post(title="나중", date="2026-10-26T22:00+09:00"))
+        self.write("c.md", post(title="검토", kind="week-mid", date="2026-10-27T22:00+09:00", extra="status: review"))
+        self.build()
+        self.assertEqual(self.updates(), [
+            {"title": "나중", "url": "posts/b/", "label": "Week 1 결과", "kind": "end",
+             "date": "2026-10-26T22:00:00+09:00"},
+            {"title": "먼저", "url": "posts/a/", "label": "Week 1 이주의 예측", "kind": "start",
+             "date": "2026-10-20T20:00:00+09:00"},
+        ])
+
+    def test_update_list_is_capped(self):
+        for day in range(1, 31):
+            self.write(f"p{day:02}.md", post(title=f"글 {day}", kind="feature", date=f"2026-10-{day:02}T12:00+09:00"))
+        self.build()
+        updates = self.updates()
+        self.assertEqual(len(updates), blog.UPDATES_KEPT)
+        self.assertEqual(updates[0]["title"], "글 30")
+
+    def test_every_page_has_the_bell_pointing_at_the_site_root(self):
+        self.write("w01-end.md", post())
+        self.build()
+        self.assertTrue((self.out / "bell.js").exists())
+        for rel, root in (("index.html", "./"), ("posts/w01-end/index.html", "../../")):
+            html = self.page(rel)
+            self.assertIn(f'<div class="bell" data-root="{root}">', html)
+            self.assertIn('aria-label="최근 3일 새 글"', html)
+            self.assertIn(f'<script src="{root}bell.js?v=', html)
