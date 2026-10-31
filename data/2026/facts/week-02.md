@@ -490,7 +490,7 @@
 - X41 2026-10-31 02:15 · add · Julian Champagnie (add: FA → TEAM G-JAY)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30
+- 스냅샷이 있는 날: 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31
 - C1 2026-10-26 · IN's WooSSa Team · Cooper Flagg: BN → SF (선발로 올림, 그날 기록 3PTM 2, AST 11, BLK 3, DD 1, FGM/A 12/23, FTM/A 3/3, PTS 29, REB 6, ST 5, TO 5)
 - C2 2026-10-26 · IN's WooSSa Team · Tari Eason: Util → BN (벤치로 내림, 그날 기록 3PTM 1, AST 2, BLK 3, DD 0, FGM/A 4/8, FTM/A 4/5, PTS 13, REB 8, ST 0, TO 1)
 - C3 2026-10-26 · Hewon the game · Keegan Murray: IL → SF (선발로 올림, 그날 기록 없음)
