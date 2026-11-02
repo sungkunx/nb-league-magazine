@@ -3,7 +3,6 @@ title: 🏁 Week 2 결과: 일요일이 만든 무승부 두 판, 그리고 블�
 date: 2026-11-02T18:00+09:00
 kind: week-end
 week: 2
-status: review
 summary: 일요일 하루에 무승부가 두 판 생겼고, 1위 Hanseong's는 10위로, 11위 Team Jaewon은 4위로. MVP Wembanyama의 3경기 108점·블록 13개와 공동 선두 세 팀까지, 2주차 최종 결과.
 ---
 
