@@ -5,7 +5,7 @@
 
 ## 현재 상태 (2026-11-02 기준)
 
-- 2주차 끝 (미국 10/26 월 ~ 11/1 일). Week 2 결과 발행(`posts/2026/w02-end.md`, 11/2). Week 2 D-2 점검은 쓰지 않고 지나갔다. 만평 글 검토 중(`w02-cartoon.md`, 운영자가 보낸 순서: Wembanyama, Cho, Team Scott).
+- 2주차 끝 (미국 10/26 월 ~ 11/1 일). Week 2 결과 발행(`posts/2026/w02-end.md`, 11/2). Week 2 D-2 점검은 쓰지 않고 지나갔다. 만평 발행(`w02-cartoon.md`, 11/2, 운영자가 보낸 순서: Wembanyama, Cho, Team Scott).
 - 특집 발행: 부상 러시 특집(`injury-wave.md`, Week 2, 10/28). 부상 상태는 NBA 공식 부상 리포트 PDF(ak-static.cms.nba.com/referee/injury/Injury-Report_YYYY-MM-DD_HH_MMPM.pdf)와 ESPN 부상 페이지가 가장 빠르고 정확했다.
 - 웨이버 발행: 흙속의진주(`waiver-w02.md`, Week 2, 10/29 발행). 갯벌체험 비유. "조개"는 성적으로 들릴 수 있어 쓰지 않고 바지락·꼬막·백합·굴처럼 구체적인 이름을 쓴다(운영자 결정). FA 기록은 Yahoo 리그 선수 목록의 "최근 7일"(`players?status=A&pos=P&stat1=S_L7&sort=AR`)에서 읽었다.
 - 특집 발행: 2주차의 이모저모(`w02-misc.md`, Week 2, 11/2 발행). 트랜잭션·최단 체류·중고 거래·라인업 명장면. 미국 10/31 경기까지의 팩트시트 기준, 스코어는 결과 글로 미룸.

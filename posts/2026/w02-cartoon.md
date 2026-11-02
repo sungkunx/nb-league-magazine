@@ -3,7 +3,6 @@ title: 🎨 Week 2 만평: "지구인 출입 금지"
 date: 2026-11-02T21:20+09:00
 kind: week-cartoon
 week: 2
-status: review
 summary: 혼자 블록 13개를 찍은 Wembanyama, 영입권 대신 부적을 고른 편집장, 그리고 일요일 하루 115점 손수레를 민 Team Scott. 2주차 만평 세 컷.
 ---
 
