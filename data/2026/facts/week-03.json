@@ -5,7 +5,7 @@
   "week": 3,
   "week_start": "2026-11-02",
   "week_end": "2026-11-08",
-  "through": "2026-11-02",
+  "through": "2026-11-03",
   "complete": false,
   "is_playoffs": false,
   "standings_through_week": 2,
@@ -1464,6 +1464,26 @@
       "DD": 0
      },
      "score": -6.58
+    },
+    {
+     "name": "Mikal Bridges",
+     "nba_team": "NYK",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": [
@@ -1872,6 +1892,46 @@
       "DD": 0
      },
      "score": -6.21
+    },
+    {
+     "name": "Pascal Siakam",
+     "nba_team": "IND",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Andrew Nembhard",
+     "nba_team": "IND",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": []
@@ -1882,9 +1942,9 @@
    "team_id": 3,
    "manager": null,
    "adds": {
-    "week": 0,
+    "week": 1,
     "week_limit": 4,
-    "season": 9,
+    "season": 10,
     "season_limit": 100
    },
    "players": [
@@ -2047,6 +2107,26 @@
       "DD": 0
      },
      "score": -5.18
+    },
+    {
+     "name": "Paul George",
+     "nba_team": "BOS",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": []
@@ -2222,6 +2302,26 @@
       "DD": 0
      },
      "score": -6.87
+    },
+    {
+     "name": "Sandro Mamukelashvili",
+     "nba_team": "LAL",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": []
@@ -2806,6 +2906,46 @@
       "DD": 0
      },
      "score": -3.89
+    },
+    {
+     "name": "Anthony Black",
+     "nba_team": "ORL",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Joel Embiid",
+     "nba_team": "PHI",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": [
@@ -3001,6 +3141,26 @@
       "DD": 0
      },
      "score": -5.06
+    },
+    {
+     "name": "Collin Gillespie",
+     "nba_team": "PHX",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": []
@@ -3176,6 +3336,46 @@
       "DD": 0
      },
      "score": -3.13
+    },
+    {
+     "name": "Daniss Jenkins",
+     "nba_team": "DET",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Isaiah Jackson",
+     "nba_team": "LAC",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": [
@@ -3390,6 +3590,26 @@
       "DD": 0
      },
      "score": -6.14
+    },
+    {
+     "name": "Jrue Holiday",
+     "nba_team": "POR",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": [
@@ -3653,9 +3873,9 @@
    "team_id": 13,
    "manager": null,
    "adds": {
-    "week": 0,
+    "week": 1,
     "week_limit": 4,
-    "season": 6,
+    "season": 7,
     "season_limit": 100
    },
    "players": [
@@ -3818,6 +4038,46 @@
       "DD": 0
      },
      "score": -2.95
+    },
+    {
+     "name": "Moritz Wagner",
+     "nba_team": "BKN",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Jonathan Kuminga",
+     "nba_team": "MIN",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
     }
    ],
    "benched": [
@@ -4016,6 +4276,26 @@
     {
      "name": "Peyton Watson",
      "nba_team": "CLE",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Ja'Kobe Walter",
+     "nba_team": "TOR",
      "games": 0,
      "line": {
       "FGM/A": "0/0",
@@ -4457,6 +4737,57 @@
      "player": "Tristan da Silva",
      "action": "drop",
      "from": "Team Jaewon",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X5",
+   "time_kst": "2026-11-03 04:20",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Jakob Poeltl",
+     "action": "add",
+     "from": "Waivers",
+     "to": "Team Scott"
+    },
+    {
+     "player": "Mo Bamba",
+     "action": "drop",
+     "from": "Team Scott",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X6",
+   "time_kst": "2026-11-03 13:48",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Klay Thompson",
+     "action": "add",
+     "from": "FA",
+     "to": "hyun's Team"
+    },
+    {
+     "player": "Moritz Wagner",
+     "action": "drop",
+     "from": "hyun's Team",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X7",
+   "time_kst": "2026-11-03 18:58",
+   "type": "drop",
+   "moves": [
+    {
+     "player": "Sam Merrill",
+     "action": "drop",
+     "from": "Hanseong's Team",
      "to": "Waivers"
     }
    ]

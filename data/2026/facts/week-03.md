@@ -1,7 +1,7 @@
 # NB League 2026 2026-27 · Week 3 팩트시트
 
 - 기간: 2026-11-02 ~ 2026-11-08 (미국 태평양 시간 기준)
-- 데이터: 2026-11-02까지 · 진행 중
+- 데이터: 2026-11-03까지 · 진행 중
 - 순위 기준: Week 2까지 (무승부는 0.5승)
 
 ## 데이터 점검
@@ -185,6 +185,7 @@
 | Neemias Queta | BOS | 1 | -1.26 | 6/7 | 0.857 | 3/4 | 0.75 | 1 | 16 | 6 | 1 | 0 | 0 | 1 | 0 |
 | Trae Young | WAS | 1 | -1.86 | 5/12 | 0.417 | 3/5 | 0.6 | 2 | 15 | 3 | 9 | 1 | 0 | 3 | 0 |
 | Keyonte George | UTA | 1 | -6.58 | 3/12 | 0.25 | 0/0 |  | 1 | 7 | 7 | 0 | 0 | 0 | 3 | 0 |
+| Mikal Bridges | NYK | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -220,8 +221,10 @@
 | Day'Ron Sharpe | BKN | 1 | -4.4 | 1/5 | 0.2 | 2/2 | 1.0 | 0 | 4 | 6 | 3 | 0 | 1 | 3 | 0 |
 | Zaccharie Risacher | DAL | 1 | -6.02 | 0/3 | 0.0 | 0/0 |  | 0 | 0 | 5 | 1 | 1 | 0 | 2 | 0 |
 | De'Andre Hunter | SAC | 1 | -6.21 | 3/13 | 0.231 | 0/0 |  | 0 | 6 | 7 | 2 | 0 | 0 | 2 | 0 |
+| Pascal Siakam | IND | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Andrew Nembhard | IND | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### T5 Team Scott — 영입 주 0/4, 시즌 9/100
+### T5 Team Scott — 영입 주 1/4, 시즌 10/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Luka Dončić | LAL | 1 | 13.62 | 14/24 | 0.583 | 8/10 | 0.8 | 6 | 42 | 7 | 13 | 2 | 0 | 2 | 1 |
@@ -232,6 +235,7 @@
 | Mo Bamba | UTA | 1 | -1.48 | 3/5 | 0.6 | 2/3 | 0.667 | 0 | 8 | 8 | 0 | 0 | 2 | 1 | 0 |
 | John Collins | DET | 1 | -4.18 | 1/4 | 0.25 | 2/2 | 1.0 | 0 | 4 | 3 | 1 | 1 | 1 | 2 | 0 |
 | Darius Garland | LAC | 1 | -5.18 | 5/14 | 0.357 | 5/6 | 0.833 | 1 | 16 | 4 | 8 | 0 | 0 | 7 | 0 |
+| Paul George | BOS | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### T6 ALTMAN_CH — 영입 주 1/4, 시즌 9/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -244,6 +248,7 @@
 | Aaron Wiggins | ATL | 1 | -6.25 | 3/12 | 0.25 | 0/1 | 0.0 | 1 | 7 | 3 | 2 | 1 | 0 | 2 | 0 |
 | Payton Pritchard | BOS | 1 | -6.33 | 0/7 | 0.0 | 4/6 | 0.667 | 0 | 4 | 3 | 3 | 1 | 0 | 1 | 0 |
 | Matas Buzelis | CHI | 1 | -6.87 | 2/5 | 0.4 | 0/0 |  | 0 | 4 | 3 | 2 | 0 | 1 | 5 | 0 |
+| Sandro Mamukelashvili | LAL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### T7 Cho — 영입 주 0/4, 시즌 4/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -291,6 +296,8 @@
 | Aaron Gordon | DEN | 1 | -2.66 | 2/6 | 0.333 | 0/0 |  | 1 | 5 | 6 | 2 | 1 | 1 | 2 | 0 |
 | Devin Vassell | SAS | 1 | -3.62 | 4/9 | 0.444 | 3/3 | 1.0 | 0 | 11 | 2 | 1 | 1 | 0 | 1 | 0 |
 | Julian Champagnie | SAS | 1 | -3.89 | 2/5 | 0.4 | 2/3 | 0.667 | 2 | 8 | 6 | 0 | 0 | 0 | 1 | 0 |
+| Anthony Black | ORL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Joel Embiid | PHI | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -308,6 +315,7 @@
 | Ace Bailey | UTA | 1 | -3.87 | 2/11 | 0.182 | 0/0 |  | 1 | 5 | 6 | 2 | 1 | 0 | 0 | 0 |
 | Keaton Wagler | LAC | 1 | -4.02 | 2/5 | 0.4 | 2/4 | 0.5 | 0 | 6 | 4 | 4 | 0 | 1 | 1 | 0 |
 | Toumani Camara | POR | 1 | -5.06 | 3/8 | 0.375 | 0/0 |  | 3 | 9 | 5 | 1 | 0 | 0 | 4 | 0 |
+| Collin Gillespie | PHX | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### T11 YoungHun`s Team Bravo — 영입 주 0/4, 시즌 3/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -320,6 +328,8 @@
 | De'Aaron Fox | SAS | 1 | -2.62 | 5/8 | 0.625 | 1/2 | 0.5 | 1 | 12 | 2 | 3 | 1 | 0 | 1 | 0 |
 | Jalen Green | PHX | 1 | -2.74 | 5/14 | 0.357 | 1/6 | 0.167 | 0 | 11 | 8 | 8 | 2 | 2 | 4 | 0 |
 | Domantas Sabonis | SAC | 1 | -3.13 | 4/4 | 1.0 | 1/2 | 0.5 | 0 | 9 | 7 | 4 | 1 | 0 | 4 | 0 |
+| Daniss Jenkins | DET | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Isaiah Jackson | LAC | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -338,6 +348,7 @@
 | Rudy Gobert | MIN | 1 | -2.85 | 3/6 | 0.5 | 4/12 | 0.333 | 0 | 10 | 10 | 1 | 0 | 1 | 0 | 1 |
 | Jeremiah Fears | NOP | 1 | -5.43 | 5/17 | 0.294 | 2/2 | 1.0 | 0 | 12 | 4 | 7 | 0 | 0 | 4 | 0 |
 | Derrick White | BOS | 1 | -6.14 | 3/12 | 0.25 | 0/0 |  | 1 | 7 | 2 | 3 | 1 | 0 | 3 | 0 |
+| Jrue Holiday | POR | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -363,7 +374,7 @@
 | Anthony Davis | WAS | 1 | 12/17 | 0.706 | 2/2 | 1.0 | 1 | 27 | 9 | 1 | 4 | 0 | 5 | 0 |
 | Coby White | CHA | 1 | 3/9 | 0.333 | 0/0 |  | 1 | 7 | 0 | 3 | 0 | 0 | 3 | 0 |
 
-### T14 hyun's Team — 영입 주 0/4, 시즌 6/100
+### T14 hyun's Team — 영입 주 1/4, 시즌 7/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Donovan Clingan | POR | 1 | 8.94 | 8/16 | 0.5 | 0/0 |  | 1 | 17 | 18 | 3 | 0 | 4 | 2 | 1 |
@@ -374,6 +385,8 @@
 | Christian Braun | DEN | 1 | -0.49 | 4/7 | 0.571 | 5/6 | 0.833 | 1 | 14 | 3 | 3 | 2 | 0 | 1 | 0 |
 | Jayson Tatum | BOS | 1 | -0.75 | 5/16 | 0.312 | 8/8 | 1.0 | 1 | 19 | 6 | 9 | 1 | 0 | 5 | 0 |
 | P.J. Washington | DAL | 1 | -2.95 | 2/9 | 0.222 | 6/8 | 0.75 | 2 | 12 | 5 | 1 | 2 | 0 | 2 | 0 |
+| Moritz Wagner | BKN | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jonathan Kuminga | MIN | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -392,6 +405,7 @@
 | Zach Edey | MEM | 1 | -1.16 | 2/6 | 0.333 | 2/2 | 1.0 | 0 | 6 | 9 | 1 | 0 | 2 | 1 | 0 |
 | Desmond Bane | ORL | 1 | -1.74 | 8/17 | 0.471 | 0/0 |  | 4 | 20 | 3 | 3 | 1 | 0 | 4 | 0 |
 | Peyton Watson | CLE | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ja'Kobe Walter | TOR | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -421,6 +435,9 @@
 - X2 2026-11-02 23:00 · add/drop · Sandro Mamukelashvili (add: FA → ALTMAN_CH); Khaman Maluach (drop: ALTMAN_CH → Waivers)
 - X3 2026-11-02 23:48 · add/drop · DeMar DeRozan (add: FA → SEOB's ME7O team); Peyton Watson (drop: SEOB's ME7O team → Waivers)
 - X4 2026-11-03 00:26 · add/drop · Karlo Matković (add: FA → Team Jaewon); Tristan da Silva (drop: Team Jaewon → Waivers)
+- X5 2026-11-03 04:20 · add/drop · Jakob Poeltl (add: Waivers → Team Scott); Mo Bamba (drop: Team Scott → Waivers)
+- X6 2026-11-03 13:48 · add/drop · Klay Thompson (add: FA → hyun's Team); Moritz Wagner (drop: hyun's Team → Waivers)
+- X7 2026-11-03 18:58 · drop · Sam Merrill (drop: Hanseong's Team → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
 - 스냅샷이 있는 날: 2026-11-02, 2026-11-03
