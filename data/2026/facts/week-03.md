@@ -1,7 +1,7 @@
 # NB League 2026 2026-27 · Week 3 팩트시트
 
 - 기간: 2026-11-02 ~ 2026-11-08 (미국 태평양 시간 기준)
-- 데이터: 2026-11-03까지 · 진행 중
+- 데이터: 2026-11-04까지 · 진행 중
 - 순위 기준: Week 2까지 (무승부는 0.5승)
 
 ## 데이터 점검
@@ -9,117 +9,117 @@
 
 ## 매치업
 
-### M1 Baesen 6-3-1 Team Jaewon — 승: Baesen
+### M1 Baesen 2-7-1 Team Jaewon — 승: Team Jaewon
 | 카테고리 | Baesen | Team Jaewon | 승 |
 |---|---|---|---|
-| FG% | .525 (53/101) | .505 (51/101) | Baesen |
-| FT% | .650 (13/20) | .739 (17/23) | Team Jaewon |
-| 3PTM | 19 | 14 | Baesen |
-| PTS | 138 | 133 | Baesen |
-| REB | 63 | 40 | Baesen |
-| AST | 34 | 36 | Team Jaewon |
-| ST | 15 | 9 | Baesen |
-| BLK | 4 | 4 | tie |
-| TO | 17 | 16 | Team Jaewon |
-| DD | 2 | 0 | Baesen |
+| FG% | .490 (101/206) | .491 (114/232) | Team Jaewon |
+| FT% | .696 (32/46) | .741 (43/58) | Team Jaewon |
+| 3PTM | 35 | 23 | Baesen |
+| PTS | 269 | 294 | Team Jaewon |
+| REB | 111 | 82 | Baesen |
+| AST | 54 | 94 | Team Jaewon |
+| ST | 25 | 26 | Team Jaewon |
+| BLK | 5 | 9 | Team Jaewon |
+| TO | 36 | 33 | Team Jaewon |
+| DD | 3 | 3 | tie |
 
-### M2 TheMan 6-3-1 Hewon the game — 승: TheMan
+### M2 TheMan 8-2-0 Hewon the game — 승: TheMan
 | 카테고리 | TheMan | Hewon the game | 승 |
 |---|---|---|---|
-| FG% | .457 (43/94) | .382 (26/68) | TheMan |
-| FT% | .607 (17/28) | .913 (21/23) | Hewon the game |
-| 3PTM | 13 | 8 | TheMan |
-| PTS | 116 | 81 | TheMan |
-| REB | 38 | 44 | Hewon the game |
-| AST | 28 | 27 | TheMan |
-| ST | 11 | 8 | TheMan |
-| BLK | 3 | 4 | Hewon the game |
-| TO | 11 | 14 | TheMan |
-| DD | 0 | 0 | tie |
+| FG% | .444 (75/169) | .441 (60/136) | TheMan |
+| FT% | .717 (38/53) | .884 (38/43) | Hewon the game |
+| 3PTM | 20 | 14 | TheMan |
+| PTS | 208 | 172 | TheMan |
+| REB | 78 | 66 | TheMan |
+| AST | 62 | 52 | TheMan |
+| ST | 15 | 13 | TheMan |
+| BLK | 5 | 8 | Hewon the game |
+| TO | 21 | 24 | TheMan |
+| DD | 2 | 0 | TheMan |
 
-### M3 Team Scott 7-2-1 ALTMAN_CH — 승: Team Scott
+### M3 Team Scott 8-2-0 ALTMAN_CH — 승: Team Scott
 | 카테고리 | Team Scott | ALTMAN_CH | 승 |
 |---|---|---|---|
-| FG% | .467 (50/107) | .432 (32/74) | Team Scott |
-| FT% | .703 (26/37) | .750 (18/24) | ALTMAN_CH |
-| 3PTM | 14 | 7 | Team Scott |
-| PTS | 140 | 89 | Team Scott |
-| REB | 55 | 31 | Team Scott |
-| AST | 42 | 28 | Team Scott |
-| ST | 7 | 7 | tie |
-| BLK | 6 | 4 | Team Scott |
-| TO | 18 | 13 | ALTMAN_CH |
+| FG% | .469 (98/209) | .400 (64/160) | Team Scott |
+| FT% | .735 (61/83) | .814 (35/43) | ALTMAN_CH |
+| 3PTM | 35 | 21 | Team Scott |
+| PTS | 292 | 184 | Team Scott |
+| REB | 90 | 62 | Team Scott |
+| AST | 73 | 54 | Team Scott |
+| ST | 17 | 13 | Team Scott |
+| BLK | 12 | 8 | Team Scott |
+| TO | 39 | 21 | ALTMAN_CH |
 | DD | 3 | 1 | Team Scott |
 
-### M4 Cho 1-7-2 IN's WooSSa Team — 승: IN's WooSSa Team
+### M4 Cho 2-8-0 IN's WooSSa Team — 승: IN's WooSSa Team
 | 카테고리 | Cho | IN's WooSSa Team | 승 |
 |---|---|---|---|
-| FG% | .403 (27/67) | .404 (40/99) | IN's WooSSa Team |
-| FT% | .611 (11/18) | .825 (33/40) | IN's WooSSa Team |
-| 3PTM | 10 | 13 | IN's WooSSa Team |
-| PTS | 75 | 126 | IN's WooSSa Team |
-| REB | 27 | 43 | IN's WooSSa Team |
-| AST | 17 | 30 | IN's WooSSa Team |
-| ST | 6 | 10 | IN's WooSSa Team |
-| BLK | 3 | 3 | tie |
-| TO | 12 | 15 | Cho |
-| DD | 0 | 0 | tie |
+| FG% | .447 (68/152) | .407 (79/194) | Cho |
+| FT% | .750 (36/48) | .805 (62/77) | IN's WooSSa Team |
+| 3PTM | 26 | 23 | Cho |
+| PTS | 198 | 243 | IN's WooSSa Team |
+| REB | 77 | 106 | IN's WooSSa Team |
+| AST | 46 | 50 | IN's WooSSa Team |
+| ST | 13 | 16 | IN's WooSSa Team |
+| BLK | 8 | 9 | IN's WooSSa Team |
+| TO | 35 | 24 | IN's WooSSa Team |
+| DD | 0 | 3 | IN's WooSSa Team |
 
-### M5 TEAM G-JAY 5-4-1 CHAN — 승: TEAM G-JAY
+### M5 TEAM G-JAY 7-3-0 CHAN — 승: TEAM G-JAY
 | 카테고리 | TEAM G-JAY | CHAN | 승 |
 |---|---|---|---|
-| FG% | .424 (39/92) | .442 (34/77) | CHAN |
-| FT% | .778 (21/27) | .714 (15/21) | TEAM G-JAY |
-| 3PTM | 13 | 9 | TEAM G-JAY |
-| PTS | 112 | 92 | TEAM G-JAY |
-| REB | 45 | 53 | CHAN |
-| AST | 29 | 23 | TEAM G-JAY |
-| ST | 6 | 7 | CHAN |
-| BLK | 6 | 4 | TEAM G-JAY |
-| TO | 14 | 12 | CHAN |
-| DD | 1 | 1 | tie |
+| FG% | .415 (85/205) | .419 (70/167) | CHAN |
+| FT% | .792 (42/53) | .674 (31/46) | TEAM G-JAY |
+| 3PTM | 24 | 18 | TEAM G-JAY |
+| PTS | 236 | 189 | TEAM G-JAY |
+| REB | 103 | 104 | CHAN |
+| AST | 54 | 42 | TEAM G-JAY |
+| ST | 13 | 10 | TEAM G-JAY |
+| BLK | 10 | 9 | TEAM G-JAY |
+| TO | 30 | 28 | CHAN |
+| DD | 4 | 2 | TEAM G-JAY |
 
-### M6 YoungHun`s Team Bravo 6-4-0 Kharami — 승: YoungHun`s Team Bravo
+### M6 YoungHun`s Team Bravo 5-4-1 Kharami — 승: YoungHun`s Team Bravo
 | 카테고리 | YoungHun`s Team Bravo | Kharami | 승 |
 |---|---|---|---|
-| FG% | .576 (53/92) | .414 (46/111) | YoungHun`s Team Bravo |
-| FT% | .640 (32/50) | .642 (34/53) | Kharami |
-| 3PTM | 6 | 11 | Kharami |
-| PTS | 144 | 137 | YoungHun`s Team Bravo |
-| REB | 67 | 53 | YoungHun`s Team Bravo |
-| AST | 38 | 34 | YoungHun`s Team Bravo |
-| ST | 9 | 8 | YoungHun`s Team Bravo |
-| BLK | 3 | 6 | Kharami |
-| TO | 15 | 25 | YoungHun`s Team Bravo |
-| DD | 3 | 4 | Kharami |
+| FG% | .505 (101/200) | .433 (91/210) | YoungHun`s Team Bravo |
+| FT% | .723 (73/101) | .701 (68/97) | YoungHun`s Team Bravo |
+| 3PTM | 14 | 27 | Kharami |
+| PTS | 289 | 277 | YoungHun`s Team Bravo |
+| REB | 113 | 103 | YoungHun`s Team Bravo |
+| AST | 60 | 60 | tie |
+| ST | 17 | 18 | Kharami |
+| BLK | 11 | 15 | Kharami |
+| TO | 33 | 44 | YoungHun`s Team Bravo |
+| DD | 4 | 5 | Kharami |
 
-### M7 Hanseong's Team 2-8-0 hyun's Team — 승: hyun's Team
+### M7 Hanseong's Team 3-6-1 hyun's Team — 승: hyun's Team
 | 카테고리 | Hanseong's Team | hyun's Team | 승 |
 |---|---|---|---|
-| FG% | .549 (45/82) | .468 (51/109) | Hanseong's Team |
-| FT% | .789 (15/19) | .902 (37/41) | hyun's Team |
-| 3PTM | 13 | 18 | hyun's Team |
-| PTS | 118 | 157 | hyun's Team |
-| REB | 27 | 61 | hyun's Team |
-| AST | 30 | 31 | hyun's Team |
-| ST | 6 | 11 | hyun's Team |
-| BLK | 2 | 6 | hyun's Team |
-| TO | 12 | 18 | Hanseong's Team |
-| DD | 1 | 2 | hyun's Team |
+| FG% | .515 (86/167) | .477 (92/193) | Hanseong's Team |
+| FT% | .877 (50/57) | .881 (59/67) | hyun's Team |
+| 3PTM | 25 | 29 | hyun's Team |
+| PTS | 247 | 272 | hyun's Team |
+| REB | 80 | 114 | hyun's Team |
+| AST | 70 | 58 | Hanseong's Team |
+| ST | 15 | 14 | Hanseong's Team |
+| BLK | 12 | 14 | hyun's Team |
+| TO | 36 | 35 | hyun's Team |
+| DD | 4 | 4 | tie |
 
-### M8 SEOB's ME7O team 4-4-2 Jaehun's Matchless Team — 무승부 또는 미정
+### M8 SEOB's ME7O team 3-6-1 Jaehun's Matchless Team — 승: Jaehun's Matchless Team
 | 카테고리 | SEOB's ME7O team | Jaehun's Matchless Team | 승 |
 |---|---|---|---|
-| FG% | .439 (47/107) | .482 (53/110) | Jaehun's Matchless Team |
-| FT% | .881 (37/42) | .786 (22/28) | SEOB's ME7O team |
-| 3PTM | 12 | 21 | Jaehun's Matchless Team |
-| PTS | 143 | 149 | Jaehun's Matchless Team |
-| REB | 45 | 40 | SEOB's ME7O team |
-| AST | 27 | 27 | tie |
-| ST | 8 | 5 | SEOB's ME7O team |
-| BLK | 5 | 5 | tie |
-| TO | 14 | 18 | SEOB's ME7O team |
-| DD | 0 | 1 | Jaehun's Matchless Team |
+| FG% | .470 (94/200) | .487 (114/234) | Jaehun's Matchless Team |
+| FT% | .837 (77/92) | .786 (66/84) | SEOB's ME7O team |
+| 3PTM | 23 | 40 | Jaehun's Matchless Team |
+| PTS | 288 | 334 | Jaehun's Matchless Team |
+| REB | 87 | 106 | Jaehun's Matchless Team |
+| AST | 55 | 50 | SEOB's ME7O team |
+| ST | 13 | 13 | tie |
+| BLK | 8 | 15 | Jaehun's Matchless Team |
+| TO | 26 | 28 | SEOB's ME7O team |
+| DD | 2 | 3 | Jaehun's Matchless Team |
 
 ## 순위
 | ID | 순위 | 팀 | 전적 | 승률 | 직전 순위 | 변동 |
@@ -144,122 +144,140 @@
 ## MVP 후보 (선발 슬롯 기록 기준)
 | ID | 선수 | 팀 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| P1 | Luka Dončić | Team Scott | LAL | 1 | 13.62 | 14/24 | 0.583 | 8/10 | 0.8 | 6 | 42 | 7 | 13 | 2 | 0 | 2 | 1 |
-| P2 | Alperen Şengün | Hanseong's Team | HOU | 1 | 11.12 | 12/15 | 0.8 | 1/2 | 0.5 | 1 | 26 | 7 | 10 | 2 | 2 | 1 | 1 |
-| P3 | Donovan Clingan | hyun's Team | POR | 1 | 8.94 | 8/16 | 0.5 | 0/0 |  | 1 | 17 | 18 | 3 | 0 | 4 | 2 | 1 |
-| P4 | Tyrese Maxey | ALTMAN_CH | PHI | 1 | 8.48 | 10/15 | 0.667 | 5/6 | 0.833 | 1 | 26 | 4 | 11 | 2 | 2 | 4 | 1 |
-| P5 | Jaylen Brown | YoungHun`s Team Bravo | PHI | 1 | 8.37 | 9/15 | 0.6 | 3/4 | 0.75 | 4 | 25 | 11 | 5 | 1 | 0 | 0 | 1 |
+| P1 | Victor Wembanyama | Jaehun's Matchless Team | SAS | 2 | 15.93 | 21/43 | 0.488 | 21/26 | 0.808 | 1 | 64 | 35 | 7 | 3 | 11 | 6 | 2 |
+| P2 | Luka Dončić | Team Scott | LAL | 2 | 13.39 | 25/47 | 0.532 | 20/23 | 0.87 | 12 | 82 | 16 | 20 | 3 | 1 | 8 | 1 |
+| P3 | Nikola Jokić | Team Jaewon | DEN | 2 | 12.92 | 23/41 | 0.561 | 10/11 | 0.909 | 2 | 58 | 19 | 19 | 7 | 1 | 4 | 1 |
+| P4 | Cade Cunningham | TheMan | DET | 2 | 10.87 | 22/42 | 0.524 | 10/11 | 0.909 | 5 | 59 | 12 | 18 | 7 | 1 | 7 | 1 |
+| P5 | Donovan Clingan | hyun's Team | POR | 2 | 10.34 | 17/28 | 0.607 | 5/6 | 0.833 | 2 | 41 | 29 | 4 | 1 | 7 | 6 | 2 |
 
 ## LVP 후보 (선발 2경기 이상)
 | ID | 선수 | 팀 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| L1 | Anfernee Simons | TheMan | PHI | 2 | -6.95 | 2/12 | 0.167 | 1/1 | 1.0 | 1 | 6 | 3 | 1 | 0 | 0 | 1 | 0 |
+| L2 | Toumani Camara | CHAN | POR | 2 | -6.75 | 7/17 | 0.412 | 2/6 | 0.333 | 4 | 20 | 9 | 3 | 0 | 0 | 6 | 0 |
+| L3 | De'Andre Hunter | Hewon the game | SAC | 2 | -5.74 | 7/23 | 0.304 | 5/6 | 0.833 | 1 | 20 | 9 | 4 | 0 | 0 | 4 | 0 |
+| L4 | Zaccharie Risacher | Hewon the game | DAL | 2 | -5.73 | 1/7 | 0.143 | 0/0 |  | 0 | 2 | 6 | 3 | 2 | 0 | 3 | 0 |
+| L5 | Norman Powell | IN's WooSSa Team | CHI | 2 | -5.27 | 8/25 | 0.32 | 13/18 | 0.722 | 1 | 30 | 4 | 1 | 2 | 0 | 2 | 0 |
 
 ## 팀별 선수 기록 (선발 슬롯에 있던 날만 합산)
 
 ### T1 Baesen — 영입 주 0/4, 시즌 7/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Nickeil Alexander-Walker | ATL | 1 | 6.62 | 12/25 | 0.48 | 1/1 | 1.0 | 9 | 34 | 4 | 4 | 4 | 0 | 4 | 0 |
-| Ayo Dosunmu | MIN | 1 | 6.33 | 8/18 | 0.444 | 2/2 | 1.0 | 1 | 19 | 12 | 8 | 1 | 1 | 2 | 1 |
-| Caleb Wilson | CHI | 1 | 4.67 | 9/17 | 0.529 | 2/3 | 0.667 | 4 | 24 | 7 | 4 | 4 | 0 | 2 | 0 |
-| Moussa Diabaté | CHA | 1 | 1.83 | 3/6 | 0.5 | 1/1 | 1.0 | 0 | 7 | 9 | 2 | 3 | 1 | 0 | 0 |
-| VJ Edgecombe | PHI | 1 | 1.68 | 9/12 | 0.75 | 1/3 | 0.333 | 2 | 21 | 3 | 5 | 1 | 1 | 1 | 0 |
-| Karl-Anthony Towns | NYK | 1 | 1.05 | 4/11 | 0.364 | 2/3 | 0.667 | 1 | 11 | 16 | 5 | 0 | 0 | 4 | 1 |
-| Cedric Coward | MEM | 1 | -1.49 | 3/6 | 0.5 | 2/4 | 0.5 | 2 | 10 | 9 | 3 | 0 | 0 | 0 | 0 |
-| Kevin Durant | HOU | 1 | -1.93 | 5/6 | 0.833 | 2/3 | 0.667 | 0 | 12 | 3 | 3 | 2 | 1 | 4 | 0 |
+| Nickeil Alexander-Walker | ATL | 2 | 5.14 | 21/45 | 0.467 | 3/3 | 1.0 | 15 | 60 | 8 | 6 | 4 | 0 | 7 | 0 |
+| Ayo Dosunmu | MIN | 2 | 4.92 | 18/38 | 0.474 | 3/4 | 0.75 | 1 | 40 | 13 | 14 | 3 | 1 | 2 | 1 |
+| Karl-Anthony Towns | NYK | 2 | 4.17 | 9/16 | 0.562 | 7/10 | 0.7 | 3 | 28 | 28 | 6 | 1 | 0 | 5 | 2 |
+| Cedric Coward | MEM | 2 | 2.06 | 11/25 | 0.44 | 5/8 | 0.625 | 6 | 33 | 18 | 7 | 4 | 0 | 3 | 0 |
+| VJ Edgecombe | PHI | 2 | 0.31 | 14/23 | 0.609 | 1/3 | 0.333 | 3 | 32 | 9 | 8 | 2 | 1 | 4 | 0 |
+| Kevin Durant | HOU | 2 | -0.33 | 12/20 | 0.6 | 7/9 | 0.778 | 2 | 33 | 8 | 5 | 3 | 2 | 8 | 0 |
+| Caleb Wilson | CHI | 2 | -0.36 | 11/29 | 0.379 | 2/3 | 0.667 | 5 | 29 | 12 | 4 | 5 | 0 | 5 | 0 |
+| Moussa Diabaté | CHA | 2 | -1.03 | 5/10 | 0.5 | 4/6 | 0.667 | 0 | 14 | 15 | 4 | 3 | 1 | 2 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Collin Murray-Boyles | TOR | 1 | 7/14 | 0.5 | 3/4 | 0.75 | 1 | 18 | 7 | 0 | 0 | 2 | 2 | 0 |
-| Pelle Larsson | MIA | 1 | 2/6 | 0.333 | 4/4 | 1.0 | 1 | 9 | 3 | 2 | 1 | 0 | 4 | 0 |
+| Collin Murray-Boyles | TOR | 2 | 13/24 | 0.542 | 3/4 | 0.75 | 2 | 31 | 10 | 2 | 0 | 2 | 3 | 0 |
+| Pelle Larsson | MIA | 2 | 4/13 | 0.308 | 7/8 | 0.875 | 1 | 16 | 6 | 6 | 2 | 0 | 5 | 0 |
 
 ### T2 Team Jaewon — 영입 주 1/4, 시즌 6/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Nikola Jokić | DEN | 1 | 7.38 | 10/22 | 0.455 | 4/4 | 1.0 | 2 | 26 | 9 | 8 | 4 | 1 | 2 | 0 |
-| Paul Reed | DET | 1 | 1.8 | 5/6 | 0.833 | 1/2 | 0.5 | 0 | 11 | 5 | 4 | 2 | 2 | 1 | 0 |
-| Davion Mitchell | MIA | 1 | 1.29 | 5/5 | 1.0 | 1/2 | 0.5 | 4 | 15 | 0 | 7 | 0 | 1 | 1 | 0 |
-| Saddiq Bey | NOP | 1 | -0.47 | 7/16 | 0.438 | 2/2 | 1.0 | 2 | 18 | 5 | 1 | 1 | 0 | 0 | 0 |
-| Darius Acuff Jr. | SAC | 1 | -1.24 | 10/21 | 0.476 | 3/4 | 0.75 | 2 | 25 | 5 | 6 | 1 | 0 | 5 | 0 |
-| Neemias Queta | BOS | 1 | -1.26 | 6/7 | 0.857 | 3/4 | 0.75 | 1 | 16 | 6 | 1 | 0 | 0 | 1 | 0 |
-| Trae Young | WAS | 1 | -1.86 | 5/12 | 0.417 | 3/5 | 0.6 | 2 | 15 | 3 | 9 | 1 | 0 | 3 | 0 |
-| Keyonte George | UTA | 1 | -6.58 | 3/12 | 0.25 | 0/0 |  | 1 | 7 | 7 | 0 | 0 | 0 | 3 | 0 |
+| Nikola Jokić | DEN | 2 | 12.92 | 23/41 | 0.561 | 10/11 | 0.909 | 2 | 58 | 19 | 19 | 7 | 1 | 4 | 1 |
+| Davion Mitchell | MIA | 2 | 5.73 | 10/18 | 0.556 | 2/3 | 0.667 | 4 | 26 | 2 | 17 | 4 | 2 | 2 | 1 |
+| Darius Acuff Jr. | SAC | 2 | 1.77 | 18/45 | 0.4 | 6/8 | 0.75 | 5 | 47 | 8 | 18 | 3 | 0 | 9 | 1 |
+| Saddiq Bey | NOP | 2 | 1.45 | 16/30 | 0.533 | 4/5 | 0.8 | 4 | 40 | 9 | 4 | 2 | 0 | 1 | 0 |
+| Trae Young | WAS | 2 | 0.47 | 11/24 | 0.458 | 7/9 | 0.778 | 4 | 33 | 5 | 15 | 3 | 1 | 7 | 0 |
+| Keyonte George | UTA | 2 | 0.16 | 17/39 | 0.436 | 9/13 | 0.692 | 3 | 46 | 9 | 9 | 4 | 1 | 6 | 0 |
+| Neemias Queta | BOS | 2 | 0.07 | 10/15 | 0.667 | 4/7 | 0.571 | 1 | 25 | 18 | 4 | 0 | 2 | 1 | 0 |
+| Paul Reed | DET | 2 | -0.33 | 9/20 | 0.45 | 1/2 | 0.5 | 0 | 19 | 12 | 8 | 3 | 2 | 3 | 0 |
 | Mikal Bridges | NYK | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Mikal Bridges | NYK | 1 | 1/7 | 0.143 | 4/4 | 1.0 | 0 | 6 | 2 | 0 | 1 | 1 | 1 | 0 |
+| Karlo Matković | NOP | 1 | 2/3 | 0.667 | 0/0 |  | 1 | 5 | 4 | 2 | 0 | 1 | 1 | 0 |
+| Mikal Bridges | NYK | 2 | 4/12 | 0.333 | 4/4 | 1.0 | 1 | 13 | 6 | 4 | 2 | 1 | 3 | 0 |
 | Tristan da Silva | ORL | 1 | 4/14 | 0.286 | 0/0 |  | 2 | 10 | 4 | 3 | 0 | 0 | 4 | 0 |
 
-### T3 TheMan — 영입 주 0/4, 시즌 5/100
+### T3 TheMan — 영입 주 1/4, 시즌 6/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Cade Cunningham | DET | 1 | 8.1 | 13/20 | 0.65 | 3/4 | 0.75 | 4 | 33 | 5 | 7 | 5 | 0 | 3 | 0 |
-| Josh Hart | NYK | 1 | 0.55 | 3/6 | 0.5 | 0/0 |  | 2 | 8 | 6 | 7 | 3 | 0 | 3 | 0 |
-| Jarrett Allen | CLE | 1 | -1.1 | 5/10 | 0.5 | 4/6 | 0.667 | 0 | 14 | 6 | 1 | 1 | 1 | 0 | 0 |
-| Deni Avdija | POR | 1 | -1.82 | 10/22 | 0.455 | 6/9 | 0.667 | 2 | 28 | 3 | 5 | 0 | 0 | 2 | 0 |
-| Jalen Brunson | NYK | 1 | -2.4 | 6/16 | 0.375 | 3/6 | 0.5 | 4 | 19 | 2 | 6 | 0 | 0 | 1 | 0 |
-| Kel'el Ware | MIL | 1 | -3.0 | 1/6 | 0.167 | 0/0 |  | 0 | 2 | 9 | 0 | 0 | 2 | 1 | 0 |
-| Trevon Brazile | DEN | 1 | -3.52 | 3/3 | 1.0 | 0/2 | 0.0 | 0 | 6 | 5 | 1 | 2 | 0 | 1 | 0 |
-| Anfernee Simons | PHI | 1 | -6.01 | 2/11 | 0.182 | 1/1 | 1.0 | 1 | 6 | 2 | 1 | 0 | 0 | 0 | 0 |
+| Cade Cunningham | DET | 2 | 10.87 | 22/42 | 0.524 | 10/11 | 0.909 | 5 | 59 | 12 | 18 | 7 | 1 | 7 | 1 |
+| Jalen Brunson | NYK | 2 | 1.84 | 16/33 | 0.485 | 11/15 | 0.733 | 9 | 52 | 4 | 10 | 0 | 0 | 1 | 0 |
+| Deni Avdija | POR | 2 | 0.6 | 17/38 | 0.447 | 12/18 | 0.667 | 3 | 49 | 10 | 17 | 0 | 0 | 5 | 1 |
+| Josh Hart | NYK | 1 | -2.11 | 3/6 | 0.5 | 0/0 |  | 2 | 8 | 6 | 7 | 3 | 0 | 3 | 0 |
+| Trevon Brazile | DEN | 2 | -2.28 | 6/9 | 0.667 | 0/2 | 0.0 | 0 | 12 | 12 | 2 | 3 | 0 | 1 | 0 |
+| Jarrett Allen | CLE | 2 | -3.6 | 5/11 | 0.455 | 4/6 | 0.667 | 0 | 14 | 7 | 1 | 1 | 1 | 0 | 0 |
+| Bobby Portis Jr. | MIA | 1 | -3.8 | 2/6 | 0.333 | 0/0 |  | 0 | 4 | 10 | 5 | 1 | 0 | 1 | 0 |
+| Kel'el Ware | MIL | 2 | -4.38 | 2/12 | 0.167 | 0/0 |  | 0 | 4 | 14 | 1 | 0 | 3 | 2 | 0 |
+| Anfernee Simons | PHI | 2 | -6.95 | 2/12 | 0.167 | 1/1 | 1.0 | 1 | 6 | 3 | 1 | 0 | 0 | 1 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Bobby Portis Jr. | MIA | 1 | 1/3 | 0.333 | 0/0 |  | 0 | 2 | 3 | 2 | 0 | 0 | 0 | 0 |
-| Mitchell Robinson | BOS | 1 | 2/2 | 1.0 | 0/0 |  | 0 | 4 | 4 | 0 | 0 | 0 | 2 | 0 |
+| Mitchell Robinson | BOS | 2 | 3/10 | 0.3 | 1/2 | 0.5 | 0 | 7 | 14 | 1 | 1 | 1 | 3 | 0 |
 
-### T4 Hewon the game — 영입 주 0/4, 시즌 7/100
+### T4 Hewon the game — 영입 주 1/4, 시즌 8/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Darryn Peterson | UTA | 1 | 4.98 | 5/13 | 0.385 | 2/2 | 1.0 | 2 | 14 | 4 | 6 | 3 | 3 | 1 | 0 |
-| Stephen Curry | GSW | 1 | 4.85 | 9/21 | 0.429 | 11/12 | 0.917 | 5 | 34 | 6 | 7 | 1 | 0 | 3 | 0 |
-| Dylan Harper | SAS | 1 | 2.25 | 6/10 | 0.6 | 4/5 | 0.8 | 1 | 17 | 7 | 8 | 2 | 0 | 2 | 0 |
-| Wendell Carter Jr. | ORL | 1 | -2.22 | 2/3 | 0.667 | 2/2 | 1.0 | 0 | 6 | 9 | 0 | 1 | 0 | 1 | 0 |
-| Day'Ron Sharpe | BKN | 1 | -4.4 | 1/5 | 0.2 | 2/2 | 1.0 | 0 | 4 | 6 | 3 | 0 | 1 | 3 | 0 |
-| Zaccharie Risacher | DAL | 1 | -6.02 | 0/3 | 0.0 | 0/0 |  | 0 | 0 | 5 | 1 | 1 | 0 | 2 | 0 |
-| De'Andre Hunter | SAC | 1 | -6.21 | 3/13 | 0.231 | 0/0 |  | 0 | 6 | 7 | 2 | 0 | 0 | 2 | 0 |
-| Pascal Siakam | IND | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Andrew Nembhard | IND | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Dylan Harper | SAS | 2 | 1.59 | 15/25 | 0.6 | 6/7 | 0.857 | 2 | 38 | 12 | 8 | 2 | 0 | 4 | 0 |
+| Darryn Peterson | UTA | 2 | 0.82 | 7/21 | 0.333 | 5/6 | 0.833 | 2 | 21 | 6 | 13 | 3 | 3 | 3 | 0 |
+| Pascal Siakam | IND | 1 | -0.25 | 8/13 | 0.615 | 2/2 | 1.0 | 2 | 20 | 5 | 2 | 2 | 1 | 0 | 0 |
+| Day'Ron Sharpe | BKN | 2 | -1.46 | 3/8 | 0.375 | 3/4 | 0.75 | 0 | 9 | 11 | 11 | 1 | 3 | 4 | 0 |
+| Andrew Nembhard | IND | 1 | -1.74 | 8/15 | 0.533 | 4/4 | 1.0 | 2 | 22 | 2 | 4 | 1 | 1 | 2 | 0 |
+| Wendell Carter Jr. | ORL | 1 | -3.92 | 2/3 | 0.667 | 2/2 | 1.0 | 0 | 6 | 9 | 0 | 1 | 0 | 1 | 0 |
+| Zaccharie Risacher | DAL | 2 | -5.73 | 1/7 | 0.143 | 0/0 |  | 0 | 2 | 6 | 3 | 2 | 0 | 3 | 0 |
+| De'Andre Hunter | SAC | 2 | -5.74 | 7/23 | 0.304 | 5/6 | 0.833 | 1 | 20 | 9 | 4 | 0 | 0 | 4 | 0 |
+| Stephen Curry | GSW | 1 | 0.0 | 9/21 | 0.429 | 11/12 | 0.917 | 5 | 34 | 6 | 7 | 1 | 0 | 3 | 0 |
+| Jalen Johnson | ATL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### T5 Team Scott — 영입 주 1/4, 시즌 10/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Luka Dončić | LAL | 1 | 13.62 | 14/24 | 0.583 | 8/10 | 0.8 | 6 | 42 | 7 | 13 | 2 | 0 | 2 | 1 |
-| CJ McCollum | ATL | 1 | 3.61 | 4/17 | 0.235 | 3/4 | 0.75 | 2 | 13 | 9 | 12 | 1 | 1 | 3 | 1 |
-| Walker Kessler | LAL | 1 | 3.57 | 7/13 | 0.538 | 1/3 | 0.333 | 0 | 15 | 15 | 2 | 2 | 0 | 1 | 1 |
-| Jaylen Wells | MEM | 1 | 0.45 | 6/11 | 0.545 | 1/1 | 1.0 | 3 | 16 | 3 | 3 | 1 | 0 | 0 | 0 |
-| RJ Barrett | TOR | 1 | 0.17 | 10/19 | 0.526 | 4/8 | 0.5 | 2 | 26 | 6 | 3 | 0 | 2 | 2 | 0 |
-| Mo Bamba | UTA | 1 | -1.48 | 3/5 | 0.6 | 2/3 | 0.667 | 0 | 8 | 8 | 0 | 0 | 2 | 1 | 0 |
-| John Collins | DET | 1 | -4.18 | 1/4 | 0.25 | 2/2 | 1.0 | 0 | 4 | 3 | 1 | 1 | 1 | 2 | 0 |
-| Darius Garland | LAC | 1 | -5.18 | 5/14 | 0.357 | 5/6 | 0.833 | 1 | 16 | 4 | 8 | 0 | 0 | 7 | 0 |
-| Paul George | BOS | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Luka Dončić | LAL | 2 | 13.39 | 25/47 | 0.532 | 20/23 | 0.87 | 12 | 82 | 16 | 20 | 3 | 1 | 8 | 1 |
+| Walker Kessler | LAL | 2 | 6.99 | 13/21 | 0.619 | 4/7 | 0.571 | 0 | 30 | 23 | 2 | 5 | 4 | 1 | 1 |
+| CJ McCollum | ATL | 2 | 2.57 | 9/31 | 0.29 | 6/8 | 0.75 | 4 | 28 | 14 | 17 | 3 | 1 | 4 | 1 |
+| RJ Barrett | TOR | 2 | -0.87 | 17/36 | 0.472 | 9/16 | 0.562 | 5 | 48 | 11 | 6 | 0 | 2 | 2 | 0 |
+| Jaylen Wells | MEM | 2 | -1.66 | 6/14 | 0.429 | 1/1 | 1.0 | 3 | 16 | 5 | 6 | 1 | 1 | 1 | 0 |
+| Darius Garland | LAC | 2 | -2.26 | 15/28 | 0.536 | 7/8 | 0.875 | 5 | 42 | 5 | 15 | 0 | 0 | 13 | 0 |
+| Paul George | BOS | 1 | -2.76 | 8/18 | 0.444 | 4/7 | 0.571 | 5 | 25 | 3 | 5 | 4 | 0 | 6 | 0 |
+| Mo Bamba | UTA | 1 | -3.88 | 3/5 | 0.6 | 2/3 | 0.667 | 0 | 8 | 8 | 0 | 0 | 2 | 1 | 0 |
+| John Collins | DET | 1 | -5.16 | 1/4 | 0.25 | 2/2 | 1.0 | 0 | 4 | 3 | 1 | 1 | 1 | 2 | 0 |
+| Scoot Henderson | POR | 1 | -6.25 | 1/5 | 0.2 | 6/8 | 0.75 | 1 | 9 | 2 | 1 | 0 | 0 | 1 | 0 |
 
-### T6 ALTMAN_CH — 영입 주 1/4, 시즌 9/100
+벤치·IL에서 뛴 기록(팀 합계에 불포함):
+| 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Jakob Poeltl | TOR | 1 | 4/5 | 0.8 | 0/0 |  | 0 | 8 | 5 | 1 | 0 | 0 | 0 | 0 |
+| John Collins | DET | 1 | 7/9 | 0.778 | 2/2 | 1.0 | 0 | 16 | 1 | 0 | 0 | 0 | 0 | 0 |
+
+### T6 ALTMAN_CH — 영입 주 3/4, 시즌 11/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Tyrese Maxey | PHI | 1 | 8.48 | 10/15 | 0.667 | 5/6 | 0.833 | 1 | 26 | 4 | 11 | 2 | 2 | 4 | 1 |
-| Trey Murphy III | NOP | 1 | 1.46 | 5/11 | 0.455 | 5/5 | 1.0 | 3 | 18 | 5 | 5 | 0 | 0 | 0 | 0 |
-| Jalen Smith | CHI | 1 | -1.12 | 6/10 | 0.6 | 0/1 | 0.0 | 1 | 13 | 7 | 4 | 0 | 0 | 0 | 0 |
-| Kris Dunn | LAC | 1 | -1.9 | 4/11 | 0.364 | 3/3 | 1.0 | 1 | 12 | 4 | 1 | 2 | 0 | 1 | 0 |
-| Khaman Maluach | PHX | 1 | -3.57 | 2/3 | 0.667 | 1/2 | 0.5 | 0 | 5 | 2 | 0 | 1 | 1 | 0 | 0 |
-| Aaron Wiggins | ATL | 1 | -6.25 | 3/12 | 0.25 | 0/1 | 0.0 | 1 | 7 | 3 | 2 | 1 | 0 | 2 | 0 |
-| Payton Pritchard | BOS | 1 | -6.33 | 0/7 | 0.0 | 4/6 | 0.667 | 0 | 4 | 3 | 3 | 1 | 0 | 1 | 0 |
-| Matas Buzelis | CHI | 1 | -6.87 | 2/5 | 0.4 | 0/0 |  | 0 | 4 | 3 | 2 | 0 | 1 | 5 | 0 |
-| Sandro Mamukelashvili | LAL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tyrese Maxey | PHI | 2 | 6.02 | 15/31 | 0.484 | 11/12 | 0.917 | 4 | 45 | 5 | 18 | 2 | 2 | 5 | 1 |
+| Kris Dunn | LAC | 2 | -0.41 | 6/15 | 0.4 | 3/3 | 1.0 | 2 | 17 | 9 | 4 | 4 | 1 | 3 | 0 |
+| Trey Murphy III | NOP | 1 | -1.82 | 5/11 | 0.455 | 5/5 | 1.0 | 3 | 18 | 5 | 5 | 0 | 0 | 0 | 0 |
+| Jalen Smith | CHI | 2 | -2.17 | 7/13 | 0.538 | 0/1 | 0.0 | 2 | 16 | 9 | 4 | 0 | 1 | 0 | 0 |
+| Kyrie Irving | DAL | 1 | -2.35 | 9/27 | 0.333 | 6/8 | 0.75 | 5 | 29 | 7 | 5 | 1 | 0 | 1 | 0 |
+| Aaron Wiggins | ATL | 2 | -2.79 | 9/26 | 0.346 | 0/1 | 0.0 | 4 | 22 | 7 | 4 | 3 | 1 | 4 | 0 |
+| Matas Buzelis | CHI | 2 | -4.11 | 7/16 | 0.438 | 1/1 | 1.0 | 1 | 16 | 8 | 5 | 1 | 1 | 6 | 0 |
+| Payton Pritchard | BOS | 2 | -4.39 | 4/14 | 0.286 | 6/8 | 0.75 | 0 | 14 | 4 | 8 | 1 | 0 | 1 | 0 |
+| Khaman Maluach | PHX | 1 | -4.73 | 2/3 | 0.667 | 1/2 | 0.5 | 0 | 5 | 2 | 0 | 1 | 1 | 0 | 0 |
+| Sandro Mamukelashvili | LAL | 1 | -5.53 | 0/4 | 0.0 | 2/2 | 1.0 | 0 | 2 | 6 | 1 | 0 | 1 | 1 | 0 |
 
 ### T7 Cho — 영입 주 0/4, 시즌 4/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| James Harden | CLE | 1 | -0.81 | 5/10 | 0.5 | 1/3 | 0.333 | 3 | 14 | 4 | 6 | 1 | 0 | 1 | 0 |
-| Jaxson Hayes | UTA | 1 | -1.35 | 4/9 | 0.444 | 1/1 | 1.0 | 0 | 9 | 5 | 0 | 1 | 2 | 1 | 0 |
-| Brandin Podziemski | GSW | 1 | -2.06 | 7/15 | 0.467 | 3/4 | 0.75 | 3 | 20 | 3 | 2 | 1 | 0 | 3 | 0 |
-| Cameron Johnson | DEN | 1 | -3.22 | 2/5 | 0.4 | 2/2 | 1.0 | 1 | 7 | 4 | 2 | 2 | 0 | 3 | 0 |
-| Naz Reid | CHA | 1 | -4.24 | 4/11 | 0.364 | 3/6 | 0.5 | 2 | 13 | 6 | 2 | 0 | 0 | 1 | 0 |
-| Kyle Kuzma | MIL | 1 | -4.95 | 1/6 | 0.167 | 0/0 |  | 0 | 2 | 2 | 3 | 1 | 0 | 0 | 0 |
-| Ryan Rollins | MIL | 1 | -5.22 | 4/11 | 0.364 | 1/2 | 0.5 | 1 | 10 | 3 | 2 | 0 | 1 | 3 | 0 |
+| James Harden | CLE | 2 | 2.11 | 10/26 | 0.385 | 7/9 | 0.778 | 6 | 33 | 13 | 12 | 2 | 2 | 4 | 0 |
+| Naz Reid | CHA | 2 | -0.57 | 15/29 | 0.517 | 7/11 | 0.636 | 4 | 41 | 15 | 4 | 0 | 1 | 3 | 0 |
+| Cameron Johnson | DEN | 2 | -1.61 | 6/15 | 0.4 | 2/2 | 1.0 | 5 | 19 | 6 | 4 | 3 | 0 | 4 | 0 |
+| OG Anunoby | NYK | 1 | -2.16 | 3/10 | 0.3 | 11/12 | 0.917 | 1 | 18 | 5 | 2 | 3 | 0 | 2 | 0 |
+| Kyshawn George | WAS | 1 | -2.27 | 10/14 | 0.714 | 2/3 | 0.667 | 3 | 25 | 4 | 7 | 0 | 0 | 4 | 0 |
+| Ryan Rollins | MIL | 2 | -2.87 | 9/21 | 0.429 | 2/4 | 0.5 | 3 | 23 | 12 | 7 | 1 | 2 | 7 | 0 |
+| Jaxson Hayes | UTA | 2 | -3.14 | 5/11 | 0.455 | 1/1 | 1.0 | 0 | 11 | 12 | 1 | 1 | 3 | 5 | 0 |
+| Brandin Podziemski | GSW | 1 | -4.01 | 7/15 | 0.467 | 3/4 | 0.75 | 3 | 20 | 3 | 2 | 1 | 0 | 3 | 0 |
+| Kyle Kuzma | MIL | 2 | -4.39 | 3/11 | 0.273 | 1/2 | 0.5 | 1 | 8 | 7 | 7 | 2 | 0 | 3 | 0 |
 | Jalen Duren | DET | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
@@ -268,167 +286,187 @@
 | Kyshawn George | WAS | 1 | 9/15 | 0.6 | 0/1 | 0.0 | 4 | 22 | 4 | 5 | 1 | 1 | 1 | 0 |
 | OG Anunoby | NYK | 1 | 4/10 | 0.4 | 7/8 | 0.875 | 3 | 18 | 4 | 2 | 2 | 1 | 3 | 0 |
 
-### T8 IN's WooSSa Team — 영입 주 0/4, 시즌 7/100
+### T8 IN's WooSSa Team — 영입 주 1/4, 시즌 8/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Lauri Markkanen | UTA | 1 | 3.31 | 8/16 | 0.5 | 2/2 | 1.0 | 4 | 22 | 8 | 3 | 1 | 0 | 0 | 0 |
-| Tyler Herro | MIL | 1 | 1.69 | 8/18 | 0.444 | 1/2 | 0.5 | 4 | 21 | 6 | 3 | 3 | 0 | 2 | 0 |
-| Yaxel Lendeborg | GSW | 1 | 0.65 | 3/10 | 0.3 | 8/9 | 0.889 | 2 | 16 | 5 | 5 | 1 | 1 | 2 | 0 |
-| Ausar Thompson | DET | 1 | -0.79 | 5/7 | 0.714 | 4/5 | 0.8 | 0 | 14 | 6 | 4 | 0 | 1 | 2 | 0 |
-| Fred VanVleet | HOU | 1 | -1.33 | 3/9 | 0.333 | 0/0 |  | 2 | 8 | 2 | 9 | 1 | 0 | 1 | 0 |
-| Aday Mara | OKC | 1 | -1.96 | 5/7 | 0.714 | 0/0 |  | 0 | 10 | 9 | 0 | 0 | 1 | 2 | 0 |
-| Norman Powell | CHI | 1 | -3.07 | 5/13 | 0.385 | 7/11 | 0.636 | 1 | 18 | 3 | 0 | 2 | 0 | 0 | 0 |
-| Cooper Flagg | DAL | 1 | -4.08 | 3/19 | 0.158 | 11/11 | 1.0 | 0 | 17 | 4 | 6 | 2 | 0 | 6 | 0 |
+| Lauri Markkanen | UTA | 2 | 6.32 | 14/31 | 0.452 | 6/8 | 0.75 | 9 | 43 | 18 | 7 | 2 | 2 | 3 | 1 |
+| Tyler Herro | MIL | 2 | 3.07 | 16/35 | 0.457 | 6/7 | 0.857 | 8 | 46 | 11 | 6 | 3 | 0 | 3 | 0 |
+| Ausar Thompson | DET | 2 | 2.39 | 9/17 | 0.529 | 7/9 | 0.778 | 0 | 25 | 23 | 7 | 1 | 1 | 3 | 1 |
+| Aday Mara | OKC | 2 | -0.17 | 9/13 | 0.692 | 1/2 | 0.5 | 0 | 19 | 14 | 2 | 0 | 4 | 2 | 0 |
+| Cooper Flagg | DAL | 2 | -1.41 | 10/38 | 0.263 | 16/18 | 0.889 | 0 | 36 | 14 | 11 | 2 | 0 | 7 | 1 |
+| Alex Sarr | WAS | 1 | -2.34 | 3/6 | 0.5 | 5/6 | 0.833 | 0 | 11 | 9 | 1 | 2 | 1 | 1 | 0 |
+| Yaxel Lendeborg | GSW | 1 | -2.53 | 3/10 | 0.3 | 8/9 | 0.889 | 2 | 16 | 5 | 5 | 1 | 1 | 2 | 0 |
+| Tari Eason | HOU | 1 | -3.43 | 4/10 | 0.4 | 0/0 |  | 1 | 9 | 6 | 1 | 2 | 0 | 0 | 0 |
+| Fred VanVleet | HOU | 1 | -3.44 | 3/9 | 0.333 | 0/0 |  | 2 | 8 | 2 | 9 | 1 | 0 | 1 | 0 |
+| Norman Powell | CHI | 2 | -5.27 | 8/25 | 0.32 | 13/18 | 0.722 | 1 | 30 | 4 | 1 | 2 | 0 | 2 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Fred VanVleet | HOU | 1 | 6/12 | 0.5 | 2/2 | 1.0 | 4 | 18 | 3 | 3 | 0 | 0 | 3 | 0 |
 | Tari Eason | HOU | 1 | 5/8 | 0.625 | 0/0 |  | 3 | 13 | 4 | 3 | 0 | 2 | 2 | 0 |
 
-### T9 TEAM G-JAY — 영입 주 0/4, 시즌 5/100
+### T9 TEAM G-JAY — 영입 주 1/4, 시즌 6/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Cameron Boozer | MEM | 1 | 2.12 | 5/11 | 0.455 | 6/7 | 0.857 | 2 | 18 | 9 | 5 | 0 | 2 | 3 | 0 |
-| Evan Mobley | CLE | 1 | 1.75 | 6/11 | 0.545 | 3/4 | 0.75 | 1 | 16 | 7 | 4 | 1 | 2 | 2 | 0 |
-| AJ Dybantsa | WAS | 1 | 0.91 | 7/17 | 0.412 | 6/6 | 1.0 | 1 | 21 | 5 | 2 | 3 | 0 | 2 | 0 |
-| Donovan Mitchell | CLE | 1 | 0.75 | 6/17 | 0.353 | 1/4 | 0.25 | 4 | 17 | 5 | 11 | 0 | 0 | 3 | 1 |
-| Stephon Castle | SAS | 1 | 0.13 | 7/16 | 0.438 | 0/0 |  | 2 | 16 | 5 | 4 | 0 | 1 | 0 | 0 |
-| Aaron Gordon | DEN | 1 | -2.66 | 2/6 | 0.333 | 0/0 |  | 1 | 5 | 6 | 2 | 1 | 1 | 2 | 0 |
-| Devin Vassell | SAS | 1 | -3.62 | 4/9 | 0.444 | 3/3 | 1.0 | 0 | 11 | 2 | 1 | 1 | 0 | 1 | 0 |
-| Julian Champagnie | SAS | 1 | -3.89 | 2/5 | 0.4 | 2/3 | 0.667 | 2 | 8 | 6 | 0 | 0 | 0 | 1 | 0 |
+| Evan Mobley | CLE | 2 | 3.54 | 13/26 | 0.5 | 4/6 | 0.667 | 2 | 32 | 17 | 7 | 1 | 4 | 4 | 1 |
+| Donovan Mitchell | CLE | 2 | 3.32 | 16/34 | 0.471 | 3/6 | 0.5 | 9 | 44 | 8 | 17 | 1 | 0 | 5 | 1 |
+| Stephon Castle | SAS | 2 | 0.59 | 13/36 | 0.361 | 3/4 | 0.75 | 4 | 33 | 15 | 7 | 0 | 1 | 2 | 1 |
+| Aaron Gordon | DEN | 2 | 0.3 | 9/15 | 0.6 | 2/2 | 1.0 | 2 | 22 | 7 | 2 | 3 | 2 | 3 | 0 |
+| Joel Embiid | PHI | 1 | 0.16 | 8/18 | 0.444 | 10/10 | 1.0 | 0 | 26 | 15 | 2 | 1 | 0 | 4 | 1 |
+| Cameron Boozer | MEM | 2 | -1.33 | 9/25 | 0.36 | 6/7 | 0.857 | 4 | 28 | 15 | 9 | 1 | 2 | 8 | 0 |
+| Devin Vassell | SAS | 2 | -1.93 | 4/17 | 0.235 | 5/5 | 1.0 | 0 | 13 | 9 | 5 | 3 | 1 | 1 | 0 |
+| AJ Dybantsa | WAS | 2 | -2.05 | 11/29 | 0.379 | 7/10 | 0.7 | 1 | 30 | 11 | 5 | 3 | 0 | 2 | 0 |
+| Julian Champagnie | SAS | 1 | -5.22 | 2/5 | 0.4 | 2/3 | 0.667 | 2 | 8 | 6 | 0 | 0 | 0 | 1 | 0 |
 | Anthony Black | ORL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Joel Embiid | PHI | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Joel Embiid | PHI | 1 | 5/11 | 0.455 | 5/6 | 0.833 | 0 | 15 | 8 | 3 | 0 | 0 | 3 | 0 |
+| Julian Champagnie | SAS | 1 | 0/6 | 0.0 | 0/0 |  | 0 | 0 | 4 | 3 | 1 | 0 | 0 | 0 |
 
-### T10 CHAN — 영입 주 0/4, 시즌 7/100
+### T10 CHAN — 영입 주 1/4, 시즌 8/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Derik Queen | NOP | 1 | 3.43 | 7/13 | 0.538 | 5/6 | 0.833 | 1 | 20 | 7 | 5 | 2 | 1 | 1 | 0 |
-| Onyeka Okongwu | ATL | 1 | 2.23 | 5/11 | 0.455 | 1/2 | 0.5 | 2 | 13 | 10 | 3 | 0 | 0 | 0 | 1 |
-| Precious Achiuwa | SAC | 1 | 1.75 | 2/3 | 0.667 | 2/3 | 0.667 | 0 | 6 | 10 | 3 | 2 | 2 | 1 | 0 |
-| Jaime Jaquez Jr. | MIL | 1 | -0.96 | 8/17 | 0.471 | 1/1 | 1.0 | 2 | 19 | 8 | 2 | 1 | 0 | 3 | 0 |
-| Amen Thompson | HOU | 1 | -2.84 | 5/9 | 0.556 | 4/5 | 0.8 | 0 | 14 | 3 | 3 | 1 | 0 | 2 | 0 |
-| Ace Bailey | UTA | 1 | -3.87 | 2/11 | 0.182 | 0/0 |  | 1 | 5 | 6 | 2 | 1 | 0 | 0 | 0 |
-| Keaton Wagler | LAC | 1 | -4.02 | 2/5 | 0.4 | 2/4 | 0.5 | 0 | 6 | 4 | 4 | 0 | 1 | 1 | 0 |
-| Toumani Camara | POR | 1 | -5.06 | 3/8 | 0.375 | 0/0 |  | 3 | 9 | 5 | 1 | 0 | 0 | 4 | 0 |
+| Onyeka Okongwu | ATL | 2 | 6.6 | 10/20 | 0.5 | 3/4 | 0.75 | 4 | 27 | 26 | 7 | 2 | 1 | 3 | 2 |
+| Derik Queen | NOP | 2 | 2.97 | 15/34 | 0.441 | 9/10 | 0.9 | 1 | 40 | 16 | 11 | 2 | 2 | 3 | 0 |
+| Precious Achiuwa | SAC | 2 | 0.85 | 5/10 | 0.5 | 2/3 | 0.667 | 1 | 13 | 13 | 4 | 2 | 4 | 1 | 0 |
+| Jaime Jaquez Jr. | MIL | 2 | -1.25 | 15/33 | 0.455 | 1/3 | 0.333 | 6 | 37 | 10 | 4 | 2 | 0 | 4 | 0 |
+| Amen Thompson | HOU | 2 | -3.67 | 8/18 | 0.444 | 9/11 | 0.818 | 0 | 25 | 11 | 4 | 1 | 0 | 5 | 0 |
+| Ace Bailey | UTA | 2 | -4.03 | 8/25 | 0.32 | 2/3 | 0.667 | 2 | 20 | 11 | 3 | 1 | 1 | 3 | 0 |
+| Keaton Wagler | LAC | 1 | -5.45 | 2/5 | 0.4 | 2/4 | 0.5 | 0 | 6 | 4 | 4 | 0 | 1 | 1 | 0 |
+| Toumani Camara | POR | 2 | -6.75 | 7/17 | 0.412 | 2/6 | 0.333 | 4 | 20 | 9 | 3 | 0 | 0 | 6 | 0 |
+| Ivica Zubac | IND | 1 | -7.68 | 0/5 | 0.0 | 1/2 | 0.5 | 0 | 1 | 4 | 2 | 0 | 0 | 2 | 0 |
 | Collin Gillespie | PHX | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### T11 YoungHun`s Team Bravo — 영입 주 0/4, 시즌 3/100
+벤치·IL에서 뛴 기록(팀 합계에 불포함):
+| 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Aaron Nesmith | IND | 1 | 7/16 | 0.438 | 0/1 | 0.0 | 2 | 16 | 1 | 2 | 3 | 1 | 1 | 0 |
+| Collin Gillespie | PHX | 1 | 1/5 | 0.2 | 0/0 |  | 0 | 2 | 3 | 2 | 2 | 0 | 2 | 0 |
+
+### T11 YoungHun`s Team Bravo — 영입 주 1/4, 시즌 4/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Jaylen Brown | PHI | 1 | 8.37 | 9/15 | 0.6 | 3/4 | 0.75 | 4 | 25 | 11 | 5 | 1 | 0 | 0 | 1 |
-| Zion Williamson | NOP | 1 | 5.01 | 9/15 | 0.6 | 7/9 | 0.778 | 0 | 25 | 11 | 4 | 0 | 0 | 0 | 1 |
-| Scottie Barnes | TOR | 1 | 2.77 | 7/15 | 0.467 | 8/15 | 0.533 | 0 | 22 | 15 | 8 | 2 | 0 | 3 | 1 |
-| Daniel Gafford | DAL | 1 | 2.08 | 9/10 | 0.9 | 2/2 | 1.0 | 0 | 20 | 7 | 0 | 1 | 1 | 1 | 0 |
-| Damian Lillard | POR | 1 | 1.07 | 5/11 | 0.455 | 9/10 | 0.9 | 1 | 20 | 6 | 6 | 1 | 0 | 2 | 0 |
-| De'Aaron Fox | SAS | 1 | -2.62 | 5/8 | 0.625 | 1/2 | 0.5 | 1 | 12 | 2 | 3 | 1 | 0 | 1 | 0 |
-| Jalen Green | PHX | 1 | -2.74 | 5/14 | 0.357 | 1/6 | 0.167 | 0 | 11 | 8 | 8 | 2 | 2 | 4 | 0 |
-| Domantas Sabonis | SAC | 1 | -3.13 | 4/4 | 1.0 | 1/2 | 0.5 | 0 | 9 | 7 | 4 | 1 | 0 | 4 | 0 |
+| Jaylen Brown | PHI | 2 | 8.53 | 20/34 | 0.588 | 8/11 | 0.727 | 7 | 55 | 18 | 6 | 2 | 1 | 0 | 1 |
+| Zion Williamson | NOP | 2 | 4.3 | 15/29 | 0.517 | 18/22 | 0.818 | 0 | 48 | 15 | 6 | 1 | 2 | 2 | 1 |
+| Damian Lillard | POR | 2 | 2.53 | 14/28 | 0.5 | 14/15 | 0.933 | 3 | 45 | 9 | 11 | 1 | 0 | 3 | 0 |
+| Domantas Sabonis | SAC | 2 | 0.39 | 9/14 | 0.643 | 7/11 | 0.636 | 0 | 25 | 24 | 5 | 2 | 0 | 6 | 1 |
+| Scottie Barnes | TOR | 2 | 0.36 | 14/30 | 0.467 | 10/19 | 0.526 | 1 | 39 | 21 | 14 | 5 | 0 | 9 | 1 |
+| Daniel Gafford | DAL | 2 | -0.35 | 10/16 | 0.625 | 2/3 | 0.667 | 0 | 22 | 11 | 1 | 2 | 3 | 3 | 0 |
+| Jalen Green | PHX | 2 | -1.62 | 11/31 | 0.355 | 9/14 | 0.643 | 2 | 33 | 10 | 10 | 2 | 4 | 6 | 0 |
+| De'Aaron Fox | SAS | 2 | -2.17 | 8/18 | 0.444 | 5/6 | 0.833 | 1 | 22 | 5 | 7 | 2 | 1 | 4 | 0 |
 | Daniss Jenkins | DET | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Isaiah Jackson | LAC | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Daniss Jenkins | DET | 1 | 1/4 | 0.25 | 0/0 |  | 0 | 2 | 1 | 7 | 0 | 0 | 2 | 0 |
-| Isaiah Jackson | LAC | 1 | 9/11 | 0.818 | 0/0 |  | 1 | 19 | 8 | 2 | 0 | 0 | 2 | 0 |
+| Daniss Jenkins | DET | 2 | 3/10 | 0.3 | 0/0 |  | 1 | 7 | 2 | 11 | 0 | 0 | 6 | 0 |
+| Isaiah Jackson | LAC | 2 | 10/15 | 0.667 | 0/2 | 0.0 | 1 | 21 | 12 | 4 | 1 | 0 | 4 | 0 |
 
 ### T12 Kharami — 영입 주 1/4, 시즌 9/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Miles Bridges | PHX | 1 | 5.08 | 7/14 | 0.5 | 4/5 | 0.8 | 3 | 21 | 6 | 3 | 4 | 1 | 1 | 0 |
-| Giannis Antetokounmpo | MIA | 1 | 4.41 | 10/17 | 0.588 | 10/15 | 0.667 | 0 | 30 | 12 | 7 | 1 | 2 | 7 | 1 |
-| Josh Giddey | CHI | 1 | 3.2 | 5/15 | 0.333 | 1/2 | 0.5 | 2 | 13 | 4 | 10 | 1 | 2 | 3 | 1 |
-| Zach LaVine | SAC | 1 | -0.23 | 8/14 | 0.571 | 2/2 | 1.0 | 5 | 23 | 4 | 1 | 0 | 0 | 3 | 0 |
-| Julius Randle | BKN | 1 | -0.71 | 5/16 | 0.312 | 11/15 | 0.733 | 0 | 21 | 11 | 2 | 1 | 0 | 4 | 1 |
-| Rudy Gobert | MIN | 1 | -2.85 | 3/6 | 0.5 | 4/12 | 0.333 | 0 | 10 | 10 | 1 | 0 | 1 | 0 | 1 |
-| Jeremiah Fears | NOP | 1 | -5.43 | 5/17 | 0.294 | 2/2 | 1.0 | 0 | 12 | 4 | 7 | 0 | 0 | 4 | 0 |
-| Derrick White | BOS | 1 | -6.14 | 3/12 | 0.25 | 0/0 |  | 1 | 7 | 2 | 3 | 1 | 0 | 3 | 0 |
-| Jrue Holiday | POR | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Giannis Antetokounmpo | MIA | 2 | 8.28 | 18/37 | 0.486 | 21/28 | 0.75 | 0 | 57 | 26 | 13 | 3 | 5 | 10 | 2 |
+| Miles Bridges | PHX | 2 | 6.24 | 13/27 | 0.481 | 6/8 | 0.75 | 7 | 39 | 13 | 8 | 6 | 1 | 1 | 0 |
+| Julius Randle | BKN | 2 | 0.23 | 12/29 | 0.414 | 17/22 | 0.773 | 2 | 43 | 14 | 6 | 2 | 0 | 6 | 1 |
+| Zach LaVine | SAC | 2 | 0.02 | 14/28 | 0.5 | 8/9 | 0.889 | 8 | 44 | 8 | 2 | 1 | 2 | 9 | 0 |
+| Josh Giddey | CHI | 2 | -0.03 | 9/22 | 0.409 | 2/4 | 0.5 | 3 | 23 | 5 | 16 | 1 | 2 | 6 | 1 |
+| Rudy Gobert | MIN | 2 | -1.76 | 6/13 | 0.462 | 6/18 | 0.333 | 0 | 18 | 21 | 3 | 1 | 5 | 0 | 1 |
+| Jeremiah Fears | NOP | 2 | -2.56 | 11/33 | 0.333 | 8/8 | 1.0 | 1 | 31 | 10 | 9 | 2 | 0 | 6 | 0 |
+| Jrue Holiday | POR | 1 | -3.47 | 5/9 | 0.556 | 0/0 |  | 5 | 15 | 4 | 0 | 1 | 0 | 3 | 0 |
+| Derrick White | BOS | 1 | -6.5 | 3/12 | 0.25 | 0/0 |  | 1 | 7 | 2 | 3 | 1 | 0 | 3 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Derrick White | BOS | 1 | 7/18 | 0.389 | 9/9 | 1.0 | 1 | 24 | 4 | 7 | 1 | 2 | 2 | 0 |
 | Jrue Holiday | POR | 1 | 7/11 | 0.636 | 0/0 |  | 3 | 17 | 8 | 10 | 1 | 1 | 2 | 1 |
 
 ### T13 Hanseong's Team — 영입 주 0/4, 시즌 4/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alperen Şengün | HOU | 1 | 11.12 | 12/15 | 0.8 | 1/2 | 0.5 | 1 | 26 | 7 | 10 | 2 | 2 | 1 | 1 |
-| LaMelo Ball | MIN | 1 | 4.03 | 12/21 | 0.571 | 4/5 | 0.8 | 6 | 34 | 6 | 3 | 1 | 0 | 3 | 0 |
-| Franz Wagner | ORL | 1 | 0.21 | 10/18 | 0.556 | 3/3 | 1.0 | 1 | 24 | 3 | 6 | 1 | 0 | 3 | 0 |
-| LeBron James | PHI | 1 | -1.51 | 6/13 | 0.462 | 3/5 | 0.6 | 0 | 15 | 7 | 9 | 1 | 0 | 3 | 0 |
-| Sam Merrill | CLE | 1 | -2.61 | 2/8 | 0.25 | 2/2 | 1.0 | 2 | 8 | 3 | 2 | 1 | 0 | 0 | 0 |
-| Grayson Allen | CHA | 1 | -4.37 | 3/7 | 0.429 | 2/2 | 1.0 | 3 | 11 | 1 | 0 | 0 | 0 | 2 | 0 |
-| Dejounte Murray | NOP | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Alex Caruso | OKC | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Alperen Şengün | HOU | 2 | 10.21 | 17/30 | 0.567 | 8/11 | 0.727 | 1 | 43 | 19 | 20 | 2 | 5 | 6 | 2 |
+| LaMelo Ball | MIN | 2 | 4.09 | 18/32 | 0.562 | 8/10 | 0.8 | 10 | 54 | 8 | 9 | 4 | 1 | 10 | 0 |
+| LeBron James | PHI | 2 | 2.82 | 11/23 | 0.478 | 5/7 | 0.714 | 1 | 28 | 17 | 17 | 2 | 1 | 6 | 1 |
+| Anthony Davis | WAS | 1 | 2.72 | 12/19 | 0.632 | 2/2 | 1.0 | 0 | 26 | 10 | 3 | 0 | 3 | 0 | 1 |
+| Grayson Allen | CHA | 2 | 0.65 | 9/18 | 0.5 | 7/7 | 1.0 | 8 | 33 | 3 | 4 | 1 | 1 | 4 | 0 |
+| Dejounte Murray | NOP | 1 | 0.3 | 4/7 | 0.571 | 11/11 | 1.0 | 1 | 20 | 8 | 4 | 4 | 0 | 4 | 0 |
+| Franz Wagner | ORL | 1 | -2.35 | 10/18 | 0.556 | 3/3 | 1.0 | 1 | 24 | 3 | 6 | 1 | 0 | 3 | 0 |
+| Sam Merrill | CLE | 1 | -4.22 | 2/8 | 0.25 | 2/2 | 1.0 | 2 | 8 | 3 | 2 | 1 | 0 | 0 | 0 |
+| Alex Caruso | OKC | 1 | -4.44 | 1/3 | 0.333 | 4/4 | 1.0 | 1 | 7 | 4 | 3 | 0 | 0 | 1 | 0 |
+| Coby White | CHA | 1 | -6.23 | 2/9 | 0.222 | 0/0 |  | 0 | 4 | 5 | 2 | 0 | 1 | 2 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Andrew Wiggins | MIA | 1 | 2/7 | 0.286 | 1/2 | 0.5 | 2 | 7 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Andrew Wiggins | MIA | 2 | 3/12 | 0.25 | 1/2 | 0.5 | 3 | 10 | 4 | 3 | 1 | 1 | 2 | 0 |
 | Anthony Davis | WAS | 1 | 12/17 | 0.706 | 2/2 | 1.0 | 1 | 27 | 9 | 1 | 4 | 0 | 5 | 0 |
 | Coby White | CHA | 1 | 3/9 | 0.333 | 0/0 |  | 1 | 7 | 0 | 3 | 0 | 0 | 3 | 0 |
 
 ### T14 hyun's Team — 영입 주 1/4, 시즌 7/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Donovan Clingan | POR | 1 | 8.94 | 8/16 | 0.5 | 0/0 |  | 1 | 17 | 18 | 3 | 0 | 4 | 2 | 1 |
-| Jamal Murray | DEN | 1 | 7.36 | 10/19 | 0.526 | 11/11 | 1.0 | 4 | 35 | 5 | 6 | 1 | 1 | 2 | 0 |
-| Ty Jerome | MEM | 1 | 6.38 | 14/22 | 0.636 | 7/8 | 0.875 | 5 | 40 | 5 | 5 | 2 | 0 | 4 | 0 |
-| Jabari Smith Jr. | HOU | 1 | 3.21 | 5/10 | 0.5 | 0/0 |  | 4 | 14 | 10 | 0 | 0 | 0 | 0 | 1 |
-| Dyson Daniels | ATL | 1 | -0.15 | 3/10 | 0.3 | 0/0 |  | 0 | 6 | 9 | 4 | 3 | 1 | 2 | 0 |
-| Christian Braun | DEN | 1 | -0.49 | 4/7 | 0.571 | 5/6 | 0.833 | 1 | 14 | 3 | 3 | 2 | 0 | 1 | 0 |
-| Jayson Tatum | BOS | 1 | -0.75 | 5/16 | 0.312 | 8/8 | 1.0 | 1 | 19 | 6 | 9 | 1 | 0 | 5 | 0 |
-| P.J. Washington | DAL | 1 | -2.95 | 2/9 | 0.222 | 6/8 | 0.75 | 2 | 12 | 5 | 1 | 2 | 0 | 2 | 0 |
+| Donovan Clingan | POR | 2 | 10.34 | 17/28 | 0.607 | 5/6 | 0.833 | 2 | 41 | 29 | 4 | 1 | 7 | 6 | 2 |
+| Jamal Murray | DEN | 2 | 5.2 | 14/30 | 0.467 | 15/15 | 1.0 | 6 | 49 | 10 | 13 | 2 | 1 | 5 | 0 |
+| Ty Jerome | MEM | 2 | 4.04 | 24/42 | 0.571 | 8/10 | 0.8 | 7 | 63 | 9 | 8 | 2 | 1 | 7 | 0 |
+| Jabari Smith Jr. | HOU | 2 | 3.56 | 8/14 | 0.571 | 3/4 | 0.75 | 6 | 25 | 14 | 2 | 0 | 3 | 1 | 1 |
+| P.J. Washington | DAL | 2 | 1.34 | 9/27 | 0.333 | 10/13 | 0.769 | 5 | 33 | 15 | 4 | 2 | 1 | 3 | 1 |
+| Christian Braun | DEN | 2 | 0.7 | 8/12 | 0.667 | 7/8 | 0.875 | 2 | 25 | 6 | 6 | 3 | 0 | 2 | 0 |
+| Dyson Daniels | ATL | 2 | 0.04 | 7/23 | 0.304 | 0/0 |  | 0 | 14 | 25 | 12 | 3 | 1 | 4 | 0 |
+| Jayson Tatum | BOS | 1 | -3.36 | 5/16 | 0.312 | 8/8 | 1.0 | 1 | 19 | 6 | 9 | 1 | 0 | 5 | 0 |
+| Kon Knueppel | CHA | 1 | -6.86 | 0/1 | 0.0 | 3/3 | 1.0 | 0 | 3 | 0 | 0 | 0 | 0 | 2 | 0 |
 | Moritz Wagner | BKN | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jonathan Kuminga | MIN | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Jonathan Kuminga | MIN | 1 | 3/8 | 0.375 | 0/0 |  | 2 | 8 | 10 | 3 | 0 | 4 | 4 | 0 |
+| Jonathan Kuminga | MIN | 2 | 8/18 | 0.444 | 2/4 | 0.5 | 6 | 24 | 18 | 8 | 1 | 5 | 5 | 0 |
+| Klay Thompson | MIA | 1 | 11/22 | 0.5 | 0/0 |  | 8 | 30 | 5 | 3 | 0 | 1 | 2 | 0 |
 | Moritz Wagner | BKN | 1 | 2/7 | 0.286 | 1/1 | 1.0 | 1 | 6 | 1 | 2 | 1 | 0 | 0 | 0 |
 
 ### T15 SEOB's ME7O team — 영입 주 1/4, 시즌 4/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Shai Gilgeous-Alexander | OKC | 1 | 7.32 | 14/35 | 0.4 | 11/12 | 0.917 | 4 | 43 | 3 | 8 | 2 | 1 | 1 | 0 |
-| Bam Adebayo | MIA | 1 | 2.12 | 5/10 | 0.5 | 5/7 | 0.714 | 1 | 16 | 9 | 4 | 2 | 2 | 3 | 0 |
-| Immanuel Quickley | TOR | 1 | 1.28 | 8/13 | 0.615 | 10/11 | 0.909 | 1 | 27 | 4 | 2 | 1 | 0 | 2 | 0 |
-| Devin Booker | PHX | 1 | 0.49 | 8/18 | 0.444 | 8/8 | 1.0 | 2 | 26 | 3 | 5 | 0 | 0 | 2 | 0 |
-| Isaiah Hartenstein | OKC | 1 | -0.75 | 2/8 | 0.25 | 1/2 | 0.5 | 0 | 5 | 14 | 4 | 2 | 0 | 1 | 0 |
-| Zach Edey | MEM | 1 | -1.16 | 2/6 | 0.333 | 2/2 | 1.0 | 0 | 6 | 9 | 1 | 0 | 2 | 1 | 0 |
-| Desmond Bane | ORL | 1 | -1.74 | 8/17 | 0.471 | 0/0 |  | 4 | 20 | 3 | 3 | 1 | 0 | 4 | 0 |
+| Bam Adebayo | MIA | 2 | 7.11 | 19/30 | 0.633 | 11/15 | 0.733 | 2 | 51 | 19 | 8 | 3 | 2 | 4 | 1 |
+| Shai Gilgeous-Alexander | OKC | 2 | 6.73 | 25/61 | 0.41 | 26/31 | 0.839 | 9 | 85 | 7 | 16 | 2 | 2 | 5 | 0 |
+| Devin Booker | PHX | 2 | 2.29 | 17/37 | 0.459 | 21/21 | 1.0 | 4 | 59 | 4 | 7 | 0 | 0 | 4 | 0 |
+| Immanuel Quickley | TOR | 2 | 2.23 | 13/25 | 0.52 | 11/12 | 0.917 | 3 | 40 | 5 | 9 | 3 | 0 | 3 | 0 |
+| Zach Edey | MEM | 2 | 1.34 | 6/12 | 0.5 | 5/7 | 0.714 | 0 | 17 | 22 | 2 | 0 | 4 | 3 | 1 |
+| Isaiah Hartenstein | OKC | 2 | 0.33 | 3/10 | 0.3 | 2/4 | 0.5 | 0 | 8 | 26 | 8 | 4 | 0 | 1 | 0 |
+| Desmond Bane | ORL | 1 | -3.76 | 8/17 | 0.471 | 0/0 |  | 4 | 20 | 3 | 3 | 1 | 0 | 4 | 0 |
+| Ja'Kobe Walter | TOR | 1 | -6.66 | 3/8 | 0.375 | 1/2 | 0.5 | 1 | 8 | 1 | 2 | 0 | 0 | 2 | 0 |
 | Peyton Watson | CLE | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ja'Kobe Walter | TOR | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| DeMar DeRozan | DEN | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Ja'Kobe Walter | TOR | 1 | 2/6 | 0.333 | 6/10 | 0.6 | 0 | 10 | 6 | 5 | 1 | 0 | 1 | 0 |
+| Rui Hachimura | LAC | 1 | 7/18 | 0.389 | 6/7 | 0.857 | 1 | 21 | 9 | 7 | 1 | 0 | 1 | 0 |
 
 ### T16 Jaehun's Matchless Team — 영입 주 0/4, 시즌 7/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Duncan Robinson | DET | 1 | 5.38 | 8/11 | 0.727 | 2/2 | 1.0 | 6 | 24 | 2 | 3 | 3 | 0 | 1 | 0 |
-| Victor Wembanyama | SAS | 1 | 2.5 | 5/15 | 0.333 | 2/3 | 0.667 | 0 | 12 | 11 | 5 | 1 | 3 | 5 | 1 |
-| Michael Porter Jr. | BKN | 1 | 1.75 | 6/13 | 0.462 | 2/3 | 0.667 | 4 | 18 | 5 | 2 | 1 | 1 | 0 | 0 |
-| Ajay Mitchell | OKC | 1 | -0.17 | 7/16 | 0.438 | 6/6 | 1.0 | 0 | 20 | 5 | 1 | 0 | 1 | 0 | 0 |
-| Austin Reaves | LAL | 1 | -0.49 | 10/15 | 0.667 | 3/4 | 0.75 | 4 | 27 | 2 | 5 | 0 | 0 | 5 | 0 |
-| Dillon Brooks | PHX | 1 | -0.82 | 5/8 | 0.625 | 6/7 | 0.857 | 2 | 18 | 8 | 4 | 0 | 0 | 4 | 0 |
-| Brandon Miller | CHA | 1 | -2.76 | 7/18 | 0.389 | 0/0 |  | 3 | 17 | 1 | 4 | 0 | 0 | 1 | 0 |
-| Jaden McDaniels | MIN | 1 | -4.52 | 5/14 | 0.357 | 1/3 | 0.333 | 2 | 13 | 6 | 3 | 0 | 0 | 2 | 0 |
+| Victor Wembanyama | SAS | 2 | 15.93 | 21/43 | 0.488 | 21/26 | 0.808 | 1 | 64 | 35 | 7 | 3 | 11 | 6 | 2 |
+| Duncan Robinson | DET | 2 | 7.02 | 16/23 | 0.696 | 6/8 | 0.75 | 13 | 51 | 3 | 5 | 4 | 0 | 1 | 0 |
+| Michael Porter Jr. | BKN | 2 | 2.47 | 14/30 | 0.467 | 8/13 | 0.615 | 8 | 44 | 15 | 2 | 1 | 1 | 2 | 1 |
+| Ajay Mitchell | OKC | 2 | 1.05 | 16/33 | 0.485 | 10/12 | 0.833 | 1 | 43 | 12 | 5 | 1 | 1 | 1 | 0 |
+| Austin Reaves | LAL | 2 | 0.97 | 17/30 | 0.567 | 9/10 | 0.9 | 5 | 48 | 5 | 9 | 0 | 0 | 5 | 0 |
+| Myles Turner | MIL | 1 | 0.94 | 4/6 | 0.667 | 0/0 |  | 4 | 12 | 9 | 6 | 2 | 2 | 1 | 0 |
+| Jaden McDaniels | MIN | 2 | -2.31 | 12/28 | 0.429 | 1/3 | 0.333 | 2 | 27 | 14 | 7 | 2 | 0 | 4 | 0 |
+| Dillon Brooks | PHX | 1 | -3.35 | 5/8 | 0.625 | 6/7 | 0.857 | 2 | 18 | 8 | 4 | 0 | 0 | 4 | 0 |
+| Brandon Miller | CHA | 2 | -5.26 | 9/33 | 0.273 | 5/5 | 1.0 | 4 | 27 | 5 | 5 | 0 | 0 | 4 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dillon Brooks | PHX | 1 | 7/15 | 0.467 | 1/2 | 0.5 | 0 | 15 | 6 | 2 | 1 | 0 | 4 | 0 |
 | Myles Turner | MIL | 1 | 5/10 | 0.5 | 0/0 |  | 3 | 13 | 5 | 2 | 0 | 5 | 1 | 0 |
-| Robert Williams III | POR | 1 | 1/4 | 0.25 | 0/0 |  | 0 | 2 | 6 | 2 | 0 | 0 | 1 | 0 |
+| Robert Williams III | POR | 2 | 5/12 | 0.417 | 1/1 | 1.0 | 0 | 11 | 14 | 3 | 2 | 3 | 2 | 0 |
 
 ## 트랜잭션 (한국 시간)
 - X1 2026-11-02 20:10 · add/drop · De'Anthony Melton (add: FA → Kharami); Derrick Jones Jr. (drop: Kharami → Waivers)
@@ -438,6 +476,13 @@
 - X5 2026-11-03 04:20 · add/drop · Jakob Poeltl (add: Waivers → Team Scott); Mo Bamba (drop: Team Scott → Waivers)
 - X6 2026-11-03 13:48 · add/drop · Klay Thompson (add: FA → hyun's Team); Moritz Wagner (drop: hyun's Team → Waivers)
 - X7 2026-11-03 18:58 · drop · Sam Merrill (drop: Hanseong's Team → Waivers)
+- X8 2026-11-04 04:17 · add/drop · Tristan da Silva (add: Waivers → TEAM G-JAY); Julian Champagnie (drop: TEAM G-JAY → Waivers)
+- X9 2026-11-04 21:09 · add/drop · Kingston Flemings (add: FA → YoungHun`s Team Bravo); Daniss Jenkins (drop: YoungHun`s Team Bravo → Waivers)
+- X10 2026-11-04 23:48 · add/drop · Charles Bassey (add: FA → TheMan); Mitchell Robinson (drop: TheMan → Waivers)
+- X11 2026-11-05 00:36 · add/drop · Oso Ighodaro (add: FA → Hewon the game); Zaccharie Risacher (drop: Hewon the game → Waivers)
+- X12 2026-11-05 01:14 · add/drop · Draymond Green (add: FA → IN's WooSSa Team); Tari Eason (drop: IN's WooSSa Team → Waivers)
+- X13 2026-11-05 01:51 · add/drop · Max Strus (add: FA → ALTMAN_CH); Sandro Mamukelashvili (drop: ALTMAN_CH → Waivers); Nolan Traore (add: FA → ALTMAN_CH); Kris Dunn (drop: ALTMAN_CH → Waivers)
+- X14 2026-11-05 02:12 · add/drop · Mario Hezonja (add: FA → CHAN); Aaron Nesmith (drop: CHAN → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
 - 스냅샷이 있는 날: 2026-11-02, 2026-11-03, 2026-11-04
@@ -450,11 +495,24 @@
 - C7 2026-11-02 · Hewon the game · Pascal Siakam: PF → BN (벤치로 내림, 그날 기록 없음)
 - C8 2026-11-02 · TEAM G-JAY · Anthony Black: PG → BN (벤치로 내림, 그날 기록 없음)
 - C9 2026-11-02 · TEAM G-JAY · Julian Champagnie: BN → Util (선발로 올림, 그날 기록 3PTM 2, AST 0, BLK 0, DD 0, FGM/A 2/5, FTM/A 2/3, PTS 8, REB 6, ST 0, TO 1)
+- C10 2026-11-04 · CHAN · Collin Gillespie: Util → BN (벤치로 내림, 그날 기록 3PTM 0, AST 2, BLK 0, DD 0, FGM/A 1/5, FTM/A 0/0, PTS 2, REB 3, ST 2, TO 2)
+- C11 2026-11-04 · CHAN · Ivica Zubac: BN → Util (선발로 올림, 그날 기록 3PTM 0, AST 2, BLK 0, DD 0, FGM/A 0/5, FTM/A 1/2, PTS 1, REB 4, ST 0, TO 2)
+- C12 2026-11-04 · hyun's Team · Jonathan Kuminga: Util → BN (벤치로 내림, 그날 기록 3PTM 4, AST 5, BLK 1, DD 0, FGM/A 5/10, FTM/A 2/4, PTS 16, REB 8, ST 1, TO 1)
+- C13 2026-11-04 · hyun's Team · Kon Knueppel: IL → Util (선발로 올림, 그날 기록 3PTM 0, AST 0, BLK 0, DD 0, FGM/A 0/1, FTM/A 3/3, PTS 3, REB 0, ST 0, TO 2)
+- C14 2026-11-04 · IN's WooSSa Team · Alex Sarr: BN → Util (선발로 올림, 그날 기록 3PTM 0, AST 1, BLK 1, DD 0, FGM/A 3/6, FTM/A 5/6, PTS 11, REB 9, ST 2, TO 1)
+- C15 2026-11-04 · IN's WooSSa Team · Fred VanVleet: Util → BN (벤치로 내림, 그날 기록 3PTM 4, AST 3, BLK 0, DD 0, FGM/A 6/12, FTM/A 2/2, PTS 18, REB 3, ST 0, TO 3)
+- C16 2026-11-04 · Jaehun's Matchless Team · Dillon Brooks: Util → BN (벤치로 내림, 그날 기록 3PTM 0, AST 2, BLK 0, DD 0, FGM/A 7/15, FTM/A 1/2, PTS 15, REB 6, ST 1, TO 4)
+- C17 2026-11-04 · Jaehun's Matchless Team · Myles Turner: BN → Util (선발로 올림, 그날 기록 3PTM 4, AST 6, BLK 2, DD 0, FGM/A 4/6, FTM/A 0/0, PTS 12, REB 9, ST 2, TO 1)
+- C18 2026-11-04 · ALTMAN_CH · Payton Pritchard: BN → Util (선발로 올림, 그날 기록 3PTM 0, AST 5, BLK 0, DD 0, FGM/A 4/7, FTM/A 2/2, PTS 10, REB 1, ST 0, TO 0)
+- C19 2026-11-04 · ALTMAN_CH · Trey Murphy III: SF → BN (벤치로 내림, 그날 기록 없음)
+- C20 2026-11-04 · TheMan · Bobby Portis Jr.: BN → Util (선발로 올림, 그날 기록 3PTM 0, AST 5, BLK 0, DD 0, FGM/A 2/6, FTM/A 0/0, PTS 4, REB 10, ST 1, TO 1)
+- C21 2026-11-04 · TheMan · Josh Hart: SF → BN (벤치로 내림, 그날 기록 없음)
 
 ## 스토리 훅
-- H1 업셋: TheMan(직전 15위)가 Hewon the game(직전 5위)에게 6-3-1 승
-- H2 대승: hyun's Team 8-2-0 Hanseong's Team
-- H3 무승부: SEOB's ME7O team vs Jaehun's Matchless Team (4-4-2)
+- H1 대승: TheMan 8-2-0 Hewon the game
+- H2 업셋: TheMan(직전 15위)가 Hewon the game(직전 5위)에게 8-2-0 승
+- H3 대승: Team Scott 8-2-0 ALTMAN_CH
+- H4 대승: IN's WooSSa Team 8-2-0 Cho
 
 ## 다음 주 대진
 - N1 Baesen (1위, 13-6-1) vs Hanseong's Team (10위, 9-11-0)
