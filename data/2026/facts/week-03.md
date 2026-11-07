@@ -520,7 +520,7 @@
 - X25 2026-11-07 03:05 · add/drop · Derrick Jones Jr. (add: FA → CHAN); Collin Gillespie (drop: CHAN → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06
+- 스냅샷이 있는 날: 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07
 - C1 2026-11-02 · Jaehun's Matchless Team · Austin Reaves: BN → Util (선발로 올림, 그날 기록 3PTM 4, AST 5, BLK 0, DD 0, FGM/A 10/15, FTM/A 3/4, PTS 27, REB 2, ST 0, TO 5)
 - C2 2026-11-02 · Jaehun's Matchless Team · Myles Turner: Util → BN (벤치로 내림, 그날 기록 3PTM 3, AST 2, BLK 5, DD 0, FGM/A 5/10, FTM/A 0/0, PTS 13, REB 5, ST 0, TO 1)
 - C3 2026-11-02 · Team Scott · Jaylen Wells: BN → SF (선발로 올림, 그날 기록 3PTM 3, AST 3, BLK 0, DD 0, FGM/A 6/11, FTM/A 1/1, PTS 16, REB 3, ST 1, TO 0)
