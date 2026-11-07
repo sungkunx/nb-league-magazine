@@ -3,7 +3,6 @@ title: ⏱️ Week 3 D-2 점검: "1점, 1어시스트, 1더블더블... 숫자 1
 date: 2026-11-08T01:30+09:00
 kind: week-mid
 week: 3
-status: review
 summary: 5일이 지났고 남은 건 토·일 이틀. 예상은 6개 순항, 2개 역주행. PTS 1점 차, AST 1개 차 매치업이 남은 주말을 기다립니다.
 ---
 
