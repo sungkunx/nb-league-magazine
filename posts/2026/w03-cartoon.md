@@ -3,7 +3,6 @@ title: 🎨 Week 3 만평: "0.001의 승리"
 date: 2026-11-09T22:00+09:00
 kind: week-cartoon
 week: 3
-status: review
 summary: 돋보기로 FT% 0.001 차 승리를 찾은 편집장, 토요일 1점 차에서 일요일 109점 차로 기운 시소, 그리고 MVP 트로피 두 개를 든 Wembanyama. 3주차 만평 세 컷.
 ---
 

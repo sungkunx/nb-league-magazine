@@ -3,7 +3,6 @@ title: 🏁 Week 3 결과: 1점 차가 109점 차로, 그리고 외계인의 2�
 date: 2026-11-09T20:30+09:00
 kind: week-end
 week: 3
-status: review
 summary: 토요일 아침 PTS 1점 차였던 매치업이 109점 차로 끝났고, hyun's Team이 단독 1위에 올랐습니다. 2주 연속 MVP Wembanyama, 예상 6승 2패(스코어 정확히 두 개)까지, 3주차 최종 결과.
 ---
 
