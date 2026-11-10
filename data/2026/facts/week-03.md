@@ -202,7 +202,7 @@
 | Mikal Bridges | NYK | 2 | 4/12 | 0.333 | 4/4 | 1.0 | 1 | 13 | 6 | 4 | 2 | 1 | 3 | 0 |
 | Tristan da Silva | ORL | 1 | 4/14 | 0.286 | 0/0 |  | 2 | 10 | 4 | 3 | 0 | 0 | 4 | 0 |
 
-### T3 TheMan — 영입 주 3/4, 시즌 8/100
+### T3 TheMan — 영입 주 4/4, 시즌 9/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Cade Cunningham | DET | 3 | 5.88 | 28/57 | 0.491 | 11/13 | 0.846 | 6 | 73 | 16 | 26 | 9 | 1 | 11 | 1 |
@@ -244,7 +244,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Keegan Murray | SAC | 1 | 3/10 | 0.3 | 4/4 | 1.0 | 0 | 10 | 1 | 2 | 2 | 1 | 0 | 0 |
 
-### T5 Team Scott — 영입 주 3/4, 시즌 12/100
+### T5 Team Scott — 영입 주 4/4, 시즌 13/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Walker Kessler | LAL | 4 | 10.6 | 25/41 | 0.61 | 8/13 | 0.615 | 0 | 58 | 51 | 8 | 7 | 7 | 6 | 3 |
@@ -266,7 +266,7 @@
 | Jakob Poeltl | TOR | 1 | 4/5 | 0.8 | 0/0 |  | 0 | 8 | 5 | 1 | 0 | 0 | 0 | 0 |
 | John Collins | DET | 1 | 7/9 | 0.778 | 2/2 | 1.0 | 0 | 16 | 1 | 0 | 0 | 0 | 0 | 0 |
 
-### T6 ALTMAN_CH — 영입 주 4/4, 시즌 12/100
+### T6 ALTMAN_CH — 영입 주 5/4, 시즌 13/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Tyrese Maxey | PHI | 4 | 6.83 | 29/62 | 0.468 | 22/24 | 0.917 | 9 | 89 | 12 | 29 | 3 | 2 | 6 | 1 |
@@ -490,7 +490,7 @@
 | Ja'Kobe Walter | TOR | 1 | 2/6 | 0.333 | 6/10 | 0.6 | 0 | 10 | 6 | 5 | 1 | 0 | 1 | 0 |
 | Rui Hachimura | LAC | 1 | 7/18 | 0.389 | 6/7 | 0.857 | 1 | 21 | 9 | 7 | 1 | 0 | 1 | 0 |
 
-### T16 Jaehun's Matchless Team — 영입 주 1/4, 시즌 8/100
+### T16 Jaehun's Matchless Team — 영입 주 2/4, 시즌 9/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Victor Wembanyama | SAS | 4 | 17.45 | 40/74 | 0.541 | 35/44 | 0.795 | 8 | 123 | 56 | 12 | 4 | 14 | 11 | 3 |
@@ -547,6 +547,10 @@
 - X33 2026-11-08 22:39 · add/drop · Khaman Maluach (add: FA → IN's WooSSa Team); Meleek Thomas (drop: IN's WooSSa Team → Waivers)
 - X34 2026-11-09 01:37 · add/drop · Draymond Green (add: FA → Team Scott); Scoot Henderson (drop: Team Scott → Waivers)
 - X35 2026-11-09 01:39 · drop · De'Andre Hunter (drop: Hewon the game → Waivers)
+- X36 2026-11-09 03:16 · add/drop · Obi Toppin (add: FA → ALTMAN_CH); Max Strus (drop: ALTMAN_CH → Waivers)
+- X37 2026-11-09 03:35 · add/drop · Jalen Smith (add: FA → Team Scott); Draymond Green (drop: Team Scott → Waivers)
+- X38 2026-11-09 04:23 · add/drop · Mario Hezonja (add: Waivers → TheMan); Anfernee Simons (drop: TheMan → Waivers)
+- X39 2026-11-09 07:02 · add · Andre Drummond (add: FA → Jaehun's Matchless Team)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
 - 스냅샷이 있는 날: 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08
@@ -583,7 +587,9 @@
 - H5 SEOB's ME7O team 매치업 3연패
 - H6 TheMan 매치업 3연패
 - H7 hyun's Team 매치업 3연승
-- H8 ALTMAN_CH 주간 영입 한도 소진 (4회)
+- H8 TheMan 주간 영입 한도 소진 (4회)
+- H9 Team Scott 주간 영입 한도 소진 (4회)
+- H10 ALTMAN_CH 주간 영입 한도 소진 (5회)
 
 ## 다음 주 대진
 - N1 Baesen (2위, 19-10-1) vs Hanseong's Team (14위, 11-19-0)

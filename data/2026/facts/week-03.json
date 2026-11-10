@@ -1617,9 +1617,9 @@
    "team_id": 2,
    "manager": null,
    "adds": {
-    "week": 3,
+    "week": 4,
     "week_limit": 4,
-    "season": 8,
+    "season": 9,
     "season_limit": 100
    },
    "players": [
@@ -2166,9 +2166,9 @@
    "team_id": 3,
    "manager": null,
    "adds": {
-    "week": 3,
+    "week": 4,
     "week_limit": 4,
-    "season": 12,
+    "season": 13,
     "season_limit": 100
    },
    "players": [
@@ -2460,9 +2460,9 @@
    "team_id": 16,
    "manager": null,
    "adds": {
-    "week": 4,
+    "week": 5,
     "week_limit": 4,
-    "season": 12,
+    "season": 13,
     "season_limit": 100
    },
    "players": [
@@ -5477,9 +5477,9 @@
    "team_id": 15,
    "manager": null,
    "adds": {
-    "week": 1,
+    "week": 2,
     "week_limit": 4,
-    "season": 8,
+    "season": 9,
     "season_limit": 100
    },
    "players": [
@@ -6622,6 +6622,76 @@
      "to": "Waivers"
     }
    ]
+  },
+  {
+   "id": "X36",
+   "time_kst": "2026-11-09 03:16",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Obi Toppin",
+     "action": "add",
+     "from": "FA",
+     "to": "ALTMAN_CH"
+    },
+    {
+     "player": "Max Strus",
+     "action": "drop",
+     "from": "ALTMAN_CH",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X37",
+   "time_kst": "2026-11-09 03:35",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Jalen Smith",
+     "action": "add",
+     "from": "FA",
+     "to": "Team Scott"
+    },
+    {
+     "player": "Draymond Green",
+     "action": "drop",
+     "from": "Team Scott",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X38",
+   "time_kst": "2026-11-09 04:23",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Mario Hezonja",
+     "action": "add",
+     "from": "Waivers",
+     "to": "TheMan"
+    },
+    {
+     "player": "Anfernee Simons",
+     "action": "drop",
+     "from": "TheMan",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X39",
+   "time_kst": "2026-11-09 07:02",
+   "type": "add",
+   "moves": [
+    {
+     "player": "Andre Drummond",
+     "action": "add",
+     "from": "FA",
+     "to": "Jaehun's Matchless Team"
+    }
+   ]
   }
  ],
  "lineup_changes": [
@@ -7125,8 +7195,20 @@
   {
    "id": "H8",
    "type": "adds_limit",
-   "team": "ALTMAN_CH",
+   "team": "TheMan",
    "adds": 4
+  },
+  {
+   "id": "H9",
+   "type": "adds_limit",
+   "team": "Team Scott",
+   "adds": 4
+  },
+  {
+   "id": "H10",
+   "type": "adds_limit",
+   "team": "ALTMAN_CH",
+   "adds": 5
   }
  ],
  "next_week": [
