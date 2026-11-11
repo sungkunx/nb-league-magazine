@@ -3,7 +3,6 @@ title: 🔮 Week 4 대진 미리보기: "주 4일 근무 14팀, 주 2일 근무 
 date: 2026-11-11T12:30+09:00
 kind: week-start
 week: 4
-status: review
 summary: NBA 14팀이 4경기, BKN·MIN은 2경기뿐인 4주차. 1일차 스코어와 남은 엿새 경기 수로 다시 낸 8개 매치업 예상.
 ---
 
