@@ -3,7 +3,6 @@ title: 🔄 누군가의 IL은 누군가의 기회: 부상이 불러온 '대타'
 date: 2026-11-12T14:30+09:00
 kind: feature
 week: 4
-status: review
 summary: Haliburton이 빠지자 Nembhard가, Duren이 빠지자 Paul Reed가. 다른 선수의 부상으로 자리를 얻어 우리 리그 로스터까지 들어온 대타 선수들의 사연과 기록을 모았습니다.
 ---
 
