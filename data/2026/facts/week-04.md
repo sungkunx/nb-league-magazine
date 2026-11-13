@@ -425,7 +425,7 @@
 - X16 2026-11-12 22:41 · drop · De'Andre Hunter (drop: SEOB's ME7O team → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12
+- 스냅샷이 있는 날: 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13
 - C1 2026-11-09 · Jaehun's Matchless Team · Brandon Miller: IL → Util (선발로 올림, 그날 기록 없음)
 - C2 2026-11-09 · Jaehun's Matchless Team · Jared McCain: Util → BN (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-09 · Team Jaewon · Davion Mitchell: Util → BN (벤치로 내림, 그날 기록 없음)
