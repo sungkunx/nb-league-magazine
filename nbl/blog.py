@@ -6,7 +6,7 @@ A post is a Markdown file with a short header:
     title: Week 1 최종 결과
     date: 2026-10-26T22:00+09:00
     kind: week-end            # week-start | week-mid | week-end | week-cartoon |
-                              # draft | preseason | playoff | extra | feature | waiver | notice
+                              # draft | preseason | playoff | extra | feature | essay | waiver | notice
     week: 1                   # weekly posts (optional for the others)
     summary: 카톡 미리보기에 뜨는 한 줄
     cover: images/w01-end.png # optional; lives in <posts>/images/
@@ -49,7 +49,7 @@ SLOTS = ("week-start", "week-end", "week-cartoon")  # fixed cards in a week box;
 WEEK_TONES = 4  # week boxes cycle through tone-1..tone-4 backgrounds; Week 0 has tone-0
 PRESEASON = ("draft", "preseason", "notice")  # kinds that belong to Week 0 (개막 전) unless they name a week
 SPECIALS = {"draft": "드래프트", "preseason": "개막 전", "playoff": "플레이오프", "extra": "호외",
-            "feature": "특집", "waiver": "웨이버", "notice": "안내", "guide": "가이드"}
+            "feature": "특집", "essay": "에세이", "waiver": "웨이버", "notice": "안내", "guide": "가이드"}
 OWN_COLOUR = ("extra", "waiver")  # specials painted in their own colour; the rest share --special
 GUIDE = "guide"  # one standing page, linked from the legend instead of listed among the posts
 CARTOON_PICTURES = 3
@@ -517,7 +517,7 @@ def _index(site, posts, team_nav="", guide=None):
         _masthead(site, "")
         + '\n<p class="legend"><span>매주 <span class="key key-start">이주의 예측</span> 대진 미리보기, '
           '<span class="key key-end">결과</span> 주간 결산, <span class="key key-cartoon">만평</span> 한 편. '
-          'D-2 점검과 특집·웨이버·호외는 그 주 안에 함께 묶입니다.</span>'
+          'D-2 점검과 특집·에세이·웨이버·호외는 그 주 안에 함께 묶입니다.</span>'
         + (f'<a class="guide-link" href="posts/{esc(guide["slug"])}/">{esc(guide["title"])} →</a>' if guide else "")
         + '</p>'
         + '\n<div class="tools">' + team_nav

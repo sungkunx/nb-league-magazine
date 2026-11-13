@@ -416,6 +416,16 @@ class ExtraTests(Base):
         self.assertIn('class="post kind-extra"', page)
         self.assertIn('<p class="tag">호외</p>', page)
 
+    def test_essay_is_its_own_kind_with_its_own_tag(self):
+        with self.assertRaisesRegex(blog.BlogError, "a essay post needs 'week'"):
+            blog.parse_post(post(kind="essay", week=None), "x")
+        self.write("why.md", post(title="왜 다칠까", kind="essay", week=1, date="2026-10-22T18:00+09:00"))
+        self.build()
+        self.assertIn('<span class="tag tag-special">에세이</span>', self.page("index.html"))
+        page = self.page("posts/why/index.html")
+        self.assertIn('class="post kind-special"', page)
+        self.assertIn('<p class="tag">에세이</p>', page)
+
     def test_feature_and_waiver_have_their_own_tags(self):
         self.write("injury.md", post(title="부상전문가", kind="feature", week=0, date="2026-10-19T18:00+09:00"))
         self.write("waiver-w01.md", post(title="고민되십니까", kind="waiver", week=1, date="2026-10-22T18:00+09:00"))
