@@ -448,7 +448,7 @@
 - X22 2026-11-14 03:03 · add/drop · Collin Gillespie (add: FA → Baesen); Pelle Larsson (drop: Baesen → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13
+- 스냅샷이 있는 날: 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14
 - C1 2026-11-09 · Jaehun's Matchless Team · Brandon Miller: IL → Util (선발로 올림, 그날 기록 없음)
 - C2 2026-11-09 · Jaehun's Matchless Team · Jared McCain: Util → BN (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-09 · Team Jaewon · Davion Mitchell: Util → BN (벤치로 내림, 그날 기록 없음)
