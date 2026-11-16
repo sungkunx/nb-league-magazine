@@ -31,9 +31,10 @@ K|Playoff Reseeding|Yes
 K|Lock Eliminated Teams|Yes
 K|Divisions|No
 K|Lock Benched Players|No
+K|IL-eligible statuses|Injured (IL-eligible), Out (short-term injury), Out For Season
 K|Make League Publicly Viewable|No
 K|Invite Permissions|Commissioner Only
 K|Send unjoined players email reminders|Yes
 K|Roster Positions|PG, SG, SF, PF, C, Util, Util, Util, BN, BN, IL
 K|Players Stat Categories|Field Goal Percentage (FG%), Free Throw Percentage (FT%), 3-point Shots Made (3PTM), Points Scored (PTS), Total Rebounds (REB), Assists (AST), Steals (ST), Blocked Shots (BLK), Turnovers (TO), Double-Doubles (DD)
-#crc=88fe5105 lines=38
+#crc=52de1686 lines=39

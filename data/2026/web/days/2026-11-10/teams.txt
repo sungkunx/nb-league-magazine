@@ -90,17 +90,17 @@ P|BN|6514|Evan Mobley|New Player Note CLE - PF,C|-
 P|IL|6164|Ja Morant|OPlayer Note POR - PG|-
 S|12/26|15/17|3|42|13|6|4|0|6|0
 T|8|YoungHun`s Team Bravo|Tue, Nov 10
-P|PG|5012|Damian Lillard|New Player Note POR - PG|8/15|5/5|4|25|3|3|1|0|0|0
-P|SG|6513|Jalen Green|New Player Note PHX - SG,SF|5/7|0/2|3|13|5|1|0|0|3|0
+P|PG|5012|Damian Lillard|Player Note POR - PG|8/15|5/5|4|25|3|3|1|0|0|0
+P|SG|6513|Jalen Green|Player Note PHX - SG,SF|5/7|0/2|3|13|5|1|0|0|3|0
 P|SF|5602|Jaylen Brown|New Player Note PHI - SG,SF,PF|4/9|4/6|1|13|5|2|2|1|4|0
 P|PF|5642|Domantas Sabonis|New Player Note SAC - PF,C|0/2|0/2|0|0|2|5|0|0|0|0
-P|C|6163|Zion Williamson|New Player Note NOP - PF,C|-
-P|Util|6226|Daniel Gafford|Player Note DAL - C|-
-P|Util|10574|Kingston Flemings|Player Note ATL - PG|-
+P|C|6163|Zion Williamson|Player Note NOP - PF,C|-
+P|Util|6226|Daniel Gafford|New Player Note DAL - C|-
+P|Util|10574|Kingston Flemings|OPlayer Note ATL - PG|-
 P|Util|5292|Andrew Wiggins|Player Note MIA - SG,SF,PF|5/8|1/1|2|13|0|0|0|0|0|0
-P|BN|5767|De'Aaron Fox|New Player Note SAS - PG|-
-P|BN|6515|Scottie Barnes|ONew Player Note TOR - SF,PF,C|-
-P|IL|5601|Brandon Ingram|OPlayer Note LAC - SG,SF,PF|-
+P|BN|5767|De'Aaron Fox|ONew Player Note SAS - PG|-
+P|BN|6515|Scottie Barnes|New Player Note TOR - SF,PF,C|-
+P|IL|5601|Brandon Ingram|OPlayer Note LAC - SG,SF,PF|0/0|0/0|0|0|0|0|0|0|0|0
 S|22/41|10/16|10|64|15|11|3|1|7|0
 T|9|Hanseong's Team|Tue, Nov 10
 P|PG|6395|LaMelo Ball|Player Note MIN - PG|-
@@ -205,4 +205,4 @@ P|BN|6597|Aaron Wiggins|Player Note ATL - SG,SF|-
 P|BN|6400|Obi Toppin|Player Note IND - SF,PF|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|15/27|5/5|7|42|7|9|1|0|2|0
-#crc=0dbb5f3e lines=207
+#crc=5d9bb412 lines=207

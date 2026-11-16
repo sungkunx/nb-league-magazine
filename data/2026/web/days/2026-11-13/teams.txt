@@ -91,17 +91,17 @@ P|BN|10599|AJ Dybantsa|Player Note WAS - SF|-
 P|IL|6164|Ja Morant|OPlayer Note POR - PG|-
 S|33/74|13/17|14|93|29|25|3|4|12|1
 T|8|YoungHun`s Team Bravo|Fri, Nov 13
-P|PG|5012|Damian Lillard|New Player Note POR - PG|6/18|11/11|6|29|2|6|0|0|4|0
-P|SG|6513|Jalen Green|New Player Note PHX - SG,SF|-
-P|SF|6515|Scottie Barnes|OPlayer Note TOR - SF,PF,C|-
-P|PF|6163|Zion Williamson|New Player Note NOP - PF,C|7/15|8/8|0|22|5|4|3|1|2|0
+P|PG|5012|Damian Lillard|Player Note POR - PG|6/18|11/11|6|29|2|6|0|0|4|0
+P|SG|6513|Jalen Green|Player Note PHX - SG,SF|-
+P|SF|6515|Scottie Barnes|New Player Note TOR - SF,PF,C|-
+P|PF|6163|Zion Williamson|Player Note NOP - PF,C|7/15|8/8|0|22|5|4|3|1|2|0
 P|C|5642|Domantas Sabonis|New Player Note SAC - PF,C|9/16|2/2|1|21|12|5|0|0|1|1
 P|Util|5292|Andrew Wiggins|Player Note MIA - SG,SF,PF|2/5|3/4|1|8|3|4|0|0|0|0
-P|Util|5767|De'Aaron Fox|New Player Note SAS - PG|1/6|5/5|0|7|5|1|1|0|2|0
+P|Util|5767|De'Aaron Fox|ONew Player Note SAS - PG|1/6|5/5|0|7|5|1|1|0|2|0
 P|Util|6030|Kevin Huerter|Player Note DET - SG,SF|-
-P|BN|5602|Jaylen Brown|Player Note PHI - SG,SF,PF|-
-P|BN|6226|Daniel Gafford|Player Note DAL - C|-
-P|IL|5601|Brandon Ingram|OPlayer Note LAC - SG,SF,PF|-
+P|BN|5602|Jaylen Brown|New Player Note PHI - SG,SF,PF|-
+P|BN|6226|Daniel Gafford|New Player Note DAL - C|-
+P|IL|5601|Brandon Ingram|OPlayer Note LAC - SG,SF,PF|0/0|0/0|0|0|0|0|0|0|0|0
 S|25/60|29/30|8|87|27|20|4|1|9|1
 T|9|Hanseong's Team|Fri, Nov 13
 P|SG|6433|Tre Jones|Player Note CHI - PG,SG|2/7|0/0|0|4|1|3|1|1|3|0
@@ -131,16 +131,16 @@ P|IL|6404|Tyrese Haliburton|OPlayer Note IND - PG,SG|-
 S|44/84|14/19|13|115|54|16|5|8|15|2
 T|11|Kharami|Fri, Nov 13
 P|PG|4622|Jrue Holiday|Player Note POR - PG,SG|2/7|2/2|0|6|5|5|1|0|6|0
-P|SG|10440|Jeremiah Fears|New Player Note NOP - PG,SG|6/15|6/6|0|18|5|7|1|2|2|0
-P|SF|5324|Zach LaVine|Player Note SAC - PG,SG,SF|4/9|1/2|3|12|3|6|1|1|1|0
-P|PF|5185|Giannis Antetokounmpo|New Player Note MIA - PF,C|15/20|6/11|1|37|9|2|0|1|4|0
+P|SG|10440|Jeremiah Fears|Player Note NOP - PG,SG|6/15|6/6|0|18|5|7|1|2|2|0
+P|SF|5324|Zach LaVine|ONew Player Note SAC - PG,SG,SF|4/9|1/2|3|12|3|6|1|1|1|0
+P|PF|5185|Giannis Antetokounmpo|Player Note MIA - PF,C|15/20|6/11|1|37|9|2|0|1|4|0
 P|C|5197|Rudy Gobert|Player Note MIN - C|-
-P|Util|5842|Derrick White|Player Note BOS - PG,SG|-
-P|Util|6572|Santi Aldama|Player Note DAL - PF|-
-P|Util|6548|Josh Giddey|New Player Note CHI - PG,SG|5/10|2/5|3|15|10|14|0|3|4|1
+P|Util|5842|Derrick White|New Player Note BOS - PG,SG|-
+P|Util|6572|Santi Aldama|ONew Player Note DAL - PF|-
+P|Util|6548|Josh Giddey|Player Note CHI - PG,SG|5/10|2/5|3|15|10|14|0|3|4|1
 P|BN|6023|Miles Bridges|Player Note PHX - PF|-
 P|BN|5318|Julius Randle|Player Note BKN - PF|-
-P|IL|4912|Jimmy Butler III|ONo new player Notes GSW - SF,PF|-
+P|IL|4912|Jimmy Butler III|ONo new player Notes GSW - SF,PF|0/0|0/0|0|0|0|0|0|0|0|0
 S|32/61|17/26|7|88|32|34|3|7|17|1
 T|12|SEOB's ME7O team|Fri, Nov 13
 P|PG|6022|Shai Gilgeous-Alexander|New Player Note OKC - PG|15/26|8/11|2|40|4|5|1|0|3|0
@@ -206,4 +206,4 @@ P|BN|6418|Payton Pritchard|Player Note BOS - PG|-
 P|BN|10445|Egor Dëmin|Player Note BKN - PG,SG|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|12/27|2/2|5|31|19|8|1|4|4|0
-#crc=e3aa8fa8 lines=208
+#crc=4a456eb5 lines=208
