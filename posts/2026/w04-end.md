@@ -3,7 +3,6 @@ title: 🏁 Week 4 결과: 469 대 470, 사진 판독 결과가 나왔습니다
 date: 2026-11-16T23:30+09:00
 kind: week-end
 week: 4
-status: review
 summary: PTS 469-470 한 점 차, FT% .720 대 .721, 3PTM 59-59. 사진 판독이 필요했던 주말의 판정 결과와 Wembanyama의 3주 연속 MVP, 14위가 2위를 잡은 업셋, 예상 5승 3패까지. 4주차 최종 결과.
 ---
 
