@@ -5,7 +5,11 @@
 - 순위 기준: Week 4까지 (무승부는 0.5승)
 
 ## 데이터 점검
-- 이상 없음
+아래 항목이 해결되기 전에는 관련 숫자를 기사에 쓰지 않는다.
+- [total_mismatch] team=IN's WooSSa Team, category=BLK, official=25, computed=26
+- [total_mismatch] team=TEAM G-JAY, category=FG%, official=144/339, computed=144/340
+- [total_mismatch] team=TEAM G-JAY, category=REB, official=153, computed=154
+- [total_mismatch] team=Jaehun's Matchless Team, category=BLK, official=27, computed=28
 
 ## 매치업
 
@@ -47,7 +51,7 @@
 | REB | 206 | 188 | Team Scott |
 | AST | 120 | 110 | Team Scott |
 | ST | 32 | 34 | IN's WooSSa Team |
-| BLK | 21 | 26 | IN's WooSSa Team |
+| BLK | 21 | 25 | IN's WooSSa Team |
 | TO | 73 | 65 | IN's WooSSa Team |
 | DD | 8 | 5 | Team Scott |
 
@@ -68,11 +72,11 @@
 ### M5 TEAM G-JAY 3-7-0 Kharami — 승: Kharami
 | 카테고리 | TEAM G-JAY | Kharami | 승 |
 |---|---|---|---|
-| FG% | .424 (144/340) | .466 (164/352) | Kharami |
+| FG% | .425 (144/339) | .466 (164/352) | Kharami |
 | FT% | .720 (77/107) | .721 (62/86) | Kharami |
 | 3PTM | 34 | 51 | Kharami |
 | PTS | 399 | 441 | Kharami |
-| REB | 154 | 146 | TEAM G-JAY |
+| REB | 153 | 146 | TEAM G-JAY |
 | AST | 109 | 130 | Kharami |
 | ST | 33 | 21 | TEAM G-JAY |
 | BLK | 17 | 22 | Kharami |
@@ -117,7 +121,7 @@
 | REB | 176 | 154 | hyun's Team |
 | AST | 109 | 73 | hyun's Team |
 | ST | 25 | 24 | hyun's Team |
-| BLK | 32 | 28 | hyun's Team |
+| BLK | 32 | 27 | hyun's Team |
 | TO | 44 | 41 | Jaehun's Matchless Team |
 | DD | 1 | 4 | Jaehun's Matchless Team |
 
@@ -320,7 +324,7 @@
 | AJ Dybantsa | WAS | 4 | -5.0 | 22/60 | 0.367 | 7/14 | 0.5 | 4 | 55 | 27 | 8 | 3 | 4 | 14 | 0 |
 | Tristan da Silva | ORL | 1 | -5.07 | 4/11 | 0.364 | 2/2 | 1.0 | 2 | 12 | 6 | 2 | 0 | 0 | 1 | 0 |
 
-### T10 Kharami — 영입 주 2/4, 시즌 13/100
+### T10 Kharami — 영입 주 3/4, 시즌 14/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Giannis Antetokounmpo | MIA | 3 | 6.17 | 40/58 | 0.69 | 18/29 | 0.621 | 3 | 101 | 34 | 14 | 1 | 4 | 8 | 2 |
@@ -430,7 +434,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Dyson Daniels | ATL | 1 | 4/9 | 0.444 | 1/2 | 0.5 | 0 | 9 | 10 | 5 | 2 | 0 | 3 | 0 |
 
-### T16 Jaehun's Matchless Team — 영입 주 1/4, 시즌 10/100
+### T16 Jaehun's Matchless Team — 영입 주 2/4, 시즌 11/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Victor Wembanyama | SAS | 4 | 22.14 | 43/69 | 0.623 | 16/21 | 0.762 | 8 | 110 | 42 | 16 | 4 | 21 | 6 | 3 |
@@ -485,6 +489,9 @@
 - X36 2026-11-15 06:23 · add/drop · De'Anthony Melton (add: FA → Hewon the game); Mo Bamba (drop: Hewon the game → Waivers)
 - X37 2026-11-15 16:04 · add/drop · Jrue Holiday (add: FA → IN's WooSSa Team); Reed Sheppard (drop: IN's WooSSa Team → Waivers)
 - X38 2026-11-16 03:02 · add/drop · Kelly Oubre Jr. (add: FA → CHAN); Julian Champagnie (drop: CHAN → Waivers)
+- X39 2026-11-16 04:28 · add/drop · Cameron Johnson (add: Waivers → Jaehun's Matchless Team); Landry Shamet (drop: Jaehun's Matchless Team → Waivers)
+- X40 2026-11-16 09:45 · drop · Jimmy Butler III (drop: Kharami → Waivers)
+- X41 2026-11-16 09:47 · add · Kevin Huerter (add: FA → Kharami)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
 - 스냅샷이 있는 날: 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14

@@ -61,7 +61,36 @@
    "lower_is_better": false
   }
  ],
- "checks": [],
+ "checks": [
+  {
+   "type": "total_mismatch",
+   "team": "IN's WooSSa Team",
+   "category": "BLK",
+   "official": "25",
+   "computed": "26"
+  },
+  {
+   "type": "total_mismatch",
+   "team": "TEAM G-JAY",
+   "category": "FG%",
+   "official": "144/339",
+   "computed": "144/340"
+  },
+  {
+   "type": "total_mismatch",
+   "team": "TEAM G-JAY",
+   "category": "REB",
+   "official": "153",
+   "computed": "154"
+  },
+  {
+   "type": "total_mismatch",
+   "team": "Jaehun's Matchless Team",
+   "category": "BLK",
+   "official": "27",
+   "computed": "28"
+  }
+ ],
  "matchups": [
   {
    "id": "M1",
@@ -350,7 +379,7 @@
      "name": "BLK",
      "values": [
       "21",
-      "26"
+      "25"
      ],
      "winner": "IN's WooSSa Team"
     },
@@ -491,11 +520,11 @@
     {
      "name": "FG%",
      "values": [
-      ".424",
+      ".425",
       ".466"
      ],
      "made_attempted": [
-      "144/340",
+      "144/339",
       "164/352"
      ],
      "winner": "Kharami"
@@ -531,7 +560,7 @@
     {
      "name": "REB",
      "values": [
-      "154",
+      "153",
       "146"
      ],
      "winner": "TEAM G-JAY"
@@ -865,7 +894,7 @@
      "name": "BLK",
      "values": [
       "32",
-      "28"
+      "27"
      ],
      "winner": "hyun's Team"
     },
@@ -3522,9 +3551,9 @@
    "team_id": 11,
    "manager": null,
    "adds": {
-    "week": 2,
+    "week": 3,
     "week_limit": 4,
-    "season": 13,
+    "season": 14,
     "season_limit": 100
    },
    "players": [
@@ -5092,9 +5121,9 @@
    "team_id": 15,
    "manager": null,
    "adds": {
-    "week": 1,
+    "week": 2,
     "week_limit": 4,
-    "season": 10,
+    "season": 11,
     "season_limit": 100
    },
    "players": [
@@ -6286,6 +6315,51 @@
      "action": "drop",
      "from": "CHAN",
      "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X39",
+   "time_kst": "2026-11-16 04:28",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Cameron Johnson",
+     "action": "add",
+     "from": "Waivers",
+     "to": "Jaehun's Matchless Team"
+    },
+    {
+     "player": "Landry Shamet",
+     "action": "drop",
+     "from": "Jaehun's Matchless Team",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X40",
+   "time_kst": "2026-11-16 09:45",
+   "type": "drop",
+   "moves": [
+    {
+     "player": "Jimmy Butler III",
+     "action": "drop",
+     "from": "Kharami",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X41",
+   "time_kst": "2026-11-16 09:47",
+   "type": "add",
+   "moves": [
+    {
+     "player": "Kevin Huerter",
+     "action": "add",
+     "from": "FA",
+     "to": "Kharami"
     }
    ]
   }
