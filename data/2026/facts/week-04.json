@@ -61,36 +61,7 @@
    "lower_is_better": false
   }
  ],
- "checks": [
-  {
-   "type": "total_mismatch",
-   "team": "IN's WooSSa Team",
-   "category": "BLK",
-   "official": "25",
-   "computed": "26"
-  },
-  {
-   "type": "total_mismatch",
-   "team": "TEAM G-JAY",
-   "category": "FG%",
-   "official": "144/339",
-   "computed": "144/340"
-  },
-  {
-   "type": "total_mismatch",
-   "team": "TEAM G-JAY",
-   "category": "REB",
-   "official": "153",
-   "computed": "154"
-  },
-  {
-   "type": "total_mismatch",
-   "team": "Jaehun's Matchless Team",
-   "category": "BLK",
-   "official": "27",
-   "computed": "28"
-  }
- ],
+ "checks": [],
  "matchups": [
   {
    "id": "M1",
@@ -1142,7 +1113,7 @@
       "TO": 10,
       "DD": 4
      },
-     "score": 12.95
+     "score": 12.96
     },
     {
      "name": "Cedric Coward",
@@ -1162,7 +1133,7 @@
       "TO": 3,
       "DD": 2
      },
-     "score": 9.2
+     "score": 9.21
     },
     {
      "name": "Kevin Durant",
@@ -1202,7 +1173,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 2.37
+     "score": 2.39
     },
     {
      "name": "VJ Edgecombe",
@@ -1222,7 +1193,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": 1.58
+     "score": 1.59
     },
     {
      "name": "Ayo Dosunmu",
@@ -1262,7 +1233,7 @@
       "TO": 6,
       "DD": 1
      },
-     "score": -1.42
+     "score": -1.4
     },
     {
      "name": "Collin Murray-Boyles",
@@ -1282,7 +1253,7 @@
       "TO": 8,
       "DD": 0
      },
-     "score": -1.55
+     "score": -1.5
     },
     {
      "name": "Collin Gillespie",
@@ -1302,7 +1273,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.03
+     "score": -3.04
     },
     {
      "name": "Caleb Wilson",
@@ -1322,7 +1293,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.07
+     "score": -4.08
     },
     {
      "name": "Pelle Larsson",
@@ -1342,7 +1313,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.37
+     "score": -4.38
     }
    ],
    "benched": []
@@ -1377,7 +1348,7 @@
       "TO": 8,
       "DD": 3
      },
-     "score": 13.27
+     "score": 13.29
     },
     {
      "name": "Alperen Şengün",
@@ -1397,7 +1368,7 @@
       "TO": 6,
       "DD": 3
      },
-     "score": 13.23
+     "score": 13.25
     },
     {
      "name": "Franz Wagner",
@@ -1417,7 +1388,7 @@
       "TO": 10,
       "DD": 1
      },
-     "score": 9.54
+     "score": 9.53
     },
     {
      "name": "Alex Caruso",
@@ -1437,7 +1408,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": 2.19
+     "score": 2.21
     },
     {
      "name": "Grayson Allen",
@@ -1457,7 +1428,7 @@
       "TO": 11,
       "DD": 0
      },
-     "score": 2.15
+     "score": 2.14
     },
     {
      "name": "LaMelo Ball",
@@ -1477,7 +1448,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 1.09
+     "score": 1.08
     },
     {
      "name": "LeBron James",
@@ -1517,7 +1488,7 @@
       "TO": 9,
       "DD": 0
      },
-     "score": -3.15
+     "score": -3.16
     },
     {
      "name": "Tre Jones",
@@ -1537,7 +1508,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": -3.69
+     "score": -3.67
     },
     {
      "name": "Keaton Wagler",
@@ -1557,7 +1528,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.11
+     "score": -4.12
     },
     {
      "name": "Derrick Jones Jr.",
@@ -1597,7 +1568,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -4.65
+     "score": -4.64
     },
     {
      "name": "Dejounte Murray",
@@ -1617,7 +1588,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -4.92
+     "score": -4.93
     },
     {
      "name": "Morez Johnson Jr.",
@@ -1637,7 +1608,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.37
+     "score": -6.38
     }
    ],
    "benched": []
@@ -1712,7 +1683,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": 2.85
+     "score": 2.87
     },
     {
      "name": "Brandin Podziemski",
@@ -1732,7 +1703,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 2.48
+     "score": 2.49
     },
     {
      "name": "Kyshawn George",
@@ -1752,7 +1723,7 @@
       "TO": 12,
       "DD": 0
      },
-     "score": 0.79
+     "score": 0.8
     },
     {
      "name": "Naz Reid",
@@ -1772,7 +1743,7 @@
       "TO": 9,
       "DD": 1
      },
-     "score": 0.19
+     "score": 0.18
     },
     {
      "name": "Jaxson Hayes",
@@ -1812,7 +1783,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": -1.22
+     "score": -1.23
     },
     {
      "name": "Kyle Kuzma",
@@ -1832,7 +1803,7 @@
       "TO": 9,
       "DD": 0
      },
-     "score": -4.08
+     "score": -4.06
     },
     {
      "name": "Bones Hyland",
@@ -1852,7 +1823,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.15
+     "score": -5.16
     },
     {
      "name": "Jalen Duren",
@@ -1947,7 +1918,7 @@
       "TO": 11,
       "DD": 0
      },
-     "score": 7.09
+     "score": 7.1
     },
     {
      "name": "Kel'el Ware",
@@ -1967,7 +1938,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 2.43
+     "score": 2.5
     },
     {
      "name": "Jarrett Allen",
@@ -2027,7 +1998,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.61
+     "score": -3.62
     },
     {
      "name": "Brayden Burries",
@@ -2047,7 +2018,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -3.94
+     "score": -3.95
     },
     {
      "name": "Aaron Nesmith",
@@ -2107,7 +2078,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -5.02
+     "score": -5.03
     },
     {
      "name": "Isaiah Stewart",
@@ -2127,7 +2098,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.43
+     "score": -6.44
     },
     {
      "name": "Anfernee Simons",
@@ -2260,7 +2231,7 @@
       "TO": 7,
       "DD": 3
      },
-     "score": 7.24
+     "score": 7.27
     },
     {
      "name": "CJ McCollum",
@@ -2280,7 +2251,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": 4.03
+     "score": 4.04
     },
     {
      "name": "Jalen Smith",
@@ -2300,7 +2271,7 @@
       "TO": 4,
       "DD": 1
      },
-     "score": 1.99
+     "score": 1.98
     },
     {
      "name": "John Collins",
@@ -2320,7 +2291,7 @@
       "TO": 5,
       "DD": 1
      },
-     "score": 1.43
+     "score": 1.44
     },
     {
      "name": "Jakob Poeltl",
@@ -2340,7 +2311,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 1.19
+     "score": 1.22
     },
     {
      "name": "RJ Barrett",
@@ -2380,7 +2351,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -0.03
+     "score": -0.04
     },
     {
      "name": "Darius Garland",
@@ -2400,7 +2371,7 @@
       "TO": 13,
       "DD": 0
      },
-     "score": -0.12
+     "score": -0.13
     },
     {
      "name": "Danny Wolf",
@@ -2420,7 +2391,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": -0.34
+     "score": -0.32
     },
     {
      "name": "Quentin Grimes",
@@ -2440,7 +2411,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -2.88
+     "score": -2.89
     },
     {
      "name": "Draymond Green",
@@ -2460,7 +2431,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.22
+     "score": -5.23
     },
     {
      "name": "Kenrich Williams",
@@ -2480,7 +2451,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -6.07
+     "score": -6.08
     }
    ],
    "benched": []
@@ -2515,7 +2486,7 @@
       "TO": 10,
       "DD": 1
      },
-     "score": 7.05
+     "score": 7.07
     },
     {
      "name": "Ausar Thompson",
@@ -2535,7 +2506,7 @@
       "TO": 10,
       "DD": 1
      },
-     "score": 4.91
+     "score": 4.95
     },
     {
      "name": "Alex Sarr",
@@ -2555,7 +2526,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 3.63
+     "score": 3.66
     },
     {
      "name": "Aday Mara",
@@ -2575,7 +2546,7 @@
       "TO": 8,
       "DD": 2
      },
-     "score": 3.07
+     "score": 3.1
     },
     {
      "name": "Fred VanVleet",
@@ -2595,7 +2566,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 1.88
+     "score": 1.87
     },
     {
      "name": "Norman Powell",
@@ -2651,11 +2622,11 @@
       "REB": 12,
       "AST": 5,
       "ST": 0,
-      "BLK": 1,
+      "BLK": 0,
       "TO": 0,
       "DD": 0
      },
-     "score": -1.7
+     "score": -2.15
     },
     {
      "name": "Tyler Herro",
@@ -2675,7 +2646,7 @@
       "TO": 9,
       "DD": 0
      },
-     "score": -2.3
+     "score": -2.29
     },
     {
      "name": "Jaylen Wells",
@@ -2695,7 +2666,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.46
+     "score": -3.47
     },
     {
      "name": "Reed Sheppard",
@@ -2715,7 +2686,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.71
+     "score": -3.72
     },
     {
      "name": "Jamal Shead",
@@ -2735,7 +2706,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -5.41
+     "score": -5.42
     },
     {
      "name": "Jalen Suggs",
@@ -2755,7 +2726,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -6.66
+     "score": -6.67
     },
     {
      "name": "Lauri Markkanen",
@@ -2830,7 +2801,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 5.16
+     "score": 5.15
     },
     {
      "name": "Darryn Peterson",
@@ -2850,7 +2821,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": 4.96
+     "score": 4.98
     },
     {
      "name": "Tari Eason",
@@ -2870,7 +2841,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 3.03
+     "score": 3.04
     },
     {
      "name": "Day'Ron Sharpe",
@@ -2890,7 +2861,7 @@
       "TO": 4,
       "DD": 1
      },
-     "score": 1.88
+     "score": 1.9
     },
     {
      "name": "Andrew Nembhard",
@@ -2930,7 +2901,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 0.41
+     "score": 0.44
     },
     {
      "name": "Jalen Johnson",
@@ -2950,7 +2921,7 @@
       "TO": 13,
       "DD": 2
      },
-     "score": -1.02
+     "score": -1.03
     },
     {
      "name": "Mo Bamba",
@@ -2990,7 +2961,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -2.52
+     "score": -2.53
     },
     {
      "name": "Keegan Murray",
@@ -3010,7 +2981,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -4.15
+     "score": -4.12
     },
     {
      "name": "De'Anthony Melton",
@@ -3050,7 +3021,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -6.33
+     "score": -6.34
     }
    ],
    "benched": [
@@ -3105,7 +3076,7 @@
       "TO": 8,
       "DD": 3
      },
-     "score": 12.55
+     "score": 12.56
     },
     {
      "name": "Davion Mitchell",
@@ -3125,7 +3096,7 @@
       "TO": 7,
       "DD": 1
      },
-     "score": 7.01
+     "score": 7.02
     },
     {
      "name": "Saddiq Bey",
@@ -3165,7 +3136,7 @@
       "TO": 10,
       "DD": 1
      },
-     "score": 3.95
+     "score": 3.94
     },
     {
      "name": "Mikal Bridges",
@@ -3185,7 +3156,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 0.25
+     "score": 0.26
     },
     {
      "name": "Neemias Queta",
@@ -3205,7 +3176,7 @@
       "TO": 6,
       "DD": 1
      },
-     "score": 0.17
+     "score": 0.19
     },
     {
      "name": "Paul Reed",
@@ -3225,7 +3196,7 @@
       "TO": 5,
       "DD": 1
      },
-     "score": -0.66
+     "score": -0.65
     },
     {
      "name": "Keyonte George",
@@ -3245,7 +3216,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": -1.25
+     "score": -1.26
     },
     {
      "name": "Daniss Jenkins",
@@ -3265,7 +3236,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -1.35
+     "score": -1.36
     },
     {
      "name": "Darius Acuff Jr.",
@@ -3285,7 +3256,7 @@
       "TO": 17,
       "DD": 0
      },
-     "score": -1.71
+     "score": -1.72
     },
     {
      "name": "Karlo Matković",
@@ -3305,7 +3276,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -5.77
+     "score": -5.78
     },
     {
      "name": "Kawhi Leonard",
@@ -3360,27 +3331,27 @@
       "TO": 12,
       "DD": 2
      },
-     "score": 5.46
+     "score": 5.47
     },
     {
      "name": "Stephon Castle",
      "nba_team": "SAS",
      "games": 4,
      "line": {
-      "FGM/A": "25/52",
-      "FG%": 0.481,
+      "FGM/A": "25/51",
+      "FG%": 0.49,
       "FTM/A": "11/14",
       "FT%": 0.786,
       "3PTM": 6,
       "PTS": 67,
-      "REB": 18,
+      "REB": 17,
       "AST": 25,
       "ST": 7,
       "BLK": 1,
       "TO": 7,
       "DD": 0
      },
-     "score": 4.74
+     "score": 4.79
     },
     {
      "name": "Anthony Black",
@@ -3400,7 +3371,7 @@
       "TO": 12,
       "DD": 0
      },
-     "score": 1.75
+     "score": 1.76
     },
     {
      "name": "Donovan Mitchell",
@@ -3420,7 +3391,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 1.17
+     "score": 1.16
     },
     {
      "name": "Evan Mobley",
@@ -3480,7 +3451,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.32
+     "score": -4.3
     },
     {
      "name": "Devin Vassell",
@@ -3500,7 +3471,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -4.62
+     "score": -4.63
     },
     {
      "name": "AJ Dybantsa",
@@ -3520,7 +3491,7 @@
       "TO": 14,
       "DD": 0
      },
-     "score": -5.0
+     "score": -4.98
     },
     {
      "name": "Tristan da Silva",
@@ -3540,7 +3511,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -5.07
+     "score": -5.08
     }
    ],
    "benched": []
@@ -3575,7 +3546,7 @@
       "TO": 8,
       "DD": 2
      },
-     "score": 6.17
+     "score": 6.19
     },
     {
      "name": "Derrick White",
@@ -3595,7 +3566,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": 2.05
+     "score": 2.07
     },
     {
      "name": "Zach LaVine",
@@ -3635,7 +3606,7 @@
       "TO": 14,
       "DD": 0
      },
-     "score": 0.29
+     "score": 0.31
     },
     {
      "name": "Josh Giddey",
@@ -3655,7 +3626,7 @@
       "TO": 12,
       "DD": 1
      },
-     "score": -0.31
+     "score": -0.28
     },
     {
      "name": "Miles Bridges",
@@ -3675,7 +3646,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -0.42
+     "score": -0.41
     },
     {
      "name": "Jrue Holiday",
@@ -3695,7 +3666,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": -1.61
+     "score": -1.62
     },
     {
      "name": "Rudy Gobert",
@@ -3715,7 +3686,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -3.59
+     "score": -3.57
     },
     {
      "name": "Julius Randle",
@@ -3735,7 +3706,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": -3.7
+     "score": -3.71
     },
     {
      "name": "Santi Aldama",
@@ -3775,7 +3746,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -5.81
+     "score": -5.82
     },
     {
      "name": "Sandro Mamukelashvili",
@@ -3795,7 +3766,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -6.07
+     "score": -6.08
     }
    ],
    "benched": []
@@ -3830,7 +3801,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 3.0
+     "score": 2.99
     },
     {
      "name": "Zion Williamson",
@@ -3850,7 +3821,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 1.91
+     "score": 1.94
     },
     {
      "name": "De'Aaron Fox",
@@ -3870,7 +3841,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 0.96
+     "score": 0.95
     },
     {
      "name": "Domantas Sabonis",
@@ -3890,7 +3861,7 @@
       "TO": 2,
       "DD": 2
      },
-     "score": 0.89
+     "score": 0.88
     },
     {
      "name": "Daniel Gafford",
@@ -3910,7 +3881,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -1.65
+     "score": -1.62
     },
     {
      "name": "Andrew Wiggins",
@@ -3970,7 +3941,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -2.3
+     "score": -2.29
     },
     {
      "name": "Scottie Barnes",
@@ -3990,7 +3961,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -3.06
+     "score": -3.05
     },
     {
      "name": "Jalen Green",
@@ -4010,7 +3981,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": -3.99
+     "score": -4.0
     },
     {
      "name": "Zaccharie Risacher",
@@ -4030,7 +4001,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -4.65
+     "score": -4.66
     },
     {
      "name": "Kingston Flemings",
@@ -4050,7 +4021,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -5.44
+     "score": -5.45
     }
    ],
    "benched": []
@@ -4085,7 +4056,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 4.65
+     "score": 4.66
     },
     {
      "name": "Tyrese Maxey",
@@ -4125,7 +4096,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": -0.32
+     "score": -0.31
     },
     {
      "name": "Payton Pritchard",
@@ -4145,7 +4116,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -0.92
+     "score": -0.93
     },
     {
      "name": "Naji Marshall",
@@ -4165,7 +4136,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": -3.07
+     "score": -3.08
     },
     {
      "name": "Nic Claxton",
@@ -4185,7 +4156,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.32
+     "score": -3.31
     },
     {
      "name": "Aaron Wiggins",
@@ -4205,7 +4176,7 @@
       "TO": 8,
       "DD": 0
      },
-     "score": -3.46
+     "score": -3.47
     },
     {
      "name": "Obi Toppin",
@@ -4225,7 +4196,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.51
+     "score": -4.52
     },
     {
      "name": "Jamal Shead",
@@ -4245,7 +4216,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.69
+     "score": -4.7
     },
     {
      "name": "Egor Dëmin",
@@ -4265,7 +4236,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -6.26
+     "score": -6.27
     },
     {
      "name": "Nolan Traore",
@@ -4360,7 +4331,7 @@
       "TO": 8,
       "DD": 1
      },
-     "score": 6.09
+     "score": 6.11
     },
     {
      "name": "Ace Bailey",
@@ -4380,7 +4351,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 4.32
+     "score": 4.34
     },
     {
      "name": "Ivica Zubac",
@@ -4400,7 +4371,7 @@
       "TO": 5,
       "DD": 2
      },
-     "score": 3.34
+     "score": 3.36
     },
     {
      "name": "Onyeka Okongwu",
@@ -4420,7 +4391,7 @@
       "TO": 5,
       "DD": 1
      },
-     "score": 3.09
+     "score": 3.11
     },
     {
      "name": "Jaime Jaquez Jr.",
@@ -4440,7 +4411,7 @@
       "TO": 12,
       "DD": 0
      },
-     "score": 2.37
+     "score": 2.36
     },
     {
      "name": "Toumani Camara",
@@ -4460,7 +4431,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": 2.05
+     "score": 2.07
     },
     {
      "name": "Derik Queen",
@@ -4480,7 +4451,7 @@
       "TO": 9,
       "DD": 0
      },
-     "score": -0.26
+     "score": -0.23
     },
     {
      "name": "Julian Champagnie",
@@ -4520,7 +4491,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -3.24
+     "score": -3.23
     },
     {
      "name": "Derrick Jones Jr.",
@@ -4580,7 +4551,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -4.65
+     "score": -4.66
     },
     {
      "name": "Kris Dunn",
@@ -4600,7 +4571,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -4.96
+     "score": -4.97
     },
     {
      "name": "Cameron Johnson",
@@ -4620,7 +4591,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -5.11
+     "score": -5.12
     }
    ],
    "benched": [
@@ -4675,7 +4646,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 7.32
+     "score": 7.33
     },
     {
      "name": "Bam Adebayo",
@@ -4695,7 +4666,7 @@
       "TO": 1,
       "DD": 1
      },
-     "score": 6.67
+     "score": 6.69
     },
     {
      "name": "Isaiah Hartenstein",
@@ -4715,7 +4686,7 @@
       "TO": 9,
       "DD": 2
      },
-     "score": 6.22
+     "score": 6.21
     },
     {
      "name": "Shai Gilgeous-Alexander",
@@ -4755,7 +4726,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": 2.87
+     "score": 2.86
     },
     {
      "name": "Brook Lopez",
@@ -4775,7 +4746,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -1.71
+     "score": -1.7
     },
     {
      "name": "Ja'Kobe Walter",
@@ -4795,7 +4766,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -1.95
+     "score": -1.96
     },
     {
      "name": "Immanuel Quickley",
@@ -4815,7 +4786,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -3.66
+     "score": -3.67
     },
     {
      "name": "Rui Hachimura",
@@ -4835,7 +4806,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -4.25
+     "score": -4.26
     },
     {
      "name": "Zach Edey",
@@ -4855,7 +4826,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.47
+     "score": -4.46
     }
    ],
    "benched": [
@@ -4910,7 +4881,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 7.38
+     "score": 7.42
     },
     {
      "name": "Donovan Clingan",
@@ -4930,7 +4901,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 4.82
+     "score": 4.87
     },
     {
      "name": "Jayson Tatum",
@@ -4950,7 +4921,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 3.25
+     "score": 3.28
     },
     {
      "name": "Christian Braun",
@@ -4970,7 +4941,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 0.93
+     "score": 0.94
     },
     {
      "name": "Dyson Daniels",
@@ -4990,7 +4961,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 0.64
+     "score": 0.63
     },
     {
      "name": "Ty Jerome",
@@ -5010,7 +4981,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 0.49
+     "score": 0.48
     },
     {
      "name": "Jabari Smith Jr.",
@@ -5030,7 +5001,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -0.37
+     "score": -0.34
     },
     {
      "name": "P.J. Washington",
@@ -5050,7 +5021,7 @@
       "TO": 8,
       "DD": 0
      },
-     "score": -2.76
+     "score": -2.74
     },
     {
      "name": "Jonathan Kuminga",
@@ -5070,7 +5041,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -3.32
+     "score": -3.33
     },
     {
      "name": "Peyton Watson",
@@ -5090,7 +5061,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.4
+     "score": -4.37
     }
    ],
    "benched": [
@@ -5141,11 +5112,11 @@
       "REB": 42,
       "AST": 16,
       "ST": 4,
-      "BLK": 21,
+      "BLK": 20,
       "TO": 6,
       "DD": 3
      },
-     "score": 22.14
+     "score": 21.85
     },
     {
      "name": "Myles Turner",
@@ -5165,7 +5136,7 @@
       "TO": 6,
       "DD": 1
      },
-     "score": 0.2
+     "score": 0.21
     },
     {
      "name": "Jared McCain",
@@ -5185,7 +5156,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 0.04
+     "score": 0.03
     },
     {
      "name": "Jaden McDaniels",
@@ -5205,7 +5176,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": -0.42
+     "score": -0.41
     },
     {
      "name": "Duncan Robinson",
@@ -5225,7 +5196,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -0.96
+     "score": -0.97
     },
     {
      "name": "Austin Reaves",
@@ -5245,7 +5216,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -2.33
+     "score": -2.34
     },
     {
      "name": "Ajay Mitchell",
@@ -5265,7 +5236,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -2.52
+     "score": -2.53
     },
     {
      "name": "Michael Porter Jr.",
@@ -5285,7 +5256,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -2.77
+     "score": -2.78
     },
     {
      "name": "Landry Shamet",
@@ -5325,7 +5296,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -3.03
+     "score": -3.02
     },
     {
      "name": "Dillon Brooks",
@@ -5345,7 +5316,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -5.29
+     "score": -5.3
     },
     {
      "name": "Brandon Miller",
@@ -5365,7 +5336,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -6.5
+     "score": -6.51
     }
    ],
    "benched": []
@@ -5387,11 +5358,11 @@
     "REB": 42,
     "AST": 16,
     "ST": 4,
-    "BLK": 21,
+    "BLK": 20,
     "TO": 6,
     "DD": 3
    },
-   "score": 22.14,
+   "score": 21.85,
    "team": "Jaehun's Matchless Team"
   },
   {
@@ -5413,7 +5384,7 @@
     "TO": 8,
     "DD": 3
    },
-   "score": 13.27,
+   "score": 13.29,
    "team": "Hanseong's Team"
   },
   {
@@ -5435,7 +5406,7 @@
     "TO": 6,
     "DD": 3
    },
-   "score": 13.23,
+   "score": 13.25,
    "team": "Hanseong's Team"
   },
   {
@@ -5457,7 +5428,7 @@
     "TO": 10,
     "DD": 4
    },
-   "score": 12.95,
+   "score": 12.96,
    "team": "Baesen"
   },
   {
@@ -5479,7 +5450,7 @@
     "TO": 8,
     "DD": 3
    },
-   "score": 12.55,
+   "score": 12.56,
    "team": "Team Jaewon"
   }
  ],
@@ -5503,7 +5474,7 @@
     "TO": 2,
     "DD": 0
    },
-   "score": -6.37,
+   "score": -6.38,
    "team": "Hanseong's Team"
   },
   {
@@ -5525,7 +5496,7 @@
     "TO": 4,
     "DD": 0
    },
-   "score": -5.41,
+   "score": -5.42,
    "team": "IN's WooSSa Team"
   },
   {
@@ -5547,7 +5518,7 @@
     "TO": 5,
     "DD": 0
    },
-   "score": -5.29,
+   "score": -5.3,
    "team": "Jaehun's Matchless Team"
   },
   {
@@ -5569,7 +5540,7 @@
     "TO": 0,
     "DD": 0
    },
-   "score": -5.02,
+   "score": -5.03,
    "team": "TheMan"
   },
   {
@@ -5591,7 +5562,7 @@
     "TO": 14,
     "DD": 0
    },
-   "score": -5.0,
+   "score": -4.98,
    "team": "TEAM G-JAY"
   }
  ],
