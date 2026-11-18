@@ -387,7 +387,7 @@
 - X5 2026-11-17 10:14 · add/drop · Andrew Wiggins (add: FA → Hanseong's Team); Alex Caruso (drop: Hanseong's Team → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-16, 2026-11-17
+- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18
 - C1 2026-11-17 · Jaehun's Matchless Team · Austin Reaves: IL → SG (선발로 올림, 그날 기록 없음)
 - C2 2026-11-17 · Jaehun's Matchless Team · Duncan Robinson: SG → IL (벤치로 내림, 그날 기록 없음)
 
