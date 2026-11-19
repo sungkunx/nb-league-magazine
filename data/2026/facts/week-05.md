@@ -428,7 +428,7 @@
 - X9 2026-11-18 22:05 · add/drop · Landry Shamet (add: FA → Jaehun's Matchless Team); Duncan Robinson (drop: Jaehun's Matchless Team → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18
+- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19
 - C1 2026-11-17 · Jaehun's Matchless Team · Austin Reaves: IL → SG (선발로 올림, 그날 기록 없음)
 - C2 2026-11-17 · Jaehun's Matchless Team · Duncan Robinson: SG → IL (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-18 · Jaehun's Matchless Team · Austin Reaves: Util → IL (벤치로 내림, 그날 기록 없음)
