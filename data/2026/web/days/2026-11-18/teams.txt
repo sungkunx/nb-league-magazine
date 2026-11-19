@@ -1,0 +1,209 @@
+#nbl-day v2 base=/nba/80126 date=2026-11-18 teams=16
+C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD
+T|1|Baesen|Wed, Nov 18
+P|PG|10454|VJ Edgecombe|New Player Note PHI - PG,SG|8/15|4/4|4|24|8|6|2|0|4|0
+P|SG|4244|Kevin Durant|New Player Note HOU - SG,SF,PF|7/9|3/4|4|21|2|3|0|0|2|0
+P|SF|10465|Cedric Coward|New Player Note MEM - SG,SF|6/11|4/6|4|20|3|5|2|0|2|0
+P|PF|6691|Paolo Banchero|ONo new player Notes ORL - PF|-
+P|C|10443|Collin Murray-Boyles|QNew Player Note TOR - PF,C|0/2|1/2|0|1|2|1|0|0|0|0
+P|Util|5432|Karl-Anthony Towns|Video ForecastPlayer Note NYK - PF,C|-
+P|Util|10576|Brayden Burries|Player Note MIL - SG|6/9|5/6|3|20|7|1|2|0|3|0
+P|Util|6205|N. Alexander-Walker|New Player Note ATL - PG,SG|8/16|0/0|3|19|4|7|1|0|1|0
+P|BN|6733|Moussa Diabaté|New Player Note CHA - C|-
+P|BN|6580|Ayo Dosunmu|Player Note MIN - PG,SG|-
+P|IL|10595|Caleb Wilson|OPlayer Note CHI - PF|-
+S|35/62|17/22|18|105|26|23|7|0|12|0
+T|2|TheMan|Wed, Nov 18
+P|PG|6044|Jalen Brunson|Player Note NYK - PG|-
+P|SG|6512|Cade Cunningham|OVideo ForecastNew Player Note DET - PG,SG|-
+P|SF|5350|Jerami Grant|Player Note MEM - SF,PF|2/5|3/3|1|8|0|1|0|1|2|0
+P|PF|6396|Patrick Williams|New Player Note CHI - SF,PF|1/2|0/0|0|2|1|2|0|1|0|0
+P|C|6017|Mo Bamba|New Player Note UTA - C|3/5|0/0|0|6|16|0|1|2|1|0
+P|Util|6406|Aaron Nesmith|Player Note IND - SG,SF|1/7|0/0|0|2|3|3|1|1|1|0
+P|Util|5835|Jarrett Allen|New Player Note CLE - C|7/15|5/5|0|19|9|4|1|0|4|0
+P|Util|10274|Kel'el Ware|Player Note MIL - C|5/7|0/0|1|11|3|1|1|0|0|0
+P|BN|6401|Deni Avdija|QNew Player Note POR - SG,SF,PF|-
+P|BN|5843|Josh Hart|New Player Note NYK - SG,SF|-
+S|19/41|8/8|2|48|32|11|4|5|8|0
+T|3|Team Scott|Wed, Nov 18
+P|PG|6014|Luka Dončić|New Player Note LAL - PG,SG|10/28|7/7|2|29|5|7|2|0|9|0
+P|SG|6165|RJ Barrett|ONew Player Note TOR - SG,SF,PF|-
+P|SF|6567|Quentin Grimes|Video ForecastNew Player Note LAL - SG,SF|8/20|0/0|4|20|7|4|0|0|1|0
+P|PF|5832|John Collins|New Player Note DET - PF,C|6/10|4/4|4|20|7|2|0|1|2|0
+P|C|6712|Walker Kessler|New Player Note LAL - C|3/7|4/10|0|10|11|1|0|0|1|1
+P|Util|5640|Jakob Poeltl|New Player Note TOR - C|3/8|2/3|0|8|9|5|3|1|3|0
+P|Util|4725|Paul George|Player Note BOS - SF,PF|3/12|3/3|1|10|4|1|3|1|1|0
+P|Util|6402|Jalen Smith|Player Note CHI - PF,C|6/11|0/0|2|14|6|3|1|0|2|0
+P|BN|5161|CJ McCollum|OPlayer Note ATL - PG,SG|-
+P|BN|6167|Darius Garland|New Player Note LAC - PG|-
+P|IL|6015|Jaren Jackson Jr.|ONo new player Notes UTA - PF,C|-
+S|39/96|20/27|13|111|49|23|9|3|19|1
+T|4|Cho|Wed, Nov 18
+P|PG|6734|Ryan Rollins|ONew Player Note MIL - PG,SG|-
+P|SG|10272|Kyshawn George|New Player Note WAS - SG,SF,PF|7/16|2/2|4|20|2|4|1|1|1|0
+P|SF|5840|Kyle Kuzma|New Player Note MIL - SF,PF|9/16|6/10|2|26|5|1|2|1|3|0
+P|PF|5836|OG Anunoby|Player Note NYK - SF,PF|-
+P|C|6703|Jalen Duren|ONo new player Notes DET - C|-
+P|Util|10327|Cam Spencer|New Player Note MEM - PG,SG|9/11|3/4|5|26|1|7|0|1|2|0
+P|Util|4563|James Harden|New Player Note CLE - PG,SG|4/10|3/3|3|14|6|9|0|1|3|0
+P|Util|10115|Brandin Podziemski|Player Note GSW - PG,SG|5/13|0/2|0|10|3|4|0|0|0|0
+P|BN|6253|Naz Reid|New Player Note CHA - PF,C|-
+P|BN|6568|Bones Hyland|New Player Note MIN - PG,SG|-
+P|IL|6355|Anthony Edwards|ONo new player Notes MIN - PG,SG|-
+S|34/66|14/21|14|96|17|25|3|4|9|0
+T|5|Hewon the game|Wed, Nov 18
+P|PG|6057|De'Anthony Melton|Player Note GSW - PG,SG|0/3|0/0|0|0|2|2|3|0|4|0
+P|SG|10590|Darryn Peterson|New Player Note UTA - PG,SG|3/5|4/6|1|11|1|3|0|0|2|0
+P|SF|6707|Tari Eason|New Player Note HOU - SG,SF,PF|4/11|2/3|1|11|4|3|2|0|3|0
+P|PF|5658|Pascal Siakam|New Player Note IND - PF,C|10/17|2/2|2|24|4|3|3|1|1|0
+P|C|6571|Day'Ron Sharpe|Player Note BKN - C|3/4|0/0|0|6|5|1|0|1|2|0
+P|Util|6562|Jalen Johnson|New Player Note ATL - SF,PF|5/15|5/5|1|16|12|11|0|1|3|1
+P|Util|6694|Keegan Murray|Player Note SAC - SF,PF|6/10|0/0|0|12|7|3|1|0|1|0
+P|Util|6018|Wendell Carter Jr.|Player Note ORL - C|5/11|3/3|2|15|8|3|0|1|0|0
+P|BN|10467|Dylan Harper|ONew Player Note SAS - PG,SG,SF|-
+P|BN|6721|Andrew Nembhard|ONew Player Note IND - PG,SG|-
+P|IL|4612|Stephen Curry|OVideo ForecastPlayer Note GSW - PG|-
+S|36/76|16/19|7|95|43|29|9|4|16|1
+T|6|Team Jaewon|Wed, Nov 18
+P|PG|6551|Davion Mitchell|Video ForecastNew Player Note MIA - PG|8/11|2/2|6|24|2|6|0|1|4|0
+P|SG|10100|Keyonte George|Video ForecastNew Player Note UTA - PG,SG|9/17|7/9|5|30|1|10|1|0|4|1
+P|SF|6411|Saddiq Bey|Player Note NOP - SF,PF|3/13|2/2|2|10|8|6|1|0|2|0
+P|PF|6450|Paul Reed|New Player Note DET - PF,C|7/9|3/4|0|17|7|1|0|2|2|0
+P|C|5352|Nikola Jokić|New Player Note DEN - C|9/17|3/3|3|24|8|9|0|1|2|0
+P|Util|10316|Daniss Jenkins|New Player Note DET - PG,SG|7/16|0/0|3|17|4|9|0|0|4|0
+P|Util|6581|Neemias Queta|New Player Note BOS - C|8/14|1/1|0|17|10|3|2|0|2|1
+P|Util|10582|Darius Acuff Jr.|New Player Note SAC - PG|11/22|8/10|6|36|4|6|0|2|2|0
+P|BN|6016|Trae Young|Player Note WAS - PG|2/9|6/7|1|11|1|8|1|0|3|0
+P|BN|6021|Mikal Bridges|New Player Note NYK - SF,PF|-
+P|IL|4896|Kawhi Leonard|OPlayer Note TOR - SG,SF,PF|-
+S|62/119|26/31|25|175|44|50|4|6|22|2
+T|7|TEAM G-JAY|Wed, Nov 18
+P|PG|5826|Donovan Mitchell|New Player Note CLE - PG,SG|14/27|4/4|2|34|4|3|1|0|3|0
+P|SG|10095|Anthony Black|Player Note ORL - PG,SG,SF|6/16|1/3|2|15|2|6|1|1|2|0
+P|SF|10275|Tristan da Silva|Player Note ORL - SF,PF|5/7|0/0|2|12|2|0|0|0|0|0
+P|PF|6514|Evan Mobley|OPlayer Note CLE - PF,C|-
+P|C|5294|Joel Embiid|New Player Note PHI - C|7/18|12/14|0|26|6|7|2|3|3|0
+P|Util|5295|Aaron Gordon|Player Note DEN - PF,C|5/10|3/6|0|13|8|2|1|0|2|0
+P|Util|10592|Cameron Boozer|New Player Note MEM - PF,C|5/9|7/7|1|18|8|5|4|1|1|0
+P|Util|10599|AJ Dybantsa|New Player Note WAS - SF|9/17|5/6|0|23|12|2|1|0|2|1
+P|BN|10290|Stephon Castle|New Player Note SAS - PG,SG|-
+P|BN|6403|Devin Vassell|New Player Note SAS - SG,SF|-
+P|IL|6164|Ja Morant|ONo new player Notes POR - PG|-
+S|51/104|32/40|7|141|42|25|10|5|13|1
+T|8|YoungHun`s Team Bravo|Wed, Nov 18
+P|PG|10472|Tyrese Proctor|Player Note CLE - PG,SG|3/6|0/0|2|8|1|1|0|0|0|0
+P|SG|6513|Jalen Green|New Player Note PHX - SG,SF|6/14|2/2|4|18|7|7|1|0|2|0
+P|SF|6515|Scottie Barnes|ONew Player Note TOR - SF,PF,C|-
+P|PF|5642|Domantas Sabonis|New Player Note SAC - PF,C|4/7|0/0|0|8|13|8|1|0|3|0
+P|C|6163|Zion Williamson|New Player Note NOP - PF,C|9/14|6/9|0|24|7|1|0|0|3|0
+P|Util|10296|Zaccharie Risacher|Player Note DAL - SF,PF|1/6|0/0|1|3|3|0|0|2|2|0
+P|Util|5602|Jaylen Brown|OVideo ForecastNew Player Note PHI - SG,SF,PF|-
+P|Util|6226|Daniel Gafford|Player Note DAL - C|3/6|0/2|0|6|6|2|0|2|1|0
+P|BN|5012|Damian Lillard|New Player Note POR - PG|-
+P|BN|5767|De'Aaron Fox|New Player Note SAS - PG|-
+P|IL|5601|Brandon Ingram|ONew Player Note LAC - SG,SF,PF|-
+S|26/53|8/13|7|67|37|19|2|4|11|0
+T|9|Hanseong's Team|Wed, Nov 18
+P|PG|6395|LaMelo Ball|New Player Note MIN - PG|-
+P|SG|5292|Andrew Wiggins|Player Note MIA - SG,SF,PF|2/5|6/6|1|11|2|2|1|0|1|0
+P|SF|6550|Franz Wagner|New Player Note ORL - SF,PF|12/22|2/3|1|27|8|11|2|2|1|1
+P|PF|3704|LeBron James|Player Note PHI - SF,PF|8/16|5/6|1|22|3|6|0|0|1|0
+P|C|6558|Alperen Şengün|QNew Player Note HOU - PF,C|3/10|0/0|1|7|7|1|0|0|3|0
+P|Util|5747|Derrick Jones Jr.|New Player Note LAC - SF,PF|-
+P|Util|6169|Coby White|New Player Note CHA - PG,SG|-
+P|Util|5007|Anthony Davis|New Player Note WAS - PF,C|9/16|5/7|2|25|14|2|1|2|3|1
+P|BN|10585|Keaton Wagler|New Player Note LAC - SG|-
+P|BN|6032|Grayson Allen|QPlayer Note CHA - SG,SF|-
+P|IL|5660|Dejounte Murray|OVideo ForecastPlayer Note NOP - PG,SG|-
+S|34/69|18/22|6|92|34|22|4|4|9|2
+T|10|CHAN|Wed, Nov 18
+P|PG|6433|Tre Jones|Player Note CHI - PG,SG|5/6|0/0|0|10|2|6|0|0|2|0
+P|SG|10092|Jaime Jaquez Jr.|Player Note MIL - SG,SF,PF|3/7|3/4|1|10|2|5|0|0|2|0
+P|SF|10462|Ace Bailey|Video ForecastNew Player Note UTA - SF,PF|7/19|3/3|2|19|8|3|1|0|2|0
+P|PF|10444|Derik Queen|Player Note NOP - PF,C|4/6|1/1|0|9|5|0|1|1|2|0
+P|C|6398|Onyeka Okongwu|New Player Note ATL - C|11/21|1/3|5|28|9|2|0|1|5|0
+P|Util|5663|Ivica Zubac|New Player Note IND - C|2/4|0/0|0|4|3|4|0|1|1|0
+P|Util|6208|Matisse Thybulle|New Player Note LAL - SG,SF|1/4|0/0|0|2|1|3|4|1|1|0
+P|Util|5475|Kelly Oubre Jr.|New Player Note IND - SF,PF|7/10|1/1|2|17|4|0|0|1|2|0
+P|BN|10108|Amen Thompson|New Player Note HOU - PG,SG|6/11|3/4|0|15|9|3|1|1|3|0
+P|BN|10065|Toumani Camara|QNew Player Note POR - SF,PF|-
+P|IL|6404|Tyrese Haliburton|OPlayer Note IND - PG,SG|-
+S|40/77|9/12|10|99|34|23|6|5|17|0
+T|11|Kharami|Wed, Nov 18
+P|PG|5842|Derrick White|Player Note BOS - PG,SG|5/16|2/2|0|12|3|8|0|1|0|0
+P|SG|6548|Josh Giddey|New Player Note CHI - PG,SG|8/12|1/1|1|18|14|9|1|0|4|1
+P|SF|6030|Kevin Huerter|Player Note DET - SG,SF|2/9|6/7|1|11|1|7|1|1|2|0
+P|PF|5318|Julius Randle|New Player Note BKN - PF|5/10|4/4|3|17|0|4|1|0|2|0
+P|C|5185|Giannis Antetokounmpo|New Player Note MIA - PF,C|7/11|13/16|0|27|14|9|1|1|2|1
+P|Util|5324|Zach LaVine|New Player Note SAC - PG,SG,SF|8/12|0/0|2|18|5|2|1|0|1|0
+P|Util|6023|Miles Bridges|Player Note PHX - PF|6/8|0/0|1|13|6|5|1|1|0|0
+P|Util|10440|Jeremiah Fears|Player Note NOP - PG,SG|6/12|2/2|2|16|5|4|1|1|4|0
+P|BN|6596|Sandro Mamukelashvili|New Player Note LAL - PF,C|1/10|4/4|0|6|3|0|0|0|0|0
+P|BN|5197|Rudy Gobert|Player Note MIN - C|-
+P|IL|6572|Santi Aldama|New Player Note DAL - PF|0/2|0/0|0|0|0|0|0|0|0|0
+S|47/90|28/32|10|132|48|48|7|5|15|2
+T|12|SEOB's ME7O team|Wed, Nov 18
+P|PG|6022|Shai Gilgeous-Alexander|New Player Note OKC - PG|14/29|5/10|1|34|5|3|2|2|4|0
+P|SG|10278|Ja'Kobe Walter|New Player Note TOR - PG,SG|7/16|1/1|3|18|7|6|2|0|2|0
+P|SF|6422|Desmond Bane|Player Note ORL - SG,SF|5/9|0/0|5|15|3|3|1|0|2|0
+P|PF|5827|Bam Adebayo|New Player Note MIA - PF,C|7/15|9/13|3|26|4|2|2|0|3|0
+P|C|10287|Zach Edey|Player Note MEM - C|5/7|1/1|0|11|2|1|2|0|1|0
+P|Util|5473|Devin Booker|New Player Note PHX - PG,SG|10/18|7/7|2|29|2|6|1|0|1|0
+P|Util|6417|Immanuel Quickley|New Player Note TOR - PG,SG|9/21|2/6|4|24|3|5|1|0|1|0
+P|Util|5856|Isaiah Hartenstein|New Player Note OKC - C|3/5|0/0|0|6|17|6|0|1|0|0
+P|BN|6171|Rui Hachimura|New Player Note LAC - SF,PF|-
+P|BN|4472|Brook Lopez|New Player Note LAC - C|-
+S|60/120|25/38|18|163|43|32|11|3|14|0
+T|13|hyun's Team|Wed, Nov 18
+P|PG|6212|Ty Jerome|OPlayer Note MEM - PG,SG|-
+P|SG|6711|Christian Braun|Player Note DEN - SG,SF,PF|6/16|2/2|1|15|5|3|2|0|2|0
+P|SF|5765|Jayson Tatum|New Player Note BOS - SF,PF|10/22|1/2|3|24|8|3|1|0|6|0
+P|PF|6174|P.J. Washington|New Player Note DAL - PF,C|7/10|2/2|5|21|5|2|1|3|0|0
+P|C|6693|Jabari Smith Jr.|New Player Note HOU - PF,C|7/10|0/0|3|17|4|2|0|1|0|0
+P|Util|5638|Jamal Murray|New Player Note DEN - PG|7/15|5/5|2|21|7|2|4|2|3|0
+P|Util|10289|Yves Missi|Player Note NOP - C|2/3|0/0|0|4|5|2|0|0|1|0
+P|Util|6698|Dyson Daniels|Player Note ATL - SG,SF|5/9|0/0|0|10|10|4|2|0|1|1
+P|BN|6549|Jonathan Kuminga|QNew Player Note MIN - SF,PF|-
+P|BN|10285|Donovan Clingan|New Player Note POR - C|-
+P|IL|10450|Kon Knueppel|ONo new player Notes CHA - SG,SF|-
+S|44/85|10/11|14|112|44|18|10|6|13|1
+T|14|IN's WooSSa Team|Wed, Nov 18
+P|PG|5727|Fred VanVleet|New Player Note HOU - PG|6/13|0/0|3|15|2|6|1|0|2|0
+P|SG|6175|Tyler Herro|Player Note MIL - PG,SG|4/11|0/1|0|8|2|4|1|0|0|0
+P|SF|10468|Cooper Flagg|New Player Note DAL - SG,SF,PF|11/15|8/8|3|33|5|9|4|0|5|0
+P|PF|10571|Yaxel Lendeborg|New Player Note GSW - SF,PF|6/18|1/2|0|13|5|4|2|0|0|0
+P|C|10294|Alex Sarr|Player Note WAS - C|5/6|0/1|3|13|2|3|0|3|1|0
+P|Util|10579|Aday Mara|New Player Note OKC - C|4/6|2/4|0|10|6|8|0|1|1|0
+P|Util|10096|Ausar Thompson|New Player Note DET - SG,SF,PF|4/6|2/2|0|10|7|4|2|0|4|0
+P|Util|5506|Norman Powell|New Player Note CHI - SG,SF|6/16|0/0|5|17|2|5|1|0|0|0
+P|BN|6516|Jalen Suggs|Player Note ORL - PG,SG|5/10|3/6|5|18|8|4|2|1|5|0
+P|BN|4622|Jrue Holiday|Player Note POR - PG,SG|-
+P|IL|5769|Lauri Markkanen|OVideo ForecastPlayer Note UTA - SF,PF|-
+S|46/91|13/18|14|119|31|43|11|4|13|0
+T|15|Jaehun's Matchless Team|Wed, Nov 18
+P|PG|10304|Ajay Mitchell|Player Note OKC - PG,SG|5/11|3/3|0|13|6|6|0|2|2|0
+P|SG|4892|Klay Thompson|Player Note MIA - SG,SF|4/10|1/1|4|13|1|1|0|1|0|0
+P|SF|6173|Cameron Johnson|Player Note DEN - SF,PF|2/8|4/4|0|8|5|1|1|0|1|0
+P|PF|6025|Michael Porter Jr.|Player Note BKN - SF,PF|1/7|2/2|1|5|3|1|1|0|1|0
+P|C|10094|Victor Wembanyama|Player Note SAS - C|-
+P|Util|5471|Myles Turner|Player Note MIL - C|2/5|0/0|0|4|5|4|0|3|1|0
+P|Util|10276|Jared McCain|New Player Note OKC - PG,SG|7/14|0/0|4|18|3|1|1|0|1|0
+P|BN|10104|Brandon Miller|New Player Note CHA - SF,PF|-
+P|BN|6420|Jaden McDaniels|New Player Note MIN - SF|-
+P|BN|6073|Duncan Robinson|OPlayer Note DET - SG,SF|-
+P|IL|6606|Austin Reaves|OVideo ForecastNew Player Note LAL - PG,SG,SF|0/0|0/0|0|0|0|0|0|0|0|0
+S|21/55|10/10|9|61|23|14|3|6|6|0
+T|16|ALTMAN_CH|Wed, Nov 18
+P|PG|6413|Tyrese Maxey|ONew Player Note PHI - PG|-
+P|SG|4840|Kyrie Irving|New Player Note DAL - PG,SG|7/15|2/2|1|17|6|5|2|0|1|0
+P|SF|6166|De'Andre Hunter|New Player Note SAC - SF,PF|3/11|0/0|1|7|1|4|1|0|2|0
+P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|9/16|2/2|5|25|5|4|2|1|2|0
+P|C|6219|Nic Claxton|New Player Note CHI - C|6/7|2/3|0|14|4|1|1|0|0|0
+P|Util|6597|Aaron Wiggins|New Player Note ATL - SG,SF|5/13|0/0|4|14|3|1|1|0|1|0
+P|Util|6418|Payton Pritchard|Player Note BOS - PG|6/11|0/0|3|15|1|2|0|0|3|0
+P|Util|10333|Jamal Shead|New Player Note TOR - PG|7/12|0/0|1|15|1|6|0|0|1|0
+P|BN|6559|Trey Murphy III|OPlayer Note NOP - SG,SF|-
+P|BN|6217|Keldon Johnson|New Player Note SAS - SF,PF|-
+P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
+S|43/85|6/7|15|107|21|23|7|1|10|0
+#crc=32234b1a lines=208
