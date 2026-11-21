@@ -447,7 +447,7 @@
 - X17 2026-11-21 03:01 · add/drop · Kenrich Williams (add: FA → CHAN); Julian Champagnie (drop: CHAN → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20
+- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21
 - C1 2026-11-17 · Jaehun's Matchless Team · Austin Reaves: IL → SG (선발로 올림, 그날 기록 없음)
 - C2 2026-11-17 · Jaehun's Matchless Team · Duncan Robinson: SG → IL (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-18 · Jaehun's Matchless Team · Austin Reaves: Util → IL (벤치로 내림, 그날 기록 없음)
