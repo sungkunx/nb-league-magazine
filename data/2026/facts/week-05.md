@@ -459,7 +459,7 @@
 - X21 2026-11-22 02:18 · add/drop · Charles Bassey (add: FA → Hewon the game); Tari Eason (drop: Hewon the game → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21
+- 스냅샷이 있는 날: 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21, 2026-11-22
 - C1 2026-11-17 · Jaehun's Matchless Team · Austin Reaves: IL → SG (선발로 올림, 그날 기록 없음)
 - C2 2026-11-17 · Jaehun's Matchless Team · Duncan Robinson: SG → IL (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-18 · Jaehun's Matchless Team · Austin Reaves: Util → IL (벤치로 내림, 그날 기록 없음)
