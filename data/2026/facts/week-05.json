@@ -5,7 +5,7 @@
   "week": 5,
   "week_start": "2026-11-16",
   "week_end": "2026-11-22",
-  "through": "2026-11-20",
+  "through": "2026-11-21",
   "complete": false,
   "is_playoffs": false,
   "standings_through_week": 4,
@@ -79,80 +79,80 @@
     {
      "name": "FG%",
      "values": [
-      ".514",
-      ".504"
+      ".521",
+      ".512"
      ],
      "made_attempted": [
-      "126/245",
-      "122/242"
+      "160/307",
+      "147/287"
      ],
      "winner": "Baesen"
     },
     {
      "name": "FT%",
      "values": [
-      ".796",
-      ".820"
+      ".785",
+      ".803"
      ],
      "made_attempted": [
-      "43/54",
-      "50/61"
+      "51/65",
+      "57/71"
      ],
      "winner": "hyun's Team"
     },
     {
      "name": "3PTM",
      "values": [
-      "46",
-      "32"
+      "54",
+      "40"
      ],
      "winner": "Baesen"
     },
     {
      "name": "PTS",
      "values": [
-      "343",
-      "326"
+      "427",
+      "391"
      ],
      "winner": "Baesen"
     },
     {
      "name": "REB",
      "values": [
-      "133",
-      "161"
+      "153",
+      "196"
      ],
      "winner": "hyun's Team"
     },
     {
      "name": "AST",
      "values": [
-      "80",
-      "66"
+      "94",
+      "79"
      ],
      "winner": "Baesen"
     },
     {
      "name": "ST",
      "values": [
-      "18",
-      "30"
+      "27",
+      "35"
      ],
      "winner": "hyun's Team"
     },
     {
      "name": "BLK",
      "values": [
-      "10",
-      "20"
+      "12",
+      "23"
      ],
      "winner": "hyun's Team"
     },
     {
      "name": "TO",
      "values": [
-      "47",
-      "46"
+      "59",
+      "56"
      ],
      "winner": "hyun's Team"
     },
@@ -160,7 +160,7 @@
      "name": "DD",
      "values": [
       "3",
-      "6"
+      "7"
      ],
      "winner": "hyun's Team"
     }
@@ -182,80 +182,80 @@
     {
      "name": "FG%",
      "values": [
-      ".447",
-      ".467"
+      ".442",
+      ".459"
      ],
      "made_attempted": [
-      "96/215",
-      "135/289"
+      "114/258",
+      "152/331"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "FT%",
      "values": [
-      ".730",
-      ".753"
+      ".702",
+      ".767"
      ],
      "made_attempted": [
-      "27/37",
-      "70/93"
+      "33/47",
+      "79/103"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "3PTM",
      "values": [
-      "25",
-      "48"
+      "33",
+      "55"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "PTS",
      "values": [
-      "244",
-      "388"
+      "294",
+      "438"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "REB",
      "values": [
-      "110",
-      "131"
+      "134",
+      "145"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "AST",
      "values": [
-      "64",
-      "81"
+      "80",
+      "90"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "ST",
      "values": [
-      "15",
-      "23"
+      "17",
+      "28"
      ],
      "winner": "Team Scott"
     },
     {
      "name": "BLK",
      "values": [
-      "17",
-      "15"
+      "19",
+      "18"
      ],
      "winner": "TheMan"
     },
     {
      "name": "TO",
      "values": [
-      "38",
-      "43"
+      "44",
+      "52"
      ],
      "winner": "TheMan"
     },
@@ -285,80 +285,80 @@
     {
      "name": "FG%",
      "values": [
-      ".451",
-      ".489"
+      ".440",
+      ".470"
      ],
      "made_attempted": [
-      "110/244",
-      "170/348"
+      "122/277",
+      "188/400"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "FT%",
      "values": [
-      ".789",
-      ".873"
+      ".797",
+      ".798"
      ],
      "made_attempted": [
-      "60/76",
-      "62/71"
+      "63/79",
+      "71/89"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "3PTM",
      "values": [
-      "41",
-      "60"
+      "43",
+      "65"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "PTS",
      "values": [
-      "321",
-      "462"
+      "350",
+      "512"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "REB",
      "values": [
-      "89",
-      "121"
+      "105",
+      "140"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "AST",
      "values": [
-      "86",
-      "148"
+      "93",
+      "162"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "ST",
      "values": [
-      "19",
-      "27"
+      "21",
+      "28"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "BLK",
      "values": [
-      "13",
-      "14"
+      "14",
+      "16"
      ],
      "winner": "Team Jaewon"
     },
     {
      "name": "TO",
      "values": [
-      "35",
-      "54"
+      "36",
+      "60"
      ],
      "winner": "Cho"
     },
@@ -379,33 +379,33 @@
     "Hanseong's Team"
    ],
    "score": [
-    "5-3-2",
-    "3-5-2"
+    "5-5-0",
+    "5-5-0"
    ],
-   "winner": "Hewon the game",
+   "winner": null,
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      ".472",
-      ".462"
+      ".473",
+      ".456"
      ],
      "made_attempted": [
-      "108/229",
-      "133/288"
+      "115/243",
+      "149/327"
      ],
      "winner": "Hewon the game"
     },
     {
      "name": "FT%",
      "values": [
-      ".738",
-      ".747"
+      ".732",
+      ".741"
      ],
      "made_attempted": [
-      "59/80",
-      "74/99"
+      "60/82",
+      "83/112"
      ],
      "winner": "Hanseong's Team"
     },
@@ -413,23 +413,23 @@
      "name": "3PTM",
      "values": [
       "22",
-      "22"
+      "25"
      ],
-     "winner": "tie"
+     "winner": "Hanseong's Team"
     },
     {
      "name": "PTS",
      "values": [
-      "297",
-      "362"
+      "312",
+      "406"
      ],
      "winner": "Hanseong's Team"
     },
     {
      "name": "REB",
      "values": [
-      "139",
-      "119"
+      "151",
+      "144"
      ],
      "winner": "Hewon the game"
     },
@@ -437,15 +437,15 @@
      "name": "AST",
      "values": [
       "77",
-      "80"
+      "97"
      ],
      "winner": "Hanseong's Team"
     },
     {
      "name": "ST",
      "values": [
-      "23",
-      "17"
+      "24",
+      "22"
      ],
      "winner": "Hewon the game"
     },
@@ -453,25 +453,25 @@
      "name": "BLK",
      "values": [
       "12",
-      "11"
+      "13"
      ],
-     "winner": "Hewon the game"
+     "winner": "Hanseong's Team"
     },
     {
      "name": "TO",
      "values": [
-      "42",
-      "45"
+      "46",
+      "51"
      ],
      "winner": "Hewon the game"
     },
     {
      "name": "DD",
      "values": [
-      "4",
+      "5",
       "4"
      ],
-     "winner": "tie"
+     "winner": "Hewon the game"
     }
    ]
   },
@@ -491,56 +491,56 @@
     {
      "name": "FG%",
      "values": [
-      ".514",
-      ".476"
+      ".507",
+      ".437"
      ],
      "made_attempted": [
-      "167/325",
-      "101/212"
+      "183/361",
+      "118/270"
      ],
      "winner": "TEAM G-JAY"
     },
     {
      "name": "FT%",
      "values": [
-      ".780",
-      ".805"
+      ".789",
+      ".817"
      ],
      "made_attempted": [
-      "85/109",
-      "33/41"
+      "101/128",
+      "49/60"
      ],
      "winner": "ALTMAN_CH"
     },
     {
      "name": "3PTM",
      "values": [
-      "43",
-      "42"
+      "50",
+      "45"
      ],
      "winner": "TEAM G-JAY"
     },
     {
      "name": "PTS",
      "values": [
-      "462",
-      "277"
+      "517",
+      "330"
      ],
      "winner": "TEAM G-JAY"
     },
     {
      "name": "REB",
      "values": [
-      "119",
-      "58"
+      "143",
+      "77"
      ],
      "winner": "TEAM G-JAY"
     },
     {
      "name": "AST",
      "values": [
-      "102",
-      "60"
+      "119",
+      "79"
      ],
      "winner": "TEAM G-JAY"
     },
@@ -555,23 +555,23 @@
     {
      "name": "BLK",
      "values": [
-      "14",
-      "6"
+      "17",
+      "7"
      ],
      "winner": "TEAM G-JAY"
     },
     {
      "name": "TO",
      "values": [
-      "58",
-      "32"
+      "62",
+      "36"
      ],
      "winner": "ALTMAN_CH"
     },
     {
      "name": "DD",
      "values": [
-      "3",
+      "4",
       "0"
      ],
      "winner": "TEAM G-JAY"
@@ -585,8 +585,8 @@
     "IN's WooSSa Team"
    ],
    "score": [
-    "2-7-1",
-    "7-2-1"
+    "4-6-0",
+    "6-4-0"
    ],
    "winner": "IN's WooSSa Team",
    "status": "midevent",
@@ -594,90 +594,90 @@
     {
      "name": "FG%",
      "values": [
-      ".467",
-      ".474"
+      ".463",
+      ".479"
      ],
      "made_attempted": [
-      "122/261",
-      "148/312"
+      "142/307",
+      "175/365"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "FT%",
      "values": [
-      ".765",
-      ".706"
+      ".798",
+      ".723"
      ],
      "made_attempted": [
-      "65/85",
-      "48/68"
+      "79/99",
+      "68/94"
      ],
      "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "3PTM",
      "values": [
-      "30",
-      "42"
+      "32",
+      "53"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "PTS",
      "values": [
-      "339",
-      "386"
+      "395",
+      "471"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "REB",
      "values": [
-      "115",
-      "123"
+      "154",
+      "149"
      ],
-     "winner": "IN's WooSSa Team"
+     "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "AST",
      "values": [
-      "66",
-      "119"
+      "87",
+      "141"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "ST",
      "values": [
-      "17",
-      "33"
+      "20",
+      "36"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "BLK",
      "values": [
-      "9",
-      "17"
+      "12",
+      "18"
      ],
      "winner": "IN's WooSSa Team"
     },
     {
      "name": "TO",
      "values": [
-      "41",
-      "52"
+      "53",
+      "59"
      ],
      "winner": "YoungHun`s Team Bravo"
     },
     {
      "name": "DD",
      "values": [
-      "2",
-      "2"
+      "4",
+      "3"
      ],
-     "winner": "tie"
+     "winner": "YoungHun`s Team Bravo"
     }
    ]
   },
@@ -688,97 +688,97 @@
     "Jaehun's Matchless Team"
    ],
    "score": [
-    "5-4-1",
-    "4-5-1"
+    "2-7-1",
+    "7-2-1"
    ],
-   "winner": "CHAN",
+   "winner": "Jaehun's Matchless Team",
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
-      ".469",
-      ".461"
+      ".455",
+      ".484"
      ],
      "made_attempted": [
-      "114/243",
-      "123/267"
+      "130/286",
+      "162/335"
      ],
-     "winner": "CHAN"
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "FT%",
      "values": [
-      ".714",
-      ".864"
+      ".712",
+      ".870"
      ],
      "made_attempted": [
-      "35/49",
-      "38/44"
+      "37/52",
+      "47/54"
      ],
      "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "3PTM",
      "values": [
-      "33",
-      "44"
+      "38",
+      "57"
      ],
      "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "PTS",
      "values": [
-      "296",
-      "328"
+      "335",
+      "428"
      ],
      "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "REB",
      "values": [
-      "118",
-      "100"
+      "141",
+      "130"
      ],
      "winner": "CHAN"
     },
     {
      "name": "AST",
      "values": [
-      "54",
-      "59"
+      "58",
+      "72"
      ],
      "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "ST",
      "values": [
-      "23",
-      "19"
+      "24",
+      "25"
      ],
-     "winner": "CHAN"
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "BLK",
      "values": [
-      "19",
-      "17"
+      "21",
+      "26"
      ],
-     "winner": "CHAN"
+     "winner": "Jaehun's Matchless Team"
     },
     {
      "name": "TO",
      "values": [
-      "38",
-      "39"
+      "44",
+      "46"
      ],
      "winner": "CHAN"
     },
     {
      "name": "DD",
      "values": [
-      "2",
-      "2"
+      "3",
+      "3"
      ],
      "winner": "tie"
     }
@@ -791,89 +791,89 @@
     "SEOB's ME7O team"
    ],
    "score": [
-    "4-6-0",
-    "6-4-0"
+    "5-5-0",
+    "5-5-0"
    ],
-   "winner": "SEOB's ME7O team",
+   "winner": null,
    "status": "midevent",
    "categories": [
     {
      "name": "FG%",
      "values": [
       ".480",
-      ".517"
+      ".525"
      ],
      "made_attempted": [
-      "144/300",
-      "169/327"
+      "159/331",
+      "188/358"
      ],
      "winner": "SEOB's ME7O team"
     },
     {
      "name": "FT%",
      "values": [
-      ".737",
-      ".745"
+      ".752",
+      ".750"
      ],
      "made_attempted": [
-      "73/99",
-      "70/94"
+      "88/117",
+      "75/100"
      ],
-     "winner": "SEOB's ME7O team"
+     "winner": "Kharami"
     },
     {
      "name": "3PTM",
      "values": [
-      "28",
-      "63"
+      "32",
+      "68"
      ],
      "winner": "SEOB's ME7O team"
     },
     {
      "name": "PTS",
      "values": [
-      "389",
-      "471"
+      "438",
+      "519"
      ],
      "winner": "SEOB's ME7O team"
     },
     {
      "name": "REB",
      "values": [
-      "177",
-      "110"
+      "197",
+      "126"
      ],
      "winner": "Kharami"
     },
     {
      "name": "AST",
      "values": [
-      "117",
-      "97"
+      "123",
+      "98"
      ],
      "winner": "Kharami"
     },
     {
      "name": "ST",
      "values": [
-      "22",
-      "28"
+      "26",
+      "30"
      ],
      "winner": "SEOB's ME7O team"
     },
     {
      "name": "BLK",
      "values": [
-      "16",
-      "10"
+      "20",
+      "11"
      ],
      "winner": "Kharami"
     },
     {
      "name": "TO",
      "values": [
-      "53",
-      "43"
+      "62",
+      "50"
      ],
      "winner": "SEOB's ME7O team"
     },
@@ -1096,6 +1096,26 @@
    },
    "players": [
     {
+     "name": "Cedric Coward",
+     "nba_team": "MEM",
+     "games": 4,
+     "line": {
+      "FGM/A": "28/51",
+      "FG%": 0.549,
+      "FTM/A": "9/13",
+      "FT%": 0.692,
+      "3PTM": 15,
+      "PTS": 80,
+      "REB": 22,
+      "AST": 17,
+      "ST": 8,
+      "BLK": 2,
+      "TO": 11,
+      "DD": 0
+     },
+     "score": 7.95
+    },
+    {
      "name": "Karl-Anthony Towns",
      "nba_team": "NYK",
      "games": 2,
@@ -1113,27 +1133,67 @@
       "TO": 6,
       "DD": 2
      },
-     "score": 6.74
+     "score": 5.06
     },
     {
-     "name": "Cedric Coward",
-     "nba_team": "MEM",
+     "name": "VJ Edgecombe",
+     "nba_team": "PHI",
      "games": 3,
      "line": {
-      "FGM/A": "20/35",
-      "FG%": 0.571,
-      "FTM/A": "6/8",
-      "FT%": 0.75,
-      "3PTM": 11,
-      "PTS": 57,
-      "REB": 15,
-      "AST": 15,
-      "ST": 4,
-      "BLK": 2,
-      "TO": 5,
+      "FGM/A": "17/37",
+      "FG%": 0.459,
+      "FTM/A": "14/15",
+      "FT%": 0.933,
+      "3PTM": 6,
+      "PTS": 54,
+      "REB": 20,
+      "AST": 16,
+      "ST": 6,
+      "BLK": 1,
+      "TO": 7,
       "DD": 0
      },
-     "score": 6.5
+     "score": 4.39
+    },
+    {
+     "name": "Brayden Burries",
+     "nba_team": "MIL",
+     "games": 3,
+     "line": {
+      "FGM/A": "23/42",
+      "FG%": 0.548,
+      "FTM/A": "7/10",
+      "FT%": 0.7,
+      "3PTM": 7,
+      "PTS": 60,
+      "REB": 18,
+      "AST": 8,
+      "ST": 4,
+      "BLK": 1,
+      "TO": 7,
+      "DD": 0
+     },
+     "score": 1.64
+    },
+    {
+     "name": "Ayo Dosunmu",
+     "nba_team": "MIN",
+     "games": 4,
+     "line": {
+      "FGM/A": "25/53",
+      "FG%": 0.472,
+      "FTM/A": "1/2",
+      "FT%": 0.5,
+      "3PTM": 12,
+      "PTS": 63,
+      "REB": 15,
+      "AST": 13,
+      "ST": 5,
+      "BLK": 0,
+      "TO": 13,
+      "DD": 0
+     },
+     "score": 0.69
     },
     {
      "name": "Kevin Durant",
@@ -1153,27 +1213,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 1.6
-    },
-    {
-     "name": "VJ Edgecombe",
-     "nba_team": "PHI",
-     "games": 2,
-     "line": {
-      "FGM/A": "12/25",
-      "FG%": 0.48,
-      "FTM/A": "9/10",
-      "FT%": 0.9,
-      "3PTM": 5,
-      "PTS": 38,
-      "REB": 17,
-      "AST": 10,
-      "ST": 4,
-      "BLK": 0,
-      "TO": 7,
-      "DD": 0
-     },
-     "score": 0.92
+     "score": 0.6
     },
     {
      "name": "Moussa Diabaté",
@@ -1193,47 +1233,7 @@
       "TO": 6,
       "DD": 1
      },
-     "score": 0.52
-    },
-    {
-     "name": "Ayo Dosunmu",
-     "nba_team": "MIN",
-     "games": 3,
-     "line": {
-      "FGM/A": "16/39",
-      "FG%": 0.41,
-      "FTM/A": "1/2",
-      "FT%": 0.5,
-      "3PTM": 11,
-      "PTS": 44,
-      "REB": 13,
-      "AST": 11,
-      "ST": 2,
-      "BLK": 0,
-      "TO": 8,
-      "DD": 0
-     },
-     "score": -1.1
-    },
-    {
-     "name": "Brayden Burries",
-     "nba_team": "MIL",
-     "games": 2,
-     "line": {
-      "FGM/A": "11/22",
-      "FG%": 0.5,
-      "FTM/A": "7/9",
-      "FT%": 0.778,
-      "3PTM": 5,
-      "PTS": 34,
-      "REB": 10,
-      "AST": 4,
-      "ST": 4,
-      "BLK": 0,
-      "TO": 6,
-      "DD": 0
-     },
-     "score": -1.53
+     "score": -0.64
     },
     {
      "name": "Nickeil Alexander-Walker",
@@ -1253,7 +1253,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -1.81
+     "score": -2.36
     },
     {
      "name": "Collin Murray-Boyles",
@@ -1273,7 +1273,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.52
+     "score": -4.04
     },
     {
      "name": "Paolo Banchero",
@@ -1313,22 +1313,22 @@
     {
      "name": "Donovan Clingan",
      "nba_team": "POR",
-     "games": 3,
+     "games": 4,
      "line": {
-      "FGM/A": "13/24",
-      "FG%": 0.542,
-      "FTM/A": "3/7",
-      "FT%": 0.429,
-      "3PTM": 0,
-      "PTS": 29,
-      "REB": 35,
-      "AST": 8,
-      "ST": 3,
-      "BLK": 7,
-      "TO": 6,
-      "DD": 2
+      "FGM/A": "22/35",
+      "FG%": 0.629,
+      "FTM/A": "4/8",
+      "FT%": 0.5,
+      "3PTM": 3,
+      "PTS": 51,
+      "REB": 48,
+      "AST": 12,
+      "ST": 4,
+      "BLK": 8,
+      "TO": 7,
+      "DD": 3
      },
-     "score": 7.13
+     "score": 12.84
     },
     {
      "name": "Christian Braun",
@@ -1348,7 +1348,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 5.6
+     "score": 4.26
     },
     {
      "name": "Jamal Murray",
@@ -1368,7 +1368,7 @@
       "TO": 8,
       "DD": 0
      },
-     "score": 5.26
+     "score": 4.01
     },
     {
      "name": "Dyson Daniels",
@@ -1388,7 +1388,7 @@
       "TO": 3,
       "DD": 2
      },
-     "score": 4.92
+     "score": 3.59
     },
     {
      "name": "Jabari Smith Jr.",
@@ -1408,7 +1408,47 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 3.74
+     "score": 2.4
+    },
+    {
+     "name": "Jonathan Kuminga",
+     "nba_team": "MIN",
+     "games": 3,
+     "line": {
+      "FGM/A": "18/34",
+      "FG%": 0.529,
+      "FTM/A": "11/11",
+      "FT%": 1.0,
+      "3PTM": 5,
+      "PTS": 52,
+      "REB": 16,
+      "AST": 6,
+      "ST": 0,
+      "BLK": 4,
+      "TO": 10,
+      "DD": 0
+     },
+     "score": 0.96
+    },
+    {
+     "name": "Yves Missi",
+     "nba_team": "NOP",
+     "games": 4,
+     "line": {
+      "FGM/A": "9/20",
+      "FG%": 0.45,
+      "FTM/A": "5/9",
+      "FT%": 0.556,
+      "3PTM": 0,
+      "PTS": 23,
+      "REB": 41,
+      "AST": 4,
+      "ST": 5,
+      "BLK": 2,
+      "TO": 5,
+      "DD": 0
+     },
+     "score": -0.28
     },
     {
      "name": "P.J. Washington",
@@ -1428,27 +1468,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": 0.34
-    },
-    {
-     "name": "Jonathan Kuminga",
-     "nba_team": "MIN",
-     "games": 2,
-     "line": {
-      "FGM/A": "12/25",
-      "FG%": 0.48,
-      "FTM/A": "9/9",
-      "FT%": 1.0,
-      "3PTM": 3,
-      "PTS": 36,
-      "REB": 12,
-      "AST": 4,
-      "ST": 0,
-      "BLK": 3,
-      "TO": 6,
-      "DD": 0
-     },
-     "score": -0.5
+     "score": -0.59
     },
     {
      "name": "Jayson Tatum",
@@ -1468,47 +1488,27 @@
       "TO": 11,
       "DD": 1
      },
-     "score": -0.73
-    },
-    {
-     "name": "Yves Missi",
-     "nba_team": "NOP",
-     "games": 3,
-     "line": {
-      "FGM/A": "6/12",
-      "FG%": 0.5,
-      "FTM/A": "2/3",
-      "FT%": 0.667,
-      "3PTM": 0,
-      "PTS": 14,
-      "REB": 27,
-      "AST": 3,
-      "ST": 3,
-      "BLK": 1,
-      "TO": 5,
-      "DD": 0
-     },
-     "score": -1.86
+     "score": -1.48
     },
     {
      "name": "Ty Jerome",
      "nba_team": "MEM",
-     "games": 0,
+     "games": 1,
      "line": {
-      "FGM/A": "0/0",
-      "FG%": null,
-      "FTM/A": "0/0",
-      "FT%": null,
-      "3PTM": 0,
-      "PTS": 0,
-      "REB": 0,
-      "AST": 0,
-      "ST": 0,
+      "FGM/A": "7/17",
+      "FG%": 0.412,
+      "FTM/A": "1/1",
+      "FT%": 1.0,
+      "3PTM": 3,
+      "PTS": 18,
+      "REB": 4,
+      "AST": 6,
+      "ST": 2,
       "BLK": 0,
-      "TO": 0,
+      "TO": 5,
       "DD": 0
      },
-     "score": null
+     "score": -4.9
     }
    ],
    "benched": []
@@ -1525,6 +1525,26 @@
     "season_limit": 100
    },
    "players": [
+    {
+     "name": "Jalen Brunson",
+     "nba_team": "NYK",
+     "games": 3,
+     "line": {
+      "FGM/A": "29/65",
+      "FG%": 0.446,
+      "FTM/A": "10/11",
+      "FT%": 0.909,
+      "3PTM": 14,
+      "PTS": 82,
+      "REB": 14,
+      "AST": 17,
+      "ST": 2,
+      "BLK": 1,
+      "TO": 6,
+      "DD": 0
+     },
+     "score": 4.62
+    },
     {
      "name": "Jarrett Allen",
      "nba_team": "CLE",
@@ -1543,27 +1563,47 @@
       "TO": 9,
       "DD": 1
      },
-     "score": 3.44
+     "score": 2.1
     },
     {
-     "name": "Jalen Brunson",
-     "nba_team": "NYK",
+     "name": "Deni Avdija",
+     "nba_team": "POR",
      "games": 2,
      "line": {
-      "FGM/A": "18/42",
-      "FG%": 0.429,
-      "FTM/A": "8/8",
-      "FT%": 1.0,
-      "3PTM": 8,
-      "PTS": 52,
-      "REB": 7,
-      "AST": 12,
-      "ST": 2,
-      "BLK": 1,
-      "TO": 3,
+      "FGM/A": "18/32",
+      "FG%": 0.562,
+      "FTM/A": "6/11",
+      "FT%": 0.545,
+      "3PTM": 5,
+      "PTS": 47,
+      "REB": 17,
+      "AST": 9,
+      "ST": 1,
+      "BLK": 3,
+      "TO": 7,
       "DD": 0
      },
-     "score": 2.11
+     "score": -0.91
+    },
+    {
+     "name": "Josh Hart",
+     "nba_team": "NYK",
+     "games": 3,
+     "line": {
+      "FGM/A": "6/21",
+      "FG%": 0.286,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 4,
+      "PTS": 16,
+      "REB": 18,
+      "AST": 10,
+      "ST": 3,
+      "BLK": 1,
+      "TO": 4,
+      "DD": 0
+     },
+     "score": -2.27
     },
     {
      "name": "Mo Bamba",
@@ -1583,7 +1623,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -1.92
+     "score": -2.7
     },
     {
      "name": "Jerami Grant",
@@ -1603,7 +1643,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -2.2
+     "score": -2.76
     },
     {
      "name": "Cade Cunningham",
@@ -1623,27 +1663,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -2.25
-    },
-    {
-     "name": "Josh Hart",
-     "nba_team": "NYK",
-     "games": 2,
-     "line": {
-      "FGM/A": "6/14",
-      "FG%": 0.429,
-      "FTM/A": "0/0",
-      "FT%": null,
-      "3PTM": 4,
-      "PTS": 16,
-      "REB": 10,
-      "AST": 4,
-      "ST": 1,
-      "BLK": 1,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": -3.13
+     "score": -2.81
     },
     {
      "name": "Kel'el Ware",
@@ -1663,7 +1683,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -3.26
+     "score": -3.79
     },
     {
      "name": "Aaron Nesmith",
@@ -1683,27 +1703,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -3.37
-    },
-    {
-     "name": "Deni Avdija",
-     "nba_team": "POR",
-     "games": 1,
-     "line": {
-      "FGM/A": "11/19",
-      "FG%": 0.579,
-      "FTM/A": "2/4",
-      "FT%": 0.5,
-      "3PTM": 3,
-      "PTS": 27,
-      "REB": 8,
-      "AST": 4,
-      "ST": 1,
-      "BLK": 1,
-      "TO": 5,
-      "DD": 0
-     },
-     "score": -3.57
+     "score": -3.85
     },
     {
      "name": "Egor Dëmin",
@@ -1723,7 +1723,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.74
+     "score": -6.86
     },
     {
      "name": "Patrick Williams",
@@ -1743,7 +1743,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.78
+     "score": -6.92
     },
     {
      "name": "Isaiah Stewart",
@@ -1766,7 +1766,27 @@
      "score": null
     }
    ],
-   "benched": []
+   "benched": [
+    {
+     "name": "Kel'el Ware",
+     "nba_team": "MIL",
+     "games": 1,
+     "line": {
+      "FGM/A": "3/6",
+      "FG%": 0.5,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 6,
+      "REB": 8,
+      "AST": 3,
+      "ST": 1,
+      "BLK": 1,
+      "TO": 0,
+      "DD": 0
+     }
+    }
+   ]
   },
   {
    "id": "T4",
@@ -1798,7 +1818,27 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 5.89
+     "score": 4.51
+    },
+    {
+     "name": "Darius Garland",
+     "nba_team": "LAC",
+     "games": 3,
+     "line": {
+      "FGM/A": "18/42",
+      "FG%": 0.429,
+      "FTM/A": "16/16",
+      "FT%": 1.0,
+      "3PTM": 7,
+      "PTS": 59,
+      "REB": 4,
+      "AST": 14,
+      "ST": 3,
+      "BLK": 4,
+      "TO": 5,
+      "DD": 0
+     },
+     "score": 4.21
     },
     {
      "name": "Jalen Smith",
@@ -1818,67 +1858,27 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 3.64
+     "score": 2.35
     },
     {
-     "name": "Darius Garland",
-     "nba_team": "LAC",
-     "games": 2,
-     "line": {
-      "FGM/A": "13/32",
-      "FG%": 0.406,
-      "FTM/A": "12/12",
-      "FT%": 1.0,
-      "3PTM": 5,
-      "PTS": 43,
-      "REB": 3,
-      "AST": 12,
-      "ST": 3,
-      "BLK": 2,
-      "TO": 2,
-      "DD": 0
-     },
-     "score": 2.42
-    },
-    {
-     "name": "Jakob Poeltl",
-     "nba_team": "TOR",
+     "name": "Paul George",
+     "nba_team": "BOS",
      "games": 3,
      "line": {
-      "FGM/A": "9/18",
-      "FG%": 0.5,
-      "FTM/A": "3/5",
-      "FT%": 0.6,
-      "3PTM": 0,
-      "PTS": 21,
-      "REB": 24,
+      "FGM/A": "16/46",
+      "FG%": 0.348,
+      "FTM/A": "11/15",
+      "FT%": 0.733,
+      "3PTM": 8,
+      "PTS": 51,
+      "REB": 20,
       "AST": 9,
-      "ST": 4,
-      "BLK": 3,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": 1.37
-    },
-    {
-     "name": "John Collins",
-     "nba_team": "DET",
-     "games": 3,
-     "line": {
-      "FGM/A": "10/19",
-      "FG%": 0.526,
-      "FTM/A": "9/9",
-      "FT%": 1.0,
-      "3PTM": 5,
-      "PTS": 34,
-      "REB": 14,
-      "AST": 3,
-      "ST": 1,
+      "ST": 8,
       "BLK": 2,
-      "TO": 3,
+      "TO": 5,
       "DD": 0
      },
-     "score": 1.25
+     "score": 2.27
     },
     {
      "name": "Luka Dončić",
@@ -1898,27 +1898,67 @@
       "TO": 20,
       "DD": 0
      },
-     "score": 1.24
+     "score": 0.57
     },
     {
-     "name": "Paul George",
-     "nba_team": "BOS",
-     "games": 2,
+     "name": "Jakob Poeltl",
+     "nba_team": "TOR",
+     "games": 3,
      "line": {
-      "FGM/A": "10/25",
-      "FG%": 0.4,
-      "FTM/A": "6/9",
-      "FT%": 0.667,
-      "3PTM": 6,
-      "PTS": 32,
-      "REB": 12,
-      "AST": 4,
+      "FGM/A": "9/18",
+      "FG%": 0.5,
+      "FTM/A": "3/5",
+      "FT%": 0.6,
+      "3PTM": 0,
+      "PTS": 21,
+      "REB": 24,
+      "AST": 9,
       "ST": 4,
-      "BLK": 1,
-      "TO": 2,
+      "BLK": 3,
+      "TO": 3,
       "DD": 0
      },
-     "score": -0.67
+     "score": 0.29
+    },
+    {
+     "name": "John Collins",
+     "nba_team": "DET",
+     "games": 3,
+     "line": {
+      "FGM/A": "10/19",
+      "FG%": 0.526,
+      "FTM/A": "9/9",
+      "FT%": 1.0,
+      "3PTM": 5,
+      "PTS": 34,
+      "REB": 14,
+      "AST": 3,
+      "ST": 1,
+      "BLK": 2,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": 0.23
+    },
+    {
+     "name": "Terrence Shannon Jr.",
+     "nba_team": "MIN",
+     "games": 2,
+     "line": {
+      "FGM/A": "10/20",
+      "FG%": 0.5,
+      "FTM/A": "2/2",
+      "FT%": 1.0,
+      "3PTM": 3,
+      "PTS": 25,
+      "REB": 9,
+      "AST": 5,
+      "ST": 2,
+      "BLK": 0,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": -2.93
     },
     {
      "name": "Walker Kessler",
@@ -1938,7 +1978,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": -2.5
+     "score": -3.3
     },
     {
      "name": "RJ Barrett",
@@ -1958,27 +1998,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -4.71
-    },
-    {
-     "name": "Terrence Shannon Jr.",
-     "nba_team": "MIN",
-     "games": 1,
-     "line": {
-      "FGM/A": "4/9",
-      "FG%": 0.444,
-      "FTM/A": "2/2",
-      "FT%": 1.0,
-      "3PTM": 0,
-      "PTS": 10,
-      "REB": 4,
-      "AST": 3,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 0,
-      "DD": 0
-     },
-     "score": -4.78
+     "score": -5.12
     },
     {
      "name": "CJ McCollum",
@@ -2033,27 +2053,27 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 8.24
+     "score": 6.72
     },
     {
      "name": "Cam Spencer",
      "nba_team": "MEM",
-     "games": 3,
+     "games": 4,
      "line": {
-      "FGM/A": "16/29",
-      "FG%": 0.552,
-      "FTM/A": "8/9",
-      "FT%": 0.889,
+      "FGM/A": "20/37",
+      "FG%": 0.541,
+      "FTM/A": "9/10",
+      "FT%": 0.9,
       "3PTM": 7,
-      "PTS": 47,
-      "REB": 9,
-      "AST": 27,
-      "ST": 1,
+      "PTS": 56,
+      "REB": 14,
+      "AST": 32,
+      "ST": 3,
       "BLK": 1,
       "TO": 4,
       "DD": 0
      },
-     "score": 4.44
+     "score": 6.16
     },
     {
      "name": "Kyshawn George",
@@ -2073,7 +2093,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 3.24
+     "score": 2.11
     },
     {
      "name": "Naz Reid",
@@ -2093,7 +2113,7 @@
       "TO": 3,
       "DD": 2
      },
-     "score": 2.29
+     "score": 1.23
     },
     {
      "name": "OG Anunoby",
@@ -2113,47 +2133,47 @@
       "TO": 2,
       "DD": 0
      },
-     "score": 0.72
+     "score": -0.25
     },
     {
      "name": "Ryan Rollins",
      "nba_team": "MIL",
-     "games": 1,
+     "games": 2,
      "line": {
-      "FGM/A": "5/11",
-      "FG%": 0.455,
+      "FGM/A": "9/20",
+      "FG%": 0.45,
       "FTM/A": "4/6",
       "FT%": 0.667,
       "3PTM": 1,
-      "PTS": 15,
-      "REB": 3,
-      "AST": 6,
+      "PTS": 23,
+      "REB": 9,
+      "AST": 7,
       "ST": 4,
-      "BLK": 0,
-      "TO": 3,
+      "BLK": 1,
+      "TO": 4,
       "DD": 0
      },
-     "score": -4.02
+     "score": -2.99
     },
     {
      "name": "Kyle Kuzma",
      "nba_team": "MIL",
-     "games": 1,
+     "games": 2,
      "line": {
-      "FGM/A": "9/16",
-      "FG%": 0.562,
-      "FTM/A": "6/10",
-      "FT%": 0.6,
-      "3PTM": 2,
-      "PTS": 26,
-      "REB": 5,
-      "AST": 1,
+      "FGM/A": "13/32",
+      "FG%": 0.406,
+      "FTM/A": "8/12",
+      "FT%": 0.667,
+      "3PTM": 4,
+      "PTS": 38,
+      "REB": 10,
+      "AST": 2,
       "ST": 2,
       "BLK": 1,
       "TO": 3,
       "DD": 0
      },
-     "score": -4.24
+     "score": -3.8
     },
     {
      "name": "Bones Hyland",
@@ -2173,7 +2193,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.76
+     "score": -5.06
     },
     {
      "name": "Brandin Podziemski",
@@ -2193,7 +2213,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.75
+     "score": -5.97
     },
     {
      "name": "Jalen Duren",
@@ -2287,7 +2307,7 @@
       "TO": 13,
       "DD": 2
      },
-     "score": 11.91
+     "score": 9.78
     },
     {
      "name": "Keyonte George",
@@ -2307,47 +2327,7 @@
       "TO": 10,
       "DD": 2
      },
-     "score": 7.56
-    },
-    {
-     "name": "Paul Reed",
-     "nba_team": "DET",
-     "games": 3,
-     "line": {
-      "FGM/A": "15/22",
-      "FG%": 0.682,
-      "FTM/A": "5/7",
-      "FT%": 0.714,
-      "3PTM": 0,
-      "PTS": 35,
-      "REB": 20,
-      "AST": 9,
-      "ST": 6,
-      "BLK": 4,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": 5.25
-    },
-    {
-     "name": "Saddiq Bey",
-     "nba_team": "NOP",
-     "games": 3,
-     "line": {
-      "FGM/A": "19/45",
-      "FG%": 0.422,
-      "FTM/A": "5/5",
-      "FT%": 1.0,
-      "3PTM": 11,
-      "PTS": 54,
-      "REB": 20,
-      "AST": 12,
-      "ST": 2,
-      "BLK": 2,
-      "TO": 2,
-      "DD": 0
-     },
-     "score": 5.16
+     "score": 6.13
     },
     {
      "name": "Davion Mitchell",
@@ -2367,7 +2347,67 @@
       "TO": 4,
       "DD": 1
      },
-     "score": 5.03
+     "score": 3.77
+    },
+    {
+     "name": "Paul Reed",
+     "nba_team": "DET",
+     "games": 3,
+     "line": {
+      "FGM/A": "15/22",
+      "FG%": 0.682,
+      "FTM/A": "5/7",
+      "FT%": 0.714,
+      "3PTM": 0,
+      "PTS": 35,
+      "REB": 20,
+      "AST": 9,
+      "ST": 6,
+      "BLK": 4,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": 3.74
+    },
+    {
+     "name": "Saddiq Bey",
+     "nba_team": "NOP",
+     "games": 4,
+     "line": {
+      "FGM/A": "20/57",
+      "FG%": 0.351,
+      "FTM/A": "5/6",
+      "FT%": 0.833,
+      "3PTM": 11,
+      "PTS": 56,
+      "REB": 24,
+      "AST": 14,
+      "ST": 2,
+      "BLK": 2,
+      "TO": 2,
+      "DD": 0
+     },
+     "score": 2.64
+    },
+    {
+     "name": "Darius Acuff Jr.",
+     "nba_team": "SAC",
+     "games": 3,
+     "line": {
+      "FGM/A": "26/68",
+      "FG%": 0.382,
+      "FTM/A": "13/17",
+      "FT%": 0.765,
+      "3PTM": 10,
+      "PTS": 75,
+      "REB": 11,
+      "AST": 26,
+      "ST": 1,
+      "BLK": 2,
+      "TO": 9,
+      "DD": 1
+     },
+     "score": 2.52
     },
     {
      "name": "Trae Young",
@@ -2387,27 +2427,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 2.31
-    },
-    {
-     "name": "Darius Acuff Jr.",
-     "nba_team": "SAC",
-     "games": 2,
-     "line": {
-      "FGM/A": "19/45",
-      "FG%": 0.422,
-      "FTM/A": "8/10",
-      "FT%": 0.8,
-      "3PTM": 8,
-      "PTS": 54,
-      "REB": 5,
-      "AST": 18,
-      "ST": 1,
-      "BLK": 2,
-      "TO": 8,
-      "DD": 1
-     },
-     "score": 1.9
+     "score": 1.47
     },
     {
      "name": "Daniss Jenkins",
@@ -2427,47 +2447,47 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 1.65
-    },
-    {
-     "name": "Neemias Queta",
-     "nba_team": "BOS",
-     "games": 1,
-     "line": {
-      "FGM/A": "8/14",
-      "FG%": 0.571,
-      "FTM/A": "1/1",
-      "FT%": 1.0,
-      "3PTM": 0,
-      "PTS": 17,
-      "REB": 10,
-      "AST": 3,
-      "ST": 2,
-      "BLK": 0,
-      "TO": 2,
-      "DD": 1
-     },
-     "score": -1.61
+     "score": 0.79
     },
     {
      "name": "Mikal Bridges",
      "nba_team": "NYK",
-     "games": 2,
+     "games": 3,
      "line": {
-      "FGM/A": "10/18",
-      "FG%": 0.556,
+      "FGM/A": "15/26",
+      "FG%": 0.577,
       "FTM/A": "1/2",
       "FT%": 0.5,
-      "3PTM": 4,
-      "PTS": 25,
-      "REB": 8,
-      "AST": 4,
-      "ST": 2,
+      "3PTM": 6,
+      "PTS": 37,
+      "REB": 10,
+      "AST": 7,
+      "ST": 3,
       "BLK": 1,
-      "TO": 3,
+      "TO": 6,
       "DD": 0
      },
-     "score": -1.98
+     "score": -0.9
+    },
+    {
+     "name": "Neemias Queta",
+     "nba_team": "BOS",
+     "games": 2,
+     "line": {
+      "FGM/A": "13/23",
+      "FG%": 0.565,
+      "FTM/A": "5/11",
+      "FT%": 0.455,
+      "3PTM": 1,
+      "PTS": 32,
+      "REB": 17,
+      "AST": 4,
+      "ST": 2,
+      "BLK": 2,
+      "TO": 4,
+      "DD": 1
+     },
+     "score": -2.01
     }
    ],
    "benched": [
@@ -2498,9 +2518,9 @@
    "team_id": 5,
    "manager": null,
    "adds": {
-    "week": 1,
+    "week": 2,
     "week_limit": 4,
-    "season": 14,
+    "season": 15,
     "season_limit": 100
    },
    "players": [
@@ -2522,7 +2542,7 @@
       "TO": 7,
       "DD": 1
      },
-     "score": 5.32
+     "score": 3.96
     },
     {
      "name": "Day'Ron Sharpe",
@@ -2542,7 +2562,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 3.02
+     "score": 1.68
     },
     {
      "name": "Wendell Carter Jr.",
@@ -2562,7 +2582,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 1.08
+     "score": 0.08
     },
     {
      "name": "Darryn Peterson",
@@ -2582,7 +2602,7 @@
       "TO": 6,
       "DD": 1
      },
-     "score": 0.02
+     "score": -0.77
     },
     {
      "name": "Pascal Siakam",
@@ -2602,7 +2622,27 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -0.21
+     "score": -1.05
+    },
+    {
+     "name": "Keegan Murray",
+     "nba_team": "SAC",
+     "games": 2,
+     "line": {
+      "FGM/A": "13/24",
+      "FG%": 0.542,
+      "FTM/A": "1/2",
+      "FT%": 0.5,
+      "3PTM": 0,
+      "PTS": 27,
+      "REB": 19,
+      "AST": 3,
+      "ST": 2,
+      "BLK": 0,
+      "TO": 5,
+      "DD": 1
+     },
+     "score": -2.23
     },
     {
      "name": "Tari Eason",
@@ -2622,27 +2662,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": -2.56
-    },
-    {
-     "name": "Jaxson Hayes",
-     "nba_team": "UTA",
-     "games": 1,
-     "line": {
-      "FGM/A": "7/8",
-      "FG%": 0.875,
-      "FTM/A": "4/8",
-      "FT%": 0.5,
-      "3PTM": 0,
-      "PTS": 18,
-      "REB": 14,
-      "AST": 0,
-      "ST": 0,
-      "BLK": 0,
-      "TO": 1,
-      "DD": 1
-     },
-     "score": -3.27
+     "score": -3.11
     },
     {
      "name": "De'Anthony Melton",
@@ -2662,27 +2682,27 @@
       "TO": 9,
       "DD": 0
      },
-     "score": -3.28
+     "score": -3.64
     },
     {
-     "name": "Keegan Murray",
-     "nba_team": "SAC",
+     "name": "Jaxson Hayes",
+     "nba_team": "UTA",
      "games": 1,
      "line": {
-      "FGM/A": "6/10",
-      "FG%": 0.6,
-      "FTM/A": "0/0",
-      "FT%": null,
+      "FGM/A": "7/8",
+      "FG%": 0.875,
+      "FTM/A": "4/8",
+      "FT%": 0.5,
       "3PTM": 0,
-      "PTS": 12,
-      "REB": 7,
-      "AST": 3,
-      "ST": 1,
+      "PTS": 18,
+      "REB": 14,
+      "AST": 0,
+      "ST": 0,
       "BLK": 0,
       "TO": 1,
-      "DD": 0
+      "DD": 1
      },
-     "score": -4.38
+     "score": -3.96
     },
     {
      "name": "Andrew Nembhard",
@@ -2702,7 +2722,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.72
+     "score": -4.99
     },
     {
      "name": "Dylan Harper",
@@ -2722,7 +2742,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.25
+     "score": -5.59
     }
    ],
    "benched": [
@@ -2753,9 +2773,9 @@
    "team_id": 9,
    "manager": null,
    "adds": {
-    "week": 2,
+    "week": 3,
     "week_limit": 4,
-    "season": 11,
+    "season": 12,
     "season_limit": 100
    },
    "players": [
@@ -2777,7 +2797,7 @@
       "TO": 7,
       "DD": 1
      },
-     "score": 9.24
+     "score": 7.49
     },
     {
      "name": "Anthony Davis",
@@ -2797,7 +2817,7 @@
       "TO": 7,
       "DD": 2
      },
-     "score": 7.77
+     "score": 5.84
     },
     {
      "name": "Alperen Şengün",
@@ -2817,7 +2837,47 @@
       "TO": 8,
       "DD": 1
      },
-     "score": 3.53
+     "score": 2.22
+    },
+    {
+     "name": "LeBron James",
+     "nba_team": "PHI",
+     "games": 2,
+     "line": {
+      "FGM/A": "17/30",
+      "FG%": 0.567,
+      "FTM/A": "8/9",
+      "FT%": 0.889,
+      "3PTM": 1,
+      "PTS": 43,
+      "REB": 9,
+      "AST": 12,
+      "ST": 3,
+      "BLK": 1,
+      "TO": 2,
+      "DD": 0
+     },
+     "score": 0.93
+    },
+    {
+     "name": "LaMelo Ball",
+     "nba_team": "MIN",
+     "games": 4,
+     "line": {
+      "FGM/A": "20/61",
+      "FG%": 0.328,
+      "FTM/A": "2/4",
+      "FT%": 0.5,
+      "3PTM": 9,
+      "PTS": 51,
+      "REB": 27,
+      "AST": 17,
+      "ST": 4,
+      "BLK": 1,
+      "TO": 10,
+      "DD": 0
+     },
+     "score": -0.97
     },
     {
      "name": "Coby White",
@@ -2837,47 +2897,27 @@
       "TO": 7,
       "DD": 0
      },
-     "score": -2.62
+     "score": -3.06
     },
     {
-     "name": "LaMelo Ball",
-     "nba_team": "MIN",
+     "name": "Keaton Wagler",
+     "nba_team": "LAC",
      "games": 3,
      "line": {
-      "FGM/A": "15/51",
-      "FG%": 0.294,
-      "FTM/A": "1/2",
-      "FT%": 0.5,
-      "3PTM": 8,
-      "PTS": 39,
-      "REB": 22,
-      "AST": 10,
-      "ST": 3,
+      "FGM/A": "9/27",
+      "FG%": 0.333,
+      "FTM/A": "8/9",
+      "FT%": 0.889,
+      "3PTM": 3,
+      "PTS": 29,
+      "REB": 14,
+      "AST": 5,
+      "ST": 2,
       "BLK": 0,
-      "TO": 7,
+      "TO": 6,
       "DD": 0
      },
-     "score": -2.98
-    },
-    {
-     "name": "LeBron James",
-     "nba_team": "PHI",
-     "games": 1,
-     "line": {
-      "FGM/A": "8/16",
-      "FG%": 0.5,
-      "FTM/A": "5/6",
-      "FT%": 0.833,
-      "3PTM": 1,
-      "PTS": 22,
-      "REB": 3,
-      "AST": 6,
-      "ST": 0,
-      "BLK": 0,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": -4.2
+     "score": -4.12
     },
     {
      "name": "Andrew Wiggins",
@@ -2897,47 +2937,27 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -4.55
-    },
-    {
-     "name": "Keaton Wagler",
-     "nba_team": "LAC",
-     "games": 2,
-     "line": {
-      "FGM/A": "8/19",
-      "FG%": 0.421,
-      "FTM/A": "4/5",
-      "FT%": 0.8,
-      "3PTM": 2,
-      "PTS": 22,
-      "REB": 7,
-      "AST": 2,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 5,
-      "DD": 0
-     },
-     "score": -5.55
+     "score": -4.89
     },
     {
      "name": "Derrick Jones Jr.",
      "nba_team": "LAC",
-     "games": 2,
+     "games": 3,
      "line": {
-      "FGM/A": "3/6",
-      "FG%": 0.5,
-      "FTM/A": "7/11",
-      "FT%": 0.636,
-      "3PTM": 0,
-      "PTS": 13,
-      "REB": 3,
-      "AST": 2,
+      "FGM/A": "4/13",
+      "FG%": 0.308,
+      "FTM/A": "8/15",
+      "FT%": 0.533,
+      "3PTM": 1,
+      "PTS": 17,
+      "REB": 10,
+      "AST": 3,
       "ST": 2,
       "BLK": 1,
-      "TO": 2,
+      "TO": 3,
       "DD": 0
      },
-     "score": -5.55
+     "score": -6.91
     },
     {
      "name": "Grayson Allen",
@@ -2975,6 +2995,26 @@
    },
    "players": [
     {
+     "name": "Joel Embiid",
+     "nba_team": "PHI",
+     "games": 3,
+     "line": {
+      "FGM/A": "27/57",
+      "FG%": 0.474,
+      "FTM/A": "33/38",
+      "FT%": 0.868,
+      "3PTM": 2,
+      "PTS": 89,
+      "REB": 28,
+      "AST": 17,
+      "ST": 3,
+      "BLK": 6,
+      "TO": 7,
+      "DD": 1
+     },
+     "score": 10.09
+    },
+    {
      "name": "Cameron Boozer",
      "nba_team": "MEM",
      "games": 3,
@@ -2992,7 +3032,7 @@
       "TO": 9,
       "DD": 0
      },
-     "score": 8.84
+     "score": 7.09
     },
     {
      "name": "AJ Dybantsa",
@@ -3012,27 +3052,7 @@
       "TO": 6,
       "DD": 2
      },
-     "score": 8.09
-    },
-    {
-     "name": "Joel Embiid",
-     "nba_team": "PHI",
-     "games": 2,
-     "line": {
-      "FGM/A": "20/40",
-      "FG%": 0.5,
-      "FTM/A": "21/24",
-      "FT%": 0.875,
-      "3PTM": 2,
-      "PTS": 63,
-      "REB": 11,
-      "AST": 8,
-      "ST": 3,
-      "BLK": 5,
-      "TO": 6,
-      "DD": 0
-     },
-     "score": 4.76
+     "score": 6.39
     },
     {
      "name": "Donovan Mitchell",
@@ -3052,7 +3072,47 @@
       "TO": 8,
       "DD": 0
      },
-     "score": 4.54
+     "score": 3.27
+    },
+    {
+     "name": "Stephon Castle",
+     "nba_team": "SAS",
+     "games": 3,
+     "line": {
+      "FGM/A": "17/35",
+      "FG%": 0.486,
+      "FTM/A": "7/9",
+      "FT%": 0.778,
+      "3PTM": 9,
+      "PTS": 50,
+      "REB": 11,
+      "AST": 25,
+      "ST": 4,
+      "BLK": 0,
+      "TO": 13,
+      "DD": 1
+     },
+     "score": 2.3
+    },
+    {
+     "name": "Devin Vassell",
+     "nba_team": "SAS",
+     "games": 3,
+     "line": {
+      "FGM/A": "12/29",
+      "FG%": 0.414,
+      "FTM/A": "8/10",
+      "FT%": 0.8,
+      "3PTM": 5,
+      "PTS": 37,
+      "REB": 13,
+      "AST": 10,
+      "ST": 4,
+      "BLK": 3,
+      "TO": 2,
+      "DD": 0
+     },
+     "score": 1.66
     },
     {
      "name": "Anthony Black",
@@ -3072,27 +3132,7 @@
       "TO": 11,
       "DD": 0
      },
-     "score": 0.82
-    },
-    {
-     "name": "Devin Vassell",
-     "nba_team": "SAS",
-     "games": 2,
-     "line": {
-      "FGM/A": "10/22",
-      "FG%": 0.455,
-      "FTM/A": "4/5",
-      "FT%": 0.8,
-      "3PTM": 3,
-      "PTS": 27,
-      "REB": 9,
-      "AST": 8,
-      "ST": 4,
-      "BLK": 1,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": 0.1
+     "score": -0.01
     },
     {
      "name": "Tristan da Silva",
@@ -3112,27 +3152,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": 0.03
-    },
-    {
-     "name": "Stephon Castle",
-     "nba_team": "SAS",
-     "games": 2,
-     "line": {
-      "FGM/A": "10/23",
-      "FG%": 0.435,
-      "FTM/A": "7/9",
-      "FT%": 0.778,
-      "3PTM": 4,
-      "PTS": 31,
-      "REB": 8,
-      "AST": 19,
-      "ST": 4,
-      "BLK": 0,
-      "TO": 11,
-      "DD": 1
-     },
-     "score": -0.3
+     "score": -0.8
     },
     {
      "name": "Aaron Gordon",
@@ -3152,7 +3172,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -2.04
+     "score": -2.75
     },
     {
      "name": "Evan Mobley",
@@ -3207,7 +3227,27 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 3.93
+     "score": 2.71
+    },
+    {
+     "name": "Tyrese Maxey",
+     "nba_team": "PHI",
+     "games": 2,
+     "line": {
+      "FGM/A": "11/23",
+      "FG%": 0.478,
+      "FTM/A": "15/16",
+      "FT%": 0.938,
+      "3PTM": 4,
+      "PTS": 41,
+      "REB": 5,
+      "AST": 13,
+      "ST": 1,
+      "BLK": 1,
+      "TO": 4,
+      "DD": 0
+     },
+     "score": -0.02
     },
     {
      "name": "Nic Claxton",
@@ -3227,7 +3267,47 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -0.33
+     "score": -1.23
+    },
+    {
+     "name": "Kyrie Irving",
+     "nba_team": "DAL",
+     "games": 2,
+     "line": {
+      "FGM/A": "15/39",
+      "FG%": 0.385,
+      "FTM/A": "8/9",
+      "FT%": 0.889,
+      "3PTM": 4,
+      "PTS": 42,
+      "REB": 12,
+      "AST": 9,
+      "ST": 2,
+      "BLK": 0,
+      "TO": 1,
+      "DD": 0
+     },
+     "score": -1.29
+    },
+    {
+     "name": "Payton Pritchard",
+     "nba_team": "BOS",
+     "games": 3,
+     "line": {
+      "FGM/A": "17/44",
+      "FG%": 0.386,
+      "FTM/A": "4/5",
+      "FT%": 0.8,
+      "3PTM": 7,
+      "PTS": 45,
+      "REB": 11,
+      "AST": 15,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": -1.86
     },
     {
      "name": "Aaron Wiggins",
@@ -3247,47 +3327,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -1.33
-    },
-    {
-     "name": "Payton Pritchard",
-     "nba_team": "BOS",
-     "games": 2,
-     "line": {
-      "FGM/A": "13/27",
-      "FG%": 0.481,
-      "FTM/A": "3/3",
-      "FT%": 1.0,
-      "3PTM": 7,
-      "PTS": 36,
-      "REB": 5,
-      "AST": 7,
-      "ST": 0,
-      "BLK": 0,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": -1.84
-    },
-    {
-     "name": "Tyrese Maxey",
-     "nba_team": "PHI",
-     "games": 1,
-     "line": {
-      "FGM/A": "7/12",
-      "FG%": 0.583,
-      "FTM/A": "6/6",
-      "FT%": 1.0,
-      "3PTM": 4,
-      "PTS": 24,
-      "REB": 1,
-      "AST": 9,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": -2.03
+     "score": -1.97
     },
     {
      "name": "Trey Murphy III",
@@ -3307,27 +3347,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -2.62
-    },
-    {
-     "name": "Kyrie Irving",
-     "nba_team": "DAL",
-     "games": 1,
-     "line": {
-      "FGM/A": "7/15",
-      "FG%": 0.467,
-      "FTM/A": "2/2",
-      "FT%": 1.0,
-      "3PTM": 1,
-      "PTS": 17,
-      "REB": 6,
-      "AST": 5,
-      "ST": 2,
-      "BLK": 0,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": -3.3
+     "score": -3.19
     },
     {
      "name": "Brice Sensabaugh",
@@ -3347,7 +3367,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -4.56
+     "score": -4.92
     },
     {
      "name": "Jamal Shead",
@@ -3367,7 +3387,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -5.36
+     "score": -5.53
     },
     {
      "name": "De'Andre Hunter",
@@ -3387,7 +3407,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.6
+     "score": -6.69
     },
     {
      "name": "Keldon Johnson",
@@ -3407,7 +3427,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -7.23
+     "score": -7.33
     },
     {
      "name": "Egor Dëmin",
@@ -3427,7 +3447,27 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -7.53
+     "score": -7.58
+    },
+    {
+     "name": "Kasparas Jakučionis",
+     "nba_team": "MIL",
+     "games": 1,
+     "line": {
+      "FGM/A": "1/6",
+      "FG%": 0.167,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 2,
+      "REB": 3,
+      "AST": 3,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": -7.79
     }
    ],
    "benched": []
@@ -3444,6 +3484,46 @@
     "season_limit": 100
    },
    "players": [
+    {
+     "name": "Domantas Sabonis",
+     "nba_team": "SAC",
+     "games": 3,
+     "line": {
+      "FGM/A": "17/30",
+      "FG%": 0.567,
+      "FTM/A": "7/8",
+      "FT%": 0.875,
+      "3PTM": 1,
+      "PTS": 42,
+      "REB": 46,
+      "AST": 13,
+      "ST": 1,
+      "BLK": 1,
+      "TO": 13,
+      "DD": 2
+     },
+     "score": 3.72
+    },
+    {
+     "name": "Damian Lillard",
+     "nba_team": "POR",
+     "games": 4,
+     "line": {
+      "FGM/A": "25/68",
+      "FG%": 0.368,
+      "FTM/A": "19/21",
+      "FT%": 0.905,
+      "3PTM": 13,
+      "PTS": 82,
+      "REB": 14,
+      "AST": 12,
+      "ST": 1,
+      "BLK": 2,
+      "TO": 9,
+      "DD": 0
+     },
+     "score": 1.91
+    },
     {
      "name": "Jalen Green",
      "nba_team": "PHX",
@@ -3462,47 +3542,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 1.83
-    },
-    {
-     "name": "Damian Lillard",
-     "nba_team": "POR",
-     "games": 3,
-     "line": {
-      "FGM/A": "20/52",
-      "FG%": 0.385,
-      "FTM/A": "15/17",
-      "FT%": 0.882,
-      "3PTM": 12,
-      "PTS": 67,
-      "REB": 11,
-      "AST": 9,
-      "ST": 1,
-      "BLK": 1,
-      "TO": 8,
-      "DD": 0
-     },
-     "score": 0.87
-    },
-    {
-     "name": "Domantas Sabonis",
-     "nba_team": "SAC",
-     "games": 2,
-     "line": {
-      "FGM/A": "12/20",
-      "FG%": 0.6,
-      "FTM/A": "2/3",
-      "FT%": 0.667,
-      "3PTM": 1,
-      "PTS": 27,
-      "REB": 29,
-      "AST": 9,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 6,
-      "DD": 1
-     },
-     "score": 0.76
+     "score": 0.91
     },
     {
      "name": "Zion Williamson",
@@ -3522,7 +3562,27 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 0.7
+     "score": -0.26
+    },
+    {
+     "name": "Daniel Gafford",
+     "nba_team": "DAL",
+     "games": 2,
+     "line": {
+      "FGM/A": "7/11",
+      "FG%": 0.636,
+      "FTM/A": "2/4",
+      "FT%": 0.5,
+      "3PTM": 0,
+      "PTS": 16,
+      "REB": 16,
+      "AST": 5,
+      "ST": 2,
+      "BLK": 3,
+      "TO": 2,
+      "DD": 1
+     },
+     "score": -0.26
     },
     {
      "name": "Scottie Barnes",
@@ -3542,7 +3602,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": 0.48
+     "score": -0.49
     },
     {
      "name": "Jaylen Brown",
@@ -3562,7 +3622,7 @@
       "TO": 1,
       "DD": 1
      },
-     "score": 0.35
+     "score": -0.58
     },
     {
      "name": "Tyrese Proctor",
@@ -3582,67 +3642,47 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -3.11
+     "score": -3.58
     },
     {
      "name": "De'Aaron Fox",
      "nba_team": "SAS",
-     "games": 2,
+     "games": 3,
      "line": {
-      "FGM/A": "5/15",
-      "FG%": 0.333,
-      "FTM/A": "6/6",
+      "FGM/A": "6/19",
+      "FG%": 0.316,
+      "FTM/A": "9/9",
       "FT%": 1.0,
       "3PTM": 0,
-      "PTS": 16,
-      "REB": 4,
-      "AST": 7,
+      "PTS": 21,
+      "REB": 6,
+      "AST": 17,
       "ST": 3,
       "BLK": 0,
-      "TO": 7,
+      "TO": 10,
       "DD": 0
      },
-     "score": -5.15
-    },
-    {
-     "name": "Daniel Gafford",
-     "nba_team": "DAL",
-     "games": 1,
-     "line": {
-      "FGM/A": "3/6",
-      "FG%": 0.5,
-      "FTM/A": "0/2",
-      "FT%": 0.0,
-      "3PTM": 0,
-      "PTS": 6,
-      "REB": 6,
-      "AST": 2,
-      "ST": 0,
-      "BLK": 2,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": -5.6
+     "score": -4.14
     },
     {
      "name": "Zaccharie Risacher",
      "nba_team": "DAL",
-     "games": 1,
+     "games": 2,
      "line": {
-      "FGM/A": "1/6",
-      "FG%": 0.167,
+      "FGM/A": "6/17",
+      "FG%": 0.353,
       "FTM/A": "0/0",
       "FT%": null,
-      "3PTM": 1,
-      "PTS": 3,
-      "REB": 3,
-      "AST": 0,
-      "ST": 0,
+      "3PTM": 2,
+      "PTS": 14,
+      "REB": 10,
+      "AST": 1,
+      "ST": 1,
       "BLK": 2,
       "TO": 2,
       "DD": 0
      },
-     "score": -6.15
+     "score": -4.28
     }
    ],
    "benched": []
@@ -3659,6 +3699,46 @@
     "season_limit": 100
    },
    "players": [
+    {
+     "name": "Tyler Herro",
+     "nba_team": "MIL",
+     "games": 3,
+     "line": {
+      "FGM/A": "26/47",
+      "FG%": 0.553,
+      "FTM/A": "14/17",
+      "FT%": 0.824,
+      "3PTM": 11,
+      "PTS": 77,
+      "REB": 17,
+      "AST": 14,
+      "ST": 3,
+      "BLK": 0,
+      "TO": 6,
+      "DD": 1
+     },
+     "score": 6.28
+    },
+    {
+     "name": "Jrue Holiday",
+     "nba_team": "POR",
+     "games": 4,
+     "line": {
+      "FGM/A": "24/54",
+      "FG%": 0.444,
+      "FTM/A": "10/13",
+      "FT%": 0.769,
+      "3PTM": 10,
+      "PTS": 68,
+      "REB": 20,
+      "AST": 23,
+      "ST": 8,
+      "BLK": 1,
+      "TO": 9,
+      "DD": 0
+     },
+     "score": 5.59
+    },
     {
      "name": "Ausar Thompson",
      "nba_team": "DET",
@@ -3677,47 +3757,7 @@
       "TO": 7,
       "DD": 1
      },
-     "score": 6.26
-    },
-    {
-     "name": "Jrue Holiday",
-     "nba_team": "POR",
-     "games": 3,
-     "line": {
-      "FGM/A": "18/40",
-      "FG%": 0.45,
-      "FTM/A": "10/13",
-      "FT%": 0.769,
-      "3PTM": 9,
-      "PTS": 55,
-      "REB": 11,
-      "AST": 16,
-      "ST": 6,
-      "BLK": 1,
-      "TO": 7,
-      "DD": 0
-     },
-     "score": 3.58
-    },
-    {
-     "name": "Aday Mara",
-     "nba_team": "OKC",
-     "games": 2,
-     "line": {
-      "FGM/A": "15/21",
-      "FG%": 0.714,
-      "FTM/A": "2/4",
-      "FT%": 0.5,
-      "3PTM": 0,
-      "PTS": 32,
-      "REB": 22,
-      "AST": 10,
-      "ST": 0,
-      "BLK": 3,
-      "TO": 2,
-      "DD": 1
-     },
-     "score": 3.33
+     "score": 4.8
     },
     {
      "name": "Yaxel Lendeborg",
@@ -3737,24 +3777,44 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 3.05
+     "score": 2.03
+    },
+    {
+     "name": "Aday Mara",
+     "nba_team": "OKC",
+     "games": 2,
+     "line": {
+      "FGM/A": "15/21",
+      "FG%": 0.714,
+      "FTM/A": "2/4",
+      "FT%": 0.5,
+      "3PTM": 0,
+      "PTS": 32,
+      "REB": 22,
+      "AST": 10,
+      "ST": 0,
+      "BLK": 3,
+      "TO": 2,
+      "DD": 1
+     },
+     "score": 1.93
     },
     {
      "name": "Cooper Flagg",
      "nba_team": "DAL",
-     "games": 1,
+     "games": 2,
      "line": {
-      "FGM/A": "11/15",
-      "FG%": 0.733,
-      "FTM/A": "8/8",
-      "FT%": 1.0,
-      "3PTM": 3,
-      "PTS": 33,
-      "REB": 5,
-      "AST": 9,
+      "FGM/A": "17/31",
+      "FG%": 0.548,
+      "FTM/A": "15/21",
+      "FT%": 0.714,
+      "3PTM": 6,
+      "PTS": 55,
+      "REB": 11,
+      "AST": 17,
       "ST": 4,
-      "BLK": 0,
-      "TO": 5,
+      "BLK": 1,
+      "TO": 8,
       "DD": 0
      },
      "score": 0.88
@@ -3777,7 +3837,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 0.73
+     "score": -0.02
     },
     {
      "name": "Alex Sarr",
@@ -3797,7 +3857,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -0.65
+     "score": -1.5
     },
     {
      "name": "Norman Powell",
@@ -3817,7 +3877,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -1.45
+     "score": -2.01
     },
     {
      "name": "Jalen Suggs",
@@ -3837,27 +3897,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": -2.27
-    },
-    {
-     "name": "Tyler Herro",
-     "nba_team": "MIL",
-     "games": 2,
-     "line": {
-      "FGM/A": "11/24",
-      "FG%": 0.458,
-      "FTM/A": "1/4",
-      "FT%": 0.25,
-      "3PTM": 4,
-      "PTS": 27,
-      "REB": 6,
-      "AST": 7,
-      "ST": 2,
-      "BLK": 0,
-      "TO": 4,
-      "DD": 0
-     },
-     "score": -4.52
+     "score": -2.89
     }
    ],
    "benched": [
@@ -3897,22 +3937,22 @@
     {
      "name": "Derik Queen",
      "nba_team": "NOP",
-     "games": 3,
+     "games": 4,
      "line": {
-      "FGM/A": "13/23",
-      "FG%": 0.565,
-      "FTM/A": "7/9",
-      "FT%": 0.778,
+      "FGM/A": "20/39",
+      "FG%": 0.513,
+      "FTM/A": "8/11",
+      "FT%": 0.727,
       "3PTM": 4,
-      "PTS": 37,
-      "REB": 22,
+      "PTS": 52,
+      "REB": 37,
       "AST": 3,
-      "ST": 1,
+      "ST": 2,
       "BLK": 3,
-      "TO": 3,
-      "DD": 1
+      "TO": 6,
+      "DD": 2
      },
-     "score": 3.55
+     "score": 5.07
     },
     {
      "name": "Ivica Zubac",
@@ -3932,27 +3972,27 @@
       "TO": 3,
       "DD": 1
      },
-     "score": 1.8
+     "score": 0.63
     },
     {
      "name": "Toumani Camara",
      "nba_team": "POR",
-     "games": 3,
+     "games": 4,
      "line": {
-      "FGM/A": "11/37",
-      "FG%": 0.297,
-      "FTM/A": "3/3",
+      "FGM/A": "13/47",
+      "FG%": 0.277,
+      "FTM/A": "4/4",
       "FT%": 1.0,
-      "3PTM": 6,
-      "PTS": 31,
-      "REB": 14,
+      "3PTM": 7,
+      "PTS": 37,
+      "REB": 19,
       "AST": 5,
       "ST": 4,
-      "BLK": 4,
-      "TO": 4,
+      "BLK": 5,
+      "TO": 7,
       "DD": 0
      },
-     "score": 0.51
+     "score": -0.21
     },
     {
      "name": "Kelly Oubre Jr.",
@@ -3972,7 +4012,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": 0.4
+     "score": -0.6
     },
     {
      "name": "Onyeka Okongwu",
@@ -3992,7 +4032,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": -1.07
+     "score": -1.88
     },
     {
      "name": "Matisse Thybulle",
@@ -4012,7 +4052,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -1.28
+     "score": -1.92
     },
     {
      "name": "Ace Bailey",
@@ -4032,7 +4072,27 @@
       "TO": 6,
       "DD": 0
      },
-     "score": -2.64
+     "score": -3.09
+    },
+    {
+     "name": "Julian Champagnie",
+     "nba_team": "SAS",
+     "games": 2,
+     "line": {
+      "FGM/A": "11/24",
+      "FG%": 0.458,
+      "FTM/A": "0/2",
+      "FT%": 0.0,
+      "3PTM": 7,
+      "PTS": 29,
+      "REB": 7,
+      "AST": 4,
+      "ST": 0,
+      "BLK": 1,
+      "TO": 1,
+      "DD": 0
+     },
+     "score": -3.4
     },
     {
      "name": "Tre Jones",
@@ -4052,7 +4112,27 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -3.08
+     "score": -3.53
+    },
+    {
+     "name": "Jaime Jaquez Jr.",
+     "nba_team": "MIL",
+     "games": 3,
+     "line": {
+      "FGM/A": "10/25",
+      "FG%": 0.4,
+      "FTM/A": "5/6",
+      "FT%": 0.833,
+      "3PTM": 3,
+      "PTS": 28,
+      "REB": 3,
+      "AST": 8,
+      "ST": 1,
+      "BLK": 0,
+      "TO": 3,
+      "DD": 0
+     },
+     "score": -4.32
     },
     {
      "name": "Kris Dunn",
@@ -4072,47 +4152,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -4.36
-    },
-    {
-     "name": "Julian Champagnie",
-     "nba_team": "SAS",
-     "games": 1,
-     "line": {
-      "FGM/A": "8/14",
-      "FG%": 0.571,
-      "FTM/A": "0/2",
-      "FT%": 0.0,
-      "3PTM": 4,
-      "PTS": 20,
-      "REB": 4,
-      "AST": 1,
-      "ST": 0,
-      "BLK": 0,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": -5.1
-    },
-    {
-     "name": "Jaime Jaquez Jr.",
-     "nba_team": "MIL",
-     "games": 2,
-     "line": {
-      "FGM/A": "6/18",
-      "FG%": 0.333,
-      "FTM/A": "5/6",
-      "FT%": 0.833,
-      "3PTM": 2,
-      "PTS": 19,
-      "REB": 3,
-      "AST": 7,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 3,
-      "DD": 0
-     },
-     "score": -5.15
+     "score": -4.71
     },
     {
      "name": "Amen Thompson",
@@ -4132,7 +4172,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.54
+     "score": -5.94
     }
    ],
    "benched": [
@@ -4170,44 +4210,44 @@
    },
    "players": [
     {
-     "name": "Jaden McDaniels",
-     "nba_team": "MIN",
-     "games": 3,
-     "line": {
-      "FGM/A": "21/37",
-      "FG%": 0.568,
-      "FTM/A": "4/4",
-      "FT%": 1.0,
-      "3PTM": 6,
-      "PTS": 52,
-      "REB": 15,
-      "AST": 8,
-      "ST": 7,
-      "BLK": 5,
-      "TO": 7,
-      "DD": 0
-     },
-     "score": 7.49
-    },
-    {
      "name": "Victor Wembanyama",
      "nba_team": "SAS",
-     "games": 2,
+     "games": 3,
      "line": {
-      "FGM/A": "24/49",
-      "FG%": 0.49,
+      "FGM/A": "44/78",
+      "FG%": 0.564,
+      "FTM/A": "11/12",
+      "FT%": 0.917,
+      "3PTM": 8,
+      "PTS": 107,
+      "REB": 47,
+      "AST": 8,
+      "ST": 6,
+      "BLK": 7,
+      "TO": 9,
+      "DD": 3
+     },
+     "score": 18.83
+    },
+    {
+     "name": "Jaden McDaniels",
+     "nba_team": "MIN",
+     "games": 4,
+     "line": {
+      "FGM/A": "32/54",
+      "FG%": 0.593,
       "FTM/A": "6/6",
       "FT%": 1.0,
-      "3PTM": 3,
-      "PTS": 57,
-      "REB": 29,
-      "AST": 7,
-      "ST": 2,
-      "BLK": 2,
-      "TO": 6,
-      "DD": 2
+      "3PTM": 7,
+      "PTS": 77,
+      "REB": 20,
+      "AST": 12,
+      "ST": 8,
+      "BLK": 5,
+      "TO": 10,
+      "DD": 0
      },
-     "score": 6.73
+     "score": 9.25
     },
     {
      "name": "Michael Porter Jr.",
@@ -4227,7 +4267,27 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 1.09
+     "score": 0.21
+    },
+    {
+     "name": "Myles Turner",
+     "nba_team": "MIL",
+     "games": 2,
+     "line": {
+      "FGM/A": "3/13",
+      "FG%": 0.231,
+      "FTM/A": "2/2",
+      "FT%": 1.0,
+      "3PTM": 1,
+      "PTS": 9,
+      "REB": 11,
+      "AST": 9,
+      "ST": 1,
+      "BLK": 7,
+      "TO": 2,
+      "DD": 0
+     },
+     "score": -0.37
     },
     {
      "name": "Brandon Miller",
@@ -4247,7 +4307,27 @@
       "TO": 8,
       "DD": 0
      },
-     "score": -0.47
+     "score": -1.19
+    },
+    {
+     "name": "Landry Shamet",
+     "nba_team": "NYK",
+     "games": 2,
+     "line": {
+      "FGM/A": "10/18",
+      "FG%": 0.556,
+      "FTM/A": "2/2",
+      "FT%": 1.0,
+      "3PTM": 8,
+      "PTS": 30,
+      "REB": 2,
+      "AST": 5,
+      "ST": 1,
+      "BLK": 0,
+      "TO": 2,
+      "DD": 0
+     },
+     "score": -1.98
     },
     {
      "name": "Jared McCain",
@@ -4267,7 +4347,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -1.58
+     "score": -2.24
     },
     {
      "name": "Cameron Johnson",
@@ -4287,7 +4367,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -1.77
+     "score": -2.37
     },
     {
      "name": "Ajay Mitchell",
@@ -4307,27 +4387,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -3.32
-    },
-    {
-     "name": "Myles Turner",
-     "nba_team": "MIL",
-     "games": 1,
-     "line": {
-      "FGM/A": "2/5",
-      "FG%": 0.4,
-      "FTM/A": "0/0",
-      "FT%": null,
-      "3PTM": 0,
-      "PTS": 4,
-      "REB": 5,
-      "AST": 4,
-      "ST": 0,
-      "BLK": 3,
-      "TO": 1,
-      "DD": 0
-     },
-     "score": -3.88
+     "score": -3.77
     },
     {
      "name": "Klay Thompson",
@@ -4347,27 +4407,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -4.31
-    },
-    {
-     "name": "Landry Shamet",
-     "nba_team": "NYK",
-     "games": 1,
-     "line": {
-      "FGM/A": "3/4",
-      "FG%": 0.75,
-      "FTM/A": "2/2",
-      "FT%": 1.0,
-      "3PTM": 2,
-      "PTS": 10,
-      "REB": 1,
-      "AST": 2,
-      "ST": 1,
-      "BLK": 0,
-      "TO": 2,
-      "DD": 0
-     },
-     "score": -4.86
+     "score": -4.69
     },
     {
      "name": "Dillon Brooks",
@@ -4387,11 +4427,31 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -6.59
+     "score": -6.71
     },
     {
      "name": "Austin Reaves",
      "nba_team": "LAL",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Mitchell Robinson",
+     "nba_team": "BOS",
      "games": 0,
      "line": {
       "FGM/A": "0/0",
@@ -4418,9 +4478,9 @@
    "team_id": 11,
    "manager": null,
    "adds": {
-    "week": 0,
+    "week": 2,
     "week_limit": 4,
-    "season": 14,
+    "season": 16,
     "season_limit": 100
    },
    "players": [
@@ -4442,7 +4502,27 @@
       "TO": 3,
       "DD": 2
      },
-     "score": 9.38
+     "score": 7.36
+    },
+    {
+     "name": "Jeremiah Fears",
+     "nba_team": "NOP",
+     "games": 4,
+     "line": {
+      "FGM/A": "30/62",
+      "FG%": 0.484,
+      "FTM/A": "18/21",
+      "FT%": 0.857,
+      "3PTM": 8,
+      "PTS": 86,
+      "REB": 26,
+      "AST": 23,
+      "ST": 3,
+      "BLK": 1,
+      "TO": 16,
+      "DD": 1
+     },
+     "score": 5.41
     },
     {
      "name": "Julius Randle",
@@ -4462,7 +4542,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 6.59
+     "score": 5.11
     },
     {
      "name": "Miles Bridges",
@@ -4482,47 +4562,47 @@
       "TO": 1,
       "DD": 0
      },
-     "score": 5.85
-    },
-    {
-     "name": "Jeremiah Fears",
-     "nba_team": "NOP",
-     "games": 3,
-     "line": {
-      "FGM/A": "21/45",
-      "FG%": 0.467,
-      "FTM/A": "9/11",
-      "FT%": 0.818,
-      "3PTM": 6,
-      "PTS": 57,
-      "REB": 21,
-      "AST": 19,
-      "ST": 1,
-      "BLK": 1,
-      "TO": 11,
-      "DD": 1
-     },
-     "score": 2.87
+     "score": 4.3
     },
     {
      "name": "Zach LaVine",
      "nba_team": "SAC",
-     "games": 2,
+     "games": 3,
      "line": {
-      "FGM/A": "15/29",
-      "FG%": 0.517,
-      "FTM/A": "3/4",
+      "FGM/A": "19/39",
+      "FG%": 0.487,
+      "FTM/A": "6/8",
       "FT%": 0.75,
-      "3PTM": 4,
-      "PTS": 37,
-      "REB": 12,
+      "3PTM": 6,
+      "PTS": 50,
+      "REB": 15,
       "AST": 6,
-      "ST": 3,
-      "BLK": 1,
-      "TO": 2,
+      "ST": 4,
+      "BLK": 2,
+      "TO": 5,
       "DD": 0
      },
-     "score": 0.55
+     "score": 1.03
+    },
+    {
+     "name": "Rudy Gobert",
+     "nba_team": "MIN",
+     "games": 4,
+     "line": {
+      "FGM/A": "11/21",
+      "FG%": 0.524,
+      "FTM/A": "12/22",
+      "FT%": 0.545,
+      "3PTM": 0,
+      "PTS": 34,
+      "REB": 37,
+      "AST": 8,
+      "ST": 3,
+      "BLK": 5,
+      "TO": 8,
+      "DD": 1
+     },
+     "score": 0.45
     },
     {
      "name": "Josh Giddey",
@@ -4542,7 +4622,7 @@
       "TO": 12,
       "DD": 1
      },
-     "score": 0.09
+     "score": -0.74
     },
     {
      "name": "Kevin Huerter",
@@ -4562,27 +4642,7 @@
       "TO": 8,
       "DD": 0
      },
-     "score": -1.91
-    },
-    {
-     "name": "Rudy Gobert",
-     "nba_team": "MIN",
-     "games": 3,
-     "line": {
-      "FGM/A": "9/19",
-      "FG%": 0.474,
-      "FTM/A": "9/18",
-      "FT%": 0.5,
-      "3PTM": 0,
-      "PTS": 27,
-      "REB": 26,
-      "AST": 6,
-      "ST": 2,
-      "BLK": 2,
-      "TO": 7,
-      "DD": 1
-     },
-     "score": -2.99
+     "score": -2.46
     },
     {
      "name": "Derrick White",
@@ -4602,7 +4662,7 @@
       "TO": 0,
       "DD": 0
      },
-     "score": -4.49
+     "score": -4.77
     },
     {
      "name": "Sandro Mamukelashvili",
@@ -4622,7 +4682,27 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -4.7
+     "score": -5.05
+    },
+    {
+     "name": "Santi Aldama",
+     "nba_team": "DAL",
+     "games": 1,
+     "line": {
+      "FGM/A": "0/2",
+      "FG%": 0.0,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 1,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": -7.36
     }
    ],
    "benched": [
@@ -4696,7 +4776,27 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 8.38
+     "score": 6.82
+    },
+    {
+     "name": "Brook Lopez",
+     "nba_team": "LAC",
+     "games": 3,
+     "line": {
+      "FGM/A": "24/41",
+      "FG%": 0.585,
+      "FTM/A": "9/9",
+      "FT%": 1.0,
+      "3PTM": 10,
+      "PTS": 67,
+      "REB": 15,
+      "AST": 6,
+      "ST": 2,
+      "BLK": 2,
+      "TO": 8,
+      "DD": 0
+     },
+     "score": 3.79
     },
     {
      "name": "Ja'Kobe Walter",
@@ -4716,27 +4816,47 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 3.34
+     "score": 2.34
     },
     {
-     "name": "Brook Lopez",
-     "nba_team": "LAC",
-     "games": 2,
+     "name": "Zach Edey",
+     "nba_team": "MEM",
+     "games": 3,
      "line": {
-      "FGM/A": "16/26",
-      "FG%": 0.615,
-      "FTM/A": "5/5",
+      "FGM/A": "19/26",
+      "FG%": 0.731,
+      "FTM/A": "4/4",
       "FT%": 1.0,
-      "3PTM": 9,
-      "PTS": 46,
-      "REB": 9,
-      "AST": 6,
+      "3PTM": 0,
+      "PTS": 42,
+      "REB": 14,
+      "AST": 2,
+      "ST": 4,
+      "BLK": 1,
+      "TO": 4,
+      "DD": 1
+     },
+     "score": 2.27
+    },
+    {
+     "name": "Rui Hachimura",
+     "nba_team": "LAC",
+     "games": 3,
+     "line": {
+      "FGM/A": "21/35",
+      "FG%": 0.6,
+      "FTM/A": "4/7",
+      "FT%": 0.571,
+      "3PTM": 10,
+      "PTS": 56,
+      "REB": 20,
+      "AST": 4,
       "ST": 2,
       "BLK": 1,
       "TO": 4,
       "DD": 0
      },
-     "score": 2.73
+     "score": 1.79
     },
     {
      "name": "Immanuel Quickley",
@@ -4756,7 +4876,7 @@
       "TO": 5,
       "DD": 1
      },
-     "score": 1.94
+     "score": 1.0
     },
     {
      "name": "Devin Booker",
@@ -4776,27 +4896,7 @@
       "TO": 6,
       "DD": 0
      },
-     "score": 1.57
-    },
-    {
-     "name": "Zach Edey",
-     "nba_team": "MEM",
-     "games": 2,
-     "line": {
-      "FGM/A": "15/22",
-      "FG%": 0.682,
-      "FTM/A": "4/4",
-      "FT%": 1.0,
-      "3PTM": 0,
-      "PTS": 34,
-      "REB": 12,
-      "AST": 2,
-      "ST": 2,
-      "BLK": 1,
-      "TO": 3,
-      "DD": 1
-     },
-     "score": 1.42
+     "score": 0.73
     },
     {
      "name": "Shai Gilgeous-Alexander",
@@ -4816,27 +4916,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 0.6
-    },
-    {
-     "name": "Rui Hachimura",
-     "nba_team": "LAC",
-     "games": 2,
-     "line": {
-      "FGM/A": "14/23",
-      "FG%": 0.609,
-      "FTM/A": "3/5",
-      "FT%": 0.6,
-      "3PTM": 6,
-      "PTS": 37,
-      "REB": 12,
-      "AST": 3,
-      "ST": 2,
-      "BLK": 1,
-      "TO": 2,
-      "DD": 0
-     },
-     "score": 0.3
+     "score": -0.34
     },
     {
      "name": "Isaiah Hartenstein",
@@ -4856,7 +4936,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": 0.29
+     "score": -0.72
     },
     {
      "name": "Bam Adebayo",
@@ -4876,7 +4956,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -4.25
+     "score": -4.62
     }
    ],
    "benched": []
@@ -4885,6 +4965,72 @@
  "mvp_candidates": [
   {
    "id": "P1",
+   "name": "Victor Wembanyama",
+   "nba_team": "SAS",
+   "games": 3,
+   "line": {
+    "FGM/A": "44/78",
+    "FG%": 0.564,
+    "FTM/A": "11/12",
+    "FT%": 0.917,
+    "3PTM": 8,
+    "PTS": 107,
+    "REB": 47,
+    "AST": 8,
+    "ST": 6,
+    "BLK": 7,
+    "TO": 9,
+    "DD": 3
+   },
+   "score": 18.83,
+   "team": "Jaehun's Matchless Team"
+  },
+  {
+   "id": "P2",
+   "name": "Donovan Clingan",
+   "nba_team": "POR",
+   "games": 4,
+   "line": {
+    "FGM/A": "22/35",
+    "FG%": 0.629,
+    "FTM/A": "4/8",
+    "FT%": 0.5,
+    "3PTM": 3,
+    "PTS": 51,
+    "REB": 48,
+    "AST": 12,
+    "ST": 4,
+    "BLK": 8,
+    "TO": 7,
+    "DD": 3
+   },
+   "score": 12.84,
+   "team": "hyun's Team"
+  },
+  {
+   "id": "P3",
+   "name": "Joel Embiid",
+   "nba_team": "PHI",
+   "games": 3,
+   "line": {
+    "FGM/A": "27/57",
+    "FG%": 0.474,
+    "FTM/A": "33/38",
+    "FT%": 0.868,
+    "3PTM": 2,
+    "PTS": 89,
+    "REB": 28,
+    "AST": 17,
+    "ST": 3,
+    "BLK": 6,
+    "TO": 7,
+    "DD": 1
+   },
+   "score": 10.09,
+   "team": "TEAM G-JAY"
+  },
+  {
+   "id": "P4",
    "name": "Nikola Jokić",
    "nba_team": "DEN",
    "games": 3,
@@ -4902,96 +5048,30 @@
     "TO": 13,
     "DD": 2
    },
-   "score": 11.91,
+   "score": 9.78,
    "team": "Team Jaewon"
   },
   {
-   "id": "P2",
-   "name": "Giannis Antetokounmpo",
-   "nba_team": "MIA",
-   "games": 2,
-   "line": {
-    "FGM/A": "15/22",
-    "FG%": 0.682,
-    "FTM/A": "17/22",
-    "FT%": 0.773,
-    "3PTM": 0,
-    "PTS": 47,
-    "REB": 27,
-    "AST": 15,
-    "ST": 2,
-    "BLK": 4,
-    "TO": 3,
-    "DD": 2
-   },
-   "score": 9.38,
-   "team": "Kharami"
-  },
-  {
-   "id": "P3",
-   "name": "Franz Wagner",
-   "nba_team": "ORL",
-   "games": 3,
-   "line": {
-    "FGM/A": "33/68",
-    "FG%": 0.485,
-    "FTM/A": "14/17",
-    "FT%": 0.824,
-    "3PTM": 3,
-    "PTS": 83,
-    "REB": 21,
-    "AST": 27,
-    "ST": 2,
-    "BLK": 4,
-    "TO": 7,
-    "DD": 1
-   },
-   "score": 9.24,
-   "team": "Hanseong's Team"
-  },
-  {
-   "id": "P4",
-   "name": "Cameron Boozer",
-   "nba_team": "MEM",
-   "games": 3,
-   "line": {
-    "FGM/A": "21/36",
-    "FG%": 0.583,
-    "FTM/A": "13/13",
-    "FT%": 1.0,
-    "3PTM": 8,
-    "PTS": 63,
-    "REB": 21,
-    "AST": 17,
-    "ST": 4,
-    "BLK": 3,
-    "TO": 9,
-    "DD": 0
-   },
-   "score": 8.84,
-   "team": "TEAM G-JAY"
-  },
-  {
    "id": "P5",
-   "name": "Desmond Bane",
-   "nba_team": "ORL",
-   "games": 3,
+   "name": "Jaden McDaniels",
+   "nba_team": "MIN",
+   "games": 4,
    "line": {
-    "FGM/A": "20/39",
-    "FG%": 0.513,
-    "FTM/A": "5/5",
+    "FGM/A": "32/54",
+    "FG%": 0.593,
+    "FTM/A": "6/6",
     "FT%": 1.0,
-    "3PTM": 15,
-    "PTS": 60,
-    "REB": 13,
-    "AST": 11,
-    "ST": 7,
-    "BLK": 1,
-    "TO": 4,
+    "3PTM": 7,
+    "PTS": 77,
+    "REB": 20,
+    "AST": 12,
+    "ST": 8,
+    "BLK": 5,
+    "TO": 10,
     "DD": 0
    },
-   "score": 8.38,
-   "team": "SEOB's ME7O team"
+   "score": 9.25,
+   "team": "Jaehun's Matchless Team"
   }
  ],
  "lvp_candidates": [
@@ -5014,11 +5094,33 @@
     "TO": 2,
     "DD": 0
    },
-   "score": -6.78,
+   "score": -6.92,
    "team": "TheMan"
   },
   {
    "id": "L2",
+   "name": "Derrick Jones Jr.",
+   "nba_team": "LAC",
+   "games": 3,
+   "line": {
+    "FGM/A": "4/13",
+    "FG%": 0.308,
+    "FTM/A": "8/15",
+    "FT%": 0.533,
+    "3PTM": 1,
+    "PTS": 17,
+    "REB": 10,
+    "AST": 3,
+    "ST": 2,
+    "BLK": 1,
+    "TO": 3,
+    "DD": 0
+   },
+   "score": -6.91,
+   "team": "Hanseong's Team"
+  },
+  {
+   "id": "L3",
    "name": "Brandin Podziemski",
    "nba_team": "GSW",
    "games": 2,
@@ -5036,55 +5138,11 @@
     "TO": 2,
     "DD": 0
    },
-   "score": -5.75,
+   "score": -5.97,
    "team": "Cho"
   },
   {
-   "id": "L3",
-   "name": "Keaton Wagler",
-   "nba_team": "LAC",
-   "games": 2,
-   "line": {
-    "FGM/A": "8/19",
-    "FG%": 0.421,
-    "FTM/A": "4/5",
-    "FT%": 0.8,
-    "3PTM": 2,
-    "PTS": 22,
-    "REB": 7,
-    "AST": 2,
-    "ST": 1,
-    "BLK": 0,
-    "TO": 5,
-    "DD": 0
-   },
-   "score": -5.55,
-   "team": "Hanseong's Team"
-  },
-  {
    "id": "L4",
-   "name": "Derrick Jones Jr.",
-   "nba_team": "LAC",
-   "games": 2,
-   "line": {
-    "FGM/A": "3/6",
-    "FG%": 0.5,
-    "FTM/A": "7/11",
-    "FT%": 0.636,
-    "3PTM": 0,
-    "PTS": 13,
-    "REB": 3,
-    "AST": 2,
-    "ST": 2,
-    "BLK": 1,
-    "TO": 2,
-    "DD": 0
-   },
-   "score": -5.55,
-   "team": "Hanseong's Team"
-  },
-  {
-   "id": "L5",
    "name": "Jamal Shead",
    "nba_team": "TOR",
    "games": 3,
@@ -5102,8 +5160,30 @@
     "TO": 4,
     "DD": 0
    },
-   "score": -5.36,
+   "score": -5.53,
    "team": "ALTMAN_CH"
+  },
+  {
+   "id": "L5",
+   "name": "Bones Hyland",
+   "nba_team": "MIN",
+   "games": 2,
+   "line": {
+    "FGM/A": "6/14",
+    "FG%": 0.429,
+    "FTM/A": "3/4",
+    "FT%": 0.75,
+    "3PTM": 4,
+    "PTS": 19,
+    "REB": 3,
+    "AST": 2,
+    "ST": 2,
+    "BLK": 0,
+    "TO": 4,
+    "DD": 0
+   },
+   "score": -5.06,
+   "team": "Cho"
   }
  ],
  "transactions": [
@@ -5423,6 +5503,76 @@
      "to": "Waivers"
     }
    ]
+  },
+  {
+   "id": "X18",
+   "time_kst": "2026-11-22 01:17",
+   "type": "add",
+   "moves": [
+    {
+     "player": "Jusuf Nurkić",
+     "action": "add",
+     "from": "FA",
+     "to": "Kharami"
+    }
+   ]
+  },
+  {
+   "id": "X19",
+   "time_kst": "2026-11-22 01:28",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "DeMar DeRozan",
+     "action": "add",
+     "from": "FA",
+     "to": "Kharami"
+    },
+    {
+     "player": "Santi Aldama",
+     "action": "drop",
+     "from": "Kharami",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X20",
+   "time_kst": "2026-11-22 01:54",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Isaac Okoro",
+     "action": "add",
+     "from": "FA",
+     "to": "Hanseong's Team"
+    },
+    {
+     "player": "Derrick Jones Jr.",
+     "action": "drop",
+     "from": "Hanseong's Team",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X21",
+   "time_kst": "2026-11-22 02:18",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Charles Bassey",
+     "action": "add",
+     "from": "FA",
+     "to": "Hewon the game"
+    },
+    {
+     "player": "Tari Eason",
+     "action": "drop",
+     "from": "Hewon the game",
+     "to": "Waivers"
+    }
+   ]
   }
  ],
  "lineup_changes": [
@@ -5627,6 +5777,58 @@
     "ST": "1",
     "TO": "2"
    }
+  },
+  {
+   "id": "C14",
+   "date": "2026-11-21",
+   "team": "hyun's Team",
+   "player": "Dyson Daniels",
+   "from": "BN",
+   "to": "Util",
+   "change": "started",
+   "played": false
+  },
+  {
+   "id": "C15",
+   "date": "2026-11-21",
+   "team": "hyun's Team",
+   "player": "Jabari Smith Jr.",
+   "from": "Util",
+   "to": "BN",
+   "change": "benched",
+   "played": false
+  },
+  {
+   "id": "C16",
+   "date": "2026-11-21",
+   "team": "TheMan",
+   "player": "Egor Dëmin",
+   "from": "Util",
+   "to": "BN",
+   "change": "benched",
+   "played": false
+  },
+  {
+   "id": "C17",
+   "date": "2026-11-21",
+   "team": "TheMan",
+   "player": "Josh Hart",
+   "from": "BN",
+   "to": "Util",
+   "change": "started",
+   "played": true,
+   "line": {
+    "3PTM": "0",
+    "AST": "6",
+    "BLK": "0",
+    "DD": "0",
+    "FGM/A": "0/7",
+    "FTM/A": "0/0",
+    "PTS": "0",
+    "REB": "8",
+    "ST": "2",
+    "TO": "1"
+   }
   }
  ],
  "hooks": [
@@ -5646,28 +5848,37 @@
   },
   {
    "id": "H3",
+   "type": "tie",
+   "teams": [
+    "Hewon the game",
+    "Hanseong's Team"
+   ],
+   "score": "5-5-0"
+  },
+  {
+   "id": "H4",
    "type": "blowout",
    "winner": "TEAM G-JAY",
    "loser": "ALTMAN_CH",
    "score": "8-2-0"
   },
   {
-   "id": "H4",
+   "id": "H5",
    "type": "upset",
    "winner": "IN's WooSSa Team",
    "winner_prev_rank": 11,
    "loser": "YoungHun`s Team Bravo",
    "loser_prev_rank": 5,
-   "score": "7-2-1"
+   "score": "6-4-0"
   },
   {
-   "id": "H5",
-   "type": "upset",
-   "winner": "SEOB's ME7O team",
-   "winner_prev_rank": 16,
-   "loser": "Kharami",
-   "loser_prev_rank": 3,
-   "score": "6-4-0"
+   "id": "H6",
+   "type": "tie",
+   "teams": [
+    "Kharami",
+    "SEOB's ME7O team"
+   ],
+   "score": "5-5-0"
   }
  ],
  "next_week": [

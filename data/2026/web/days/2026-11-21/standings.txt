@@ -1,0 +1,18 @@
+#nbl-standings v1 base=/nba/80126
+R|1|13|hyun's Team|26-13-1|.663|9
+R|2|5|Hewon the game|24-14-2|.625|15
+R|3|11|Kharami|24-16-0|.600|16
+R|4|3|Team Scott|23-16-1|.588|16
+R|5|8|YoungHun`s Team Bravo|23-16-1|.588|9
+R|6|1|Baesen|22-16-2|.575|9
+R|7|15|Jaehun's Matchless Team|20-19-1|.513|14
+R|8|6|Team Jaewon|20-19-1|.513|7
+R|9|7|TEAM G-JAY|20-19-1|.513|6
+R|10|10|CHAN|17-21-2|.450|18
+R|11|14|IN's WooSSa Team|17-21-2|.450|14
+R|12|9|Hanseong's Team|17-22-1|.438|12
+R|13|16|ALTMAN_CH|16-22-2|.425|19
+R|14|2|TheMan|15-25-0|.375|14
+R|15|4|Cho|14-25-1|.363|7
+R|16|12|SEOB's ME7O team|12-26-2|.325|6
+#crc=ca96a642 lines=17
