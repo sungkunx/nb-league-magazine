@@ -3,7 +3,7 @@
 새 대화는 CLAUDE.md 다음에 이 문서를 읽는다. 대화에서 정한 것 중 다른 문서에 없는 것을 여기 모은다.
 글을 내거나 운영 방식이 바뀌면 이 문서의 "현재 상태"와 해당 항목을 같이 고친다.
 
-## 현재 상태 (2026-11-19 기준)
+## 현재 상태 (2026-11-22 기준)
 
 - 2주차 끝 (미국 10/26 월 ~ 11/1 일). Week 2 결과 발행(`posts/2026/w02-end.md`, 11/2). Week 2 D-2 점검은 쓰지 않고 지나갔다. 만평 발행(`w02-cartoon.md`, 11/2, 운영자가 보낸 순서: Wembanyama, Cho, Team Scott).
 - 특집 발행: 부상 러시 특집(`injury-wave.md`, Week 2, 10/28). 부상 상태는 NBA 공식 부상 리포트 PDF(ak-static.cms.nba.com/referee/injury/Injury-Report_YYYY-MM-DD_HH_MMPM.pdf)와 ESPN 부상 페이지가 가장 빠르고 정확했다.
@@ -25,7 +25,8 @@
 - Week 5 이주의 예측 발행(`w05-start.md`, 11/17 저녁). 운영자가 "메인에 5주차 만들어주고 올려줘"라고 해서 검토 단계 없이 바로 발행했다(주차 상자는 발행된 글이 있어야 생긴다). 월요일(11/16) 1일차 스코어와 **남은 엿새(11/17~11/22) 경기 수** 기준. 배차 간격 비유(수 12경기 만원 버스, 목 4경기 텅 빈 막차). 로스터·결장 표시는 `web/days/2026-11-16/teams.txt`(11/17 오후 수집)에 그 뒤 트랜잭션 6건(CHAN Oubre·Tre Jones, Jaehun's Cameron Johnson·Klay, Kharami Huerter, ALTMAN_CH Keldon Johnson)을 얹었고, 일정은 작업 공간 `curl`로 ESPN에서 셌다. 예상: hyun's 6-4, Team Scott 6-4, Team Jaewon 7-3, Hewon 6-4, TEAM G-JAY 7-3, IN's 6-4, Jaehun's 6-4, Kharami 6-4.
 - 확인 필요: Kharami가 IL의 Butler를 방출하고 Huerter를 영입해 IL 밖 선수가 11명으로 계산된다(남은 경기 수 31에 Huerter 4경기 포함). 누가 IL로 갔는지는 다음 수집 로스터에서 확인. 시각이 11/16 새벽·오전으로 찍힌 세 건(Oubre, Cameron Johnson, Huerter)은 11/16 로스터에 없었다. 트랜잭션 시각이 한국 시간이 아니라는 근거가 하나 더 생겼다. 예측 글에는 시각과 주간 영입 횟수를 쓰지 않았다.
 - 특집 발행: 누가 판타지를 잘하는가(`who-wins-fantasy.md`, Week 5, 11/19 발행). 운영자 요청 "도대체 누가 판타지 리그를 잘 하는가? 편집장의 하소연", 바깥 연구·기사를 모아 정리. 고민 상담소 비유(진단 여섯 번과 처방전). **운영자가 제목으로 정한 글이라 이 글에서만 편집장 화자를 썼다**(편집장 드립 중단 결정의 예외, 다른 글에는 적용하지 않는다). 출처: MIT SIAM Review 2018, theScore, McKinsey 2015, PLOS ONE 2021(FPL 100만 명), 미시간대 Kwak 2013, Tony ElHabr, Yahoo 상위 500팀 자료, RotoWire·ESPN 가이드. 우리 리그 숫자는 시즌 영입 횟수(5주차 팩트시트)와 4주차까지 순위만 썼다. news.mit.edu와 pmc 원문은 작업 공간에서 열리지 않아 meche.mit.edu와 ar5iv 사본으로 읽었다.
-- 다음 정규 글: Week 5 D-2 점검(토 11/21 오후 수집 뒤).
+- Week 5 D-1 점검 검토 중(`w05-mid.md`, 11/22 저녁, `status: review`). 토요일 D-2는 쓰지 않았고, 운영자 요청으로 일요일 오후 수집 뒤(미국 11/21 경기까지) **D-1**로 썼다. 종류는 그대로 `week-mid`. 미리보기의 버스 비유를 이어 "막차"(일요일 7경기). 예상 채점: 순항 6(hyun's·IN's는 스코어 일치), 동점 2(Hewon-Hanseong's, Kharami-SEOB's 5-5), 역주행 0. 일요일 출전 가능 인원은 `web/days/2026-11-21/teams.txt`에 X17~X21을 얹어 셌다(IL·O 제외). `teams.txt`의 선수 메모 앞에 "Video Forecast"가 붙는 줄이 생겨 정규식에 넣어야 한다. 영입 마감(16:59)이 지난 뒤라 영입 팁은 넣지 않았다.
+- 다음 정규 글: Week 5 결과(월 11/23 오후 수집 뒤). 6주차 대진은 5주차 팩트시트 N1~N8.
 - 예상 성적 누적(Week 4까지): **18승 14패**.
 - 예상 성적 누적(Week 3까지): **13승 11패**.
 - 예상 성적 누적: Week 1 **4승 4패**, Week 2 **3승 5패**, 누적 **7승 9패** (매치업 승자 기준, 무승부 예상이 무승부로 끝나면 적중, 승리 예상이 무승부로 끝나면 실패).
