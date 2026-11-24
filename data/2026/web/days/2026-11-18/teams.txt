@@ -194,16 +194,16 @@ P|BN|6073|Duncan Robinson|OPlayer Note DET - SG,SF|-
 P|IL|6606|Austin Reaves|OVideo ForecastNew Player Note LAL - PG,SG,SF|0/0|0/0|0|0|0|0|0|0|0|0
 S|21/55|10/10|9|61|23|14|3|6|6|0
 T|16|ALTMAN_CH|Wed, Nov 18
-P|PG|6413|Tyrese Maxey|ONew Player Note PHI - PG|-
+P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|0/0|0/0|0|0|0|0|0|0|0|0
 P|SG|4840|Kyrie Irving|New Player Note DAL - PG,SG|7/15|2/2|1|17|6|5|2|0|1|0
 P|SF|6166|De'Andre Hunter|New Player Note SAC - SF,PF|3/11|0/0|1|7|1|4|1|0|2|0
 P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|9/16|2/2|5|25|5|4|2|1|2|0
 P|C|6219|Nic Claxton|New Player Note CHI - C|6/7|2/3|0|14|4|1|1|0|0|0
-P|Util|6597|Aaron Wiggins|New Player Note ATL - SG,SF|5/13|0/0|4|14|3|1|1|0|1|0
+P|Util|6597|Aaron Wiggins|Player Note ATL - SG,SF|5/13|0/0|4|14|3|1|1|0|1|0
 P|Util|6418|Payton Pritchard|Player Note BOS - PG|6/11|0/0|3|15|1|2|0|0|3|0
-P|Util|10333|Jamal Shead|New Player Note TOR - PG|7/12|0/0|1|15|1|6|0|0|1|0
-P|BN|6559|Trey Murphy III|OPlayer Note NOP - SG,SF|-
-P|BN|6217|Keldon Johnson|New Player Note SAS - SF,PF|-
-P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
+P|Util|10333|Jamal Shead|Player Note TOR - PG|7/12|0/0|1|15|1|6|0|0|1|0
+P|BN|6559|Trey Murphy III|New Player Note NOP - SG,SF|0/0|0/0|0|0|0|0|0|0|0|0
+P|BN|6217|Keldon Johnson|Player Note SAS - SF,PF|-
+P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|0/0|0/0|0|0|0|0|0|0|0|0
 S|43/85|6/7|15|107|21|23|7|1|10|0
-#crc=32234b1a lines=208
+#crc=1659b551 lines=208

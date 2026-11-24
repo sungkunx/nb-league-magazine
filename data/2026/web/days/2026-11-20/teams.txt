@@ -2,17 +2,17 @@
 C|FGM/A|FTM/A|3PTM|PTS|REB|AST|ST|BLK|TO|DD
 T|1|Baesen|Fri, Nov 20
 P|PG|6580|Ayo Dosunmu|New Player Note MIN - PG,SG|-
-P|SG|4244|Kevin Durant|Player Note HOU - SG,SF,PF|6/9|4/4|0|16|4|4|0|0|3|0
-P|SF|10465|Cedric Coward|New Player Note MEM - SG,SF|-
-P|PF|6691|Paolo Banchero|ONo new player Notes ORL - PF|-
-P|C|10443|Collin Murray-Boyles|OPlayer Note TOR - PF,C|-
-P|Util|10576|Brayden Burries|New Player Note MIL - SG|-
-P|Util|6205|N. Alexander-Walker|New Player Note ATL - PG,SG|7/20|1/1|2|19|4|3|0|0|1|0
-P|Util|6733|Moussa Diabaté|New Player Note CHA - C|9/12|3/5|0|21|15|2|1|0|4|1
+P|SG|4244|Kevin Durant|New Player Note HOU - SG,SF,PF|6/9|4/4|0|16|4|4|0|0|3|0
+P|SF|10465|Cedric Coward|Player Note MEM - SG,SF|-
+P|PF|6691|Paolo Banchero|ONo new player Notes ORL - PF|0/0|0/0|0|0|0|0|0|0|0|0
+P|C|10443|Collin Murray-Boyles|New Player Note TOR - PF,C|0/0|0/0|0|0|0|0|0|0|0|0
+P|Util|10576|Brayden Burries|Video ForecastNew Player Note MIL - SG|-
+P|Util|6205|N. Alexander-Walker|New Player Note ATL - PG,SG|7/20|1/1|2|17|4|3|0|0|1|0
+P|Util|6733|Moussa Diabaté|Player Note CHA - C|9/12|3/5|0|21|15|2|1|0|4|1
 P|BN|5432|Karl-Anthony Towns|Player Note NYK - PF,C|-
 P|BN|10454|VJ Edgecombe|Player Note PHI - PG,SG|-
-P|IL|10595|Caleb Wilson|OPlayer Note CHI - PF|-
-S|22/41|8/10|2|56|23|9|1|0|8|1
+P|IL|10595|Caleb Wilson|ONo new player Notes CHI - PF|0/0|0/0|0|0|0|0|0|0|0|0
+S|22/41|8/10|2|54|23|9|1|0|8|1
 T|2|TheMan|Fri, Nov 20
 P|PG|6044|Jalen Brunson|New Player Note NYK - PG|-
 P|SG|6512|Cade Cunningham|New Player Note DET - PG,SG|10/22|1/4|2|23|5|9|1|0|3|0
@@ -66,17 +66,17 @@ P|IL|4612|Stephen Curry|OPlayer Note GSW - PG|-
 S|47/88|26/37|9|129|65|29|8|6|13|3
 T|6|Team Jaewon|Fri, Nov 20
 P|PG|6016|Trae Young|New Player Note WAS - PG|4/13|4/4|4|16|2|5|3|0|1|0
-P|SG|10316|Daniss Jenkins|Video ForecastPlayer Note DET - PG,SG|5/14|2/2|2|14|4|1|2|0|1|0
-P|SF|6411|Saddiq Bey|Player Note NOP - SF,PF|8/17|1/1|4|21|6|3|0|1|0|0
+P|SG|10316|Daniss Jenkins|Video ForecastNew Player Note DET - PG,SG|5/14|2/2|2|14|4|1|2|0|1|0
+P|SF|6411|Saddiq Bey|New Player Note NOP - SF,PF|8/17|1/1|4|21|6|3|0|1|0|0
 P|PF|6450|Paul Reed|New Player Note DET - PF,C|3/5|2/2|0|8|7|3|3|1|1|0
-P|C|5352|Nikola Jokić|Player Note DEN - C|10/15|4/4|2|26|7|11|0|0|4|1
-P|Util|6021|Mikal Bridges|New Player Note NYK - SF,PF|-
+P|C|5352|Nikola Jokić|Video ForecastPlayer Note DEN - C|10/15|4/4|2|26|7|11|0|0|4|1
+P|Util|6021|Mikal Bridges|Player Note NYK - SF,PF|-
 P|Util|10582|Darius Acuff Jr.|New Player Note SAC - PG|8/23|0/0|2|18|1|12|1|0|6|1
-P|Util|10100|Keyonte George|New Player Note UTA - PG,SG|4/17|6/7|0|14|3|6|0|0|4|0
+P|Util|10100|Keyonte George|New Player Note UTA - PG,SG|4/17|6/7|0|14|2|6|1|0|4|0
 P|BN|6581|Neemias Queta|Player Note BOS - C|-
 P|BN|6551|Davion Mitchell|Video ForecastPlayer Note MIA - PG|-
-P|IL|4896|Kawhi Leonard|ONew Player Note TOR - SG,SF,PF|-
-S|42/104|19/20|14|117|30|41|9|2|17|2
+P|IL|4896|Kawhi Leonard|OPlayer Note TOR - SG,SF,PF|0/0|0/0|0|0|0|0|0|0|0|0
+S|42/104|19/20|14|117|29|41|10|2|17|2
 T|7|TEAM G-JAY|Fri, Nov 20
 P|PG|5826|Donovan Mitchell|Player Note CLE - PG,SG|8/17|2/4|2|20|3|3|0|0|2|0
 P|SG|10095|Anthony Black|New Player Note ORL - PG,SG,SF|4/11|3/8|2|13|7|6|3|2|5|0
@@ -144,16 +144,16 @@ P|IL|6572|Santi Aldama|Player Note DAL - PF|-
 S|44/98|18/25|11|117|49|31|8|3|14|0
 T|12|SEOB's ME7O team|Fri, Nov 20
 P|PG|6022|Shai Gilgeous-Alexander|New Player Note OKC - PG|14/24|8/11|4|40|3|8|0|1|3|0
-P|SG|10278|Ja'Kobe Walter|Player Note TOR - PG,SG|2/11|2/2|2|8|3|3|1|0|1|0
+P|SG|10278|Ja'Kobe Walter|New Player Note TOR - PG,SG|2/11|2/2|2|8|3|3|1|0|1|0
 P|SF|6422|Desmond Bane|New Player Note ORL - SG,SF|7/17|0/0|7|21|2|3|5|1|1|0
 P|PF|5827|Bam Adebayo|Player Note MIA - PF,C|-
-P|C|10287|Zach Edey|New Player Note MEM - C|-
+P|C|10287|Zach Edey|Player Note MEM - C|-
 P|Util|6417|Immanuel Quickley|New Player Note TOR - PG,SG|6/10|3/4|3|18|3|10|0|0|3|1
 P|Util|5856|Isaiah Hartenstein|New Player Note OKC - C|2/3|1/1|0|5|8|4|1|2|4|0
-P|Util|5473|Devin Booker|New Player Note PHX - PG,SG|9/22|4/6|1|23|2|3|0|0|3|0
+P|Util|5473|Devin Booker|New Player Note PHX - PG,SG|9/21|4/6|1|23|2|3|0|0|4|0
 P|BN|6171|Rui Hachimura|New Player Note LAC - SF,PF|-
 P|BN|4472|Brook Lopez|New Player Note LAC - C|-
-S|40/87|18/24|17|115|21|31|7|4|15|1
+S|40/86|18/24|17|115|21|31|7|4|16|1
 T|13|hyun's Team|Fri, Nov 20
 P|PG|6212|Ty Jerome|OVideo ForecastNew Player Note MEM - PG,SG|-
 P|SG|6711|Christian Braun|New Player Note DEN - SG,SF,PF|7/10|2/2|3|19|5|3|4|1|0|0
@@ -194,16 +194,16 @@ P|BN|6420|Jaden McDaniels|New Player Note MIN - SF|-
 P|IL|5471|Myles Turner|New Player Note MIL - C|-
 S|30/71|6/10|14|80|20|18|6|1|9|0
 T|16|ALTMAN_CH|Fri, Nov 20
-P|PG|6413|Tyrese Maxey|QNew Player Note PHI - PG|-
-P|SG|4840|Kyrie Irving|Player Note DAL - PG,SG|-
+P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|-
+P|SG|4840|Kyrie Irving|New Player Note DAL - PG,SG|-
 P|SF|10122|Brice Sensabaugh|Player Note UTA - SG,SF,PF|6/13|1/2|5|18|3|1|0|0|0|0
-P|PF|10265|Matas Buzelis|Player Note CHI - SF,PF|4/10|0/0|1|9|5|1|1|0|3|0
+P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|4/10|0/0|1|9|5|1|1|0|3|0
 P|C|6219|Nic Claxton|New Player Note CHI - C|4/8|3/3|0|11|7|1|0|2|3|0
-P|Util|6597|Aaron Wiggins|New Player Note ATL - SG,SF|7/12|1/2|4|19|2|3|1|0|0|0
+P|Util|6597|Aaron Wiggins|Player Note ATL - SG,SF|7/12|1/2|4|19|2|3|1|0|0|0
 P|Util|10333|Jamal Shead|Player Note TOR - PG|0/4|0/0|0|0|1|4|0|0|2|0
 P|Util|6559|Trey Murphy III|New Player Note NOP - SG,SF|5/10|4/5|3|17|4|1|2|1|0|0
-P|BN|10452|Kasparas Jakučionis|New Player Note MIL - PG,SG|-
+P|BN|10452|Kasparas Jakučionis|Player Note MIL - PG,SG|-
 P|BN|6418|Payton Pritchard|Player Note BOS - PG|-
-P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
+P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|0/0|0/0|0|0|0|0|0|0|0|0
 S|26/57|9/12|13|74|22|11|4|3|8|0
-#crc=f455b69e lines=208
+#crc=414c2782 lines=208

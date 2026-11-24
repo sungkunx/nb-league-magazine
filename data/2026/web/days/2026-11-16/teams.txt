@@ -132,16 +132,16 @@ S|7/19|2/3|4|20|10|0|1|2|0|1
 T|11|Kharami|Mon, Nov 16
 P|PG|5842|Derrick White|New Player Note BOS - PG,SG|4/12|0/1|1|9|3|2|0|0|0|0
 P|SG|10440|Jeremiah Fears|New Player Note NOP - PG,SG|6/13|6/7|1|19|10|10|0|0|3|1
-P|SF|5324|Zach LaVine|QPlayer Note SAC - PG,SG,SF|-
+P|SF|5324|Zach LaVine|New Player Note SAC - PG,SG,SF|-
 P|PF|6023|Miles Bridges|New Player Note PHX - PF|7/15|0/0|2|16|8|2|1|1|1|0
-P|C|5197|Rudy Gobert|New Player Note MIN - C|5/10|8/14|0|18|15|4|0|2|2|1
+P|C|5197|Rudy Gobert|Player Note MIN - C|5/10|8/14|0|18|15|3|0|2|2|1
 P|Util|6548|Josh Giddey|Player Note CHI - PG,SG|1/5|1/2|1|4|4|8|0|1|6|0
 P|Util|5318|Julius Randle|New Player Note BKN - PF|13/20|5/5|2|33|6|1|2|1|1|0
-P|Util|5185|Giannis Antetokounmpo|New Player Note MIA - PF,C|8/11|4/6|0|20|13|6|1|3|1|1
+P|Util|5185|Giannis Antetokounmpo|QPlayer Note MIA - PF,C|8/11|4/6|0|20|13|6|1|3|1|1
 P|BN|6596|Sandro Mamukelashvili|Player Note LAL - PF,C|-
-P|BN|6572|Santi Aldama|QPlayer Note DAL - PF|-
-P|IL|4912|Jimmy Butler III|ONo new player Notes GSW - SF,PF|-
-S|44/86|24/35|7|119|59|33|4|8|14|3
+P|BN|6572|Santi Aldama|Player Note DAL - PF|-
+P|IL|4912|Jimmy Butler III|ONo new player Notes GSW - SF,PF|0/0|0/0|0|0|0|0|0|0|0|0
+S|44/86|24/35|7|119|59|32|4|8|14|3
 T|12|SEOB's ME7O team|Mon, Nov 16
 P|PG|6022|Shai Gilgeous-Alexander|Player Note OKC - PG|-
 P|SG|10278|Ja'Kobe Walter|Player Note TOR - PG,SG|-
@@ -194,16 +194,16 @@ P|BN|10104|Brandon Miller|New Player Note CHA - SF,PF|-
 P|IL|6606|Austin Reaves|ONew Player Note LAL - PG,SG,SF|-
 S|19/43|10/12|5|53|16|9|2|4|6|0
 T|16|ALTMAN_CH|Mon, Nov 16
-P|PG|6413|Tyrese Maxey|Player Note PHI - PG|7/12|6/6|4|24|1|9|1|0|3|0
+P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|7/12|6/6|4|24|1|9|1|0|3|0
 P|SG|10445|Egor Dëmin|Player Note BKN - PG,SG|3/10|1/3|2|9|3|4|0|1|5|0
-P|SF|6559|Trey Murphy III|OPlayer Note NOP - SG,SF|-
+P|SF|6559|Trey Murphy III|New Player Note NOP - SG,SF|0/0|0/0|0|0|0|0|0|0|0|0
 P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|8/14|4/4|3|23|3|0|1|1|2|0
-P|C|6219|Nic Claxton|Player Note CHI - C|3/6|2/2|0|8|2|1|1|0|1|0
+P|C|6219|Nic Claxton|New Player Note CHI - C|3/6|2/2|0|8|2|1|1|0|1|0
 P|Util|6597|Aaron Wiggins|Player Note ATL - SG,SF|-
-P|Util|6418|Payton Pritchard|New Player Note BOS - PG|7/16|3/3|4|21|4|5|0|0|0|0
-P|Util|10333|Jamal Shead|New Player Note TOR - PG|-
-P|BN|4840|Kyrie Irving|QPlayer Note DAL - PG,SG|-
-P|BN|6166|De'Andre Hunter|QPlayer Note SAC - SF,PF|-
+P|Util|6418|Payton Pritchard|Player Note BOS - PG|7/16|3/3|4|21|4|5|0|0|0|0
+P|Util|10333|Jamal Shead|Player Note TOR - PG|-
+P|BN|4840|Kyrie Irving|New Player Note DAL - PG,SG|-
+P|BN|6166|De'Andre Hunter|New Player Note SAC - SF,PF|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|28/58|16/18|13|85|13|19|3|2|11|0
-#crc=670dfaae lines=208
+#crc=8c4c2c74 lines=208

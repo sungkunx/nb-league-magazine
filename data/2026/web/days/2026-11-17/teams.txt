@@ -195,15 +195,15 @@ P|IL|6073|Duncan Robinson|ONew Player Note DET - SG,SF|-
 S|31/58|5/5|8|75|25|12|4|3|10|1
 T|16|ALTMAN_CH|Tue, Nov 17
 P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|-
-P|SG|6559|Trey Murphy III|ONew Player Note NOP - SG,SF|-
+P|SG|6559|Trey Murphy III|New Player Note NOP - SG,SF|-
 P|SF|6217|Keldon Johnson|Player Note SAS - SF,PF|2/5|0/0|0|4|2|1|0|0|2|0
 P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|-
-P|C|6219|Nic Claxton|Player Note CHI - C|-
+P|C|6219|Nic Claxton|New Player Note CHI - C|-
 P|Util|6597|Aaron Wiggins|Player Note ATL - SG,SF|-
 P|Util|6418|Payton Pritchard|Player Note BOS - PG|-
 P|Util|10333|Jamal Shead|Player Note TOR - PG|2/7|2/4|1|7|0|6|0|0|1|0
 P|BN|4840|Kyrie Irving|New Player Note DAL - PG,SG|-
-P|BN|6166|De'Andre Hunter|QNew Player Note SAC - SF,PF|-
+P|BN|6166|De'Andre Hunter|New Player Note SAC - SF,PF|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|4/12|2/4|1|11|2|7|0|0|3|0
-#crc=f9ceee2a lines=208
+#crc=f10579f3 lines=208

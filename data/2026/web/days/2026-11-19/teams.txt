@@ -194,16 +194,16 @@ P|BN|10104|Brandon Miller|Player Note CHA - SF,PF|-
 P|IL|6606|Austin Reaves|OVideo ForecastNew Player Note LAL - PG,SG,SF|-
 S|22/40|7/7|8|59|16|6|4|3|8|1
 T|16|ALTMAN_CH|Thu, Nov 19
-P|PG|6413|Tyrese Maxey|QPlayer Note PHI - PG|-
+P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|-
 P|SG|4840|Kyrie Irving|New Player Note DAL - PG,SG|-
 P|SF|10122|Brice Sensabaugh|Player Note UTA - SG,SF,PF|-
-P|PF|10265|Matas Buzelis|Player Note CHI - SF,PF|-
-P|C|6219|Nic Claxton|Player Note CHI - C|-
+P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|-
+P|C|6219|Nic Claxton|New Player Note CHI - C|-
 P|Util|6597|Aaron Wiggins|Player Note ATL - SG,SF|-
-P|Util|6418|Payton Pritchard|New Player Note BOS - PG|-
-P|Util|10333|Jamal Shead|New Player Note TOR - PG|-
-P|BN|6559|Trey Murphy III|ONew Player Note NOP - SG,SF|-
-P|BN|6166|De'Andre Hunter|QNew Player Note SAC - SF,PF|-
+P|Util|6418|Payton Pritchard|Player Note BOS - PG|-
+P|Util|10333|Jamal Shead|Player Note TOR - PG|-
+P|BN|6559|Trey Murphy III|New Player Note NOP - SG,SF|-
+P|BN|6166|De'Andre Hunter|New Player Note SAC - SF,PF|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|-
-#crc=47c00656 lines=208
+#crc=73443345 lines=208

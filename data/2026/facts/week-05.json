@@ -112,7 +112,7 @@
     {
      "name": "PTS",
      "values": [
-      "484",
+      "482",
       "489"
      ],
      "winner": "hyun's Team"
@@ -327,7 +327,7 @@
      "name": "REB",
      "values": [
       "115",
-      "189"
+      "188"
      ],
      "winner": "Team Jaewon"
     },
@@ -343,7 +343,7 @@
      "name": "ST",
      "values": [
       "21",
-      "33"
+      "34"
      ],
      "winner": "Team Jaewon"
     },
@@ -802,11 +802,11 @@
      "name": "FG%",
      "values": [
       ".463",
-      ".526"
+      ".527"
      ],
      "made_attempted": [
       "177/382",
-      "204/388"
+      "204/387"
      ],
      "winner": "SEOB's ME7O team"
     },
@@ -849,7 +849,7 @@
     {
      "name": "AST",
      "values": [
-      "152",
+      "151",
       "119"
      ],
      "winner": "Kharami"
@@ -874,7 +874,7 @@
      "name": "TO",
      "values": [
       "72",
-      "54"
+      "55"
      ],
      "winner": "SEOB's ME7O team"
     },
@@ -1134,7 +1134,7 @@
       "TO": 11,
       "DD": 0
      },
-     "score": 6.2
+     "score": 6.21
     },
     {
      "name": "VJ Edgecombe",
@@ -1154,7 +1154,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 3.15
+     "score": 3.16
     },
     {
      "name": "Brayden Burries",
@@ -1174,7 +1174,7 @@
       "TO": 7,
       "DD": 0
      },
-     "score": 0.63
+     "score": 0.64
     },
     {
      "name": "Nickeil Alexander-Walker",
@@ -1186,7 +1186,7 @@
       "FTM/A": "6/6",
       "FT%": 1.0,
       "3PTM": 11,
-      "PTS": 65,
+      "PTS": 63,
       "REB": 10,
       "AST": 11,
       "ST": 1,
@@ -1194,7 +1194,7 @@
       "TO": 4,
       "DD": 0
      },
-     "score": -0.02
+     "score": -0.1
     },
     {
      "name": "Kevin Durant",
@@ -1329,7 +1329,7 @@
       "TO": 10,
       "DD": 0
      },
-     "score": 11.69
+     "score": 11.7
     },
     {
      "name": "Donovan Clingan",
@@ -1369,7 +1369,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 6.69
+     "score": 6.7
     },
     {
      "name": "Dyson Daniels",
@@ -1389,7 +1389,7 @@
       "TO": 6,
       "DD": 2
      },
-     "score": 6.39
+     "score": 6.4
     },
     {
      "name": "Jayson Tatum",
@@ -1624,7 +1624,7 @@
       "TO": 11,
       "DD": 0
      },
-     "score": -2.07
+     "score": -2.08
     },
     {
      "name": "Aaron Nesmith",
@@ -1724,7 +1724,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -6.83
+     "score": -6.84
     },
     {
      "name": "Patrick Williams",
@@ -1979,7 +1979,7 @@
       "TO": 3,
       "DD": 1
      },
-     "score": -3.94
+     "score": -3.95
     },
     {
      "name": "RJ Barrett",
@@ -2321,14 +2321,14 @@
       "FT%": 0.889,
       "3PTM": 11,
       "PTS": 89,
-      "REB": 11,
+      "REB": 10,
       "AST": 34,
-      "ST": 1,
+      "ST": 2,
       "BLK": 2,
       "TO": 11,
       "DD": 2
      },
-     "score": 7.41
+     "score": 7.76
     },
     {
      "name": "Paul Reed",
@@ -2583,7 +2583,7 @@
       "TO": 5,
       "DD": 0
      },
-     "score": 1.17
+     "score": 1.18
     },
     {
      "name": "Day'Ron Sharpe",
@@ -2743,7 +2743,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -5.72
+     "score": -5.73
     },
     {
      "name": "Andrew Nembhard",
@@ -2794,9 +2794,9 @@
    "team_id": 9,
    "manager": null,
    "adds": {
-    "week": 3,
+    "week": 4,
     "week_limit": 4,
-    "season": 12,
+    "season": 13,
     "season_limit": 100
    },
    "players": [
@@ -2978,7 +2978,7 @@
       "TO": 1,
       "DD": 0
      },
-     "score": -5.63
+     "score": -5.64
     },
     {
      "name": "Derrick Jones Jr.",
@@ -3133,7 +3133,7 @@
       "TO": 13,
       "DD": 0
      },
-     "score": 1.1
+     "score": 1.11
     },
     {
      "name": "Stephon Castle",
@@ -3153,7 +3153,7 @@
       "TO": 13,
       "DD": 1
      },
-     "score": 1.03
+     "score": 1.04
     },
     {
      "name": "Tristan da Silva",
@@ -3508,7 +3508,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -7.72
+     "score": -7.73
     }
    ],
    "benched": [
@@ -3778,7 +3778,7 @@
       "TO": 8,
       "DD": 2
      },
-     "score": 9.79
+     "score": 9.8
     },
     {
      "name": "Tyler Herro",
@@ -4053,7 +4053,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -0.22
+     "score": -0.23
     },
     {
      "name": "Toumani Camara",
@@ -4193,7 +4193,7 @@
       "TO": 3,
       "DD": 0
      },
-     "score": -4.65
+     "score": -4.66
     },
     {
      "name": "Kris Dunn",
@@ -4284,9 +4284,9 @@
    "team_id": 15,
    "manager": null,
    "adds": {
-    "week": 4,
+    "week": 5,
     "week_limit": 4,
-    "season": 15,
+    "season": 16,
     "season_limit": 100
    },
    "players": [
@@ -4408,7 +4408,7 @@
       "TO": 2,
       "DD": 0
      },
-     "score": -0.9
+     "score": -0.91
     },
     {
      "name": "Jared McCain",
@@ -4697,13 +4697,13 @@
       "3PTM": 0,
       "PTS": 34,
       "REB": 37,
-      "AST": 8,
+      "AST": 7,
       "ST": 3,
       "BLK": 5,
       "TO": 8,
       "DD": 1
      },
-     "score": -0.64
+     "score": -0.77
     },
     {
      "name": "Kevin Huerter",
@@ -4980,26 +4980,6 @@
      "score": 0.8
     },
     {
-     "name": "Devin Booker",
-     "nba_team": "PHX",
-     "games": 3,
-     "line": {
-      "FGM/A": "24/54",
-      "FG%": 0.444,
-      "FTM/A": "20/23",
-      "FT%": 0.87,
-      "3PTM": 4,
-      "PTS": 72,
-      "REB": 8,
-      "AST": 17,
-      "ST": 2,
-      "BLK": 0,
-      "TO": 6,
-      "DD": 0
-     },
-     "score": -0.17
-    },
-    {
      "name": "Immanuel Quickley",
      "nba_team": "TOR",
      "games": 3,
@@ -5018,6 +4998,26 @@
       "DD": 1
      },
      "score": -0.21
+    },
+    {
+     "name": "Devin Booker",
+     "nba_team": "PHX",
+     "games": 3,
+     "line": {
+      "FGM/A": "24/53",
+      "FG%": 0.453,
+      "FTM/A": "20/23",
+      "FT%": 0.87,
+      "3PTM": 4,
+      "PTS": 72,
+      "REB": 8,
+      "AST": 17,
+      "ST": 2,
+      "BLK": 0,
+      "TO": 7,
+      "DD": 0
+     },
+     "score": -0.3
     },
     {
      "name": "Shai Gilgeous-Alexander",
@@ -5127,7 +5127,7 @@
     "TO": 10,
     "DD": 0
    },
-   "score": 11.69,
+   "score": 11.7,
    "team": "hyun's Team"
   },
   {
@@ -5795,6 +5795,44 @@
      "to": "Waivers"
     }
    ]
+  },
+  {
+   "id": "X29",
+   "time_kst": "2026-11-23 04:25",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Derrick Jones Jr.",
+     "action": "add",
+     "from": "Waivers",
+     "to": "Jaehun's Matchless Team"
+    },
+    {
+     "player": "Mitchell Robinson",
+     "action": "drop",
+     "from": "Jaehun's Matchless Team",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X30",
+   "time_kst": "2026-11-23 11:52",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Sam Hauser",
+     "action": "add",
+     "from": "FA",
+     "to": "Hanseong's Team"
+    },
+    {
+     "player": "Isaac Okoro",
+     "action": "drop",
+     "from": "Hanseong's Team",
+     "to": "Waivers"
+    }
+   ]
   }
  ],
  "lineup_changes": [
@@ -6179,14 +6217,20 @@
   {
    "id": "H10",
    "type": "adds_limit",
-   "team": "ALTMAN_CH",
+   "team": "Hanseong's Team",
    "adds": 4
   },
   {
    "id": "H11",
    "type": "adds_limit",
-   "team": "Jaehun's Matchless Team",
+   "team": "ALTMAN_CH",
    "adds": 4
+  },
+  {
+   "id": "H12",
+   "type": "adds_limit",
+   "team": "Jaehun's Matchless Team",
+   "adds": 5
   }
  ],
  "next_week": [

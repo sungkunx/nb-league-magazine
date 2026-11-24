@@ -195,14 +195,14 @@ S|39/68|9/10|13|100|30|13|6|9|7|1
 T|16|ALTMAN_CH|Sat, Nov 21
 P|PG|6413|Tyrese Maxey|New Player Note PHI - PG|4/11|9/10|0|17|4|4|0|1|1|0
 P|SG|4840|Kyrie Irving|New Player Note DAL - PG,SG|8/24|6/7|3|25|6|4|0|0|0|0
-P|SF|10122|Brice Sensabaugh|New Player Note UTA - SG,SF,PF|-
+P|SF|10122|Brice Sensabaugh|Player Note UTA - SG,SF,PF|-
 P|PF|10265|Matas Buzelis|New Player Note CHI - SF,PF|-
 P|C|6219|Nic Claxton|New Player Note CHI - C|-
-P|Util|6559|Trey Murphy III|ONew Player Note NOP - SG,SF|-
+P|Util|6559|Trey Murphy III|New Player Note NOP - SG,SF|0/0|0/0|0|0|0|0|0|0|0|0
 P|Util|10452|Kasparas Jakučionis|Player Note MIL - PG,SG|1/6|0/0|0|2|3|3|0|0|3|0
-P|Util|6418|Payton Pritchard|New Player Note BOS - PG|4/17|1/2|0|9|6|8|0|0|0|0
+P|Util|6418|Payton Pritchard|Player Note BOS - PG|4/17|1/2|0|9|6|8|0|0|0|0
 P|BN|6597|Aaron Wiggins|Player Note ATL - SG,SF|-
 P|BN|10333|Jamal Shead|Player Note TOR - PG|-
 P|IL|6692|Chet Holmgren|ONo new player Notes OKC - PF,C|-
 S|17/58|16/19|3|53|19|19|0|1|4|0
-#crc=3bd2450d lines=207
+#crc=8123e76d lines=207
