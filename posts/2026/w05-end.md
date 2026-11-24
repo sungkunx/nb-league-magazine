@@ -3,7 +3,6 @@ title: 🏁 Week 5 결과: 막차에서 5점 차 역전, 그리고 2위만 잡�
 date: 2026-11-24T11:40+09:00
 kind: week-end
 week: 5
-status: review
 summary: 일요일 막차에서 Jamal Murray가 45점을 넣어 PTS 489-484로 뒤집었고, 12위와 16위가 2위와 3위를 잡았습니다. 트리플더블 네 개, Wembanyama 4주 연속 MVP, 예상 6승 2패까지. 5주차 최종 결과.
 ---
 
