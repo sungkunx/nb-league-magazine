@@ -3,7 +3,6 @@ title: 📜 NBA의 간손미: 쓰긴 쓰는데, 맡기자니 아깝고, 없으�
 date: 2026-11-24T17:00+09:00
 kind: feature
 week: 6
-status: review
 summary: 평균 득점은 11점도 안 되는데 어쩐지 로스터 한 칸을 지키고 있는 선수들. Josh Hart, Myles Turner, Murray-Boyles, Gafford, Queta, Andrew Wiggins, Poeltl, Rollins. 우리 리그의 간손미 여덟 명을 소개합니다.
 ---
 
