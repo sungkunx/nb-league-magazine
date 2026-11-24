@@ -366,7 +366,7 @@
 - X5 2026-11-24 01:34 · add/drop · Caleb Martin (add: FA → Team Scott); Quentin Grimes (drop: Team Scott → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-23
+- 스냅샷이 있는 날: 2026-11-23, 2026-11-24
 
 ## 스토리 훅
 - H1 대승: Baesen 8-2-0 Hewon the game
