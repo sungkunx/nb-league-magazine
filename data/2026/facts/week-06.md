@@ -425,7 +425,7 @@
 - X14 2026-11-25 22:10 · add/drop · Bones Hyland (add: FA → Kharami); Peyton Watson (drop: Kharami → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
-- 스냅샷이 있는 날: 2026-11-23, 2026-11-24, 2026-11-25
+- 스냅샷이 있는 날: 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26
 - C1 2026-11-24 · ALTMAN_CH · Aaron Wiggins: BN → SF (선발로 올림, 그날 기록 없음)
 - C2 2026-11-24 · Hewon the game · Dylan Harper: SF → BN (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-24 · Hewon the game · Jalen Johnson: BN → SF (선발로 올림, 그날 기록 없음)
