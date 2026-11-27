@@ -5,7 +5,7 @@
   "week": 6,
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
-  "through": "2026-11-25",
+  "through": "2026-11-26",
   "complete": false,
   "is_playoffs": false,
   "standings_through_week": 5,
@@ -1282,9 +1282,9 @@
    "team_id": 5,
    "manager": null,
    "adds": {
-    "week": 0,
+    "week": 1,
     "week_limit": 4,
-    "season": 17,
+    "season": 18,
     "season_limit": 100
    },
    "players": [
@@ -1497,9 +1497,9 @@
    "team_id": 2,
    "manager": null,
    "adds": {
-    "week": 1,
+    "week": 2,
     "week_limit": 4,
-    "season": 15,
+    "season": 16,
     "season_limit": 100
    },
    "players": [
@@ -1921,6 +1921,26 @@
     {
      "name": "De'Aaron Fox",
      "nba_team": "SAS",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Quentin Grimes",
+     "nba_team": "LAL",
      "games": 0,
      "line": {
       "FGM/A": "0/0",
@@ -3546,6 +3566,26 @@
     {
      "name": "Onyeka Okongwu",
      "nba_team": "ATL",
+     "games": 0,
+     "line": {
+      "FGM/A": "0/0",
+      "FG%": null,
+      "FTM/A": "0/0",
+      "FT%": null,
+      "3PTM": 0,
+      "PTS": 0,
+      "REB": 0,
+      "AST": 0,
+      "ST": 0,
+      "BLK": 0,
+      "TO": 0,
+      "DD": 0
+     },
+     "score": null
+    },
+    {
+     "name": "Ryan Rollins",
+     "nba_team": "MIL",
      "games": 0,
      "line": {
       "FGM/A": "0/0",
@@ -5232,6 +5272,44 @@
      "to": "Waivers"
     }
    ]
+  },
+  {
+   "id": "X15",
+   "time_kst": "2026-11-27 01:48",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Kyle Filipowski",
+     "action": "add",
+     "from": "FA",
+     "to": "TheMan"
+    },
+    {
+     "player": "Jerami Grant",
+     "action": "drop",
+     "from": "TheMan",
+     "to": "Waivers"
+    }
+   ]
+  },
+  {
+   "id": "X16",
+   "time_kst": "2026-11-27 01:55",
+   "type": "add/drop",
+   "moves": [
+    {
+     "player": "Kevin Huerter",
+     "action": "add",
+     "from": "FA",
+     "to": "Hewon the game"
+    },
+    {
+     "player": "Yanic Konan Niederhäuser",
+     "action": "drop",
+     "from": "Hewon the game",
+     "to": "Waivers"
+    }
+   ]
   }
  ],
  "lineup_changes": [
@@ -5262,6 +5340,46 @@
    "player": "Jalen Johnson",
    "from": "BN",
    "to": "SF",
+   "change": "started",
+   "played": false
+  },
+  {
+   "id": "C4",
+   "date": "2026-11-26",
+   "team": "CHAN",
+   "player": "Charles Bassey",
+   "from": "C",
+   "to": "BN",
+   "change": "benched",
+   "played": false
+  },
+  {
+   "id": "C5",
+   "date": "2026-11-26",
+   "team": "CHAN",
+   "player": "Derik Queen",
+   "from": "BN",
+   "to": "Util",
+   "change": "started",
+   "played": false
+  },
+  {
+   "id": "C6",
+   "date": "2026-11-26",
+   "team": "CHAN",
+   "player": "Kelly Oubre Jr.",
+   "from": "Util",
+   "to": "BN",
+   "change": "benched",
+   "played": false
+  },
+  {
+   "id": "C7",
+   "date": "2026-11-26",
+   "team": "CHAN",
+   "player": "Ryan Rollins",
+   "from": "BN",
+   "to": "Util",
    "change": "started",
    "played": false
   }

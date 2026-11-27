@@ -1,7 +1,7 @@
 # NB League 2026 2026-27 · Week 6 팩트시트
 
 - 기간: 2026-11-23 ~ 2026-11-29 (미국 태평양 시간 기준)
-- 데이터: 2026-11-25까지 · 진행 중
+- 데이터: 2026-11-26까지 · 진행 중
 - 순위 기준: Week 5까지 (무승부는 0.5승)
 
 ## 데이터 점검
@@ -174,7 +174,7 @@
 | Collin Murray-Boyles | TOR | 1 | -4.17 | 3/10 | 0.3 | 0/0 |  | 0 | 6 | 10 | 1 | 3 | 0 | 4 | 0 |
 | Paolo Banchero | ORL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### T2 Hewon the game — 영입 주 0/4, 시즌 17/100
+### T2 Hewon the game — 영입 주 1/4, 시즌 18/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Day'Ron Sharpe | BKN | 2 | 8.99 | 7/15 | 0.467 | 2/2 | 1.0 | 1 | 17 | 19 | 12 | 5 | 2 | 1 | 1 |
@@ -188,7 +188,7 @@
 | Dylan Harper | SAS | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jalen Johnson | ATL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### T3 TheMan — 영입 주 1/4, 시즌 15/100
+### T3 TheMan — 영입 주 2/4, 시즌 16/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Deni Avdija | POR | 2 | 9.39 | 23/40 | 0.575 | 8/13 | 0.615 | 10 | 64 | 15 | 14 | 3 | 0 | 7 | 1 |
@@ -216,6 +216,7 @@
 | Daniel Gafford | DAL | 1 | -3.11 | 6/8 | 0.75 | 1/4 | 0.25 | 0 | 13 | 6 | 3 | 1 | 2 | 2 | 0 |
 | Zion Williamson | NOP | 1 | -4.39 | 10/18 | 0.556 | 5/5 | 1.0 | 0 | 25 | 4 | 0 | 1 | 0 | 6 | 0 |
 | De'Aaron Fox | SAS | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Quentin Grimes | LAL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### T5 Team Scott — 영입 주 1/4, 시즌 17/100
 | 선수 | NBA | G | 점수 | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -320,6 +321,7 @@
 | Charles Bassey | GSW | 1 | -3.16 | 4/9 | 0.444 | 2/2 | 1.0 | 0 | 10 | 7 | 1 | 0 | 2 | 2 | 0 |
 | Derik Queen | NOP | 1 | -6.49 | 5/9 | 0.556 | 1/5 | 0.2 | 0 | 11 | 9 | 2 | 1 | 1 | 5 | 0 |
 | Onyeka Okongwu | ATL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Rollins | MIL | 0 |  | 0/0 |  | 0/0 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 벤치·IL에서 뛴 기록(팀 합계에 불포함):
 | 선수 | NBA | G | FGM/A | FG% | FTM/A | FT% | 3PTM | PTS | REB | AST | ST | BLK | TO | DD |
@@ -423,12 +425,18 @@
 - X12 2026-11-25 19:59 · add/drop · Kevin Porter Jr. (add: FA → IN's WooSSa Team); Andre Drummond (drop: IN's WooSSa Team → Waivers)
 - X13 2026-11-25 20:27 · add/drop · Quentin Grimes (add: FA → YoungHun`s Team Bravo); Zaccharie Risacher (drop: YoungHun`s Team Bravo → Waivers)
 - X14 2026-11-25 22:10 · add/drop · Bones Hyland (add: FA → Kharami); Peyton Watson (drop: Kharami → Waivers)
+- X15 2026-11-27 01:48 · add/drop · Kyle Filipowski (add: FA → TheMan); Jerami Grant (drop: TheMan → Waivers)
+- X16 2026-11-27 01:55 · add/drop · Kevin Huerter (add: FA → Hewon the game); Yanic Konan Niederhäuser (drop: Hewon the game → Waivers)
 
 ## 경기 전 라인업 변경 (전날 밤 스냅샷 대비)
 - 스냅샷이 있는 날: 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26
 - C1 2026-11-24 · ALTMAN_CH · Aaron Wiggins: BN → SF (선발로 올림, 그날 기록 없음)
 - C2 2026-11-24 · Hewon the game · Dylan Harper: SF → BN (벤치로 내림, 그날 기록 없음)
 - C3 2026-11-24 · Hewon the game · Jalen Johnson: BN → SF (선발로 올림, 그날 기록 없음)
+- C4 2026-11-26 · CHAN · Charles Bassey: C → BN (벤치로 내림, 그날 기록 없음)
+- C5 2026-11-26 · CHAN · Derik Queen: BN → Util (선발로 올림, 그날 기록 없음)
+- C6 2026-11-26 · CHAN · Kelly Oubre Jr.: Util → BN (벤치로 내림, 그날 기록 없음)
+- C7 2026-11-26 · CHAN · Ryan Rollins: BN → Util (선발로 올림, 그날 기록 없음)
 
 ## 스토리 훅
 - H1 대승: Baesen 9-1-0 Hewon the game
